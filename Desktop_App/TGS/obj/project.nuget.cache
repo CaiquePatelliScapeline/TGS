@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "aSvrxKmc6+6bRqKSqJ5euPrwvrDFPZznS8WlLqUv21S9To09y9+qPWdEvs8zj+Ykc4hUtJCkyp9d7USTJr31nQ==",
+  "dgSpecHash": "X47f1qJG5jI0BTG9G2864hwESbn+JFPZQN9NSxDJaBc1BPtA0K8H3dgPOWyULogFMdUaWby482exUdSa+x/ITg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Gianluca\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -31,7 +31,7 @@ namespace TGS {
             this.txt_User = new System.Windows.Forms.TextBox();
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.lbl_Password = new System.Windows.Forms.Label();
-            this.btn_Login = new System.Windows.Forms.Button();
+            this.btn_Login2 = new TGS.MyButton();
             ((System.ComponentModel.ISupportInitialize)(this.img_Logo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,32 +107,37 @@ namespace TGS {
             this.lbl_Password.TabIndex = 4;
             this.lbl_Password.Text = "Senha";
             // 
-            // btn_Login
+            // btn_Login2
             // 
-            this.btn_Login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.btn_Login.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.btn_Login.FlatAppearance.BorderSize = 0;
-            this.btn_Login.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(74)))), ((int)(((byte)(137)))));
-            this.btn_Login.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Login.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(746, 556);
-            this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(94, 42);
-            this.btn_Login.TabIndex = 6;
-            this.btn_Login.Text = "Entrar";
-            this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Login2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Login2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Login2.BorderRadius = 0;
+            this.btn_Login2.BorderSize = 0;
+            this.btn_Login2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Login2.FlatAppearance.BorderSize = 0;
+            this.btn_Login2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(74)))), ((int)(((byte)(137)))));
+            this.btn_Login2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.btn_Login2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Login2.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Login2.ForeColor = System.Drawing.Color.White;
+            this.btn_Login2.Location = new System.Drawing.Point(746, 556);
+            this.btn_Login2.Name = "btn_Login2";
+            this.btn_Login2.Size = new System.Drawing.Size(94, 42);
+            this.btn_Login2.TabIndex = 7;
+            this.btn_Login2.Text = "Entrar";
+            this.btn_Login2.TextColor = System.Drawing.Color.White;
+            this.btn_Login2.UseVisualStyleBackColor = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.btn_Login2);
             this.Controls.Add(this.txt_Password);
             this.Controls.Add(this.lbl_Password);
             this.Controls.Add(this.txt_User);
@@ -141,7 +146,9 @@ namespace TGS {
             this.Controls.Add(this.img_Logo);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
             this.Name = "Login";
+            this.ShowIcon = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.img_Logo)).EndInit();
             this.ResumeLayout(false);
@@ -157,7 +164,7 @@ namespace TGS {
         private System.Windows.Forms.TextBox txt_User;
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Label lbl_Password;
-        private System.Windows.Forms.Button btn_Login;
+        private MyButton btn_Login2;
     }
 }
 

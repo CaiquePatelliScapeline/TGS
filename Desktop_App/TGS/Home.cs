@@ -131,7 +131,9 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            Application.Exit();
+            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                Application.Exit();
+            }  
         }
 
         private void btn_MenuHamburger_Click(object sender, EventArgs e) {

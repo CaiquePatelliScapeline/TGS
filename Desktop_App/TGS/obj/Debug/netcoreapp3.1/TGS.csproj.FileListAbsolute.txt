@@ -36,3 +36,23 @@ D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.dll
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.exe
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.deps.json
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.runtimeconfig.json
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.runtimeconfig.dev.json
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.pdb
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.AssemblyReference.cache
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Home.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Login.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Properties.Resources.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.GenerateResource.cache
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfoInputs.cache
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfo.cs
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.CoreCompileInputs.cache
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.CopyComplete
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache

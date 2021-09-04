@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class Home : Form {
+    public partial class HomeCopia : Form {
 
         // Fields
         private int borderSize = 2;
 
         // Constructor
-        public Home() {
+        public HomeCopia() {
             InitializeComponent();
             CollapseMenu();
             this.Padding = new Padding(borderSize); // Border Size
@@ -161,6 +161,5 @@ namespace TGS {
                 }
             }
         }
-
     }
 }

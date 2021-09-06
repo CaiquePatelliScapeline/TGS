@@ -21,6 +21,18 @@ namespace TGS {
             CollapseMenu();
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+            string[] item = new string[6];
+            item[0] = "Miriam";
+            item[1] = " ";
+            item[2] = "Dr. Fernando";
+            item[3] = "diabetes";
+            item[4] = "14:00";
+            item[5] = "1";
+
+            ListViewItem items = new ListViewItem(item);
+            lv_Consults.Items.Add(items);
+
+
 
         }
 
@@ -162,5 +174,6 @@ namespace TGS {
             }
         }
 
+        
     }
 }

@@ -43,37 +43,54 @@ namespace TGS {
             this.btn_Maximize = new FontAwesome.Sharp.IconButton();
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Content = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lv_Consults = new System.Windows.Forms.ListView();
+            this.col_Name = new System.Windows.Forms.ColumnHeader();
+            this.col_Nickname = new System.Windows.Forms.ColumnHeader();
+            this.col_Professional = new System.Windows.Forms.ColumnHeader();
+            this.col_Disease = new System.Windows.Forms.ColumnHeader();
+            this.col_Schedule = new System.Windows.Forms.ColumnHeader();
+            this.col_Status = new System.Windows.Forms.ColumnHeader();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport1 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport1 = new System.Windows.Forms.Label();
-            this.img_IconReport1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport2 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport2 = new System.Windows.Forms.Label();
-            this.img_IconReport2 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.lbl_ValueReport4 = new System.Windows.Forms.Label();
+            this.lbl_TitleReport4 = new System.Windows.Forms.Label();
+            this.img_IconReport4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lbl_ValueReport3 = new System.Windows.Forms.Label();
             this.lbl_TitleReport3 = new System.Windows.Forms.Label();
             this.img_IconReport3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lbl_ValueReport2 = new System.Windows.Forms.Label();
+            this.lbl_TitleReport2 = new System.Windows.Forms.Label();
+            this.img_IconReport2 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lbl_ValueReport1 = new System.Windows.Forms.Label();
+            this.lbl_TitleReport1 = new System.Windows.Forms.Label();
+            this.img_IconReport1 = new System.Windows.Forms.PictureBox();
             this.pnl_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_TitleBar.SuspendLayout();
             this.pnl_Content.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Menu
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnl_Menu.Controls.Add(this.btn_MenuLogout);
             this.pnl_Menu.Controls.Add(this.btn_MenuOptions);
             this.pnl_Menu.Controls.Add(this.btn_MenuPacientes);
@@ -100,10 +117,10 @@ namespace TGS {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 629);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(228, 35);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -126,7 +143,7 @@ namespace TGS {
             this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(228, 76);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -149,7 +166,7 @@ namespace TGS {
             this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(228, 76);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -172,7 +189,7 @@ namespace TGS {
             this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuChat.Size = new System.Drawing.Size(228, 76);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -195,7 +212,7 @@ namespace TGS {
             this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(228, 76);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -218,7 +235,7 @@ namespace TGS {
             this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuHome.Size = new System.Drawing.Size(228, 76);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -233,7 +250,7 @@ namespace TGS {
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 73);
+            this.panel1.Size = new System.Drawing.Size(228, 73);
             this.panel1.TabIndex = 0;
             // 
             // img_LogoMenu
@@ -365,6 +382,7 @@ namespace TGS {
             // 
             // pnl_Content
             // 
+            this.pnl_Content.Controls.Add(this.panel7);
             this.pnl_Content.Controls.Add(this.panel2);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Content.Location = new System.Drawing.Point(230, 73);
@@ -372,10 +390,92 @@ namespace TGS {
             this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.label2);
+            this.panel7.Controls.Add(this.lv_Consults);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 158);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(1034, 450);
+            this.panel7.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(1034, 38);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "   Consultas";
+            // 
+            // lv_Consults
+            // 
+            this.lv_Consults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.lv_Consults.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.col_Name,
+            this.col_Nickname,
+            this.col_Professional,
+            this.col_Disease,
+            this.col_Schedule,
+            this.col_Status});
+            this.lv_Consults.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lv_Consults.ForeColor = System.Drawing.Color.White;
+            this.lv_Consults.FullRowSelect = true;
+            this.lv_Consults.GridLines = true;
+            this.lv_Consults.HideSelection = false;
+            this.lv_Consults.Location = new System.Drawing.Point(32, 70);
+            this.lv_Consults.MultiSelect = false;
+            this.lv_Consults.Name = "lv_Consults";
+            this.lv_Consults.Size = new System.Drawing.Size(985, 365);
+            this.lv_Consults.TabIndex = 0;
+            this.lv_Consults.UseCompatibleStateImageBehavior = false;
+            this.lv_Consults.View = System.Windows.Forms.View.Details;
+            // 
+            // col_Name
+            // 
+            this.col_Name.Text = "Nome";
+            this.col_Name.Width = 200;
+            // 
+            // col_Nickname
+            // 
+            this.col_Nickname.Text = "Apelido";
+            this.col_Nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Nickname.Width = 160;
+            // 
+            // col_Professional
+            // 
+            this.col_Professional.Text = "Profissional";
+            this.col_Professional.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Professional.Width = 200;
+            // 
+            // col_Disease
+            // 
+            this.col_Disease.Text = "Doenças";
+            this.col_Disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Disease.Width = 200;
+            // 
+            // col_Schedule
+            // 
+            this.col_Schedule.Text = "Horário";
+            this.col_Schedule.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Schedule.Width = 140;
+            // 
+            // col_Status
+            // 
+            this.col_Status.Text = "Status";
+            this.col_Status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.col_Status.Width = 80;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
@@ -384,95 +484,50 @@ namespace TGS {
             this.panel2.Size = new System.Drawing.Size(1034, 130);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
+            // panel6
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel3.Controls.Add(this.lbl_ValueReport1);
-            this.panel3.Controls.Add(this.lbl_TitleReport1);
-            this.panel3.Controls.Add(this.img_IconReport1);
-            this.panel3.Location = new System.Drawing.Point(63, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(233, 86);
-            this.panel3.TabIndex = 0;
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.panel6.Controls.Add(this.lbl_ValueReport4);
+            this.panel6.Controls.Add(this.lbl_TitleReport4);
+            this.panel6.Controls.Add(this.img_IconReport4);
+            this.panel6.Location = new System.Drawing.Point(784, 21);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(233, 86);
+            this.panel6.TabIndex = 2;
             // 
-            // lbl_ValueReport1
+            // lbl_ValueReport4
             // 
-            this.lbl_ValueReport1.AutoSize = true;
-            this.lbl_ValueReport1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport1.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport1.Location = new System.Drawing.Point(122, 42);
-            this.lbl_ValueReport1.Name = "lbl_ValueReport1";
-            this.lbl_ValueReport1.Size = new System.Drawing.Size(58, 24);
-            this.lbl_ValueReport1.TabIndex = 1;
-            this.lbl_ValueReport1.Text = "1050";
-            this.lbl_ValueReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_ValueReport4.AutoSize = true;
+            this.lbl_ValueReport4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ValueReport4.ForeColor = System.Drawing.Color.White;
+            this.lbl_ValueReport4.Location = new System.Drawing.Point(122, 42);
+            this.lbl_ValueReport4.Name = "lbl_ValueReport4";
+            this.lbl_ValueReport4.Size = new System.Drawing.Size(34, 24);
+            this.lbl_ValueReport4.TabIndex = 1;
+            this.lbl_ValueReport4.Text = "28";
+            this.lbl_ValueReport4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbl_TitleReport1
+            // lbl_TitleReport4
             // 
-            this.lbl_TitleReport1.AutoSize = true;
-            this.lbl_TitleReport1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport1.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport1.Location = new System.Drawing.Point(80, 10);
-            this.lbl_TitleReport1.Name = "lbl_TitleReport1";
-            this.lbl_TitleReport1.Size = new System.Drawing.Size(140, 32);
-            this.lbl_TitleReport1.TabIndex = 1;
-            this.lbl_TitleReport1.Text = "Pacientes";
-            this.lbl_TitleReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_TitleReport4.AutoSize = true;
+            this.lbl_TitleReport4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleReport4.ForeColor = System.Drawing.Color.White;
+            this.lbl_TitleReport4.Location = new System.Drawing.Point(80, 10);
+            this.lbl_TitleReport4.Name = "lbl_TitleReport4";
+            this.lbl_TitleReport4.Size = new System.Drawing.Size(129, 32);
+            this.lbl_TitleReport4.TabIndex = 1;
+            this.lbl_TitleReport4.Text = "Cirurgias";
+            this.lbl_TitleReport4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // img_IconReport1
+            // img_IconReport4
             // 
-            this.img_IconReport1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport1.Image")));
-            this.img_IconReport1.Location = new System.Drawing.Point(13, 15);
-            this.img_IconReport1.Name = "img_IconReport1";
-            this.img_IconReport1.Size = new System.Drawing.Size(57, 50);
-            this.img_IconReport1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport1.TabIndex = 0;
-            this.img_IconReport1.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel4.Controls.Add(this.lbl_ValueReport2);
-            this.panel4.Controls.Add(this.lbl_TitleReport2);
-            this.panel4.Controls.Add(this.img_IconReport2);
-            this.panel4.Location = new System.Drawing.Point(322, 21);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 86);
-            this.panel4.TabIndex = 2;
-            // 
-            // lbl_ValueReport2
-            // 
-            this.lbl_ValueReport2.AutoSize = true;
-            this.lbl_ValueReport2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport2.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport2.Location = new System.Drawing.Point(137, 42);
-            this.lbl_ValueReport2.Name = "lbl_ValueReport2";
-            this.lbl_ValueReport2.Size = new System.Drawing.Size(34, 24);
-            this.lbl_ValueReport2.TabIndex = 1;
-            this.lbl_ValueReport2.Text = "50";
-            this.lbl_ValueReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_TitleReport2
-            // 
-            this.lbl_TitleReport2.AutoSize = true;
-            this.lbl_TitleReport2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport2.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport2.Location = new System.Drawing.Point(72, 10);
-            this.lbl_TitleReport2.Name = "lbl_TitleReport2";
-            this.lbl_TitleReport2.Size = new System.Drawing.Size(160, 32);
-            this.lbl_TitleReport2.TabIndex = 1;
-            this.lbl_TitleReport2.Text = "Avaliações";
-            this.lbl_TitleReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_IconReport2
-            // 
-            this.img_IconReport2.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport2.Image")));
-            this.img_IconReport2.Location = new System.Drawing.Point(13, 15);
-            this.img_IconReport2.Name = "img_IconReport2";
-            this.img_IconReport2.Size = new System.Drawing.Size(57, 50);
-            this.img_IconReport2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport2.TabIndex = 0;
-            this.img_IconReport2.TabStop = false;
+            this.img_IconReport4.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.Image")));
+            this.img_IconReport4.Location = new System.Drawing.Point(13, 15);
+            this.img_IconReport4.Name = "img_IconReport4";
+            this.img_IconReport4.Size = new System.Drawing.Size(57, 50);
+            this.img_IconReport4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_IconReport4.TabIndex = 0;
+            this.img_IconReport4.TabStop = false;
             // 
             // panel5
             // 
@@ -480,7 +535,7 @@ namespace TGS {
             this.panel5.Controls.Add(this.lbl_ValueReport3);
             this.panel5.Controls.Add(this.lbl_TitleReport3);
             this.panel5.Controls.Add(this.img_IconReport3);
-            this.panel5.Location = new System.Drawing.Point(588, 21);
+            this.panel5.Location = new System.Drawing.Point(533, 21);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(233, 86);
             this.panel5.TabIndex = 2;
@@ -519,6 +574,96 @@ namespace TGS {
             this.img_IconReport3.TabIndex = 0;
             this.img_IconReport3.TabStop = false;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.panel4.Controls.Add(this.lbl_ValueReport2);
+            this.panel4.Controls.Add(this.lbl_TitleReport2);
+            this.panel4.Controls.Add(this.img_IconReport2);
+            this.panel4.Location = new System.Drawing.Point(281, 21);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(233, 86);
+            this.panel4.TabIndex = 2;
+            // 
+            // lbl_ValueReport2
+            // 
+            this.lbl_ValueReport2.AutoSize = true;
+            this.lbl_ValueReport2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ValueReport2.ForeColor = System.Drawing.Color.White;
+            this.lbl_ValueReport2.Location = new System.Drawing.Point(137, 42);
+            this.lbl_ValueReport2.Name = "lbl_ValueReport2";
+            this.lbl_ValueReport2.Size = new System.Drawing.Size(34, 24);
+            this.lbl_ValueReport2.TabIndex = 1;
+            this.lbl_ValueReport2.Text = "50";
+            this.lbl_ValueReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_TitleReport2
+            // 
+            this.lbl_TitleReport2.AutoSize = true;
+            this.lbl_TitleReport2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleReport2.ForeColor = System.Drawing.Color.White;
+            this.lbl_TitleReport2.Location = new System.Drawing.Point(72, 10);
+            this.lbl_TitleReport2.Name = "lbl_TitleReport2";
+            this.lbl_TitleReport2.Size = new System.Drawing.Size(160, 32);
+            this.lbl_TitleReport2.TabIndex = 1;
+            this.lbl_TitleReport2.Text = "Avaliações";
+            this.lbl_TitleReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // img_IconReport2
+            // 
+            this.img_IconReport2.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport2.Image")));
+            this.img_IconReport2.Location = new System.Drawing.Point(13, 15);
+            this.img_IconReport2.Name = "img_IconReport2";
+            this.img_IconReport2.Size = new System.Drawing.Size(57, 50);
+            this.img_IconReport2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_IconReport2.TabIndex = 0;
+            this.img_IconReport2.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.panel3.Controls.Add(this.lbl_ValueReport1);
+            this.panel3.Controls.Add(this.lbl_TitleReport1);
+            this.panel3.Controls.Add(this.img_IconReport1);
+            this.panel3.Location = new System.Drawing.Point(32, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(233, 86);
+            this.panel3.TabIndex = 0;
+            // 
+            // lbl_ValueReport1
+            // 
+            this.lbl_ValueReport1.AutoSize = true;
+            this.lbl_ValueReport1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_ValueReport1.ForeColor = System.Drawing.Color.White;
+            this.lbl_ValueReport1.Location = new System.Drawing.Point(122, 42);
+            this.lbl_ValueReport1.Name = "lbl_ValueReport1";
+            this.lbl_ValueReport1.Size = new System.Drawing.Size(58, 24);
+            this.lbl_ValueReport1.TabIndex = 1;
+            this.lbl_ValueReport1.Text = "1050";
+            this.lbl_ValueReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lbl_TitleReport1
+            // 
+            this.lbl_TitleReport1.AutoSize = true;
+            this.lbl_TitleReport1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleReport1.ForeColor = System.Drawing.Color.White;
+            this.lbl_TitleReport1.Location = new System.Drawing.Point(80, 10);
+            this.lbl_TitleReport1.Name = "lbl_TitleReport1";
+            this.lbl_TitleReport1.Size = new System.Drawing.Size(140, 32);
+            this.lbl_TitleReport1.TabIndex = 1;
+            this.lbl_TitleReport1.Text = "Pacientes";
+            this.lbl_TitleReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // img_IconReport1
+            // 
+            this.img_IconReport1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport1.Image")));
+            this.img_IconReport1.Location = new System.Drawing.Point(13, 15);
+            this.img_IconReport1.Name = "img_IconReport1";
+            this.img_IconReport1.Size = new System.Drawing.Size(57, 50);
+            this.img_IconReport1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_IconReport1.TabIndex = 0;
+            this.img_IconReport1.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -538,16 +683,20 @@ namespace TGS {
             this.pnl_TitleBar.ResumeLayout(false);
             this.pnl_TitleBar.PerformLayout();
             this.pnl_Content.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -585,5 +734,18 @@ namespace TGS {
         private System.Windows.Forms.Label lbl_ValueReport3;
         private System.Windows.Forms.Label lbl_TitleReport3;
         private System.Windows.Forms.PictureBox img_IconReport3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label lbl_ValueReport4;
+        private System.Windows.Forms.Label lbl_TitleReport4;
+        private System.Windows.Forms.PictureBox img_IconReport4;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.ListView lv_Consults;
+        private System.Windows.Forms.ColumnHeader col_Name;
+        private System.Windows.Forms.ColumnHeader col_Nickname;
+        private System.Windows.Forms.ColumnHeader col_Professional;
+        private System.Windows.Forms.ColumnHeader col_Disease;
+        private System.Windows.Forms.ColumnHeader col_Schedule;
+        private System.Windows.Forms.ColumnHeader col_Status;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -31,9 +31,6 @@ namespace TGS {
 
             ListViewItem items = new ListViewItem(item);
             lv_Consults.Items.Add(items);
-
-
-
         }
 
         //Drag Form
@@ -174,6 +171,11 @@ namespace TGS {
             }
         }
 
-        
+        private void lv_Consults_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e) {
+            var Font = new Font("Century Gothic", 16, FontStyle.Regular);
+            e.Graphics.FillRectangle(Brushes.RoyalBlue, e.Bounds);
+            /*e.DrawText();*/
+            e.Graphics.DrawString(e.Header.Text, Font,Brushes.White, e.Bounds);
+        }
     }
 }

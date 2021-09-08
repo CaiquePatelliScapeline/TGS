@@ -26,6 +26,15 @@ namespace TGS {
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.pnl_Menu = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.btn_MenuLogout = new FontAwesome.Sharp.IconButton();
             this.btn_MenuOptions = new FontAwesome.Sharp.IconButton();
             this.btn_MenuPacientes = new FontAwesome.Sharp.IconButton();
@@ -37,14 +46,13 @@ namespace TGS {
             this.btn_MenuHamburger = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_TitleBar = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_Date = new System.Windows.Forms.Label();
             this.lbl_Welcome = new System.Windows.Forms.Label();
             this.btn_Minimize = new FontAwesome.Sharp.IconButton();
             this.btn_Maximize = new FontAwesome.Sharp.IconButton();
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Content = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pnl_ConsultsTable = new System.Windows.Forms.Panel();
             this.lv_Consults = new System.Windows.Forms.ListView();
             this.col_Name = new System.Windows.Forms.ColumnHeader();
             this.col_Nickname = new System.Windows.Forms.ColumnHeader();
@@ -52,45 +60,53 @@ namespace TGS {
             this.col_Disease = new System.Windows.Forms.ColumnHeader();
             this.col_Schedule = new System.Windows.Forms.ColumnHeader();
             this.col_Status = new System.Windows.Forms.ColumnHeader();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pnl_Reports = new System.Windows.Forms.Panel();
+            this.pnl_Report4 = new System.Windows.Forms.Panel();
             this.lbl_ValueReport4 = new System.Windows.Forms.Label();
             this.lbl_TitleReport4 = new System.Windows.Forms.Label();
             this.img_IconReport4 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnl_Report3 = new System.Windows.Forms.Panel();
             this.lbl_ValueReport3 = new System.Windows.Forms.Label();
             this.lbl_TitleReport3 = new System.Windows.Forms.Label();
             this.img_IconReport3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_Report2 = new System.Windows.Forms.Panel();
             this.lbl_ValueReport2 = new System.Windows.Forms.Label();
             this.lbl_TitleReport2 = new System.Windows.Forms.Label();
             this.img_IconReport2 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl_Report1 = new System.Windows.Forms.Panel();
             this.lbl_ValueReport1 = new System.Windows.Forms.Label();
             this.lbl_TitleReport1 = new System.Windows.Forms.Label();
             this.img_IconReport1 = new System.Windows.Forms.PictureBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.pnl_Menu.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_TitleBar.SuspendLayout();
             this.pnl_Content.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).BeginInit();
+            this.pnl_ConsultsTable.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.pnl_Reports.SuspendLayout();
+            this.pnl_Report4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).BeginInit();
+            this.pnl_Report3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).BeginInit();
+            this.pnl_Report2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).BeginInit();
+            this.pnl_Report1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnl_Menu
             // 
             this.pnl_Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.pnl_Menu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Menu.Controls.Add(this.panel2);
             this.pnl_Menu.Controls.Add(this.btn_MenuLogout);
             this.pnl_Menu.Controls.Add(this.btn_MenuOptions);
             this.pnl_Menu.Controls.Add(this.btn_MenuPacientes);
@@ -105,6 +121,81 @@ namespace TGS {
             this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
             this.pnl_Menu.TabIndex = 0;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Location = new System.Drawing.Point(229, 224);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1034, 51);
+            this.panel2.TabIndex = 2;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.listView1);
+            this.panel4.Location = new System.Drawing.Point(1, 12);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1034, 442);
+            this.panel4.TabIndex = 5;
+            // 
+            // listView1
+            // 
+            this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6});
+            this.listView1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.listView1.ForeColor = System.Drawing.Color.White;
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(108, 63);
+            this.listView1.MultiSelect = false;
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(926, 379);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Nome";
+            this.columnHeader1.Width = 200;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Apelido";
+            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader2.Width = 160;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Profissional";
+            this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader3.Width = 200;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Doenças";
+            this.columnHeader4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader4.Width = 200;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Horário";
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader5.Width = 140;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "Status";
+            this.columnHeader6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader6.Width = 80;
+            // 
             // btn_MenuLogout
             // 
             this.btn_MenuLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -117,10 +208,10 @@ namespace TGS {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 629);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(228, 35);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -143,7 +234,7 @@ namespace TGS {
             this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(228, 76);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -166,7 +257,7 @@ namespace TGS {
             this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(228, 76);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -189,7 +280,7 @@ namespace TGS {
             this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(228, 76);
+            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -212,7 +303,7 @@ namespace TGS {
             this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(228, 76);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -235,7 +326,7 @@ namespace TGS {
             this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(228, 76);
+            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -250,7 +341,7 @@ namespace TGS {
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(228, 73);
+            this.panel1.Size = new System.Drawing.Size(230, 73);
             this.panel1.TabIndex = 0;
             // 
             // img_LogoMenu
@@ -291,7 +382,7 @@ namespace TGS {
             // pnl_TitleBar
             // 
             this.pnl_TitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
-            this.pnl_TitleBar.Controls.Add(this.label1);
+            this.pnl_TitleBar.Controls.Add(this.lbl_Date);
             this.pnl_TitleBar.Controls.Add(this.lbl_Welcome);
             this.pnl_TitleBar.Controls.Add(this.btn_Minimize);
             this.pnl_TitleBar.Controls.Add(this.pictureBox1);
@@ -304,16 +395,16 @@ namespace TGS {
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
-            // label1
+            // lbl_Date
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label1.Location = new System.Drawing.Point(93, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 30);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "02/09/2021";
+            this.lbl_Date.AutoSize = true;
+            this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_Date.Location = new System.Drawing.Point(93, 36);
+            this.lbl_Date.Name = "lbl_Date";
+            this.lbl_Date.Size = new System.Drawing.Size(137, 30);
+            this.lbl_Date.TabIndex = 6;
+            this.lbl_Date.Text = "02/09/2021";
             // 
             // lbl_Welcome
             // 
@@ -382,40 +473,27 @@ namespace TGS {
             // 
             // pnl_Content
             // 
-            this.pnl_Content.Controls.Add(this.panel7);
-            this.pnl_Content.Controls.Add(this.panel2);
-            this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Content.Controls.Add(this.pnl_ConsultsTable);
+            this.pnl_Content.Controls.Add(this.panel3);
+            this.pnl_Content.Controls.Add(this.pnl_Reports);
             this.pnl_Content.Location = new System.Drawing.Point(230, 73);
             this.pnl_Content.Name = "pnl_Content";
             this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
-            // panel7
+            // pnl_ConsultsTable
             // 
-            this.panel7.Controls.Add(this.label2);
-            this.panel7.Controls.Add(this.lv_Consults);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 158);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1034, 450);
-            this.panel7.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(5);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(1034, 38);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "   Consultas";
+            this.pnl_ConsultsTable.Controls.Add(this.lv_Consults);
+            this.pnl_ConsultsTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_ConsultsTable.Location = new System.Drawing.Point(0, 164);
+            this.pnl_ConsultsTable.Name = "pnl_ConsultsTable";
+            this.pnl_ConsultsTable.Size = new System.Drawing.Size(1034, 444);
+            this.pnl_ConsultsTable.TabIndex = 5;
             // 
             // lv_Consults
             // 
             this.lv_Consults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.lv_Consults.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lv_Consults.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.col_Name,
             this.col_Nickname,
@@ -423,77 +501,100 @@ namespace TGS {
             this.col_Disease,
             this.col_Schedule,
             this.col_Status});
+            this.lv_Consults.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.lv_Consults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_Consults.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lv_Consults.ForeColor = System.Drawing.Color.White;
             this.lv_Consults.FullRowSelect = true;
-            this.lv_Consults.GridLines = true;
+            this.lv_Consults.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lv_Consults.HideSelection = false;
-            this.lv_Consults.Location = new System.Drawing.Point(32, 70);
+            this.lv_Consults.Location = new System.Drawing.Point(0, 0);
             this.lv_Consults.MultiSelect = false;
             this.lv_Consults.Name = "lv_Consults";
-            this.lv_Consults.Size = new System.Drawing.Size(985, 365);
+            this.lv_Consults.OwnerDraw = true;
+            this.lv_Consults.Size = new System.Drawing.Size(1034, 444);
             this.lv_Consults.TabIndex = 0;
             this.lv_Consults.UseCompatibleStateImageBehavior = false;
             this.lv_Consults.View = System.Windows.Forms.View.Details;
+            this.lv_Consults.DrawColumnHeader += new System.Windows.Forms.DrawListViewColumnHeaderEventHandler(this.lv_Consults_DrawColumnHeader);
             // 
             // col_Name
             // 
             this.col_Name.Text = "Nome";
-            this.col_Name.Width = 200;
+            this.col_Name.Width = 225;
             // 
             // col_Nickname
             // 
             this.col_Nickname.Text = "Apelido";
-            this.col_Nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.col_Nickname.Width = 160;
             // 
             // col_Professional
             // 
             this.col_Professional.Text = "Profissional";
-            this.col_Professional.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.col_Professional.Width = 200;
+            this.col_Professional.Width = 225;
             // 
             // col_Disease
             // 
             this.col_Disease.Text = "Doenças";
-            this.col_Disease.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.col_Disease.Width = 200;
             // 
             // col_Schedule
             // 
             this.col_Schedule.Text = "Horário";
-            this.col_Schedule.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.col_Schedule.Width = 140;
             // 
             // col_Status
             // 
             this.col_Status.Text = "Status";
-            this.col_Status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.col_Status.Width = 80;
+            this.col_Status.Width = 84;
             // 
-            // panel2
+            // panel3
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.panel6);
-            this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(0, 16);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1034, 130);
-            this.panel2.TabIndex = 0;
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 128);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1034, 36);
+            this.panel3.TabIndex = 4;
             // 
-            // panel6
+            // label9
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel6.Controls.Add(this.lbl_ValueReport4);
-            this.panel6.Controls.Add(this.lbl_TitleReport4);
-            this.panel6.Controls.Add(this.img_IconReport4);
-            this.panel6.Location = new System.Drawing.Point(784, 21);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(233, 86);
-            this.panel6.TabIndex = 2;
+            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(0, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(1034, 36);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Consultas";
+            // 
+            // pnl_Reports
+            // 
+            this.pnl_Reports.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_Reports.Controls.Add(this.pnl_Report4);
+            this.pnl_Reports.Controls.Add(this.pnl_Report3);
+            this.pnl_Reports.Controls.Add(this.pnl_Report2);
+            this.pnl_Reports.Controls.Add(this.pnl_Report1);
+            this.pnl_Reports.Controls.Add(this.iconButton1);
+            this.pnl_Reports.Controls.Add(this.iconButton2);
+            this.pnl_Reports.Controls.Add(this.iconButton3);
+            this.pnl_Reports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Reports.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Reports.Name = "pnl_Reports";
+            this.pnl_Reports.Size = new System.Drawing.Size(1034, 128);
+            this.pnl_Reports.TabIndex = 0;
+            // 
+            // pnl_Report4
+            // 
+            this.pnl_Report4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report4.Controls.Add(this.lbl_ValueReport4);
+            this.pnl_Report4.Controls.Add(this.lbl_TitleReport4);
+            this.pnl_Report4.Controls.Add(this.img_IconReport4);
+            this.pnl_Report4.Location = new System.Drawing.Point(776, 16);
+            this.pnl_Report4.Name = "pnl_Report4";
+            this.pnl_Report4.Size = new System.Drawing.Size(232, 88);
+            this.pnl_Report4.TabIndex = 6;
             // 
             // lbl_ValueReport4
             // 
@@ -529,16 +630,16 @@ namespace TGS {
             this.img_IconReport4.TabIndex = 0;
             this.img_IconReport4.TabStop = false;
             // 
-            // panel5
+            // pnl_Report3
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel5.Controls.Add(this.lbl_ValueReport3);
-            this.panel5.Controls.Add(this.lbl_TitleReport3);
-            this.panel5.Controls.Add(this.img_IconReport3);
-            this.panel5.Location = new System.Drawing.Point(533, 21);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(233, 86);
-            this.panel5.TabIndex = 2;
+            this.pnl_Report3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report3.Controls.Add(this.lbl_ValueReport3);
+            this.pnl_Report3.Controls.Add(this.lbl_TitleReport3);
+            this.pnl_Report3.Controls.Add(this.img_IconReport3);
+            this.pnl_Report3.Location = new System.Drawing.Point(520, 16);
+            this.pnl_Report3.Name = "pnl_Report3";
+            this.pnl_Report3.Size = new System.Drawing.Size(232, 88);
+            this.pnl_Report3.TabIndex = 7;
             // 
             // lbl_ValueReport3
             // 
@@ -574,16 +675,16 @@ namespace TGS {
             this.img_IconReport3.TabIndex = 0;
             this.img_IconReport3.TabStop = false;
             // 
-            // panel4
+            // pnl_Report2
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel4.Controls.Add(this.lbl_ValueReport2);
-            this.panel4.Controls.Add(this.lbl_TitleReport2);
-            this.panel4.Controls.Add(this.img_IconReport2);
-            this.panel4.Location = new System.Drawing.Point(281, 21);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(233, 86);
-            this.panel4.TabIndex = 2;
+            this.pnl_Report2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report2.Controls.Add(this.lbl_ValueReport2);
+            this.pnl_Report2.Controls.Add(this.lbl_TitleReport2);
+            this.pnl_Report2.Controls.Add(this.img_IconReport2);
+            this.pnl_Report2.Location = new System.Drawing.Point(272, 16);
+            this.pnl_Report2.Name = "pnl_Report2";
+            this.pnl_Report2.Size = new System.Drawing.Size(232, 88);
+            this.pnl_Report2.TabIndex = 8;
             // 
             // lbl_ValueReport2
             // 
@@ -619,16 +720,16 @@ namespace TGS {
             this.img_IconReport2.TabIndex = 0;
             this.img_IconReport2.TabStop = false;
             // 
-            // panel3
+            // pnl_Report1
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.panel3.Controls.Add(this.lbl_ValueReport1);
-            this.panel3.Controls.Add(this.lbl_TitleReport1);
-            this.panel3.Controls.Add(this.img_IconReport1);
-            this.panel3.Location = new System.Drawing.Point(32, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(233, 86);
-            this.panel3.TabIndex = 0;
+            this.pnl_Report1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report1.Controls.Add(this.lbl_ValueReport1);
+            this.pnl_Report1.Controls.Add(this.lbl_TitleReport1);
+            this.pnl_Report1.Controls.Add(this.img_IconReport1);
+            this.pnl_Report1.Location = new System.Drawing.Point(24, 16);
+            this.pnl_Report1.Name = "pnl_Report1";
+            this.pnl_Report1.Size = new System.Drawing.Size(232, 88);
+            this.pnl_Report1.TabIndex = 5;
             // 
             // lbl_ValueReport1
             // 
@@ -664,6 +765,57 @@ namespace TGS {
             this.img_IconReport1.TabIndex = 0;
             this.img_IconReport1.TabStop = false;
             // 
+            // iconButton1
+            // 
+            this.iconButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 20;
+            this.iconButton1.Location = new System.Drawing.Point(1733, 0);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(45, 25);
+            this.iconButton1.TabIndex = 4;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // iconButton2
+            // 
+            this.iconButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.iconButton2.FlatAppearance.BorderSize = 0;
+            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
+            this.iconButton2.IconColor = System.Drawing.Color.White;
+            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton2.IconSize = 20;
+            this.iconButton2.Location = new System.Drawing.Point(1778, 0);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.iconButton2.Name = "iconButton2";
+            this.iconButton2.Size = new System.Drawing.Size(45, 25);
+            this.iconButton2.TabIndex = 3;
+            this.iconButton2.UseVisualStyleBackColor = false;
+            // 
+            // iconButton3
+            // 
+            this.iconButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(74)))), ((int)(((byte)(130)))));
+            this.iconButton3.FlatAppearance.BorderSize = 0;
+            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.iconButton3.IconColor = System.Drawing.Color.White;
+            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton3.IconSize = 20;
+            this.iconButton3.Location = new System.Drawing.Point(1823, 0);
+            this.iconButton3.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.iconButton3.Name = "iconButton3";
+            this.iconButton3.Size = new System.Drawing.Size(45, 25);
+            this.iconButton3.TabIndex = 2;
+            this.iconButton3.UseVisualStyleBackColor = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -677,25 +829,28 @@ namespace TGS {
             this.Text = "Home";
             this.Resize += new System.EventHandler(this.Home_Resize);
             this.pnl_Menu.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_TitleBar.ResumeLayout(false);
             this.pnl_TitleBar.PerformLayout();
             this.pnl_Content.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).EndInit();
+            this.pnl_ConsultsTable.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnl_Reports.ResumeLayout(false);
+            this.pnl_Report4.ResumeLayout(false);
+            this.pnl_Report4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).EndInit();
+            this.pnl_Report3.ResumeLayout(false);
+            this.pnl_Report3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).EndInit();
+            this.pnl_Report2.ResumeLayout(false);
+            this.pnl_Report2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).EndInit();
+            this.pnl_Report1.ResumeLayout(false);
+            this.pnl_Report1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).EndInit();
             this.ResumeLayout(false);
 
@@ -718,34 +873,47 @@ namespace TGS {
         private FontAwesome.Sharp.IconButton btn_Minimize;
         private FontAwesome.Sharp.IconButton btn_Maximize;
         private FontAwesome.Sharp.IconButton btn_Close;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_Date;
         private System.Windows.Forms.Label lbl_Welcome;
         private System.Windows.Forms.PictureBox img_LogoMenu;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label lbl_ValueReport1;
-        private System.Windows.Forms.Label lbl_TitleReport1;
-        private System.Windows.Forms.PictureBox img_IconReport1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label lbl_ValueReport2;
-        private System.Windows.Forms.Label lbl_TitleReport2;
-        private System.Windows.Forms.PictureBox img_IconReport2;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lbl_ValueReport3;
-        private System.Windows.Forms.Label lbl_TitleReport3;
-        private System.Windows.Forms.PictureBox img_IconReport3;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label lbl_ValueReport4;
-        private System.Windows.Forms.Label lbl_TitleReport4;
-        private System.Windows.Forms.PictureBox img_IconReport4;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.ListView lv_Consults;
-        private System.Windows.Forms.ColumnHeader col_Name;
         private System.Windows.Forms.ColumnHeader col_Nickname;
         private System.Windows.Forms.ColumnHeader col_Professional;
         private System.Windows.Forms.ColumnHeader col_Disease;
         private System.Windows.Forms.ColumnHeader col_Schedule;
         private System.Windows.Forms.ColumnHeader col_Status;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnl_Reports;
+        private System.Windows.Forms.Panel pnl_Report4;
+        private System.Windows.Forms.Label lbl_ValueReport4;
+        private System.Windows.Forms.Label lbl_TitleReport4;
+        private System.Windows.Forms.PictureBox img_IconReport4;
+        private System.Windows.Forms.Panel pnl_Report3;
+        private System.Windows.Forms.Label lbl_ValueReport3;
+        private System.Windows.Forms.Label lbl_TitleReport3;
+        private System.Windows.Forms.PictureBox img_IconReport3;
+        private System.Windows.Forms.Panel pnl_Report2;
+        private System.Windows.Forms.Label lbl_ValueReport2;
+        private System.Windows.Forms.Label lbl_TitleReport2;
+        private System.Windows.Forms.PictureBox img_IconReport2;
+        private System.Windows.Forms.Panel pnl_Report1;
+        private System.Windows.Forms.Label lbl_ValueReport1;
+        private System.Windows.Forms.Label lbl_TitleReport1;
+        private System.Windows.Forms.PictureBox img_IconReport1;
+        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton iconButton3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.Panel pnl_ConsultsTable;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ColumnHeader col_Name;
     }
 }

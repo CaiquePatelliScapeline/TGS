@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj": {}
+    "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj": {
+    "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
+        "projectUniqueName": "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
         "projectName": "TGS",
-        "projectPath": "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
-        "packagesPath": "C:\\Users\\miria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\obj\\",
+        "projectPath": "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
+        "packagesPath": "C:\\Users\\Gianluca\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gianluca\\Documents\\GitHub\\TGS\\Desktop_App\\TGS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\miria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gianluca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

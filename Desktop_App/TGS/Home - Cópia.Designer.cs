@@ -24,7 +24,7 @@ namespace TGS {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeCopia));
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.btn_MenuLogout = new FontAwesome.Sharp.IconButton();
             this.btn_MenuOptions = new FontAwesome.Sharp.IconButton();
@@ -350,7 +350,7 @@ namespace TGS {
             this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
-            // Home
+            // HomeCopia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -359,7 +359,7 @@ namespace TGS {
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
-            this.Name = "Home";
+            this.Name = "HomeCopia";
             this.Text = "Home";
             this.Resize += new System.EventHandler(this.Home_Resize);
             this.pnl_Menu.ResumeLayout(false);

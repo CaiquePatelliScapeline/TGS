@@ -57,3 +57,4 @@ C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcorea
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources

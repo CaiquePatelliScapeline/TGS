@@ -23,5 +23,12 @@ namespace TGS {
                 e.Cancel = true;
             }
         }
+
+        private void btn_Login_Click(object sender, EventArgs e) {
+            this.Hide();
+            Home home = new Home();
+            home.ShowDialog();
+
+        }
     }
 }

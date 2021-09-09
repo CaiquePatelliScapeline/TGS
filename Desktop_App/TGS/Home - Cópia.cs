@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Web;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -11,27 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class Home : Form {
+    public partial class HomeCopia : Form {
 
         // Fields
         private int borderSize = 2;
 
         // Constructor
-        public Home() {
+        public HomeCopia() {
             InitializeComponent();
             CollapseMenu();
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
-            string[] item = new string[6];
-            item[0] = "Miriam";
-            item[1] = " ";
-            item[2] = "Dr. Fernando";
-            item[3] = "diabetes";
-            item[4] = "14:00";
-            item[5] = "1";
 
-            ListViewItem items = new ListViewItem(item);
-            lv_Consults.Items.Add(items);
         }
 
         //Drag Form
@@ -141,9 +131,9 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            //if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
                 Application.Exit();
-            //}  
+            }  
         }
 
         private void btn_MenuHamburger_Click(object sender, EventArgs e) {
@@ -171,24 +161,5 @@ namespace TGS {
                 }
             }
         }
-
-        private void btn_MenuChat_Click(object sender, EventArgs e) {
-            try {
-                VisitLink("whatsapp://");
-            } catch (Exception ex) {
-                MessageBox.Show("Não foi possível abrir o aplicativo de mensagem!.");
-            }
-        }
-
-        private void VisitLink(string link) {
-            System.Diagnostics.Process.Start("cmd", $"/c start {link}");
-        }
-
-        //private void lv_Consults_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e) {
-        //    //var Font = new Font("Century Gothic", 18, FontStyle.Regular);
-        //    //e.Graphics.FillRectangle(Brushes.RoyalBlue, e.Bounds);
-        //    e.DrawText();
-        //    //e.Graphics.DrawString(e.Header.Text, Font,Brushes.White, e.Bounds);
-        //}
     }
 }

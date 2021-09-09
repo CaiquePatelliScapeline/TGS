@@ -128,6 +128,7 @@ namespace TGS {
             this.btn_Login.Text = "Entrar";
             this.btn_Login.TextColor = System.Drawing.Color.White;
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // Login
             // 

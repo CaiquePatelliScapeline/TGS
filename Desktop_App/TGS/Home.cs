@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Web;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -171,11 +172,23 @@ namespace TGS {
             }
         }
 
-        private void lv_Consults_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e) {
-            var Font = new Font("Century Gothic", 16, FontStyle.Regular);
-            e.Graphics.FillRectangle(Brushes.RoyalBlue, e.Bounds);
-            /*e.DrawText();*/
-            e.Graphics.DrawString(e.Header.Text, Font,Brushes.White, e.Bounds);
+        private void btn_MenuChat_Click(object sender, EventArgs e) {
+            try {
+                VisitLink("whatsapp://");
+            } catch (Exception ex) {
+                MessageBox.Show("Não foi possível abrir o aplicativo de mensagem!.");
+            }
         }
+
+        private void VisitLink(string link) {
+            System.Diagnostics.Process.Start("cmd", $"/c start {link}");
+        }
+
+        //private void lv_Consults_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e) {
+        //    //var Font = new Font("Century Gothic", 18, FontStyle.Regular);
+        //    //e.Graphics.FillRectangle(Brushes.RoyalBlue, e.Bounds);
+        //    e.DrawText();
+        //    //e.Graphics.DrawString(e.Header.Text, Font,Brushes.White, e.Bounds);
+        //}
     }
 }

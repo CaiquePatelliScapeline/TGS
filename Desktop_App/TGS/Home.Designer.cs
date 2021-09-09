@@ -44,6 +44,26 @@ namespace TGS {
             this.panel1 = new System.Windows.Forms.Panel();
             this.img_LogoMenu = new System.Windows.Forms.PictureBox();
             this.btn_MenuHamburger = new FontAwesome.Sharp.IconButton();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pnl_Report3 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.img_IconReport3 = new System.Windows.Forms.PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pnl_Report4 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.img_IconReport4 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_TitleBar = new System.Windows.Forms.Panel();
             this.lbl_Date = new System.Windows.Forms.Label();
@@ -52,22 +72,7 @@ namespace TGS {
             this.btn_Maximize = new FontAwesome.Sharp.IconButton();
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Reports = new System.Windows.Forms.Panel();
-            this.pnl_Report4 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport4 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport4 = new System.Windows.Forms.Label();
-            this.img_IconReport4 = new System.Windows.Forms.PictureBox();
-            this.pnl_Report3 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport3 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport3 = new System.Windows.Forms.Label();
-            this.img_IconReport3 = new System.Windows.Forms.PictureBox();
-            this.pnl_Report2 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport2 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport2 = new System.Windows.Forms.Label();
-            this.img_IconReport2 = new System.Windows.Forms.PictureBox();
-            this.pnl_Report1 = new System.Windows.Forms.Panel();
-            this.lbl_ValueReport1 = new System.Windows.Forms.Label();
-            this.lbl_TitleReport1 = new System.Windows.Forms.Label();
-            this.img_IconReport1 = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lv_Consults = new System.Windows.Forms.ListView();
             this.col_Name = new System.Windows.Forms.ColumnHeader();
             this.col_Nickname = new System.Windows.Forms.ColumnHeader();
@@ -75,27 +80,34 @@ namespace TGS {
             this.col_Disease = new System.Windows.Forms.ColumnHeader();
             this.col_Schedule = new System.Windows.Forms.ColumnHeader();
             this.col_Status = new System.Windows.Forms.ColumnHeader();
-            this.label9 = new System.Windows.Forms.Label();
             this.pnl_Content = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl_body = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl_Menu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnl_Report3.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).BeginInit();
+            this.panel12.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.pnl_Report4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_TitleBar.SuspendLayout();
             this.pnl_Reports.SuspendLayout();
-            this.pnl_Report4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).BeginInit();
-            this.pnl_Report3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).BeginInit();
-            this.pnl_Report2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).BeginInit();
-            this.pnl_Report1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.pnl_Content.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnl_body.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Menu
@@ -290,6 +302,7 @@ namespace TGS {
             this.btn_MenuChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuChat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuChat.UseVisualStyleBackColor = true;
+            this.btn_MenuChat.Click += new System.EventHandler(this.btn_MenuChat_Click);
             // 
             // btn_MenuCalendar
             // 
@@ -377,6 +390,270 @@ namespace TGS {
             this.btn_MenuHamburger.UseVisualStyleBackColor = true;
             this.btn_MenuHamburger.Click += new System.EventHandler(this.btn_MenuHamburger_Click);
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.panel10.Controls.Add(this.tableLayoutPanel2);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(14, 24);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(267, 107);
+            this.panel10.TabIndex = 7;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.label4, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.pictureBox3, 0, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(267, 107);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(83, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(181, 43);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "1050";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(83, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(181, 64);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Pacientes";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.tableLayoutPanel2.SetRowSpan(this.pictureBox3, 2);
+            this.pictureBox3.Size = new System.Drawing.Size(74, 99);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pnl_Report3
+            // 
+            this.pnl_Report3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report3.Controls.Add(this.tableLayoutPanel4);
+            this.pnl_Report3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Report3.Location = new System.Drawing.Point(606, 24);
+            this.pnl_Report3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Report3.Name = "pnl_Report3";
+            this.pnl_Report3.Size = new System.Drawing.Size(267, 107);
+            this.pnl_Report3.TabIndex = 19;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel4.Controls.Add(this.label6, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.img_IconReport3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.label8, 1, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 2;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(267, 107);
+            this.tableLayoutPanel4.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(83, 64);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(181, 43);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "50";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // img_IconReport3
+            // 
+            this.img_IconReport3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.img_IconReport3.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport3.Image")));
+            this.img_IconReport3.Location = new System.Drawing.Point(3, 4);
+            this.img_IconReport3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_IconReport3.Name = "img_IconReport3";
+            this.tableLayoutPanel4.SetRowSpan(this.img_IconReport3, 2);
+            this.img_IconReport3.Size = new System.Drawing.Size(74, 99);
+            this.img_IconReport3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_IconReport3.TabIndex = 0;
+            this.img_IconReport3.TabStop = false;
+            // 
+            // label8
+            // 
+            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(83, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(181, 64);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Consultas";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.panel12.Controls.Add(this.tableLayoutPanel3);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(310, 24);
+            this.panel12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(267, 107);
+            this.panel12.TabIndex = 14;
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 2;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label5, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.pictureBox4, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(267, 107);
+            this.tableLayoutPanel3.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Location = new System.Drawing.Point(83, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(181, 43);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "50";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(83, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(181, 64);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Avaliações";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.tableLayoutPanel3.SetRowSpan(this.pictureBox4, 2);
+            this.pictureBox4.Size = new System.Drawing.Size(74, 99);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 0;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pnl_Report4
+            // 
+            this.pnl_Report4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_Report4.Controls.Add(this.tableLayoutPanel5);
+            this.pnl_Report4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Report4.Location = new System.Drawing.Point(902, 24);
+            this.pnl_Report4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Report4.Name = "pnl_Report4";
+            this.pnl_Report4.Size = new System.Drawing.Size(267, 107);
+            this.pnl_Report4.TabIndex = 16;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel5.Controls.Add(this.img_IconReport4, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label13, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label14, 1, 0);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 2;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(267, 107);
+            this.tableLayoutPanel5.TabIndex = 1;
+            // 
+            // img_IconReport4
+            // 
+            this.img_IconReport4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.img_IconReport4.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.Image")));
+            this.img_IconReport4.Location = new System.Drawing.Point(3, 4);
+            this.img_IconReport4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_IconReport4.Name = "img_IconReport4";
+            this.tableLayoutPanel5.SetRowSpan(this.img_IconReport4, 2);
+            this.img_IconReport4.Size = new System.Drawing.Size(74, 99);
+            this.img_IconReport4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.img_IconReport4.TabIndex = 0;
+            this.img_IconReport4.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label13.Location = new System.Drawing.Point(83, 64);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(181, 43);
+            this.label13.TabIndex = 2;
+            this.label13.Text = "50";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label14
+            // 
+            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(83, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(181, 64);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Cirurgias";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -401,7 +678,7 @@ namespace TGS {
             this.pnl_TitleBar.Location = new System.Drawing.Point(263, 0);
             this.pnl_TitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(1182, 97);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1190, 97);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -437,7 +714,7 @@ namespace TGS {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(1029, 0);
+            this.btn_Minimize.Location = new System.Drawing.Point(1037, 0);
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(51, 33);
@@ -455,7 +732,7 @@ namespace TGS {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(1081, 0);
+            this.btn_Maximize.Location = new System.Drawing.Point(1089, 0);
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(51, 33);
@@ -473,10 +750,10 @@ namespace TGS {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(1128, 0);
+            this.btn_Close.Location = new System.Drawing.Point(1140, 0);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(51, 33);
+            this.btn_Close.Size = new System.Drawing.Size(47, 33);
             this.btn_Close.TabIndex = 2;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -484,208 +761,44 @@ namespace TGS {
             // pnl_Reports
             // 
             this.pnl_Reports.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_Reports.Controls.Add(this.pnl_Report4);
-            this.pnl_Reports.Controls.Add(this.pnl_Report3);
-            this.pnl_Reports.Controls.Add(this.pnl_Report2);
-            this.pnl_Reports.Controls.Add(this.pnl_Report1);
+            this.pnl_Reports.Controls.Add(this.tableLayoutPanel1);
             this.pnl_Reports.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Reports.Location = new System.Drawing.Point(0, 0);
             this.pnl_Reports.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Reports.Name = "pnl_Reports";
-            this.pnl_Reports.Size = new System.Drawing.Size(1182, 171);
+            this.pnl_Reports.Size = new System.Drawing.Size(1190, 155);
             this.pnl_Reports.TabIndex = 5;
             // 
-            // pnl_Report4
+            // tableLayoutPanel1
             // 
-            this.pnl_Report4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.pnl_Report4.Controls.Add(this.lbl_ValueReport4);
-            this.pnl_Report4.Controls.Add(this.lbl_TitleReport4);
-            this.pnl_Report4.Controls.Add(this.img_IconReport4);
-            this.pnl_Report4.Location = new System.Drawing.Point(652, 0);
-            this.pnl_Report4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnl_Report4.Name = "pnl_Report4";
-            this.pnl_Report4.Size = new System.Drawing.Size(265, 171);
-            this.pnl_Report4.TabIndex = 6;
-            // 
-            // lbl_ValueReport4
-            // 
-            this.lbl_ValueReport4.AutoSize = true;
-            this.lbl_ValueReport4.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport4.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport4.Location = new System.Drawing.Point(139, 56);
-            this.lbl_ValueReport4.Name = "lbl_ValueReport4";
-            this.lbl_ValueReport4.Size = new System.Drawing.Size(45, 33);
-            this.lbl_ValueReport4.TabIndex = 1;
-            this.lbl_ValueReport4.Text = "28";
-            this.lbl_ValueReport4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_TitleReport4
-            // 
-            this.lbl_TitleReport4.AutoSize = true;
-            this.lbl_TitleReport4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport4.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport4.Location = new System.Drawing.Point(91, 13);
-            this.lbl_TitleReport4.Name = "lbl_TitleReport4";
-            this.lbl_TitleReport4.Size = new System.Drawing.Size(161, 40);
-            this.lbl_TitleReport4.TabIndex = 1;
-            this.lbl_TitleReport4.Text = "Cirurgias";
-            this.lbl_TitleReport4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_IconReport4
-            // 
-            this.img_IconReport4.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.Image")));
-            this.img_IconReport4.Location = new System.Drawing.Point(15, 20);
-            this.img_IconReport4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.img_IconReport4.Name = "img_IconReport4";
-            this.img_IconReport4.Size = new System.Drawing.Size(65, 67);
-            this.img_IconReport4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport4.TabIndex = 0;
-            this.img_IconReport4.TabStop = false;
-            // 
-            // pnl_Report3
-            // 
-            this.pnl_Report3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.pnl_Report3.Controls.Add(this.lbl_ValueReport3);
-            this.pnl_Report3.Controls.Add(this.lbl_TitleReport3);
-            this.pnl_Report3.Controls.Add(this.img_IconReport3);
-            this.pnl_Report3.Location = new System.Drawing.Point(917, 0);
-            this.pnl_Report3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnl_Report3.Name = "pnl_Report3";
-            this.pnl_Report3.Size = new System.Drawing.Size(265, 171);
-            this.pnl_Report3.TabIndex = 7;
-            // 
-            // lbl_ValueReport3
-            // 
-            this.lbl_ValueReport3.AutoSize = true;
-            this.lbl_ValueReport3.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport3.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport3.Location = new System.Drawing.Point(153, 56);
-            this.lbl_ValueReport3.Name = "lbl_ValueReport3";
-            this.lbl_ValueReport3.Size = new System.Drawing.Size(45, 33);
-            this.lbl_ValueReport3.TabIndex = 1;
-            this.lbl_ValueReport3.Text = "75";
-            this.lbl_ValueReport3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_TitleReport3
-            // 
-            this.lbl_TitleReport3.AutoSize = true;
-            this.lbl_TitleReport3.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport3.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport3.Location = new System.Drawing.Point(91, 13);
-            this.lbl_TitleReport3.Name = "lbl_TitleReport3";
-            this.lbl_TitleReport3.Size = new System.Drawing.Size(176, 40);
-            this.lbl_TitleReport3.TabIndex = 1;
-            this.lbl_TitleReport3.Text = "Consultas";
-            this.lbl_TitleReport3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_IconReport3
-            // 
-            this.img_IconReport3.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport3.Image")));
-            this.img_IconReport3.Location = new System.Drawing.Point(15, 20);
-            this.img_IconReport3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.img_IconReport3.Name = "img_IconReport3";
-            this.img_IconReport3.Size = new System.Drawing.Size(65, 67);
-            this.img_IconReport3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport3.TabIndex = 0;
-            this.img_IconReport3.TabStop = false;
-            // 
-            // pnl_Report2
-            // 
-            this.pnl_Report2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.pnl_Report2.Controls.Add(this.lbl_ValueReport2);
-            this.pnl_Report2.Controls.Add(this.lbl_TitleReport2);
-            this.pnl_Report2.Controls.Add(this.img_IconReport2);
-            this.pnl_Report2.Location = new System.Drawing.Point(265, 0);
-            this.pnl_Report2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnl_Report2.Name = "pnl_Report2";
-            this.pnl_Report2.Size = new System.Drawing.Size(265, 171);
-            this.pnl_Report2.TabIndex = 8;
-            // 
-            // lbl_ValueReport2
-            // 
-            this.lbl_ValueReport2.AutoSize = true;
-            this.lbl_ValueReport2.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport2.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport2.Location = new System.Drawing.Point(157, 56);
-            this.lbl_ValueReport2.Name = "lbl_ValueReport2";
-            this.lbl_ValueReport2.Size = new System.Drawing.Size(45, 33);
-            this.lbl_ValueReport2.TabIndex = 1;
-            this.lbl_ValueReport2.Text = "50";
-            this.lbl_ValueReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_TitleReport2
-            // 
-            this.lbl_TitleReport2.AutoSize = true;
-            this.lbl_TitleReport2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport2.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport2.Location = new System.Drawing.Point(82, 13);
-            this.lbl_TitleReport2.Name = "lbl_TitleReport2";
-            this.lbl_TitleReport2.Size = new System.Drawing.Size(202, 40);
-            this.lbl_TitleReport2.TabIndex = 1;
-            this.lbl_TitleReport2.Text = "Avaliações";
-            this.lbl_TitleReport2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_IconReport2
-            // 
-            this.img_IconReport2.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport2.Image")));
-            this.img_IconReport2.Location = new System.Drawing.Point(15, 20);
-            this.img_IconReport2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.img_IconReport2.Name = "img_IconReport2";
-            this.img_IconReport2.Size = new System.Drawing.Size(65, 67);
-            this.img_IconReport2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport2.TabIndex = 0;
-            this.img_IconReport2.TabStop = false;
-            // 
-            // pnl_Report1
-            // 
-            this.pnl_Report1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.pnl_Report1.Controls.Add(this.lbl_ValueReport1);
-            this.pnl_Report1.Controls.Add(this.lbl_TitleReport1);
-            this.pnl_Report1.Controls.Add(this.img_IconReport1);
-            this.pnl_Report1.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Report1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pnl_Report1.Name = "pnl_Report1";
-            this.pnl_Report1.Size = new System.Drawing.Size(265, 171);
-            this.pnl_Report1.TabIndex = 5;
-            // 
-            // lbl_ValueReport1
-            // 
-            this.lbl_ValueReport1.AutoSize = true;
-            this.lbl_ValueReport1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbl_ValueReport1.ForeColor = System.Drawing.Color.White;
-            this.lbl_ValueReport1.Location = new System.Drawing.Point(139, 56);
-            this.lbl_ValueReport1.Name = "lbl_ValueReport1";
-            this.lbl_ValueReport1.Size = new System.Drawing.Size(75, 33);
-            this.lbl_ValueReport1.TabIndex = 1;
-            this.lbl_ValueReport1.Text = "1050";
-            this.lbl_ValueReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lbl_TitleReport1
-            // 
-            this.lbl_TitleReport1.AutoSize = true;
-            this.lbl_TitleReport1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleReport1.ForeColor = System.Drawing.Color.White;
-            this.lbl_TitleReport1.Location = new System.Drawing.Point(91, 13);
-            this.lbl_TitleReport1.Name = "lbl_TitleReport1";
-            this.lbl_TitleReport1.Size = new System.Drawing.Size(177, 40);
-            this.lbl_TitleReport1.TabIndex = 1;
-            this.lbl_TitleReport1.Text = "Pacientes";
-            this.lbl_TitleReport1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // img_IconReport1
-            // 
-            this.img_IconReport1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport1.Image")));
-            this.img_IconReport1.Location = new System.Drawing.Point(15, 20);
-            this.img_IconReport1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.img_IconReport1.Name = "img_IconReport1";
-            this.img_IconReport1.Size = new System.Drawing.Size(65, 67);
-            this.img_IconReport1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.img_IconReport1.TabIndex = 0;
-            this.img_IconReport1.TabStop = false;
+            this.tableLayoutPanel1.ColumnCount = 9;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Report3, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel10, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel12, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Report4, 7, 1);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 115F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1190, 155);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // lv_Consults
             // 
-            this.lv_Consults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.lv_Consults.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.lv_Consults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
             this.lv_Consults.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lv_Consults.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.col_Name,
@@ -697,20 +810,19 @@ namespace TGS {
             this.lv_Consults.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lv_Consults.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_Consults.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lv_Consults.ForeColor = System.Drawing.Color.White;
+            this.lv_Consults.ForeColor = System.Drawing.Color.Black;
             this.lv_Consults.FullRowSelect = true;
             this.lv_Consults.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lv_Consults.HideSelection = false;
-            this.lv_Consults.Location = new System.Drawing.Point(0, 0);
+            this.lv_Consults.LabelWrap = false;
+            this.lv_Consults.Location = new System.Drawing.Point(14, 56);
             this.lv_Consults.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.lv_Consults.MultiSelect = false;
             this.lv_Consults.Name = "lv_Consults";
-            this.lv_Consults.OwnerDraw = true;
-            this.lv_Consults.Size = new System.Drawing.Size(1182, 592);
+            this.lv_Consults.Size = new System.Drawing.Size(1160, 588);
             this.lv_Consults.TabIndex = 0;
             this.lv_Consults.UseCompatibleStateImageBehavior = false;
             this.lv_Consults.View = System.Windows.Forms.View.Details;
-            this.lv_Consults.DrawColumnHeader += new System.Windows.Forms.DrawListViewColumnHeaderEventHandler(this.lv_Consults_DrawColumnHeader);
             // 
             // col_Name
             // 
@@ -740,47 +852,65 @@ namespace TGS {
             // col_Status
             // 
             this.col_Status.Text = "Status";
-            this.col_Status.Width = 84;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
-            this.label9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(0, 171);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(1182, 48);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Consultas";
+            this.col_Status.Width = 100;
             // 
             // pnl_Content
             // 
-            this.pnl_Content.Controls.Add(this.panel3);
-            this.pnl_Content.Controls.Add(this.label9);
+            this.pnl_Content.Controls.Add(this.pnl_body);
             this.pnl_Content.Controls.Add(this.pnl_Reports);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Content.Location = new System.Drawing.Point(263, 97);
             this.pnl_Content.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(1182, 811);
+            this.pnl_Content.Size = new System.Drawing.Size(1190, 811);
             this.pnl_Content.TabIndex = 2;
             // 
-            // panel3
+            // pnl_body
             // 
-            this.panel3.Controls.Add(this.lv_Consults);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 219);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1182, 592);
-            this.panel3.TabIndex = 1;
+            this.pnl_body.Controls.Add(this.tableLayoutPanel6);
+            this.pnl_body.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_body.Location = new System.Drawing.Point(0, 155);
+            this.pnl_body.Name = "pnl_body";
+            this.pnl_body.Size = new System.Drawing.Size(1190, 656);
+            this.pnl_body.TabIndex = 1;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 3;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel6.Controls.Add(this.lv_Consults, 1, 1);
+            this.tableLayoutPanel6.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 3;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(1190, 656);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(14, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1160, 52);
+            this.label1.TabIndex = 1;
+            this.label1.Text = " Próximas Consultas";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1445, 908);
+            this.ClientSize = new System.Drawing.Size(1453, 908);
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
@@ -793,24 +923,26 @@ namespace TGS {
             this.panel4.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_Report3.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).EndInit();
+            this.panel12.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.pnl_Report4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnl_TitleBar.ResumeLayout(false);
             this.pnl_TitleBar.PerformLayout();
             this.pnl_Reports.ResumeLayout(false);
-            this.pnl_Report4.ResumeLayout(false);
-            this.pnl_Report4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport4)).EndInit();
-            this.pnl_Report3.ResumeLayout(false);
-            this.pnl_Report3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport3)).EndInit();
-            this.pnl_Report2.ResumeLayout(false);
-            this.pnl_Report2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport2)).EndInit();
-            this.pnl_Report1.ResumeLayout(false);
-            this.pnl_Report1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.img_IconReport1)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.pnl_Content.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.pnl_body.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -844,22 +976,6 @@ namespace TGS {
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
         private System.Windows.Forms.Panel pnl_Reports;
-        private System.Windows.Forms.Panel pnl_Report4;
-        private System.Windows.Forms.Label lbl_ValueReport4;
-        private System.Windows.Forms.Label lbl_TitleReport4;
-        private System.Windows.Forms.PictureBox img_IconReport4;
-        private System.Windows.Forms.Panel pnl_Report3;
-        private System.Windows.Forms.Label lbl_ValueReport3;
-        private System.Windows.Forms.Label lbl_TitleReport3;
-        private System.Windows.Forms.PictureBox img_IconReport3;
-        private System.Windows.Forms.Panel pnl_Report2;
-        private System.Windows.Forms.Label lbl_ValueReport2;
-        private System.Windows.Forms.Label lbl_TitleReport2;
-        private System.Windows.Forms.PictureBox img_IconReport2;
-        private System.Windows.Forms.Panel pnl_Report1;
-        private System.Windows.Forms.Label lbl_ValueReport1;
-        private System.Windows.Forms.Label lbl_TitleReport1;
-        private System.Windows.Forms.PictureBox img_IconReport1;
         private System.Windows.Forms.ListView lv_Consults;
         private System.Windows.Forms.ColumnHeader col_Name;
         private System.Windows.Forms.ColumnHeader col_Nickname;
@@ -867,8 +983,30 @@ namespace TGS {
         private System.Windows.Forms.ColumnHeader col_Disease;
         private System.Windows.Forms.ColumnHeader col_Schedule;
         private System.Windows.Forms.ColumnHeader col_Status;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel pnl_Content;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnl_body;
+        private System.Windows.Forms.Panel pnl_Report4;
+        private System.Windows.Forms.PictureBox img_IconReport4;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel pnl_Report3;
+        private System.Windows.Forms.PictureBox img_IconReport3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.Label label1;
     }
 }

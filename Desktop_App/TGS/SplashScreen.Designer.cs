@@ -60,7 +60,7 @@ namespace TGS {
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 75;
+            this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SplashScreen
@@ -75,7 +75,6 @@ namespace TGS {
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.SplashScreen_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_Logo)).EndInit();
             this.ResumeLayout(false);

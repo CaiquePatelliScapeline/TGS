@@ -21,20 +21,10 @@ namespace TGS {
             base.WndProc(ref m);
         }
         private void timer1_Tick(object sender, EventArgs e) {
-            if(this.Opacity < 1) {
-                this.Opacity += 0.1;
-            } else {
-                timer1.Enabled = false;
-                this.Hide();
-                Login login = new Login();
-                login.ShowDialog();
-
-                
-            }
-        }
-
-        private void SplashScreen_Load(object sender, EventArgs e) {
-            this.Opacity = 0;
+            timer1.Enabled = false;
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
         }
     }
 }

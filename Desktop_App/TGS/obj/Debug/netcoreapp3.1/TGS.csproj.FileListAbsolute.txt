@@ -35,6 +35,7 @@ D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.dll
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache
+<<<<<<< Updated upstream
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.exe
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.deps.json
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.runtimeconfig.json
@@ -58,3 +59,7 @@ C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcorea
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.AssemblyReference.cache
+=======
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.SplashScreen.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.HomeCopia.resources
+>>>>>>> Stashed changes

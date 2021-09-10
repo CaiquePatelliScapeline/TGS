@@ -248,10 +248,10 @@ namespace TGS {
             this.Controls.Add(this.pnl_Login);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Login";
-            this.ShowIcon = false;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.pnl_Login.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);

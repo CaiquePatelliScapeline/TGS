@@ -619,7 +619,7 @@ namespace TGS {
             // img_IconReport4
             // 
             this.img_IconReport4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_IconReport4.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.Image")));
+            this.img_IconReport4.Image = global::TGS.Properties.Resources.Cirurgia;
             this.img_IconReport4.Location = new System.Drawing.Point(3, 4);
             this.img_IconReport4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconReport4.Name = "img_IconReport4";
@@ -914,6 +914,7 @@ namespace TGS {
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Home";
             this.Text = "Home";

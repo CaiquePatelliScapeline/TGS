@@ -13,6 +13,9 @@ using System.Runtime.InteropServices;
 namespace TGS {
     public partial class Login : Form {
 
+        //Classes
+        MainController mainController = new MainController();
+
         public Login() {
             InitializeComponent();
         }
@@ -102,11 +105,11 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            Application.Exit();
+            mainController.Exit();
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            this.WindowState = FormWindowState.Minimized;
+            mainController.Minimize(Login.ActiveForm);
         }
 
         private void btn_Login_Click(object sender, EventArgs e) {

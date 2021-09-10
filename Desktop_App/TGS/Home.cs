@@ -13,7 +13,12 @@ using System.Windows.Forms;
 namespace TGS {
     public partial class Home : Form {
 
+        //Classes
+        MainController mainController = new MainController();
+
+
         // Fields
+        private String chatLink = "whatsapp://";
         private int borderSize = 2;
 
         // Constructor
@@ -128,27 +133,28 @@ namespace TGS {
             }
         }
 
+        //Buttons Header
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            this.WindowState = FormWindowState.Minimized;
+            mainController.Minimize(Home.ActiveForm);
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            if (this.WindowState == FormWindowState.Normal) {
-                this.WindowState = FormWindowState.Maximized;
-            } else {
-                this.WindowState = FormWindowState.Normal;
-            }
+            mainController.Maximize(Home.ActiveForm);
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            //if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                Application.Exit();
-            //}  
+            mainController.Exit();
         }
+        
 
+        //Buttons Menu
+        private void btn_MenuChat_Click(object sender, EventArgs e) {
+            mainController.OpenLink(chatLink);
+        }
         private void btn_MenuHamburger_Click(object sender, EventArgs e) {
             CollapseMenu();
         }
+
 
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
@@ -165,30 +171,11 @@ namespace TGS {
                 img_LogoMenu.Visible = true;
                 btn_MenuHamburger.Dock = DockStyle.None;
                 foreach (Button menuButton in pnl_Menu.Controls.OfType<Button>()) {
-                    menuButton.Text = "  " +  menuButton.Tag.ToString();
+                    menuButton.Text = "  " + menuButton.Tag.ToString();
                     menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
         }
-
-        private void btn_MenuChat_Click(object sender, EventArgs e) {
-            try {
-                VisitLink("whatsapp://");
-            } catch (Exception ex) {
-                MessageBox.Show("Não foi possível abrir o aplicativo de mensagem!.");
-            }
-        }
-
-        private void VisitLink(string link) {
-            System.Diagnostics.Process.Start("cmd", $"/c start {link}");
-        }
-
-        //private void lv_Consults_DrawColumnHeader(object sender, DrawListViewColumnHeaderEventArgs e) {
-        //    //var Font = new Font("Century Gothic", 18, FontStyle.Regular);
-        //    //e.Graphics.FillRectangle(Brushes.RoyalBlue, e.Bounds);
-        //    e.DrawText();
-        //    //e.Graphics.DrawString(e.Header.Text, Font,Brushes.White, e.Bounds);
-        //}
     }
 }

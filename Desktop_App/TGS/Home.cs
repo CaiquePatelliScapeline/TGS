@@ -12,19 +12,13 @@ using System.Windows.Forms;
 
 namespace TGS {
     public partial class Home : Form {
-
-        //Classes
-        MainController mainController = new MainController();
-
-
-        // Fields
-        private String chatLink = "whatsapp://";
-        private int borderSize = 2;
-
-        // Constructor
+        
         public Home() {
             InitializeComponent();
             CollapseMenu();
+
+            lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
             string[] item = new string[6];
@@ -39,6 +33,15 @@ namespace TGS {
             lv_Consults.Items.Add(items);
         }
 
+
+        //Classes
+        MainController mainController = new MainController();
+        AuthenticateController authenticateController = new AuthenticateController();
+
+        // Fields
+        private int borderSize = 2;
+
+
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -46,10 +49,6 @@ namespace TGS {
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void pnl_TitleBar_MouseDown(object sender, MouseEventArgs e) {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
 
         // Overridden Methods
         protected override void WndProc(ref Message m) {
@@ -114,6 +113,7 @@ namespace TGS {
             base.WndProc(ref m);
         }
 
+        //Resize Form
         // Events Methods
         private void Home_Resize(object sender, EventArgs e) {
             AdjustForm();
@@ -133,29 +133,27 @@ namespace TGS {
             }
         }
 
-        //Buttons Header
-        private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(Home.ActiveForm);
-        }
 
-        private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(Home.ActiveForm);
+        //Header
+        private void pnl_TitleBar_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
             mainController.Exit();
         }
-        
 
-        //Buttons Menu
-        private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.OpenLink(chatLink);
-        }
-        private void btn_MenuHamburger_Click(object sender, EventArgs e) {
-            CollapseMenu();
+        private void btn_Maximize_Click(object sender, EventArgs e) {
+            mainController.Maximize(ActiveForm);
         }
 
+        private void btn_Minimize_Click(object sender, EventArgs e) {
+            mainController.Minimize(ActiveForm);
+        }
 
+
+        //Menu
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
                 pnl_Menu.Width = 100;
@@ -176,6 +174,30 @@ namespace TGS {
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
+        }
+
+        private void btn_MenuHamburger_Click(object sender, EventArgs e) {
+            CollapseMenu();
+        }
+        
+        private void btn_MenuCalendar_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "calendar");
+        }
+
+        private void btn_MenuChat_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "chat");
+        }
+
+        private void btn_MenuPacientes_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "pacientes");
+        }
+
+        private void btn_MenuOptions_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "options");
+        }
+
+        private void btn_MenuLogout_Click(object sender, EventArgs e) {
+            authenticateController.Logout(ActiveForm);
         }
     }
 }

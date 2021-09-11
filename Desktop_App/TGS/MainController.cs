@@ -12,14 +12,14 @@ using System.Windows.Forms;
 
 namespace TGS {
     class MainController {
-        public void Exit() {
-            //if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                Application.Exit();
-            //}
-        }
 
-        public void Minimize(Form form) {
-            form.WindowState = FormWindowState.Minimized;
+        //Fields
+        private String chatLink = "whatsapp://";
+
+        public void Exit() {
+            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                Application.Exit();
+            }
         }
 
         public void Maximize(Form form) {
@@ -30,7 +30,42 @@ namespace TGS {
             }
         }
 
-        public void OpenLink(String link) {
+        public void Minimize(Form form) {
+            form.WindowState = FormWindowState.Minimized;
+        }
+
+
+        public void AlterPage(Form formAtual, String formDestino) {
+            formAtual.Hide();
+
+            switch (formDestino) {
+                case "home":
+                    Home home = new Home();
+                    home.ShowDialog();
+                    break;
+                case "calendar":
+
+                    break;
+                case "chat":
+                    OpenLink(chatLink);
+                    break;
+                case "pacientes":
+
+                    break;
+                case "options":
+
+                    break;
+                case "login":
+                    Login login = new Login();
+                    login.ShowDialog();
+                    break;
+                default:
+                    Errors("Pagina não encontrada!");
+                    break;
+            }
+        }
+
+        private void OpenLink(String link) {
             try {
                 System.Diagnostics.Process.Start("cmd", $"/c start {link}");
             } catch (Exception ex) {
@@ -41,5 +76,6 @@ namespace TGS {
         private void Errors(String message) {
             MessageBox.Show(message);
         }
+
     }
 }

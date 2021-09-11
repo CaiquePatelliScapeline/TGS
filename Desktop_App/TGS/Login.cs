@@ -12,13 +12,14 @@ using System.Runtime.InteropServices;
 
 namespace TGS {
     public partial class Login : Form {
-
-        //Classes
-        MainController mainController = new MainController();
-
         public Login() {
             InitializeComponent();
         }
+
+        //Classes
+        MainController mainController = new MainController();
+        AuthenticateController authenticateController = new AuthenticateController();
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -26,6 +27,7 @@ namespace TGS {
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
 
         // Overridden Methods
         protected override void WndProc(ref Message m) {
@@ -90,15 +92,8 @@ namespace TGS {
             base.WndProc(ref m);
         }
 
-        private void Login_FormClosing(object sender, FormClosingEventArgs e) {
-            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                Application.ExitThread();
-            } else {
-                e.Cancel = true;
-            }
-        }
 
-
+        //Header
         private void pnl_HeaderLogin_MouseDown(object sender, MouseEventArgs e) {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
@@ -109,13 +104,13 @@ namespace TGS {
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(Login.ActiveForm);
+            mainController.Minimize(ActiveForm);
         }
 
+
+        //Body
         private void btn_Login_Click(object sender, EventArgs e) {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
+            authenticateController.Login(txt_User.Text, txt_Password.Text, Login.ActiveForm);
         }
     }
 }

@@ -230,6 +230,7 @@ namespace TGS {
             this.btn_MenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuLogout.UseVisualStyleBackColor = true;
+            this.btn_MenuLogout.Click += new System.EventHandler(this.btn_MenuLogout_Click);
             // 
             // btn_MenuOptions
             // 
@@ -254,6 +255,7 @@ namespace TGS {
             this.btn_MenuOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuOptions.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuOptions.UseVisualStyleBackColor = true;
+            this.btn_MenuOptions.Click += new System.EventHandler(this.btn_MenuOptions_Click);
             // 
             // btn_MenuPacientes
             // 
@@ -278,6 +280,7 @@ namespace TGS {
             this.btn_MenuPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuPacientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuPacientes.UseVisualStyleBackColor = true;
+            this.btn_MenuPacientes.Click += new System.EventHandler(this.btn_MenuPacientes_Click);
             // 
             // btn_MenuChat
             // 
@@ -327,6 +330,7 @@ namespace TGS {
             this.btn_MenuCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuCalendar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuCalendar.UseVisualStyleBackColor = true;
+            this.btn_MenuCalendar.Click += new System.EventHandler(this.btn_MenuCalendar_Click);
             // 
             // btn_MenuHome
             // 
@@ -689,9 +693,9 @@ namespace TGS {
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_Date.Location = new System.Drawing.Point(106, 48);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(179, 37);
+            this.lbl_Date.Size = new System.Drawing.Size(123, 37);
             this.lbl_Date.TabIndex = 6;
-            this.lbl_Date.Text = "02/09/2021";
+            this.lbl_Date.Text = "--/--/----";
             // 
             // lbl_Welcome
             // 

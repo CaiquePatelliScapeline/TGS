@@ -53,6 +53,8 @@ namespace TGS {
 
                     break;
                 case "options":
+                    Options options = new Options();
+                    options.ShowDialog();
 
                     break;
                 case "login":

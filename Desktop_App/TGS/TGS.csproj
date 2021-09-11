@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="ListPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Home - Cópia.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -13,11 +13,14 @@ using System.Windows.Forms;
 namespace TGS {
     class MainController {
 
+        // Classes
+        MyMsgBox MyMsgBox = new MyMsgBox();
+
         //Fields
         private String chatLink = "whatsapp://";
 
         public void Exit() {
-            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+            if (MyMsgBox.Show("Deseja realmente sair?") == DialogResult.Yes) {
                 Application.Exit();
             }
         }

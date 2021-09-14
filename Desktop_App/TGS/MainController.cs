@@ -47,15 +47,31 @@ namespace TGS {
                     home.ShowDialog();
                     break;
                 case "calendar":
-
+                    ListPage calendar = new ListPage("Calendário");
+                    calendar.ShowDialog();
                     break;
                 case "chat":
                     OpenLink(chatLink);
                     break;
                 case "pacientes":
-
+                    ListPage patients = new ListPage("Pacientes");
+                    patients.ShowDialog();
                     break;
                 case "options":
+                    Options options = new Options();
+                    options.ShowDialog();
+
+                    break;
+                case "employee-registration":
+
+                    break;
+                case "consult-category-registration":
+
+                    break;
+                case "support":
+
+                    break; 
+                case "chat-options":
 
                     break;
                 case "login":

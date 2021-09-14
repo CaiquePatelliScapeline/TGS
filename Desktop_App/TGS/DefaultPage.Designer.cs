@@ -1,6 +1,6 @@
 ﻿
 namespace TGS {
-    partial class HomeCopia {
+    partial class DefaultPage {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -24,7 +24,7 @@ namespace TGS {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeCopia));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DefaultPage));
             this.pnl_Menu = new System.Windows.Forms.Panel();
             this.btn_MenuLogout = new FontAwesome.Sharp.IconButton();
             this.btn_MenuOptions = new FontAwesome.Sharp.IconButton();

@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class HomeCopia : Form {
-        public HomeCopia() {
+    public partial class DefaultPage : Form {
+        public DefaultPage() {
             InitializeComponent();
             CollapseMenu();
 

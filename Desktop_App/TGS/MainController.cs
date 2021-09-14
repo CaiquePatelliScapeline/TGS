@@ -20,7 +20,7 @@ namespace TGS {
         private String chatLink = "whatsapp://";
 
         public void Exit() {
-            if (MyMsgBox.Show("Deseja realmente sair?") == DialogResult.Yes) {
+            if (MyMsgBox.Show("", "Deseja realmente sair?", true) == DialogResult.Yes) {
                 Application.Exit();
             }
         }
@@ -63,7 +63,7 @@ namespace TGS {
                     login.ShowDialog();
                     break;
                 default:
-                    Errors("Pagina não encontrada!");
+                    Errors("404", "Pagina não encontrada!");
                     break;
             }
         }
@@ -72,12 +72,14 @@ namespace TGS {
             try {
                 System.Diagnostics.Process.Start("cmd", $"/c start {link}");
             } catch (Exception ex) {
-                Errors("Não foi possível abrir o aplicativo de mensagem!");
+                Errors("Erro", "Não foi possível abrir o aplicativo de mensagem!");
             }
         }
 
-        private void Errors(String message) {
-            MessageBox.Show(message);
+        private void Errors(String title, String message) {
+            MyMsgBox.Show(title, message, false);
+            Home home = new Home();
+            home.ShowDialog();
         }
 
     }

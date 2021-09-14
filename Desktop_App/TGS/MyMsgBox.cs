@@ -28,9 +28,17 @@ namespace TGS {
             private set;
         }
 
-        public static DialogResult Show(string message) {
+        public static DialogResult Show(string title, string message, bool buttons) {
             var MsgBox = new MyMsgBox();
+            MsgBox.lbl_MsgBoxTitle.Text = title;
             MsgBox.lbl_MsgBoxMessage.Text = message;
+
+            if (!buttons) {
+                MsgBox.timer.Enabled = true;
+                MsgBox.btn_Yes.Visible = false;
+                MsgBox.btn_No.Visible = false;
+            }
+
             MsgBox.ShowDialog();
             return MsgBox.Result;
         }
@@ -45,6 +53,10 @@ namespace TGS {
 
         private void iconButton1_Click(object sender, EventArgs e) {
             Result = DialogResult.No;
+            Close();
+        }
+
+        private void timer_Tick(object sender, EventArgs e) {
             Close();
         }
     }

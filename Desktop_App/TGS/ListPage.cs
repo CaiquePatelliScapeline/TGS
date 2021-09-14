@@ -11,10 +11,11 @@ using System.Windows.Forms;
 
 namespace TGS {
     public partial class ListPage : Form {
-        public ListPage() {
+        public ListPage(string title) {
             InitializeComponent();
             CollapseMenu();
 
+            lbl_Title.Text = title;
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size

@@ -10,11 +10,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class HomeCopia : Form {
-        public HomeCopia() {
+    public partial class ListPage : Form {
+        public ListPage(string title) {
             InitializeComponent();
             CollapseMenu();
 
+            lbl_Title.Text = title;
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size
@@ -166,6 +167,10 @@ namespace TGS {
 
         private void btn_MenuHamburger_Click(object sender, EventArgs e) {
             CollapseMenu();
+        }
+
+        private void btn_MenuHome_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "home");
         }
 
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {

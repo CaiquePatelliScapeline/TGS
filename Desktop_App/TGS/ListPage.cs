@@ -169,6 +169,10 @@ namespace TGS {
             CollapseMenu();
         }
 
+        private void btn_MenuHome_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "home");
+        }
+
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
             mainController.AlterPage(ActiveForm, "calendar");
         }

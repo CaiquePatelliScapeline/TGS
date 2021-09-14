@@ -226,6 +226,7 @@ namespace TGS {
             this.btn_MenuHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_MenuHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_MenuHome.UseVisualStyleBackColor = true;
+            this.btn_MenuHome.Click += new System.EventHandler(this.btn_MenuHome_Click);
             // 
             // panel1
             // 

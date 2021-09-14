@@ -38,27 +38,26 @@ namespace TGS {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnl_TitleBar = new System.Windows.Forms.Panel();
             this.lbl_Date = new System.Windows.Forms.Label();
-            this.lbl_Welcome = new System.Windows.Forms.Label();
+            this.lbl_Title = new System.Windows.Forms.Label();
             this.btn_Minimize = new FontAwesome.Sharp.IconButton();
             this.btn_Maximize = new FontAwesome.Sharp.IconButton();
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Content = new System.Windows.Forms.Panel();
-            this.@pnl_filtrer = new System.Windows.Forms.Panel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lv_List = new System.Windows.Forms.ListView();
+            this.pnl_Filter = new System.Windows.Forms.Panel();
+            this.tb_Filter = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_filter = new System.Windows.Forms.TextBox();
-            this.cb_filter = new System.Windows.Forms.ComboBox();
-            this.lv_list = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.lbl_Filter = new System.Windows.Forms.Label();
+            this.txt_Filter = new System.Windows.Forms.TextBox();
+            this.cbx_FilterType = new System.Windows.Forms.ComboBox();
             this.pnl_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnl_TitleBar.SuspendLayout();
             this.pnl_Content.SuspendLayout();
-            this.@pnl_filtrer.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.pnl_Filter.SuspendLayout();
+            this.tb_Filter.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Menu
@@ -73,9 +72,10 @@ namespace TGS {
             this.pnl_Menu.Controls.Add(this.panel1);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.pnl_Menu.Size = new System.Drawing.Size(230, 562);
+            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.pnl_Menu.Size = new System.Drawing.Size(263, 749);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -90,10 +90,11 @@ namespace TGS {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 512);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 682);
+            this.btn_MenuLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
-            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
+            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(263, 47);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -114,10 +115,11 @@ namespace TGS {
             this.btn_MenuOptions.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuOptions.IconSize = 30;
             this.btn_MenuOptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
+            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 501);
+            this.btn_MenuOptions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
-            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -138,10 +140,11 @@ namespace TGS {
             this.btn_MenuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuPacientes.IconSize = 30;
             this.btn_MenuPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
+            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 400);
+            this.btn_MenuPacientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
-            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -162,10 +165,11 @@ namespace TGS {
             this.btn_MenuChat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuChat.IconSize = 30;
             this.btn_MenuChat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
+            this.btn_MenuChat.Location = new System.Drawing.Point(0, 299);
+            this.btn_MenuChat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuChat.Name = "btn_MenuChat";
-            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuChat.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -186,10 +190,11 @@ namespace TGS {
             this.btn_MenuCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuCalendar.IconSize = 30;
             this.btn_MenuCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
+            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 198);
+            this.btn_MenuCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
-            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -210,10 +215,11 @@ namespace TGS {
             this.btn_MenuHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHome.IconSize = 30;
             this.btn_MenuHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
+            this.btn_MenuHome.Location = new System.Drawing.Point(0, 97);
+            this.btn_MenuHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuHome.Name = "btn_MenuHome";
-            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuHome.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -227,16 +233,18 @@ namespace TGS {
             this.panel1.Controls.Add(this.btn_MenuHamburger);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 73);
+            this.panel1.Size = new System.Drawing.Size(263, 97);
             this.panel1.TabIndex = 0;
             // 
             // img_LogoMenu
             // 
             this.img_LogoMenu.Image = ((System.Drawing.Image)(resources.GetObject("img_LogoMenu.Image")));
-            this.img_LogoMenu.Location = new System.Drawing.Point(33, 12);
+            this.img_LogoMenu.Location = new System.Drawing.Point(38, 16);
+            this.img_LogoMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_LogoMenu.Name = "img_LogoMenu";
-            this.img_LogoMenu.Size = new System.Drawing.Size(104, 50);
+            this.img_LogoMenu.Size = new System.Drawing.Size(119, 67);
             this.img_LogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_LogoMenu.TabIndex = 2;
             this.img_LogoMenu.TabStop = false;
@@ -249,9 +257,10 @@ namespace TGS {
             this.btn_MenuHamburger.IconColor = System.Drawing.Color.White;
             this.btn_MenuHamburger.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHamburger.IconSize = 30;
-            this.btn_MenuHamburger.Location = new System.Drawing.Point(164, 12);
+            this.btn_MenuHamburger.Location = new System.Drawing.Point(187, 16);
+            this.btn_MenuHamburger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuHamburger.Name = "btn_MenuHamburger";
-            this.btn_MenuHamburger.Size = new System.Drawing.Size(60, 60);
+            this.btn_MenuHamburger.Size = new System.Drawing.Size(69, 80);
             this.btn_MenuHamburger.TabIndex = 1;
             this.btn_MenuHamburger.UseVisualStyleBackColor = true;
             this.btn_MenuHamburger.Click += new System.EventHandler(this.btn_MenuHamburger_Click);
@@ -259,9 +268,10 @@ namespace TGS {
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(7, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 63);
+            this.pictureBox1.Size = new System.Drawing.Size(82, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -270,15 +280,16 @@ namespace TGS {
             // 
             this.pnl_TitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
             this.pnl_TitleBar.Controls.Add(this.lbl_Date);
-            this.pnl_TitleBar.Controls.Add(this.lbl_Welcome);
+            this.pnl_TitleBar.Controls.Add(this.lbl_Title);
             this.pnl_TitleBar.Controls.Add(this.btn_Minimize);
             this.pnl_TitleBar.Controls.Add(this.pictureBox1);
             this.pnl_TitleBar.Controls.Add(this.btn_Maximize);
             this.pnl_TitleBar.Controls.Add(this.btn_Close);
             this.pnl_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_TitleBar.Location = new System.Drawing.Point(230, 0);
+            this.pnl_TitleBar.Location = new System.Drawing.Point(263, 0);
+            this.pnl_TitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(964, 73);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1102, 97);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -287,22 +298,22 @@ namespace TGS {
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Date.Location = new System.Drawing.Point(93, 36);
+            this.lbl_Date.Location = new System.Drawing.Point(106, 48);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(97, 30);
+            this.lbl_Date.Size = new System.Drawing.Size(123, 37);
             this.lbl_Date.TabIndex = 6;
             this.lbl_Date.Text = "--/--/----";
             // 
-            // lbl_Welcome
+            // lbl_Title
             // 
-            this.lbl_Welcome.AutoSize = true;
-            this.lbl_Welcome.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_Welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Welcome.Location = new System.Drawing.Point(84, 3);
-            this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(189, 38);
-            this.lbl_Welcome.TabIndex = 5;
-            this.lbl_Welcome.Text = "Bem-Vindo";
+            this.lbl_Title.AutoSize = true;
+            this.lbl_Title.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_Title.Location = new System.Drawing.Point(96, 4);
+            this.lbl_Title.Name = "lbl_Title";
+            this.lbl_Title.Size = new System.Drawing.Size(95, 47);
+            this.lbl_Title.TabIndex = 5;
+            this.lbl_Title.Text = "Title";
             // 
             // btn_Minimize
             // 
@@ -314,10 +325,10 @@ namespace TGS {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(829, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.btn_Minimize.Location = new System.Drawing.Point(947, 0);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
+            this.btn_Minimize.Size = new System.Drawing.Size(51, 33);
             this.btn_Minimize.TabIndex = 4;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -332,10 +343,10 @@ namespace TGS {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(874, 0);
-            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.btn_Maximize.Location = new System.Drawing.Point(999, 0);
+            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
+            this.btn_Maximize.Size = new System.Drawing.Size(51, 33);
             this.btn_Maximize.TabIndex = 3;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
@@ -350,123 +361,131 @@ namespace TGS {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(919, 0);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.btn_Close.Location = new System.Drawing.Point(1050, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(45, 25);
+            this.btn_Close.Size = new System.Drawing.Size(51, 33);
             this.btn_Close.TabIndex = 2;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // pnl_Content
             // 
-            this.pnl_Content.Controls.Add(this.lv_list);
-            this.pnl_Content.Controls.Add(this.@pnl_filtrer);
+            this.pnl_Content.Controls.Add(this.lv_List);
+            this.pnl_Content.Controls.Add(this.pnl_Filter);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Content.Location = new System.Drawing.Point(230, 73);
+            this.pnl_Content.Location = new System.Drawing.Point(263, 97);
+            this.pnl_Content.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(964, 489);
+            this.pnl_Content.Size = new System.Drawing.Size(1102, 652);
             this.pnl_Content.TabIndex = 2;
             // 
-            // @pnl_filtrer
+            // lv_List
             // 
-            this.@pnl_filtrer.BackColor = System.Drawing.Color.Transparent;
-            this.@pnl_filtrer.Controls.Add(this.tableLayoutPanel1);
-            this.@pnl_filtrer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.@pnl_filtrer.Location = new System.Drawing.Point(0, 0);
-            this.@pnl_filtrer.Name = "@pnl_filtrer";
-            this.@pnl_filtrer.Size = new System.Drawing.Size(964, 121);
-            this.@pnl_filtrer.TabIndex = 0;
+            this.lv_List.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
+            this.lv_List.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lv_List.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lv_List.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lv_List.FullRowSelect = true;
+            this.lv_List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lv_List.HideSelection = false;
+            this.lv_List.Location = new System.Drawing.Point(0, 161);
+            this.lv_List.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lv_List.MultiSelect = false;
+            this.lv_List.Name = "lv_List";
+            this.lv_List.Size = new System.Drawing.Size(1102, 491);
+            this.lv_List.TabIndex = 1;
+            this.lv_List.UseCompatibleStateImageBehavior = false;
+            this.lv_List.View = System.Windows.Forms.View.Details;
             // 
-            // tableLayoutPanel1
+            // pnl_Filter
             // 
-            this.tableLayoutPanel1.ColumnCount = 5;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txt_filter, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cb_filter, 3, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(964, 121);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.pnl_Filter.BackColor = System.Drawing.Color.Transparent;
+            this.pnl_Filter.Controls.Add(this.tb_Filter);
+            this.pnl_Filter.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Filter.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Filter.Name = "pnl_Filter";
+            this.pnl_Filter.Size = new System.Drawing.Size(1102, 161);
+            this.pnl_Filter.TabIndex = 0;
+            // 
+            // tb_Filter
+            // 
+            this.tb_Filter.ColumnCount = 5;
+            this.tb_Filter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tb_Filter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.43376F));
+            this.tb_Filter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.803993F));
+            this.tb_Filter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.68966F));
+            this.tb_Filter.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tb_Filter.Controls.Add(this.label1, 0, 0);
+            this.tb_Filter.Controls.Add(this.lbl_Filter, 1, 1);
+            this.tb_Filter.Controls.Add(this.txt_Filter, 1, 2);
+            this.tb_Filter.Controls.Add(this.cbx_FilterType, 3, 2);
+            this.tb_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tb_Filter.Location = new System.Drawing.Point(0, 0);
+            this.tb_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tb_Filter.Name = "tb_Filter";
+            this.tb_Filter.RowCount = 4;
+            this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
+            this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
+            this.tb_Filter.Size = new System.Drawing.Size(1102, 161);
+            this.tb_Filter.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(3, 1);
+            this.label1.Size = new System.Drawing.Size(42, 4);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
-            // label2
+            // lbl_Filter
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(427, 59);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Filtro";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lbl_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Filter.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_Filter.Location = new System.Drawing.Point(58, 4);
+            this.lbl_Filter.Name = "lbl_Filter";
+            this.lbl_Filter.Size = new System.Drawing.Size(671, 75);
+            this.lbl_Filter.TabIndex = 1;
+            this.lbl_Filter.Text = "Filtro";
+            this.lbl_Filter.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
-            // txt_filter
+            // txt_Filter
             // 
-            this.txt_filter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_filter.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_filter.Location = new System.Drawing.Point(12, 63);
-            this.txt_filter.Name = "txt_filter";
-            this.txt_filter.Size = new System.Drawing.Size(427, 31);
-            this.txt_filter.TabIndex = 2;
+            this.txt_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Filter.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Filter.Location = new System.Drawing.Point(58, 83);
+            this.txt_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Filter.Name = "txt_Filter";
+            this.txt_Filter.Size = new System.Drawing.Size(671, 37);
+            this.txt_Filter.TabIndex = 2;
             // 
-            // cb_filter
+            // cbx_FilterType
             // 
-            this.cb_filter.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cb_filter.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_filter.FormattingEnabled = true;
-            this.cb_filter.Location = new System.Drawing.Point(522, 63);
-            this.cb_filter.Name = "cb_filter";
-            this.cb_filter.Size = new System.Drawing.Size(121, 30);
-            this.cb_filter.TabIndex = 3;
-            // 
-            // lv_list
-            // 
-            this.lv_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lv_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.lv_list.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lv_list.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lv_list.HideSelection = false;
-            this.lv_list.Location = new System.Drawing.Point(0, 121);
-            this.lv_list.Name = "lv_list";
-            this.lv_list.Size = new System.Drawing.Size(964, 368);
-            this.lv_list.TabIndex = 1;
-            this.lv_list.UseCompatibleStateImageBehavior = false;
-            this.lv_list.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.cbx_FilterType.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbx_FilterType.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbx_FilterType.FormattingEnabled = true;
+            this.cbx_FilterType.Location = new System.Drawing.Point(821, 83);
+            this.cbx_FilterType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_FilterType.Name = "cbx_FilterType";
+            this.cbx_FilterType.Size = new System.Drawing.Size(222, 38);
+            this.cbx_FilterType.TabIndex = 3;
             // 
             // ListPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1194, 562);
+            this.ClientSize = new System.Drawing.Size(1365, 749);
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListPage";
             this.Text = "Home";
             this.Resize += new System.EventHandler(this.Home_Resize);
@@ -477,9 +496,9 @@ namespace TGS {
             this.pnl_TitleBar.ResumeLayout(false);
             this.pnl_TitleBar.PerformLayout();
             this.pnl_Content.ResumeLayout(false);
-            this.@pnl_filtrer.ResumeLayout(false);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.pnl_Filter.ResumeLayout(false);
+            this.tb_Filter.ResumeLayout(false);
+            this.tb_Filter.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -502,15 +521,14 @@ namespace TGS {
         private FontAwesome.Sharp.IconButton btn_Maximize;
         private FontAwesome.Sharp.IconButton btn_Close;
         private System.Windows.Forms.Label lbl_Date;
-        private System.Windows.Forms.Label lbl_Welcome;
+        private System.Windows.Forms.Label lbl_Title;
         private System.Windows.Forms.PictureBox img_LogoMenu;
-        private System.Windows.Forms.Panel pnl_filtrer;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Panel pnl_Filter;
+        private System.Windows.Forms.TableLayoutPanel tb_Filter;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListView lv_list;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.TextBox txt_filter;
-        private System.Windows.Forms.ComboBox cb_filter;
+        private System.Windows.Forms.Label lbl_Filter;
+        private System.Windows.Forms.ListView lv_List;
+        private System.Windows.Forms.TextBox txt_Filter;
+        private System.Windows.Forms.ComboBox cbx_FilterType;
     }
 }

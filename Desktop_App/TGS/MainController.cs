@@ -57,6 +57,18 @@ namespace TGS {
                     options.ShowDialog();
 
                     break;
+                case "employee-registration":
+
+                    break;
+                case "consult-category-registration":
+
+                    break;
+                case "support":
+
+                    break; 
+                case "chat-options":
+
+                    break;
                 case "login":
                     Login login = new Login();
                     login.ShowDialog();

@@ -12,29 +12,30 @@ using System.Windows.Forms;
 namespace TGS {
     public partial class Options : Form {
 
-        // Fields
-        private int borderSize = 2;
-
-        // Constructor
         public Options() {
             InitializeComponent();
             CollapseMenu();
+            lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
 
         }
 
+        //Classes
+        MainController mainController = new MainController();
+        AuthenticateController authenticateController = new AuthenticateController();
+
+        // Fields
+        private int borderSize = 2;
+        
+        
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
-        private void pnl_TitleBar_MouseDown(object sender, MouseEventArgs e) {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
 
         // Overridden Methods
         protected override void WndProc(ref Message m) {
@@ -99,6 +100,8 @@ namespace TGS {
             base.WndProc(ref m);
         }
 
+
+        //Resize Form
         // Events Methods
         private void Home_Resize(object sender, EventArgs e) {
             AdjustForm();
@@ -118,28 +121,27 @@ namespace TGS {
             }
         }
 
-        private void btn_Minimize_Click(object sender, EventArgs e) {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void btn_Maximize_Click(object sender, EventArgs e) {
-            if (this.WindowState == FormWindowState.Normal) {
-                this.WindowState = FormWindowState.Maximized;
-            } else {
-                this.WindowState = FormWindowState.Normal;
-            }
+        //Header
+        private void pnl_TitleBar_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                Application.Exit();
-            }  
+            mainController.Exit();
         }
 
-        private void btn_MenuHamburger_Click(object sender, EventArgs e) {
-            CollapseMenu();
+        private void btn_Maximize_Click(object sender, EventArgs e) {
+            mainController.Maximize(ActiveForm);
         }
 
+        private void btn_Minimize_Click(object sender, EventArgs e) {
+            mainController.Minimize(ActiveForm);
+        }
+
+
+        //Menu
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
                 pnl_Menu.Width = 100;
@@ -160,6 +162,80 @@ namespace TGS {
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
             }
+        }
+
+        private void btn_MenuHamburger_Click(object sender, EventArgs e) {
+            CollapseMenu();
+        }
+
+        private void btn_MenuHome_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "home");
+        }
+
+        private void btn_MenuCalendar_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "calendar");
+        }
+
+        private void btn_MenuChat_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "chat");
+        }
+
+        private void btn_MenuPacientes_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "pacientes");
+        }
+
+        private void btn_MenuLogout_Click(object sender, EventArgs e) {
+            authenticateController.Logout(ActiveForm);
+        }
+
+
+        //Body
+        private void img_IconOption1_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "employee-registration");
+        }
+
+        private void lbl_TitleOption1_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "employee-registration");
+        }
+
+        private void img_ArrowOption1_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "employee-registration");
+        }
+
+        private void img_TitleOption2_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "consult-category-registration");
+        }
+
+        private void lbl_TitleOptions2_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "consult-category-registration");
+        }
+
+        private void img_ArrowOptions2_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "consult-category-registration");
+        }
+
+        private void img_TitleOptions3_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "support");
+        }
+
+        private void lbl_TitleOptions3_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "support");
+        }
+
+        private void img_ArrowOptions3_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "support");
+        }
+
+        private void img_TitleOptions4_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "chat-options");
+        }
+
+        private void lbl_TitleOptions4_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "chat-options");
+        }
+
+        private void img_ArrowOptions4_Click(object sender, EventArgs e) {
+            mainController.AlterPage(ActiveForm, "chat-options");
         }
     }
 }

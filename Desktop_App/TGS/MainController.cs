@@ -37,43 +37,65 @@ namespace TGS {
             form.WindowState = FormWindowState.Minimized;
         }
 
-
         public void AlterPage(Form formAtual, String formDestino) {
-            formAtual.Hide();
+            if (!(formAtual is null)) {
+                formAtual.Hide();
+            } 
 
             switch (formDestino) {
+                // Go to home
                 case "home":
                     Home home = new Home();
                     home.ShowDialog();
                     break;
+                // Go to calendar
                 case "calendar":
                     ListPage calendar = new ListPage("Calendário");
                     calendar.ShowDialog();
                     break;
+                // Go to chat
                 case "chat":
                     OpenLink(chatLink);
                     break;
-                case "pacientes":
+                // Go to patients list
+                case "patients":
                     ListPage patients = new ListPage("Pacientes");
                     patients.ShowDialog();
                     break;
+                // Go to options
                 case "options":
                     Options options = new Options();
                     options.ShowDialog();
-
                     break;
+                // Go to employees list
+                case "employee-list":
+                    ListPage employees = new ListPage("Funcionários");
+                    employees.ShowDialog();
+                    break;
+                // Go to employees registration
                 case "employee-registration":
-
+                    FormPage employeesRegistration = new FormPage();
+                    employeesRegistration.ShowDialog();
                     break;
+                // Go to consults category list
+                case "consult-category-list":
+                    ListPage consultsCategory = new ListPage("Categorias de Consulta");
+                    consultsCategory.ShowDialog();
+                    break;
+                // Go to consults category registration
                 case "consult-category-registration":
-
+                    FormPage consultsCategoryRegistration = new FormPage();
+                    consultsCategoryRegistration.ShowDialog();
                     break;
+                // Go to support
                 case "support":
 
-                    break; 
+                    break;
+                // Go to chat options
                 case "chat-options":
 
                     break;
+                // Go to login
                 case "login":
                     Login login = new Login();
                     login.ShowDialog();
@@ -94,8 +116,7 @@ namespace TGS {
 
         private void Errors(String title, String message) {
             MyMsgBox.Show(title, message, false);
-            Home home = new Home();
-            home.ShowDialog();
+            AlterPage(null, "home");
         }
 
     }

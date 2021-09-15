@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="FormPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="DefaultPage.cs">
       <SubType>Form</SubType>
     </Compile>

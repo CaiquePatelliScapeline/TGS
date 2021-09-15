@@ -173,11 +173,11 @@ namespace TGS {
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "chat");
+            mainController.AlterPage(null, "chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "pacientes");
+            mainController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuOptions_Click(object sender, EventArgs e) {

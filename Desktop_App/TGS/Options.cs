@@ -177,11 +177,11 @@ namespace TGS {
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "chat");
+            mainController.AlterPage(null, "chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "pacientes");
+            mainController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
@@ -191,27 +191,27 @@ namespace TGS {
 
         //Body
         private void img_IconOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-registration");
+            mainController.AlterPage(ActiveForm, "employee-list");
         }
 
         private void lbl_TitleOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-registration");
+            mainController.AlterPage(ActiveForm, "employee-list");
         }
 
         private void img_ArrowOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-registration");
+            mainController.AlterPage(ActiveForm, "employee-list");
         }
 
         private void img_TitleOption2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-registration");
+            mainController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void lbl_TitleOptions2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-registration");
+            mainController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void img_ArrowOptions2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-registration");
+            mainController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void img_TitleOptions3_Click(object sender, EventArgs e) {

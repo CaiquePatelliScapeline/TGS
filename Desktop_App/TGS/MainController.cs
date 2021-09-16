@@ -50,8 +50,13 @@ namespace TGS {
                     break;
                 // Go to calendar
                 case "calendar":
-                    ListPage calendar = new ListPage("Calendário");
+                    ListPage calendar = new ListPage("consults");
                     calendar.ShowDialog();
+                    break;
+                // Go to consults registration
+                case "consults-registration":
+                    FormPage consultsRegistration = new FormPage("consults");
+                    consultsRegistration.ShowDialog();
                     break;
                 // Go to chat
                 case "chat":
@@ -59,8 +64,13 @@ namespace TGS {
                     break;
                 // Go to patients list
                 case "patients":
-                    ListPage patients = new ListPage("Pacientes");
+                    ListPage patients = new ListPage("patients");
                     patients.ShowDialog();
+                    break;
+                // Go to patientes registration
+                case "patients-registration":
+                    FormPage patientsRegistration = new FormPage("patients");
+                    patientsRegistration.ShowDialog();
                     break;
                 // Go to options
                 case "options":
@@ -69,22 +79,22 @@ namespace TGS {
                     break;
                 // Go to employees list
                 case "employee-list":
-                    ListPage employees = new ListPage("Funcionários");
+                    ListPage employees = new ListPage("employees");
                     employees.ShowDialog();
                     break;
                 // Go to employees registration
                 case "employee-registration":
-                    FormPage employeesRegistration = new FormPage();
+                    FormPage employeesRegistration = new FormPage("employees");
                     employeesRegistration.ShowDialog();
                     break;
                 // Go to consults category list
                 case "consult-category-list":
-                    ListPage consultsCategory = new ListPage("Categorias de Consulta");
+                    ListPage consultsCategory = new ListPage("consult-categories");
                     consultsCategory.ShowDialog();
                     break;
                 // Go to consults category registration
                 case "consult-category-registration":
-                    FormPage consultsCategoryRegistration = new FormPage();
+                    FormPage consultsCategoryRegistration = new FormPage("consults-category");
                     consultsCategoryRegistration.ShowDialog();
                     break;
                 // Go to support
@@ -114,7 +124,7 @@ namespace TGS {
             }
         }
 
-        private void Errors(String title, String message) {
+        public void Errors(String title, String message) {
             MyMsgBox.Show(title, message, false);
             AlterPage(null, "home");
         }

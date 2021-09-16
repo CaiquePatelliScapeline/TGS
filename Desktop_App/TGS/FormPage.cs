@@ -11,14 +11,18 @@ using System.Windows.Forms;
 
 namespace TGS {
     public partial class FormPage : Form {
-        public FormPage() {
+        public FormPage(String form) {
+            formRender = form;
             InitializeComponent();
+            Render();
             CollapseMenu();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+
+            formPart = 1;
         }
 
         //Classes
@@ -28,6 +32,8 @@ namespace TGS {
 
         // Fields
         private int borderSize = 2;
+        private string formRender;
+        private int formPart = 1;
 
 
         //Drag Form
@@ -186,6 +192,192 @@ namespace TGS {
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
             authenticateController.Logout(ActiveForm);
+        }
+
+
+        private void Render() {
+            lbl_TitlePart.Visible = false;
+            lbl_TitlePart.Visible = false;
+            lbl_Title1.Visible = true;
+            txt_Input2.Visible = true;
+            lbl_Title2.Visible = true;
+            txt_Input2.Visible = true;
+            lbl_Title3.Visible = true;
+            txt_Input3.Visible = true;
+            lbl_Title4.Visible = true;
+            txt_Input4.Visible = true;
+            lbl_Title5.Visible = true;
+            txt_Input5.Visible = true;
+            lbl_Title6.Visible = true;
+            txt_Input6.Visible = true;
+            lbl_Title7.Visible = true;
+            txt_Input7.Visible = true;
+            lbl_Title8.Visible = true;
+            txt_Input8.Visible = true;
+            lbl_Title9.Visible = true;
+            txt_Input9.Visible = true;
+            lbl_Part.Visible   = true;
+            btn_Back.Visible   = false;
+            btn_Forward.Text = "Cadastrar";
+
+            switch (formRender) {
+                case "employees":
+                    lbl_Title.Text = "Cadastro de Funcionários";
+                    lbl_Title1.Text = "Nome";
+                    lbl_Title2.Text = "Data de Nascimento";
+                    lbl_Title3.Text = "E-mail";
+                    lbl_Title4.Text = "Gênero";
+                    lbl_Title5.Text = "CRO";
+                    lbl_Title6.Text = "RG";
+                    lbl_Title7.Text = "CPF";
+                    lbl_Title8.Text = "Estado Civil";
+                    lbl_Title9.Text = "Especialidade";
+                    lbl_Part.Visible = false;
+                    break;
+                case "consults-category":
+                    lbl_Title.Text = "Cadastro de Categoria de Consulta";
+                    lbl_Title1.Text = "Título da Categoria";
+                    lbl_Title2.Visible = false;
+                    txt_Input2.Visible = false;
+                    lbl_Title3.Visible = false;
+                    txt_Input3.Visible = false;
+                    lbl_Title4.Visible = false;
+                    txt_Input4.Visible = false;
+                    lbl_Title5.Visible = false;
+                    txt_Input5.Visible = false;
+                    lbl_Title6.Visible = false;
+                    txt_Input6.Visible = false;
+                    lbl_Title7.Visible = false;
+                    txt_Input7.Visible = false;
+                    lbl_Title8.Visible = false;
+                    txt_Input8.Visible = false;
+                    lbl_Title9.Visible = false;
+                    txt_Input9.Visible = false;
+                    lbl_Part.Visible = false;
+                    break;
+                case "patients":
+                    lbl_Title.Text = "Cadastro de Pacientes";
+                    switch (formPart) {
+                        case 1:
+                            lbl_TitlePart.Visible = true;
+                            lbl_TitlePart.Text = "   Dados Básicos";
+                            lbl_Part.Text = "Parte 1 de 4   ";
+                            lbl_Title1.Text = "Nome";
+                            lbl_Title2.Text = "Apelido";
+                            lbl_Title3.Text = "Data de Nascimento";
+                            lbl_Title4.Text = "Gênero";
+                            lbl_Title5.Text = "CPF";
+                            lbl_Title6.Text = "RG";
+                            lbl_Title7.Text = "Estado Civil";
+                            lbl_Title8.Text = "Altura";
+                            lbl_Title9.Visible = false;
+                            txt_Input9.Visible = false;
+                            btn_Forward.Text = "Avançar";
+                            break;
+                        case 2:
+                            lbl_TitlePart.Visible = true;
+                            lbl_TitlePart.Text = "   Contato";
+                            lbl_Part.Text = "Parte 2 de 4   ";
+                            lbl_Title1.Text = "Celular";
+                            lbl_Title2.Text = "Telefone";
+                            lbl_Title3.Text = "E-mail";
+                            lbl_Title4.Visible = false;
+                            txt_Input4.Visible = false;
+                            lbl_Title5.Visible = false;
+                            txt_Input5.Visible = false;
+                            lbl_Title6.Visible = false;
+                            txt_Input6.Visible = false;
+                            lbl_Title7.Visible = false;
+                            txt_Input7.Visible = false;
+                            lbl_Title8.Visible = false;
+                            txt_Input8.Visible = false;
+                            lbl_Title9.Visible = false;
+                            txt_Input9.Visible = false;
+                            btn_Back.Visible = true;
+                            btn_Forward.Text = "Avançar";
+                            break;
+                        case 3:
+                            lbl_TitlePart.Visible = true;
+                            lbl_TitlePart.Text = "   Observações";
+                            lbl_Part.Text = "Parte 3 de 4   ";
+                            lbl_Title1.Text = "Como conheceu o consultório?";
+                            lbl_Title2.Text = "Observações";
+                            lbl_Title3.Visible = false;
+                            txt_Input3.Visible = false;
+                            lbl_Title4.Visible = false;
+                            txt_Input4.Visible = false;
+                            lbl_Title5.Visible = false;
+                            txt_Input5.Visible = false;
+                            lbl_Title6.Visible = false;
+                            txt_Input6.Visible = false;
+                            lbl_Title7.Visible = false;
+                            txt_Input7.Visible = false;
+                            lbl_Title8.Visible = false;
+                            txt_Input8.Visible = false;
+                            lbl_Title9.Visible = false;
+                            txt_Input9.Visible = false;
+                            btn_Back.Visible = true;
+                            btn_Forward.Text = "Avançar";
+                            break;
+                        case 4:
+                            lbl_TitlePart.Visible = true;
+                            lbl_TitlePart.Text = "   Localidade";
+                            lbl_Part.Text = "Parte 4 de 4   ";
+                            lbl_Title1.Text = "Logradouro";
+                            lbl_Title2.Text = "Bairro";
+                            lbl_Title3.Text = "Número";
+                            lbl_Title4.Text = "Complemento";
+                            lbl_Title5.Text = "Cidade";
+                            lbl_Title6.Text = "CEP";
+                            lbl_Title7.Text = "Estado";
+                            lbl_Title8.Visible = false;
+                            txt_Input8.Visible = false;
+                            lbl_Title9.Visible = false;
+                            txt_Input9.Visible = false;
+                            btn_Back.Visible = true;
+                            break;
+                        default:
+                            mainController.Errors("404", "Pagina não encontrada!");
+                            break;
+                    }
+                    break;
+                case "consults":
+                    lbl_TitlePart.Visible = false;
+                    lbl_Title.Text = "Cadastro de Consultas";
+                    lbl_Title1.Text = "Nome do Paciente";
+                    lbl_Title2.Text = "Profissional";
+                    lbl_Title3.Text = "Dia";
+                    lbl_Title4.Text = "Mês";
+                    lbl_Title5.Text = "Horário";
+                    lbl_Title6.Text = "Categoria da Consulta";
+                    lbl_Title7.Visible = false;
+                    txt_Input7.Visible = false;
+                    lbl_Title8.Visible = false;
+                    txt_Input8.Visible = false;
+                    lbl_Title9.Visible = false;
+                    txt_Input9.Visible = false;
+                    lbl_Part.Visible = false;
+                    break;
+                default:
+                    mainController.Errors("404", "Pagina não encontrada!");
+                    break;
+            }
+        }
+
+        private void btn_Forward_Click(object sender, EventArgs e) {
+            if(btn_Forward.Text == "Cadastrar") {
+            
+            } else if(btn_Forward.Text == "Avançar") {
+                formPart++;
+                Render();
+            } else {
+                mainController.Errors("Erro", "Erro desconhecido!");
+            }
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e) {
+            formPart--;
+            Render();
         }
     }
 }

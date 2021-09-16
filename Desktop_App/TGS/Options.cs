@@ -191,7 +191,7 @@ namespace TGS {
 
         //Body
         private void img_IconOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-list");
+            mainController.AlterPage(ActiveForm, "employee-list"); 
         }
 
         private void lbl_TitleOption1_Click(object sender, EventArgs e) {

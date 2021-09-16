@@ -23,3 +23,28 @@ C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\T
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.dll
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.exe
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.deps.json
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.runtimeconfig.json
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.runtimeconfig.dev.json
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.dll
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.pdb
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.AssemblyReference.cache
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.DefaultPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.FormPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Home.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.ListPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Login.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.MyMsgBox.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Options.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Properties.Resources.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.SplashScreen.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.GenerateResource.cache
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfoInputs.cache
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfo.cs
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.CoreCompileInputs.cache
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.CopyComplete
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.dll
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.pdb
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.genruntimeconfig.cache

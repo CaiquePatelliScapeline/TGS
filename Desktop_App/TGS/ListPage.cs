@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace TGS {
     public partial class ListPage : Form {
-        public ListPage(string title) {
+        public ListPage(string list) {
+            listRender = list;
             InitializeComponent();
+            Render();
             CollapseMenu();
 
-            lbl_Title.Text = title;
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size
@@ -29,7 +30,7 @@ namespace TGS {
 
         // Fields
         private int borderSize = 2;
-
+        private string listRender;
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -191,6 +192,47 @@ namespace TGS {
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
             authenticateController.Logout(ActiveForm);
+        }
+
+        private void btn_Register_Click(object sender, EventArgs e) {
+            switch (listRender) {
+                case "patients":
+                    mainController.AlterPage(ActiveForm, "patients-registration");
+                    break;
+                case "employees":
+                    mainController.AlterPage(ActiveForm, "employee-registration");
+                    break;
+                case "consults":
+                    mainController.AlterPage(ActiveForm, "consults-registration");
+                    break;
+                case "consult-category":
+                    mainController.AlterPage(ActiveForm, "consult-category-registration");
+                    break;
+                default:
+                    mainController.Errors("404", "Pagina não encontrada!");
+                    break;
+            }
+        }
+
+
+        private void Render() {
+            switch (listRender) {
+                case "patients":
+                    lbl_Title.Text = "Pacientes";
+                    break;
+                case "employees":
+                    lbl_Title.Text = "Funcionários";
+                    break;
+                case "consults":
+                    lbl_Title.Text = "Consultas";
+                    break;
+                case "consult-categories":
+                    lbl_Title.Text = "Categorias de Consulta";
+                    break;
+                default:
+                    mainController.Errors("404", "Pagina não encontrada!");
+                    break;
+            }
         }
     }
 }

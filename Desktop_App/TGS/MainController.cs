@@ -94,7 +94,7 @@ namespace TGS {
                     break;
                 // Go to consults category registration
                 case "consult-category-registration":
-                    FormPage consultsCategoryRegistration = new FormPage("consults-category");
+                    FormPage consultsCategoryRegistration = new FormPage("consults-categories");
                     consultsCategoryRegistration.ShowDialog();
                     break;
                 // Go to support
@@ -111,7 +111,7 @@ namespace TGS {
                     login.ShowDialog();
                     break;
                 default:
-                    Errors("404", "Pagina não encontrada!");
+                    Errors("404", "Página não encontrada!");
                     break;
             }
         }

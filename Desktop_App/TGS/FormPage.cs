@@ -234,7 +234,7 @@ namespace TGS {
                     lbl_Title9.Text = "Especialidade";
                     lbl_Part.Visible = false;
                     break;
-                case "consults-category":
+                case "consults-categories":
                     lbl_Title.Text = "Cadastro de Categoria de Consulta";
                     lbl_Title1.Text = "Título da Categoria";
                     lbl_Title2.Visible = false;
@@ -379,5 +379,7 @@ namespace TGS {
             formPart--;
             Render();
         }
+
+        
     }
 }

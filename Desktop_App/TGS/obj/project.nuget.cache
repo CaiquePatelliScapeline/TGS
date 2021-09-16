@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CJOJjgA0qyp7fkX+Eu1i4Hd0jJNgpQP0hJQ01yiPc/OmgbS6jPNCPW0G9Yoq+xj17BZz0Q7PkMk7JRVygK28DQ==",
+  "dgSpecHash": "yenOg/VeOncCzfKeU37SYRnhdbFigDYmSXBZaFx7ZAyUNWBLIL+cn2VVCAJXT308fx6p+pO1grduzbLyyPaF1w==",
   "success": true,
-  "projectFilePath": "D:\\Users\\Caique Patelli\\Projects\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
+  "projectFilePath": "C:\\Users\\miria\\OneDrive\\Documentos\\GitHub\\TGS\\Desktop_App\\TGS\\TGS.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Caique\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
+    "C:\\Users\\miria\\.nuget\\packages\\fontawesome.sharp\\5.15.3\\fontawesome.sharp.5.15.3.nupkg.sha512"
   ],
   "logs": []
 }

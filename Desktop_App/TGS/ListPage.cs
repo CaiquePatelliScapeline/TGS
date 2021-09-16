@@ -205,11 +205,11 @@ namespace TGS {
                 case "consults":
                     mainController.AlterPage(ActiveForm, "consults-registration");
                     break;
-                case "consult-category":
+                case "consult-categories":
                     mainController.AlterPage(ActiveForm, "consult-category-registration");
                     break;
                 default:
-                    mainController.Errors("404", "Pagina não encontrada!");
+                    mainController.Errors("404", "Página não encontrada!");
                     break;
             }
         }

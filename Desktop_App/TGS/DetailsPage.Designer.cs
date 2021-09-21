@@ -44,48 +44,48 @@ namespace TGS {
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Content = new System.Windows.Forms.Panel();
             this.tb_Details = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_DetailsTitle = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail1 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail2 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail3 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail4 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail5 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail6 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail7 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail8 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail9 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail10 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail11 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail12 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail13 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail14 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail15 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail16 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail17 = new System.Windows.Forms.Label();
+            this.lbl_TitleDetail18 = new System.Windows.Forms.Label();
+            this.txt_Detail1 = new System.Windows.Forms.TextBox();
+            this.txt_Detail2 = new System.Windows.Forms.TextBox();
+            this.txt_Detail3 = new System.Windows.Forms.TextBox();
+            this.txt_Detail4 = new System.Windows.Forms.TextBox();
+            this.txt_Detail5 = new System.Windows.Forms.TextBox();
+            this.txt_Detail6 = new System.Windows.Forms.TextBox();
+            this.txt_Detail7 = new System.Windows.Forms.TextBox();
+            this.txt_Detail8 = new System.Windows.Forms.TextBox();
+            this.txt_Detail9 = new System.Windows.Forms.TextBox();
+            this.txt_Detail10 = new System.Windows.Forms.TextBox();
+            this.txt_Detail11 = new System.Windows.Forms.TextBox();
+            this.txt_Detail12 = new System.Windows.Forms.TextBox();
+            this.txt_Detail13 = new System.Windows.Forms.TextBox();
+            this.txt_Detail14 = new System.Windows.Forms.TextBox();
+            this.txt_Detail15 = new System.Windows.Forms.TextBox();
+            this.txt_Detail16 = new System.Windows.Forms.TextBox();
+            this.txt_Detail17 = new System.Windows.Forms.TextBox();
+            this.txt_Detail18 = new System.Windows.Forms.TextBox();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.pnl_Buttons = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_Delet = new System.Windows.Forms.Button();
             this.pnl_Menu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
@@ -411,44 +411,44 @@ namespace TGS {
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tb_Details.Controls.Add(this.label1, 1, 1);
-            this.tb_Details.Controls.Add(this.label2, 1, 2);
-            this.tb_Details.Controls.Add(this.label3, 3, 2);
-            this.tb_Details.Controls.Add(this.label4, 1, 4);
-            this.tb_Details.Controls.Add(this.label5, 3, 4);
-            this.tb_Details.Controls.Add(this.label6, 1, 6);
-            this.tb_Details.Controls.Add(this.label7, 3, 6);
-            this.tb_Details.Controls.Add(this.label8, 1, 8);
-            this.tb_Details.Controls.Add(this.label9, 3, 8);
-            this.tb_Details.Controls.Add(this.label10, 1, 10);
-            this.tb_Details.Controls.Add(this.label11, 3, 10);
-            this.tb_Details.Controls.Add(this.label12, 1, 12);
-            this.tb_Details.Controls.Add(this.label13, 3, 12);
-            this.tb_Details.Controls.Add(this.label14, 1, 14);
-            this.tb_Details.Controls.Add(this.label15, 3, 14);
-            this.tb_Details.Controls.Add(this.label16, 1, 16);
-            this.tb_Details.Controls.Add(this.label17, 3, 16);
-            this.tb_Details.Controls.Add(this.label18, 1, 18);
-            this.tb_Details.Controls.Add(this.label19, 3, 18);
-            this.tb_Details.Controls.Add(this.textBox1, 1, 3);
-            this.tb_Details.Controls.Add(this.textBox2, 3, 3);
-            this.tb_Details.Controls.Add(this.textBox3, 1, 5);
-            this.tb_Details.Controls.Add(this.textBox4, 3, 5);
-            this.tb_Details.Controls.Add(this.textBox5, 1, 7);
-            this.tb_Details.Controls.Add(this.textBox6, 3, 7);
-            this.tb_Details.Controls.Add(this.textBox7, 1, 9);
-            this.tb_Details.Controls.Add(this.textBox8, 3, 9);
-            this.tb_Details.Controls.Add(this.textBox9, 1, 11);
-            this.tb_Details.Controls.Add(this.textBox10, 3, 11);
-            this.tb_Details.Controls.Add(this.textBox11, 1, 13);
-            this.tb_Details.Controls.Add(this.textBox12, 3, 13);
-            this.tb_Details.Controls.Add(this.textBox13, 1, 15);
-            this.tb_Details.Controls.Add(this.textBox14, 3, 15);
-            this.tb_Details.Controls.Add(this.textBox15, 1, 17);
-            this.tb_Details.Controls.Add(this.textBox16, 3, 17);
-            this.tb_Details.Controls.Add(this.textBox17, 1, 19);
-            this.tb_Details.Controls.Add(this.textBox18, 3, 19);
-            this.tb_Details.Controls.Add(this.button1, 1, 20);
+            this.tb_Details.Controls.Add(this.lbl_DetailsTitle, 1, 1);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail1, 1, 2);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail2, 3, 2);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail3, 1, 4);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail4, 3, 4);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail5, 1, 6);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail6, 3, 6);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail7, 1, 8);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail8, 3, 8);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail9, 1, 10);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail10, 3, 10);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail11, 1, 12);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail12, 3, 12);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail13, 1, 14);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail14, 3, 14);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail15, 1, 16);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail16, 3, 16);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail17, 1, 18);
+            this.tb_Details.Controls.Add(this.lbl_TitleDetail18, 3, 18);
+            this.tb_Details.Controls.Add(this.txt_Detail1, 1, 3);
+            this.tb_Details.Controls.Add(this.txt_Detail2, 3, 3);
+            this.tb_Details.Controls.Add(this.txt_Detail3, 1, 5);
+            this.tb_Details.Controls.Add(this.txt_Detail4, 3, 5);
+            this.tb_Details.Controls.Add(this.txt_Detail5, 1, 7);
+            this.tb_Details.Controls.Add(this.txt_Detail6, 3, 7);
+            this.tb_Details.Controls.Add(this.txt_Detail7, 1, 9);
+            this.tb_Details.Controls.Add(this.txt_Detail8, 3, 9);
+            this.tb_Details.Controls.Add(this.txt_Detail9, 1, 11);
+            this.tb_Details.Controls.Add(this.txt_Detail10, 3, 11);
+            this.tb_Details.Controls.Add(this.txt_Detail11, 1, 13);
+            this.tb_Details.Controls.Add(this.txt_Detail12, 3, 13);
+            this.tb_Details.Controls.Add(this.txt_Detail13, 1, 15);
+            this.tb_Details.Controls.Add(this.txt_Detail14, 3, 15);
+            this.tb_Details.Controls.Add(this.txt_Detail15, 1, 17);
+            this.tb_Details.Controls.Add(this.txt_Detail16, 3, 17);
+            this.tb_Details.Controls.Add(this.txt_Detail17, 1, 19);
+            this.tb_Details.Controls.Add(this.txt_Detail18, 3, 19);
+            this.tb_Details.Controls.Add(this.btn_Back, 1, 20);
             this.tb_Details.Controls.Add(this.pnl_Buttons, 3, 20);
             this.tb_Details.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_Details.Location = new System.Drawing.Point(0, 0);
@@ -479,499 +479,501 @@ namespace TGS {
             this.tb_Details.Size = new System.Drawing.Size(969, 489);
             this.tb_Details.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(23, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(446, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Title";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label2.Location = new System.Drawing.Point(23, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(446, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "TitleDetails";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label3
-            // 
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label3.Location = new System.Drawing.Point(500, 40);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(446, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "TitleDetails";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label4.Location = new System.Drawing.Point(23, 105);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(446, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "TitleDetails";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label5.Location = new System.Drawing.Point(500, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(446, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "TitleDetails";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label6.Location = new System.Drawing.Point(23, 170);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(446, 30);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "TitleDetails";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label7.Location = new System.Drawing.Point(500, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(446, 30);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "TitleDetails";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label8.Location = new System.Drawing.Point(23, 235);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(446, 30);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "TitleDetails";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label9.Location = new System.Drawing.Point(500, 235);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(446, 30);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "TitleDetails";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label10.Location = new System.Drawing.Point(23, 300);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(446, 30);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "TitleDetails";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label11.Location = new System.Drawing.Point(500, 300);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(446, 30);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "TitleDetails";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label12
-            // 
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label12.Location = new System.Drawing.Point(23, 365);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(446, 30);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "TitleDetails";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label13.Location = new System.Drawing.Point(500, 365);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(446, 30);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "TitleDetails";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label14.Location = new System.Drawing.Point(23, 430);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(446, 30);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "TitleDetails";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label15.Location = new System.Drawing.Point(500, 430);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(446, 30);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "TitleDetails";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label16.Location = new System.Drawing.Point(23, 495);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(446, 30);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "TitleDetails";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label17
-            // 
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label17.Location = new System.Drawing.Point(500, 495);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(446, 30);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "TitleDetails";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label18
-            // 
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label18.Location = new System.Drawing.Point(23, 560);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(446, 30);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "TitleDetails";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.label19.Location = new System.Drawing.Point(500, 560);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(446, 30);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "TitleDetails";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(23, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(446, 31);
-            this.textBox1.TabIndex = 19;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(500, 73);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(446, 31);
-            this.textBox2.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(23, 138);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(446, 31);
-            this.textBox3.TabIndex = 21;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(500, 138);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(446, 31);
-            this.textBox4.TabIndex = 22;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.Color.White;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(23, 203);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(446, 31);
-            this.textBox5.TabIndex = 23;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(500, 203);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(446, 31);
-            this.textBox6.TabIndex = 24;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.Color.White;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.Location = new System.Drawing.Point(23, 268);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(446, 31);
-            this.textBox7.TabIndex = 25;
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.Color.White;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(500, 268);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(446, 31);
-            this.textBox8.TabIndex = 26;
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.White;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox9.Location = new System.Drawing.Point(23, 333);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(446, 31);
-            this.textBox9.TabIndex = 27;
-            // 
-            // textBox10
-            // 
-            this.textBox10.BackColor = System.Drawing.Color.White;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox10.Location = new System.Drawing.Point(500, 333);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(446, 31);
-            this.textBox10.TabIndex = 28;
-            // 
-            // textBox11
-            // 
-            this.textBox11.BackColor = System.Drawing.Color.White;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox11.Location = new System.Drawing.Point(23, 398);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(446, 31);
-            this.textBox11.TabIndex = 29;
-            // 
-            // textBox12
-            // 
-            this.textBox12.BackColor = System.Drawing.Color.White;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox12.Location = new System.Drawing.Point(500, 398);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(446, 31);
-            this.textBox12.TabIndex = 30;
-            // 
-            // textBox13
-            // 
-            this.textBox13.BackColor = System.Drawing.Color.White;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox13.Location = new System.Drawing.Point(23, 463);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(446, 31);
-            this.textBox13.TabIndex = 31;
-            // 
-            // textBox14
-            // 
-            this.textBox14.BackColor = System.Drawing.Color.White;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox14.Location = new System.Drawing.Point(500, 463);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(446, 31);
-            this.textBox14.TabIndex = 32;
-            // 
-            // textBox15
-            // 
-            this.textBox15.BackColor = System.Drawing.Color.White;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox15.Location = new System.Drawing.Point(23, 528);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(446, 31);
-            this.textBox15.TabIndex = 33;
-            // 
-            // textBox16
-            // 
-            this.textBox16.BackColor = System.Drawing.Color.White;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox16.Location = new System.Drawing.Point(500, 528);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(446, 31);
-            this.textBox16.TabIndex = 34;
-            // 
-            // textBox17
-            // 
-            this.textBox17.BackColor = System.Drawing.Color.White;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox17.Location = new System.Drawing.Point(23, 593);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(446, 31);
-            this.textBox17.TabIndex = 35;
-            // 
-            // textBox18
-            // 
-            this.textBox18.BackColor = System.Drawing.Color.White;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox18.Location = new System.Drawing.Point(500, 593);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(446, 31);
-            this.textBox18.TabIndex = 36;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.button1.Location = new System.Drawing.Point(23, 628);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
-            this.button1.TabIndex = 37;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            // lbl_DetailsTitle
+            // 
+            this.lbl_DetailsTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_DetailsTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_DetailsTitle.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_DetailsTitle.Location = new System.Drawing.Point(23, 10);
+            this.lbl_DetailsTitle.Name = "lbl_DetailsTitle";
+            this.lbl_DetailsTitle.Size = new System.Drawing.Size(446, 30);
+            this.lbl_DetailsTitle.TabIndex = 0;
+            this.lbl_DetailsTitle.Text = "Title";
+            this.lbl_DetailsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail1
+            // 
+            this.lbl_TitleDetail1.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail1.Location = new System.Drawing.Point(23, 40);
+            this.lbl_TitleDetail1.Name = "lbl_TitleDetail1";
+            this.lbl_TitleDetail1.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail1.TabIndex = 1;
+            this.lbl_TitleDetail1.Text = "TitleDetails";
+            this.lbl_TitleDetail1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail2
+            // 
+            this.lbl_TitleDetail2.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail2.Location = new System.Drawing.Point(500, 40);
+            this.lbl_TitleDetail2.Name = "lbl_TitleDetail2";
+            this.lbl_TitleDetail2.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail2.TabIndex = 2;
+            this.lbl_TitleDetail2.Text = "TitleDetails";
+            this.lbl_TitleDetail2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail3
+            // 
+            this.lbl_TitleDetail3.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail3.Location = new System.Drawing.Point(23, 105);
+            this.lbl_TitleDetail3.Name = "lbl_TitleDetail3";
+            this.lbl_TitleDetail3.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail3.TabIndex = 3;
+            this.lbl_TitleDetail3.Text = "TitleDetails";
+            this.lbl_TitleDetail3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail4
+            // 
+            this.lbl_TitleDetail4.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail4.Location = new System.Drawing.Point(500, 105);
+            this.lbl_TitleDetail4.Name = "lbl_TitleDetail4";
+            this.lbl_TitleDetail4.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail4.TabIndex = 4;
+            this.lbl_TitleDetail4.Text = "TitleDetails";
+            this.lbl_TitleDetail4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail5
+            // 
+            this.lbl_TitleDetail5.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail5.Location = new System.Drawing.Point(23, 170);
+            this.lbl_TitleDetail5.Name = "lbl_TitleDetail5";
+            this.lbl_TitleDetail5.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail5.TabIndex = 5;
+            this.lbl_TitleDetail5.Text = "TitleDetails";
+            this.lbl_TitleDetail5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail6
+            // 
+            this.lbl_TitleDetail6.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail6.Location = new System.Drawing.Point(500, 170);
+            this.lbl_TitleDetail6.Name = "lbl_TitleDetail6";
+            this.lbl_TitleDetail6.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail6.TabIndex = 6;
+            this.lbl_TitleDetail6.Text = "TitleDetails";
+            this.lbl_TitleDetail6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail7
+            // 
+            this.lbl_TitleDetail7.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail7.Location = new System.Drawing.Point(23, 235);
+            this.lbl_TitleDetail7.Name = "lbl_TitleDetail7";
+            this.lbl_TitleDetail7.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail7.TabIndex = 7;
+            this.lbl_TitleDetail7.Text = "TitleDetails";
+            this.lbl_TitleDetail7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail8
+            // 
+            this.lbl_TitleDetail8.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail8.Location = new System.Drawing.Point(500, 235);
+            this.lbl_TitleDetail8.Name = "lbl_TitleDetail8";
+            this.lbl_TitleDetail8.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail8.TabIndex = 8;
+            this.lbl_TitleDetail8.Text = "TitleDetails";
+            this.lbl_TitleDetail8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail9
+            // 
+            this.lbl_TitleDetail9.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail9.Location = new System.Drawing.Point(23, 300);
+            this.lbl_TitleDetail9.Name = "lbl_TitleDetail9";
+            this.lbl_TitleDetail9.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail9.TabIndex = 9;
+            this.lbl_TitleDetail9.Text = "TitleDetails";
+            this.lbl_TitleDetail9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail10
+            // 
+            this.lbl_TitleDetail10.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail10.Location = new System.Drawing.Point(500, 300);
+            this.lbl_TitleDetail10.Name = "lbl_TitleDetail10";
+            this.lbl_TitleDetail10.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail10.TabIndex = 10;
+            this.lbl_TitleDetail10.Text = "TitleDetails";
+            this.lbl_TitleDetail10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail11
+            // 
+            this.lbl_TitleDetail11.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail11.Location = new System.Drawing.Point(23, 365);
+            this.lbl_TitleDetail11.Name = "lbl_TitleDetail11";
+            this.lbl_TitleDetail11.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail11.TabIndex = 11;
+            this.lbl_TitleDetail11.Text = "TitleDetails";
+            this.lbl_TitleDetail11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail12
+            // 
+            this.lbl_TitleDetail12.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail12.Location = new System.Drawing.Point(500, 365);
+            this.lbl_TitleDetail12.Name = "lbl_TitleDetail12";
+            this.lbl_TitleDetail12.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail12.TabIndex = 12;
+            this.lbl_TitleDetail12.Text = "TitleDetails";
+            this.lbl_TitleDetail12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail13
+            // 
+            this.lbl_TitleDetail13.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail13.Location = new System.Drawing.Point(23, 430);
+            this.lbl_TitleDetail13.Name = "lbl_TitleDetail13";
+            this.lbl_TitleDetail13.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail13.TabIndex = 13;
+            this.lbl_TitleDetail13.Text = "TitleDetails";
+            this.lbl_TitleDetail13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail14
+            // 
+            this.lbl_TitleDetail14.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail14.Location = new System.Drawing.Point(500, 430);
+            this.lbl_TitleDetail14.Name = "lbl_TitleDetail14";
+            this.lbl_TitleDetail14.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail14.TabIndex = 14;
+            this.lbl_TitleDetail14.Text = "TitleDetails";
+            this.lbl_TitleDetail14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail15
+            // 
+            this.lbl_TitleDetail15.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail15.Location = new System.Drawing.Point(23, 495);
+            this.lbl_TitleDetail15.Name = "lbl_TitleDetail15";
+            this.lbl_TitleDetail15.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail15.TabIndex = 15;
+            this.lbl_TitleDetail15.Text = "TitleDetails";
+            this.lbl_TitleDetail15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail16
+            // 
+            this.lbl_TitleDetail16.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail16.Location = new System.Drawing.Point(500, 495);
+            this.lbl_TitleDetail16.Name = "lbl_TitleDetail16";
+            this.lbl_TitleDetail16.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail16.TabIndex = 16;
+            this.lbl_TitleDetail16.Text = "TitleDetails";
+            this.lbl_TitleDetail16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail17
+            // 
+            this.lbl_TitleDetail17.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail17.Location = new System.Drawing.Point(23, 560);
+            this.lbl_TitleDetail17.Name = "lbl_TitleDetail17";
+            this.lbl_TitleDetail17.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail17.TabIndex = 17;
+            this.lbl_TitleDetail17.Text = "TitleDetails";
+            this.lbl_TitleDetail17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_TitleDetail18
+            // 
+            this.lbl_TitleDetail18.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_TitleDetail18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_TitleDetail18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_TitleDetail18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lbl_TitleDetail18.Location = new System.Drawing.Point(500, 560);
+            this.lbl_TitleDetail18.Name = "lbl_TitleDetail18";
+            this.lbl_TitleDetail18.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail18.TabIndex = 18;
+            this.lbl_TitleDetail18.Text = "TitleDetails";
+            this.lbl_TitleDetail18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txt_Detail1
+            // 
+            this.txt_Detail1.BackColor = System.Drawing.Color.White;
+            this.txt_Detail1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail1.Location = new System.Drawing.Point(23, 73);
+            this.txt_Detail1.Name = "txt_Detail1";
+            this.txt_Detail1.ReadOnly = true;
+            this.txt_Detail1.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail1.TabIndex = 19;
+            // 
+            // txt_Detail2
+            // 
+            this.txt_Detail2.BackColor = System.Drawing.Color.White;
+            this.txt_Detail2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail2.Location = new System.Drawing.Point(500, 73);
+            this.txt_Detail2.Name = "txt_Detail2";
+            this.txt_Detail2.ReadOnly = true;
+            this.txt_Detail2.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail2.TabIndex = 20;
+            // 
+            // txt_Detail3
+            // 
+            this.txt_Detail3.BackColor = System.Drawing.Color.White;
+            this.txt_Detail3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail3.Location = new System.Drawing.Point(23, 138);
+            this.txt_Detail3.Name = "txt_Detail3";
+            this.txt_Detail3.ReadOnly = true;
+            this.txt_Detail3.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail3.TabIndex = 21;
+            // 
+            // txt_Detail4
+            // 
+            this.txt_Detail4.BackColor = System.Drawing.Color.White;
+            this.txt_Detail4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail4.Location = new System.Drawing.Point(500, 138);
+            this.txt_Detail4.Name = "txt_Detail4";
+            this.txt_Detail4.ReadOnly = true;
+            this.txt_Detail4.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail4.TabIndex = 22;
+            // 
+            // txt_Detail5
+            // 
+            this.txt_Detail5.BackColor = System.Drawing.Color.White;
+            this.txt_Detail5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail5.Location = new System.Drawing.Point(23, 203);
+            this.txt_Detail5.Name = "txt_Detail5";
+            this.txt_Detail5.ReadOnly = true;
+            this.txt_Detail5.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail5.TabIndex = 23;
+            // 
+            // txt_Detail6
+            // 
+            this.txt_Detail6.BackColor = System.Drawing.Color.White;
+            this.txt_Detail6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail6.Location = new System.Drawing.Point(500, 203);
+            this.txt_Detail6.Name = "txt_Detail6";
+            this.txt_Detail6.ReadOnly = true;
+            this.txt_Detail6.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail6.TabIndex = 24;
+            // 
+            // txt_Detail7
+            // 
+            this.txt_Detail7.BackColor = System.Drawing.Color.White;
+            this.txt_Detail7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail7.Location = new System.Drawing.Point(23, 268);
+            this.txt_Detail7.Name = "txt_Detail7";
+            this.txt_Detail7.ReadOnly = true;
+            this.txt_Detail7.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail7.TabIndex = 25;
+            // 
+            // txt_Detail8
+            // 
+            this.txt_Detail8.BackColor = System.Drawing.Color.White;
+            this.txt_Detail8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail8.Location = new System.Drawing.Point(500, 268);
+            this.txt_Detail8.Name = "txt_Detail8";
+            this.txt_Detail8.ReadOnly = true;
+            this.txt_Detail8.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail8.TabIndex = 26;
+            // 
+            // txt_Detail9
+            // 
+            this.txt_Detail9.BackColor = System.Drawing.Color.White;
+            this.txt_Detail9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail9.Location = new System.Drawing.Point(23, 333);
+            this.txt_Detail9.Name = "txt_Detail9";
+            this.txt_Detail9.ReadOnly = true;
+            this.txt_Detail9.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail9.TabIndex = 27;
+            // 
+            // txt_Detail10
+            // 
+            this.txt_Detail10.BackColor = System.Drawing.Color.White;
+            this.txt_Detail10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail10.Location = new System.Drawing.Point(500, 333);
+            this.txt_Detail10.Name = "txt_Detail10";
+            this.txt_Detail10.ReadOnly = true;
+            this.txt_Detail10.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail10.TabIndex = 28;
+            // 
+            // txt_Detail11
+            // 
+            this.txt_Detail11.BackColor = System.Drawing.Color.White;
+            this.txt_Detail11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail11.Location = new System.Drawing.Point(23, 398);
+            this.txt_Detail11.Name = "txt_Detail11";
+            this.txt_Detail11.ReadOnly = true;
+            this.txt_Detail11.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail11.TabIndex = 29;
+            // 
+            // txt_Detail12
+            // 
+            this.txt_Detail12.BackColor = System.Drawing.Color.White;
+            this.txt_Detail12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail12.Location = new System.Drawing.Point(500, 398);
+            this.txt_Detail12.Name = "txt_Detail12";
+            this.txt_Detail12.ReadOnly = true;
+            this.txt_Detail12.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail12.TabIndex = 30;
+            // 
+            // txt_Detail13
+            // 
+            this.txt_Detail13.BackColor = System.Drawing.Color.White;
+            this.txt_Detail13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail13.Location = new System.Drawing.Point(23, 463);
+            this.txt_Detail13.Name = "txt_Detail13";
+            this.txt_Detail13.ReadOnly = true;
+            this.txt_Detail13.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail13.TabIndex = 31;
+            // 
+            // txt_Detail14
+            // 
+            this.txt_Detail14.BackColor = System.Drawing.Color.White;
+            this.txt_Detail14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail14.Location = new System.Drawing.Point(500, 463);
+            this.txt_Detail14.Name = "txt_Detail14";
+            this.txt_Detail14.ReadOnly = true;
+            this.txt_Detail14.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail14.TabIndex = 32;
+            // 
+            // txt_Detail15
+            // 
+            this.txt_Detail15.BackColor = System.Drawing.Color.White;
+            this.txt_Detail15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail15.Location = new System.Drawing.Point(23, 528);
+            this.txt_Detail15.Name = "txt_Detail15";
+            this.txt_Detail15.ReadOnly = true;
+            this.txt_Detail15.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail15.TabIndex = 33;
+            // 
+            // txt_Detail16
+            // 
+            this.txt_Detail16.BackColor = System.Drawing.Color.White;
+            this.txt_Detail16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail16.Location = new System.Drawing.Point(500, 528);
+            this.txt_Detail16.Name = "txt_Detail16";
+            this.txt_Detail16.ReadOnly = true;
+            this.txt_Detail16.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail16.TabIndex = 34;
+            // 
+            // txt_Detail17
+            // 
+            this.txt_Detail17.BackColor = System.Drawing.Color.White;
+            this.txt_Detail17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail17.Location = new System.Drawing.Point(23, 593);
+            this.txt_Detail17.Name = "txt_Detail17";
+            this.txt_Detail17.ReadOnly = true;
+            this.txt_Detail17.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail17.TabIndex = 35;
+            // 
+            // txt_Detail18
+            // 
+            this.txt_Detail18.BackColor = System.Drawing.Color.White;
+            this.txt_Detail18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_Detail18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail18.Location = new System.Drawing.Point(500, 593);
+            this.txt_Detail18.Name = "txt_Detail18";
+            this.txt_Detail18.ReadOnly = true;
+            this.txt_Detail18.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail18.TabIndex = 36;
+            // 
+            // btn_Back
+            // 
+            this.btn_Back.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btn_Back.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Back.Location = new System.Drawing.Point(23, 628);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(75, 24);
+            this.btn_Back.TabIndex = 37;
+            this.btn_Back.Text = "Voltar";
+            this.btn_Back.UseVisualStyleBackColor = true;
             // 
             // pnl_Buttons
             // 
             this.pnl_Buttons.BackColor = System.Drawing.Color.Transparent;
-            this.pnl_Buttons.Controls.Add(this.button3);
+            this.pnl_Buttons.Controls.Add(this.btn_Edit);
             this.pnl_Buttons.Controls.Add(this.panel2);
-            this.pnl_Buttons.Controls.Add(this.button2);
+            this.pnl_Buttons.Controls.Add(this.btn_Delet);
             this.pnl_Buttons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Buttons.Location = new System.Drawing.Point(500, 628);
             this.pnl_Buttons.Name = "pnl_Buttons";
             this.pnl_Buttons.Size = new System.Drawing.Size(446, 24);
             this.pnl_Buttons.TabIndex = 38;
             // 
-            // button2
+            // btn_Edit
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button2.Location = new System.Drawing.Point(371, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 24);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Edit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_Edit.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Edit.Location = new System.Drawing.Point(259, 0);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(75, 24);
+            this.btn_Edit.TabIndex = 40;
+            this.btn_Edit.Text = "Editar";
+            this.btn_Edit.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -981,15 +983,16 @@ namespace TGS {
             this.panel2.Size = new System.Drawing.Size(37, 24);
             this.panel2.TabIndex = 39;
             // 
-            // button3
+            // btn_Delet
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button3.Location = new System.Drawing.Point(259, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 24);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Delet.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_Delet.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Delet.Location = new System.Drawing.Point(371, 0);
+            this.btn_Delet.Name = "btn_Delet";
+            this.btn_Delet.Size = new System.Drawing.Size(75, 24);
+            this.btn_Delet.TabIndex = 38;
+            this.btn_Delet.Text = "Excluir";
+            this.btn_Delet.UseVisualStyleBackColor = true;
             // 
             // DetailsPage
             // 
@@ -1039,47 +1042,47 @@ namespace TGS {
         private System.Windows.Forms.Label lbl_Welcome;
         private System.Windows.Forms.PictureBox img_LogoMenu;
         private System.Windows.Forms.TableLayoutPanel tb_Details;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbl_DetailsTitle;
+        private System.Windows.Forms.Label lbl_TitleDetail1;
+        private System.Windows.Forms.Label lbl_TitleDetail2;
+        private System.Windows.Forms.Label lbl_TitleDetail3;
+        private System.Windows.Forms.Label lbl_TitleDetail4;
+        private System.Windows.Forms.Label lbl_TitleDetail5;
+        private System.Windows.Forms.Label lbl_TitleDetail6;
+        private System.Windows.Forms.Label lbl_TitleDetail7;
+        private System.Windows.Forms.Label lbl_TitleDetail8;
+        private System.Windows.Forms.Label lbl_TitleDetail9;
+        private System.Windows.Forms.Label lbl_TitleDetail10;
+        private System.Windows.Forms.Label lbl_TitleDetail11;
+        private System.Windows.Forms.Label lbl_TitleDetail12;
+        private System.Windows.Forms.Label lbl_TitleDetail13;
+        private System.Windows.Forms.Label lbl_TitleDetail14;
+        private System.Windows.Forms.Label lbl_TitleDetail15;
+        private System.Windows.Forms.Label lbl_TitleDetail16;
+        private System.Windows.Forms.Label lbl_TitleDetail17;
+        private System.Windows.Forms.Label lbl_TitleDetail18;
+        private System.Windows.Forms.TextBox txt_Detail1;
+        private System.Windows.Forms.TextBox txt_Detail2;
+        private System.Windows.Forms.TextBox txt_Detail3;
+        private System.Windows.Forms.TextBox txt_Detail4;
+        private System.Windows.Forms.TextBox txt_Detail5;
+        private System.Windows.Forms.TextBox txt_Detail6;
+        private System.Windows.Forms.TextBox txt_Detail7;
+        private System.Windows.Forms.TextBox txt_Detail8;
+        private System.Windows.Forms.TextBox txt_Detail9;
+        private System.Windows.Forms.TextBox txt_Detail10;
+        private System.Windows.Forms.TextBox txt_Detail11;
+        private System.Windows.Forms.TextBox txt_Detail12;
+        private System.Windows.Forms.TextBox txt_Detail13;
+        private System.Windows.Forms.TextBox txt_Detail14;
+        private System.Windows.Forms.TextBox txt_Detail15;
+        private System.Windows.Forms.TextBox txt_Detail16;
+        private System.Windows.Forms.TextBox txt_Detail17;
+        private System.Windows.Forms.TextBox txt_Detail18;
+        private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Panel pnl_Buttons;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Delet;
     }
 }

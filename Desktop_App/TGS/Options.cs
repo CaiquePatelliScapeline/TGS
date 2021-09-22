@@ -19,12 +19,12 @@ namespace TGS {
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
-
         }
 
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
+        AlterPageController alterPageController = new AlterPageController();
 
         // Fields
         private int borderSize = 2;
@@ -129,15 +129,15 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(ActiveForm);
+            headerController.Maximize(ActiveForm);
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
 
@@ -169,19 +169,19 @@ namespace TGS {
         }
 
         private void btn_MenuHome_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "home");
+            alterPageController.AlterPage(ActiveForm, "home");
         }
 
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "calendar");
+            alterPageController.AlterPage(ActiveForm, "calendar");
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(null, "chat");
+            alterPageController.AlterPage(null, "chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "patients");
+            alterPageController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
@@ -191,51 +191,51 @@ namespace TGS {
 
         //Body
         private void img_IconOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-list"); 
+            alterPageController.AlterPage(ActiveForm, "employee-list"); 
         }
 
         private void lbl_TitleOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-list");
+            alterPageController.AlterPage(ActiveForm, "employee-list");
         }
 
         private void img_ArrowOption1_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "employee-list");
+            alterPageController.AlterPage(ActiveForm, "employee-list");
         }
 
         private void img_TitleOption2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-list");
+            alterPageController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void lbl_TitleOptions2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-list");
+            alterPageController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void img_ArrowOptions2_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "consult-category-list");
+            alterPageController.AlterPage(ActiveForm, "consult-category-list");
         }
 
         private void img_TitleOptions3_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "support");
+            alterPageController.AlterPage(ActiveForm, "support");
         }
 
         private void lbl_TitleOptions3_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "support");
+            alterPageController.AlterPage(ActiveForm, "support");
         }
 
         private void img_ArrowOptions3_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "support");
+            alterPageController.AlterPage(ActiveForm, "support");
         }
 
         private void img_TitleOptions4_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "chat-options");
+            alterPageController.AlterPage(ActiveForm, "chat-options");
         }
 
         private void lbl_TitleOptions4_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "chat-options");
+            alterPageController.AlterPage(ActiveForm, "chat-options");
         }
 
         private void img_ArrowOptions4_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "chat-options");
+            alterPageController.AlterPage(ActiveForm, "chat-options");
         }
     }
 }

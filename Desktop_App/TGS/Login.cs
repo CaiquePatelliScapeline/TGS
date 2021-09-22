@@ -17,7 +17,7 @@ namespace TGS {
         }
 
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
 
 
@@ -100,11 +100,11 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
 

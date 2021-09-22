@@ -35,8 +35,9 @@ namespace TGS {
 
 
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
+        AlterPageController alterPageController = new AlterPageController();
 
         // Fields
         private int borderSize = 2;
@@ -141,15 +142,15 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(ActiveForm);
+            headerController.Maximize(ActiveForm);
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
 
@@ -181,19 +182,19 @@ namespace TGS {
         }
         
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "calendar");
+            alterPageController.AlterPage(ActiveForm, "calendar");
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(null,"chat");
+            alterPageController.AlterPage(null,"chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "patients");
+            alterPageController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuOptions_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "options");
+            alterPageController.AlterPage(ActiveForm, "options");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {

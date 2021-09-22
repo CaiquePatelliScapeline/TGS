@@ -12,6 +12,8 @@ namespace TGS {
             InitializeComponent();
         }
 
+        AlterPageController alterPageController = new AlterPageController();
+
         protected override void WndProc(ref Message m) {
             const int WM_NCCALCSIZE = 0x0083;//Standar Title Bar - Snap Window
 
@@ -22,9 +24,7 @@ namespace TGS {
         }
         private void timer1_Tick(object sender, EventArgs e) {
             timer1.Enabled = false;
-            this.Hide();
-            Login login = new Login();
-            login.ShowDialog();
+            alterPageController.AlterPage(ActiveForm, "login");
         }
     }
 }

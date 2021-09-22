@@ -24,9 +24,9 @@ namespace TGS {
         }
 
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
-
+        AlterPageController alterPageController = new AlterPageController();
 
         // Fields
         private int borderSize = 2;
@@ -131,15 +131,15 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(ActiveForm);
+            headerController.Maximize(ActiveForm);
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
         
@@ -171,23 +171,23 @@ namespace TGS {
         }
 
         private void btn_MenuHome_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "home");
+            alterPageController.AlterPage(ActiveForm, "home");
         }
 
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "calendar");
+            alterPageController.AlterPage(ActiveForm, "calendar");
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(null, "chat");
+            alterPageController.AlterPage(null, "chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "patients");
+            alterPageController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuOptions_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "options");
+            alterPageController.AlterPage(ActiveForm, "options");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
@@ -197,19 +197,19 @@ namespace TGS {
         private void btn_Register_Click(object sender, EventArgs e) {
             switch (listRender) {
                 case "patients":
-                    mainController.AlterPage(ActiveForm, "patients-registration");
+                    alterPageController.AlterPage(ActiveForm, "patients-registration");
                     break;
                 case "employees":
-                    mainController.AlterPage(ActiveForm, "employee-registration");
+                    alterPageController.AlterPage(ActiveForm, "employee-registration");
                     break;
                 case "consults":
-                    mainController.AlterPage(ActiveForm, "consults-registration");
+                    alterPageController.AlterPage(ActiveForm, "consults-registration");
                     break;
                 case "consult-categories":
-                    mainController.AlterPage(ActiveForm, "consult-category-registration");
+                    alterPageController.AlterPage(ActiveForm, "consult-category-registration");
                     break;
                 default:
-                    mainController.Errors("404", "Página não encontrada!");
+                    alterPageController.Errors("404", "Página não encontrada!");
                     break;
             }
         }
@@ -230,7 +230,7 @@ namespace TGS {
                     lbl_Title.Text = "Categorias de Consulta";
                     break;
                 default:
-                    mainController.Errors("404", "Pagina não encontrada!");
+                    alterPageController.Errors("404", "Pagina não encontrada!");
                     break;
             }
         }

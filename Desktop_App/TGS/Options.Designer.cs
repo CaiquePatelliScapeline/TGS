@@ -44,19 +44,19 @@ namespace TGS {
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.pnl_Content = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnl_Option1 = new System.Windows.Forms.Panel();
             this.lbl_TitleOption1 = new System.Windows.Forms.Label();
             this.img_ArrowOption1 = new System.Windows.Forms.PictureBox();
             this.img_IconOption1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnl_Option2 = new System.Windows.Forms.Panel();
             this.lbl_TitleOptions2 = new System.Windows.Forms.Label();
             this.img_TitleOption2 = new System.Windows.Forms.PictureBox();
             this.img_ArrowOptions2 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_Option3 = new System.Windows.Forms.Panel();
             this.lbl_TitleOptions3 = new System.Windows.Forms.Label();
             this.img_TitleOptions3 = new System.Windows.Forms.PictureBox();
             this.img_ArrowOptions3 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnl_Option4 = new System.Windows.Forms.Panel();
             this.lbl_TitleOptions4 = new System.Windows.Forms.Label();
             this.img_TitleOptions4 = new System.Windows.Forms.PictureBox();
             this.img_ArrowOptions4 = new System.Windows.Forms.PictureBox();
@@ -67,16 +67,16 @@ namespace TGS {
             this.pnl_TitleBar.SuspendLayout();
             this.pnl_Content.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnl_Option1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOption1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconOption1)).BeginInit();
-            this.panel3.SuspendLayout();
+            this.pnl_Option2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOption2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions2)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.pnl_Option3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOptions3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions3)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.pnl_Option4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOptions4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions4)).BeginInit();
             this.SuspendLayout();
@@ -101,6 +101,7 @@ namespace TGS {
             // 
             // btn_MenuLogout
             // 
+            this.btn_MenuLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_MenuLogout.FlatAppearance.BorderSize = 0;
             this.btn_MenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -126,6 +127,7 @@ namespace TGS {
             // 
             // btn_MenuOptions
             // 
+            this.btn_MenuOptions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuOptions.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuOptions.FlatAppearance.BorderSize = 0;
             this.btn_MenuOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -150,6 +152,7 @@ namespace TGS {
             // 
             // btn_MenuPacientes
             // 
+            this.btn_MenuPacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuPacientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuPacientes.FlatAppearance.BorderSize = 0;
             this.btn_MenuPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,6 +178,7 @@ namespace TGS {
             // 
             // btn_MenuChat
             // 
+            this.btn_MenuChat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuChat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuChat.FlatAppearance.BorderSize = 0;
             this.btn_MenuChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -200,6 +204,7 @@ namespace TGS {
             // 
             // btn_MenuCalendar
             // 
+            this.btn_MenuCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuCalendar.FlatAppearance.BorderSize = 0;
             this.btn_MenuCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -225,6 +230,7 @@ namespace TGS {
             // 
             // btn_MenuHome
             // 
+            this.btn_MenuHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuHome.FlatAppearance.BorderSize = 0;
             this.btn_MenuHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -272,6 +278,7 @@ namespace TGS {
             // 
             // btn_MenuHamburger
             // 
+            this.btn_MenuHamburger.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHamburger.FlatAppearance.BorderSize = 0;
             this.btn_MenuHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MenuHamburger.IconChar = FontAwesome.Sharp.IconChar.Bars;
@@ -340,6 +347,7 @@ namespace TGS {
             // 
             this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.FlatAppearance.BorderSize = 0;
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Minimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
@@ -358,6 +366,7 @@ namespace TGS {
             // 
             this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Maximize.FlatAppearance.BorderSize = 0;
             this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Maximize.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
@@ -376,6 +385,7 @@ namespace TGS {
             // 
             this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(74)))), ((int)(((byte)(130)))));
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Close.FlatAppearance.BorderSize = 0;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Close.IconChar = FontAwesome.Sharp.IconChar.Times;
@@ -406,10 +416,10 @@ namespace TGS {
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Option1, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Option2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Option3, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pnl_Option4, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -427,22 +437,23 @@ namespace TGS {
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1182, 811);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // panel2
+            // pnl_Option1
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.lbl_TitleOption1);
-            this.panel2.Controls.Add(this.img_ArrowOption1);
-            this.panel2.Controls.Add(this.img_IconOption1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(62, 28);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1057, 114);
-            this.panel2.TabIndex = 0;
+            this.pnl_Option1.BackColor = System.Drawing.Color.White;
+            this.pnl_Option1.Controls.Add(this.lbl_TitleOption1);
+            this.pnl_Option1.Controls.Add(this.img_ArrowOption1);
+            this.pnl_Option1.Controls.Add(this.img_IconOption1);
+            this.pnl_Option1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Option1.ForeColor = System.Drawing.Color.Black;
+            this.pnl_Option1.Location = new System.Drawing.Point(62, 28);
+            this.pnl_Option1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option1.Name = "pnl_Option1";
+            this.pnl_Option1.Size = new System.Drawing.Size(1057, 114);
+            this.pnl_Option1.TabIndex = 0;
             // 
             // lbl_TitleOption1
             // 
+            this.lbl_TitleOption1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOption1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOption1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleOption1.Location = new System.Drawing.Point(91, 0);
@@ -451,10 +462,13 @@ namespace TGS {
             this.lbl_TitleOption1.TabIndex = 3;
             this.lbl_TitleOption1.Text = "Cadastro de Funcionários";
             this.lbl_TitleOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOption1.Click += new System.EventHandler(this.lbl_TitleOption1_Click);
+            this.lbl_TitleOption1.Click += new System.EventHandler(this.Option1_Click);
+            this.lbl_TitleOption1.MouseLeave += new System.EventHandler(this.Option1_MouseLeave);
+            this.lbl_TitleOption1.MouseHover += new System.EventHandler(this.Option1_MouseHover);
             // 
             // img_ArrowOption1
             // 
+            this.img_ArrowOption1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOption1.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOption1.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOption1.Image")));
             this.img_ArrowOption1.Location = new System.Drawing.Point(967, 0);
@@ -464,10 +478,13 @@ namespace TGS {
             this.img_ArrowOption1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOption1.TabIndex = 2;
             this.img_ArrowOption1.TabStop = false;
-            this.img_ArrowOption1.Click += new System.EventHandler(this.img_ArrowOption1_Click);
+            this.img_ArrowOption1.Click += new System.EventHandler(this.Option1_Click);
+            this.img_ArrowOption1.MouseLeave += new System.EventHandler(this.Option1_MouseLeave);
+            this.img_ArrowOption1.MouseHover += new System.EventHandler(this.Option1_MouseHover);
             // 
             // img_IconOption1
             // 
+            this.img_IconOption1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_IconOption1.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_IconOption1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconOption1.Image")));
             this.img_IconOption1.Location = new System.Drawing.Point(0, 0);
@@ -477,23 +494,26 @@ namespace TGS {
             this.img_IconOption1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_IconOption1.TabIndex = 0;
             this.img_IconOption1.TabStop = false;
-            this.img_IconOption1.Click += new System.EventHandler(this.img_IconOption1_Click);
+            this.img_IconOption1.Click += new System.EventHandler(this.Option1_Click);
+            this.img_IconOption1.MouseLeave += new System.EventHandler(this.Option1_MouseLeave);
+            this.img_IconOption1.MouseHover += new System.EventHandler(this.Option1_MouseHover);
             // 
-            // panel3
+            // pnl_Option2
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.lbl_TitleOptions2);
-            this.panel3.Controls.Add(this.img_TitleOption2);
-            this.panel3.Controls.Add(this.img_ArrowOptions2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(62, 182);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1057, 114);
-            this.panel3.TabIndex = 1;
+            this.pnl_Option2.BackColor = System.Drawing.Color.White;
+            this.pnl_Option2.Controls.Add(this.lbl_TitleOptions2);
+            this.pnl_Option2.Controls.Add(this.img_TitleOption2);
+            this.pnl_Option2.Controls.Add(this.img_ArrowOptions2);
+            this.pnl_Option2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Option2.Location = new System.Drawing.Point(62, 182);
+            this.pnl_Option2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option2.Name = "pnl_Option2";
+            this.pnl_Option2.Size = new System.Drawing.Size(1057, 114);
+            this.pnl_Option2.TabIndex = 1;
             // 
             // lbl_TitleOptions2
             // 
+            this.lbl_TitleOptions2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleOptions2.Location = new System.Drawing.Point(91, 0);
@@ -502,10 +522,13 @@ namespace TGS {
             this.lbl_TitleOptions2.TabIndex = 1;
             this.lbl_TitleOptions2.Text = "Cadastro de Categoria de Consulta";
             this.lbl_TitleOptions2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOptions2.Click += new System.EventHandler(this.lbl_TitleOptions2_Click);
+            this.lbl_TitleOptions2.Click += new System.EventHandler(this.Option2_Click);
+            this.lbl_TitleOptions2.MouseLeave += new System.EventHandler(this.Option2_MouseLeave);
+            this.lbl_TitleOptions2.MouseHover += new System.EventHandler(this.Option2_MouseHover);
             // 
             // img_TitleOption2
             // 
+            this.img_TitleOption2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_TitleOption2.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOption2.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOption2.Image")));
             this.img_TitleOption2.Location = new System.Drawing.Point(0, 0);
@@ -515,10 +538,13 @@ namespace TGS {
             this.img_TitleOption2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOption2.TabIndex = 0;
             this.img_TitleOption2.TabStop = false;
-            this.img_TitleOption2.Click += new System.EventHandler(this.img_TitleOption2_Click);
+            this.img_TitleOption2.Click += new System.EventHandler(this.Option2_Click);
+            this.img_TitleOption2.MouseLeave += new System.EventHandler(this.Option2_MouseLeave);
+            this.img_TitleOption2.MouseHover += new System.EventHandler(this.Option2_MouseHover);
             // 
             // img_ArrowOptions2
             // 
+            this.img_ArrowOptions2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions2.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions2.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions2.Image")));
             this.img_ArrowOptions2.Location = new System.Drawing.Point(967, 0);
@@ -528,23 +554,26 @@ namespace TGS {
             this.img_ArrowOptions2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions2.TabIndex = 2;
             this.img_ArrowOptions2.TabStop = false;
-            this.img_ArrowOptions2.Click += new System.EventHandler(this.img_ArrowOptions2_Click);
+            this.img_ArrowOptions2.Click += new System.EventHandler(this.Option2_Click);
+            this.img_ArrowOptions2.MouseLeave += new System.EventHandler(this.Option2_MouseLeave);
+            this.img_ArrowOptions2.MouseHover += new System.EventHandler(this.Option2_MouseHover);
             // 
-            // panel4
+            // pnl_Option3
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.lbl_TitleOptions3);
-            this.panel4.Controls.Add(this.img_TitleOptions3);
-            this.panel4.Controls.Add(this.img_ArrowOptions3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(62, 336);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1057, 114);
-            this.panel4.TabIndex = 2;
+            this.pnl_Option3.BackColor = System.Drawing.Color.White;
+            this.pnl_Option3.Controls.Add(this.lbl_TitleOptions3);
+            this.pnl_Option3.Controls.Add(this.img_TitleOptions3);
+            this.pnl_Option3.Controls.Add(this.img_ArrowOptions3);
+            this.pnl_Option3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Option3.Location = new System.Drawing.Point(62, 336);
+            this.pnl_Option3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option3.Name = "pnl_Option3";
+            this.pnl_Option3.Size = new System.Drawing.Size(1057, 114);
+            this.pnl_Option3.TabIndex = 2;
             // 
             // lbl_TitleOptions3
             // 
+            this.lbl_TitleOptions3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleOptions3.Location = new System.Drawing.Point(91, 0);
@@ -553,10 +582,13 @@ namespace TGS {
             this.lbl_TitleOptions3.TabIndex = 1;
             this.lbl_TitleOptions3.Text = "Suporte";
             this.lbl_TitleOptions3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOptions3.Click += new System.EventHandler(this.lbl_TitleOptions3_Click);
+            this.lbl_TitleOptions3.Click += new System.EventHandler(this.Options3_Click);
+            this.lbl_TitleOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.lbl_TitleOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
             // img_TitleOptions3
             // 
+            this.img_TitleOptions3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_TitleOptions3.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOptions3.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOptions3.Image")));
             this.img_TitleOptions3.Location = new System.Drawing.Point(0, 0);
@@ -566,10 +598,13 @@ namespace TGS {
             this.img_TitleOptions3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOptions3.TabIndex = 0;
             this.img_TitleOptions3.TabStop = false;
-            this.img_TitleOptions3.Click += new System.EventHandler(this.img_TitleOptions3_Click);
+            this.img_TitleOptions3.Click += new System.EventHandler(this.Options3_Click);
+            this.img_TitleOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.img_TitleOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
             // img_ArrowOptions3
             // 
+            this.img_ArrowOptions3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions3.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions3.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions3.Image")));
             this.img_ArrowOptions3.Location = new System.Drawing.Point(967, 0);
@@ -579,23 +614,26 @@ namespace TGS {
             this.img_ArrowOptions3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions3.TabIndex = 3;
             this.img_ArrowOptions3.TabStop = false;
-            this.img_ArrowOptions3.Click += new System.EventHandler(this.img_ArrowOptions3_Click);
+            this.img_ArrowOptions3.Click += new System.EventHandler(this.Options3_Click);
+            this.img_ArrowOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.img_ArrowOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
-            // panel5
+            // pnl_Option4
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.lbl_TitleOptions4);
-            this.panel5.Controls.Add(this.img_TitleOptions4);
-            this.panel5.Controls.Add(this.img_ArrowOptions4);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(62, 490);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1057, 114);
-            this.panel5.TabIndex = 3;
+            this.pnl_Option4.BackColor = System.Drawing.Color.White;
+            this.pnl_Option4.Controls.Add(this.lbl_TitleOptions4);
+            this.pnl_Option4.Controls.Add(this.img_TitleOptions4);
+            this.pnl_Option4.Controls.Add(this.img_ArrowOptions4);
+            this.pnl_Option4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_Option4.Location = new System.Drawing.Point(62, 490);
+            this.pnl_Option4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option4.Name = "pnl_Option4";
+            this.pnl_Option4.Size = new System.Drawing.Size(1057, 114);
+            this.pnl_Option4.TabIndex = 3;
             // 
             // lbl_TitleOptions4
             // 
+            this.lbl_TitleOptions4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleOptions4.Location = new System.Drawing.Point(91, 0);
@@ -604,10 +642,13 @@ namespace TGS {
             this.lbl_TitleOptions4.TabIndex = 5;
             this.lbl_TitleOptions4.Text = "Configuração de Chat";
             this.lbl_TitleOptions4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOptions4.Click += new System.EventHandler(this.lbl_TitleOptions4_Click);
+            this.lbl_TitleOptions4.Click += new System.EventHandler(this.Options4_Click);
+            this.lbl_TitleOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.lbl_TitleOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // img_TitleOptions4
             // 
+            this.img_TitleOptions4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_TitleOptions4.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOptions4.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOptions4.Image")));
             this.img_TitleOptions4.Location = new System.Drawing.Point(0, 0);
@@ -617,10 +658,13 @@ namespace TGS {
             this.img_TitleOptions4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOptions4.TabIndex = 4;
             this.img_TitleOptions4.TabStop = false;
-            this.img_TitleOptions4.Click += new System.EventHandler(this.img_TitleOptions4_Click);
+            this.img_TitleOptions4.Click += new System.EventHandler(this.Options4_Click);
+            this.img_TitleOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.img_TitleOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // img_ArrowOptions4
             // 
+            this.img_ArrowOptions4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions4.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions4.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions4.Image")));
             this.img_ArrowOptions4.Location = new System.Drawing.Point(967, 0);
@@ -630,7 +674,9 @@ namespace TGS {
             this.img_ArrowOptions4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions4.TabIndex = 4;
             this.img_ArrowOptions4.TabStop = false;
-            this.img_ArrowOptions4.Click += new System.EventHandler(this.img_ArrowOptions4_Click);
+            this.img_ArrowOptions4.Click += new System.EventHandler(this.Options4_Click);
+            this.img_ArrowOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.img_ArrowOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // Options
             // 
@@ -655,16 +701,16 @@ namespace TGS {
             this.pnl_TitleBar.PerformLayout();
             this.pnl_Content.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
+            this.pnl_Option1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOption1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_IconOption1)).EndInit();
-            this.panel3.ResumeLayout(false);
+            this.pnl_Option2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOption2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions2)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.pnl_Option3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOptions3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions3)).EndInit();
-            this.panel5.ResumeLayout(false);
+            this.pnl_Option4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_TitleOptions4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_ArrowOptions4)).EndInit();
             this.ResumeLayout(false);
@@ -692,18 +738,18 @@ namespace TGS {
         private System.Windows.Forms.Label lbl_Title;
         private System.Windows.Forms.PictureBox img_LogoMenu;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnl_Option1;
         private System.Windows.Forms.PictureBox img_ArrowOption1;
         private System.Windows.Forms.PictureBox img_IconOption1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnl_Option2;
         private System.Windows.Forms.Label lbl_TitleOptions2;
         private System.Windows.Forms.PictureBox img_TitleOption2;
         private System.Windows.Forms.PictureBox img_ArrowOptions2;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_Option3;
         private System.Windows.Forms.Label lbl_TitleOptions3;
         private System.Windows.Forms.PictureBox img_TitleOptions3;
         private System.Windows.Forms.PictureBox img_ArrowOptions3;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnl_Option4;
         private System.Windows.Forms.Label lbl_TitleOptions4;
         private System.Windows.Forms.PictureBox img_TitleOptions4;
         private System.Windows.Forms.PictureBox img_ArrowOptions4;

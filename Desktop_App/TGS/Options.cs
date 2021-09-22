@@ -19,6 +19,7 @@ namespace TGS {
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+
         }
 
         //Classes
@@ -190,52 +191,52 @@ namespace TGS {
 
 
         //Body
-        private void img_IconOption1_Click(object sender, EventArgs e) {
+        private void Option1_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "employee-list"); 
         }
 
-        private void lbl_TitleOption1_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "employee-list");
-        }
-
-        private void img_ArrowOption1_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "employee-list");
-        }
-
-        private void img_TitleOption2_Click(object sender, EventArgs e) {
+        private void Option2_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "consult-category-list");
         }
 
-        private void lbl_TitleOptions2_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "consult-category-list");
-        }
-
-        private void img_ArrowOptions2_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "consult-category-list");
-        }
-
-        private void img_TitleOptions3_Click(object sender, EventArgs e) {
+        private void Options3_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "support");
         }
 
-        private void lbl_TitleOptions3_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "support");
-        }
-
-        private void img_ArrowOptions3_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "support");
-        }
-
-        private void img_TitleOptions4_Click(object sender, EventArgs e) {
+        private void Options4_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "chat-options");
         }
 
-        private void lbl_TitleOptions4_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "chat-options");
+        private void Option1_MouseHover(object sender, EventArgs e) {
+            pnl_Option1.BackColor = Color.FromArgb(212, 231, 255);
         }
 
-        private void img_ArrowOptions4_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "chat-options");
+        private void Option1_MouseLeave(object sender, EventArgs e) {
+            pnl_Option1.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option2_MouseHover(object sender, EventArgs e) {
+            pnl_Option2.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option2_MouseLeave(object sender, EventArgs e) {
+            pnl_Option2.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option3_MouseHover(object sender, EventArgs e) {
+            pnl_Option3.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option3_MouseLeave(object sender, EventArgs e) {
+            pnl_Option3.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option4_MouseHover(object sender, EventArgs e) {
+            pnl_Option4.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option4_MouseLeave(object sender, EventArgs e) {
+            pnl_Option4.BackColor = Color.FromArgb(255, 255, 255);
         }
     }
 }

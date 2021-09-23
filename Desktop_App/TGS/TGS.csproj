@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,7 +33,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="dataBase\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 

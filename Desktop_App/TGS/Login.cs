@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using TGS.dataBase;
 
 namespace TGS {
     public partial class Login : Form {
@@ -19,6 +20,7 @@ namespace TGS {
         //Classes
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
+        ProceduresRegistration proceduresRegistration = new ProceduresRegistration();
 
 
         //Drag Form

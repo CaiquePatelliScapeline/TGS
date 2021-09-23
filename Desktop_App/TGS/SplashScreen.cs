@@ -22,6 +22,7 @@ namespace TGS {
             }
             base.WndProc(ref m);
         }
+
         private void timer1_Tick(object sender, EventArgs e) {
             timer1.Enabled = false;
             alterPageController.AlterPage(ActiveForm, "login");

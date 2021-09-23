@@ -110,7 +110,7 @@ namespace TGS {
 
         //Body
         private void btn_Login_Click(object sender, EventArgs e) {
-            authenticateController.Login(txt_User.Text, txt_Password.Text, Login.ActiveForm);
+            authenticateController.Login(txt_User.Text, txt_Password.Text, ActiveForm);
         }
     }
 }

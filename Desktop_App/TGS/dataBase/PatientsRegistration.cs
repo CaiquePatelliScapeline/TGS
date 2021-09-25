@@ -18,7 +18,7 @@ namespace TGS.dataBase {
             if (!(emailValidate.IsMatch(email))) {
                 MyMsgBox.Show("Error", "E-mail inválido!", false);
             } else {
-                query.CommandText = $"INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES ('{}')";
+                //query.CommandText = $"INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES ('{}')";
                 try {
                     query.Connection = dbConn.Connect();
                     query.ExecuteNonQuery();

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using TGS.Views;
 
-namespace TGS {
+namespace TGS.Controllers.Main {
     class AlterPageController {
         //Fields
         private String chatLink = "whatsapp://";

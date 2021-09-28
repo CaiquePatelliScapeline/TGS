@@ -1,5 +1,5 @@
 ﻿
-namespace TGS {
+namespace TGS.Views {
     partial class SplashScreen {
         /// <summary>
         /// Required designer variable.

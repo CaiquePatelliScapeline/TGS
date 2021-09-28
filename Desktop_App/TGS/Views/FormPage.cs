@@ -8,8 +8,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TGS.Controllers.Main;
+using TGS.Controllers.Criptography;
 
-namespace TGS {
+namespace TGS.Views {
     public partial class FormPage : Form {
         public FormPage(String form) {
             formRender = form;

@@ -8,8 +8,11 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TGS.Controllers;
+using TGS.Controllers.Main;
+using TGS.Controllers.Criptography;
 
-namespace TGS {
+namespace TGS.Views {
     public partial class ListPage : Form {
         public ListPage(string list) {
             listRender = list;

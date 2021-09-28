@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace TGS.dataBase {
+namespace TGS.Model {
     class DBConnection {
         
         public DBConnection() {

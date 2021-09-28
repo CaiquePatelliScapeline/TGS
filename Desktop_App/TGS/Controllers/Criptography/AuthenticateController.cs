@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using TGS.Controllers.Main;
 
-namespace TGS {
+namespace TGS.Controllers.Criptography {
     class AuthenticateController {
         AlterPageController alterPageController = new AlterPageController();
 

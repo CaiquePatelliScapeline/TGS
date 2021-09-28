@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
+using TGS.Model;
+using TGS.Views;
 
-namespace TGS.dataBase {
+namespace TGS.Controllers.Register {
     class ProceduresRegistration {
         
         // Classes

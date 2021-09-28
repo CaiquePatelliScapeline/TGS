@@ -1,5 +1,5 @@
 ﻿
-namespace TGS {
+namespace TGS.Views {
     partial class Options {
         /// <summary>
         /// Required designer variable.

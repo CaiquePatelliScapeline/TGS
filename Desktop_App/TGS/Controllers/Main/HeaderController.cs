@@ -9,8 +9,9 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TGS.Views;
 
-namespace TGS {
+namespace TGS.Controllers.Main {
     class HeaderController {
 
         // Classes

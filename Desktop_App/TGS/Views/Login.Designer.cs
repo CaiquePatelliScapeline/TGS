@@ -1,5 +1,5 @@
 ﻿
-namespace TGS {
+namespace TGS.Views {
     partial class Login {
         /// <summary>
         ///  Required designer variable.
@@ -89,7 +89,7 @@ namespace TGS {
             this.txt_User.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_User.ForeColor = System.Drawing.Color.Black;
             this.txt_User.Location = new System.Drawing.Point(399, 63);
-            this.txt_User.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_User.Margin = new System.Windows.Forms.Padding(4);
             this.txt_User.Name = "txt_User";
             this.txt_User.Size = new System.Drawing.Size(782, 43);
             this.txt_User.TabIndex = 17;
@@ -118,7 +118,7 @@ namespace TGS {
             this.txt_Password.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Password.ForeColor = System.Drawing.Color.Black;
             this.txt_Password.Location = new System.Drawing.Point(399, 176);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(782, 43);
@@ -155,7 +155,7 @@ namespace TGS {
             this.btn_Login.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Login.ForeColor = System.Drawing.Color.White;
             this.btn_Login.Location = new System.Drawing.Point(1063, 230);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(118, 46);
             this.btn_Login.TabIndex = 15;
@@ -184,7 +184,7 @@ namespace TGS {
             this.img_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.img_Logo.Image = ((System.Drawing.Image)(resources.GetObject("img_Logo.Image")));
             this.img_Logo.Location = new System.Drawing.Point(0, 98);
-            this.img_Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.img_Logo.Margin = new System.Windows.Forms.Padding(4);
             this.img_Logo.Name = "img_Logo";
             this.img_Logo.Size = new System.Drawing.Size(1580, 188);
             this.img_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -252,7 +252,7 @@ namespace TGS {
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

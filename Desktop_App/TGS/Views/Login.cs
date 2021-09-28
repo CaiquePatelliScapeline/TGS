@@ -9,10 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using TGS.dataBase;
+using TGS.Controllers;
 using System.Data.SqlClient;
+using TGS.Controllers.Main;
+using TGS.Controllers.Criptography;
 
-namespace TGS {
+namespace TGS.Views {
     public partial class Login : Form {
         public Login() {
             InitializeComponent();
@@ -21,6 +23,7 @@ namespace TGS {
         //Classes
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
+        MD5Hash md5Hash = new MD5Hash();
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

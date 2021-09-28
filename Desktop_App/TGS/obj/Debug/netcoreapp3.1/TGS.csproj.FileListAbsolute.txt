@@ -31,15 +31,7 @@ D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.pdb
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.AssemblyReference.cache
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.DefaultPage.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.FormPage.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Home.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.ListPage.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Login.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.MyMsgBox.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Options.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Properties.Resources.resources
-D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.SplashScreen.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.GenerateResource.cache
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfoInputs.cache
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfo.cs
@@ -85,3 +77,11 @@ D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.DefaultPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.FormPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Home.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.ListPage.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Login.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.MyMsgBox.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Options.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.SplashScreen.resources

@@ -5,8 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using TGS.Controllers.Main;
 
-namespace TGS {
+namespace TGS.Views {
     public partial class SplashScreen : Form {
         public SplashScreen() {
             InitializeComponent();

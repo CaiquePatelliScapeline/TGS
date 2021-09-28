@@ -11,6 +11,8 @@ namespace TGS.dataBase {
                 dbRoute = caiqueRoute;
             } else if (Environment.MachineName == "LENOVO-AMD-GL") {
                 dbRoute = gianlucaRoute;
+            } else {
+                //Rota não identificada
             }
 
             dbConn.ConnectionString = dbRoute;
@@ -20,7 +22,7 @@ namespace TGS.dataBase {
         SqlConnection dbConn = new SqlConnection(); 
 
         // Fields 
-        private const string caiqueRoute = @"Data Source=LAPTOP-2P9K4L2I\SQLEXPRESS; Initial Catalog=DB_TGS;Integrated Security=True";
+        private const string caiqueRoute = @"Data Source=LAPTOP-2P9K4L2I\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True";
         private const string gianlucaRoute = @"Data Source=LENOVO-AMD-GL\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True";
         private string dbRoute;
 

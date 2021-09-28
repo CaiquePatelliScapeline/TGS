@@ -12,10 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="FormPage.cs">
+    <Compile Update="Views\FormPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DefaultPage.cs">
+    <Compile Update="Views\DefaultPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Properties\Resources.Designer.cs">

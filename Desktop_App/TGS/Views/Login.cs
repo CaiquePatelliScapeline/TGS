@@ -13,6 +13,7 @@ using TGS.Controllers;
 using System.Data.SqlClient;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
+using TGS.Controllers.Register;
 
 namespace TGS.Views {
     public partial class Login : Form {
@@ -24,6 +25,8 @@ namespace TGS.Views {
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         MD5Hash md5Hash = new MD5Hash();
+
+        ConsultsRegistration consult = new ConsultsRegistration();
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

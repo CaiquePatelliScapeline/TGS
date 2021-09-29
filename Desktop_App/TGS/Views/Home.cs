@@ -11,15 +11,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
+using TGS.Model;
 
 namespace TGS.Views {
     public partial class Home : Form {
-        
+
         public Home() {
             InitializeComponent();
             CollapseMenu();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            lbl_Welcome.Text = $"Bem-Vindo(a),  {ENV.name}";
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color

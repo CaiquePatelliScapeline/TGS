@@ -10,9 +10,24 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
+using TGS.Controllers.Register;
 
 namespace TGS.Views {
     public partial class FormPage : Form {
+
+        // Classes
+        HeaderController headerController = new HeaderController();
+        AuthenticateController authenticateController = new AuthenticateController();
+        AlterPageController alterPageController = new AlterPageController();
+        EmployeesRegistration employeesRegistration = new EmployeesRegistration();
+        MD5Hash md5Hash = new MD5Hash();
+
+        // Fields
+        private int borderSize = 2;
+        private string formRender;
+        private int formPart = 1;
+        string[] patients = new string[20];
+
         public FormPage(String form) {
             formRender = form;
             InitializeComponent();
@@ -27,25 +42,12 @@ namespace TGS.Views {
             formPart = 1;
         }
 
-        //Classes
-        HeaderController headerController = new HeaderController();
-        AuthenticateController authenticateController = new AuthenticateController();
-        AlterPageController alterPageController = new AlterPageController();
-
-
-        // Fields
-        private int borderSize = 2;
-        private string formRender;
-        private int formPart = 1;
-
-
-        //Drag Form
+        // Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
 
         // Overridden Methods
         protected override void WndProc(ref Message m) {
@@ -197,7 +199,6 @@ namespace TGS.Views {
             authenticateController.Logout(ActiveForm);
         }
 
-
         private void Render() {
             lbl_TitlePart.Visible = false;
             lbl_TitlePart.Visible = false;
@@ -219,6 +220,8 @@ namespace TGS.Views {
             txt_Input8.Visible = true;
             lbl_Title9.Visible = true;
             txt_Input9.Visible = true;
+            lbl_Title10.Visible = true;
+            txt_Input10.Visible = true;
             lbl_Part.Visible   = true;
             btn_Back.Visible   = false;
             btn_Forward.Text = "Cadastrar";
@@ -227,14 +230,19 @@ namespace TGS.Views {
                 case "employees":
                     lbl_Title.Text = "Cadastro de Funcionários";
                     lbl_Title1.Text = "Nome";
-                    lbl_Title2.Text = "Data de Nascimento";
+                    lbl_Title2.Text = "Sobrenome";
                     lbl_Title3.Text = "E-mail";
-                    lbl_Title4.Text = "Gênero";
-                    lbl_Title5.Text = "CRO";
-                    lbl_Title6.Text = "RG";
-                    lbl_Title7.Text = "CPF";
-                    lbl_Title8.Text = "Estado Civil";
-                    lbl_Title9.Text = "Especialidade";
+                    lbl_Title4.Text = "Telefone";
+                    lbl_Title5.Text = "Celular";
+                    lbl_Title6.Text = "CPF";
+                    lbl_Title7.Text = "Senha";
+                    txt_Input7.PasswordChar = Convert.ToChar("*");
+                    lbl_Title8.Visible = false;
+                    txt_Input8.Visible = false;
+                    lbl_Title9.Visible = false;
+                    txt_Input9.Visible = false;
+                    lbl_Title10.Visible = false;
+                    txt_Input10.Visible = false;
                     lbl_Part.Visible = false;
                     break;
                 case "consults-categories":
@@ -256,6 +264,8 @@ namespace TGS.Views {
                     txt_Input8.Visible = false;
                     lbl_Title9.Visible = false;
                     txt_Input9.Visible = false;
+                    lbl_Title10.Visible = false;
+                    txt_Input10.Visible = false;
                     lbl_Part.Visible = false;
                     break;
                 case "patients":
@@ -275,6 +285,8 @@ namespace TGS.Views {
                             lbl_Title8.Text = "Altura";
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
+                            lbl_Title10.Visible = false;
+                            txt_Input10.Visible = false;
                             btn_Forward.Text = "Avançar";
                             break;
                         case 2:
@@ -296,6 +308,8 @@ namespace TGS.Views {
                             txt_Input8.Visible = false;
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
+                            lbl_Title10.Visible = false;
+                            txt_Input10.Visible = false;
                             btn_Back.Visible = true;
                             btn_Forward.Text = "Avançar";
                             break;
@@ -319,6 +333,8 @@ namespace TGS.Views {
                             txt_Input8.Visible = false;
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
+                            lbl_Title10.Visible = false;
+                            txt_Input10.Visible = false;
                             btn_Back.Visible = true;
                             btn_Forward.Text = "Avançar";
                             break;
@@ -337,6 +353,8 @@ namespace TGS.Views {
                             txt_Input8.Visible = false;
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
+                            lbl_Title10.Visible = false;
+                            txt_Input10.Visible = false;
                             btn_Back.Visible = true;
                             break;
                         default:
@@ -359,6 +377,8 @@ namespace TGS.Views {
                     txt_Input8.Visible = false;
                     lbl_Title9.Visible = false;
                     txt_Input9.Visible = false;
+                    lbl_Title10.Visible = false;
+                    txt_Input10.Visible = false;
                     lbl_Part.Visible = false;
                     break;
                 default:
@@ -369,7 +389,12 @@ namespace TGS.Views {
 
         private void btn_Forward_Click(object sender, EventArgs e) {
             if(btn_Forward.Text == "Cadastrar") {
-            
+                switch (formRender) {
+                    case "employees":
+                        string hashPassword = md5Hash.CreateMD5Hash(txt_Input7.Text);
+                        employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, hashPassword);
+                        break;
+                }
             } else if(btn_Forward.Text == "Avançar") {
                 formPart++;
                 Render();

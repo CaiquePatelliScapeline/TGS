@@ -10,15 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Views;
+using TGS.Model;
+using TGS.Controllers.Criptography;
 
 namespace TGS.Controllers.Main {
     class HeaderController {
 
         // Classes
         MyMsgBox MyMsgBox = new MyMsgBox();
+        AuthenticateController authenticateController = new AuthenticateController();
 
         public void Exit() {
             if (MyMsgBox.Show("", "Deseja realmente sair?", true) == DialogResult.Yes) {
+                authenticateController.DestroySession();
                 Application.Exit();
             }
         }

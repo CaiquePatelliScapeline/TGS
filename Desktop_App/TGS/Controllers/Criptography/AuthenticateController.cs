@@ -42,11 +42,15 @@ namespace TGS.Controllers.Criptography {
         }
 
         public void Logout(Form form) {
-            if (MyMsgBox.Show("Deseja realmente sair?", "Atenção", true) == DialogResult.Yes) {
-                Session.Name = "";
-                Session.CPF = "";
+            if (MyMsgBox.Show("Atenção", "Deseja realmente sair?", true) == DialogResult.Yes) {
+                DestroySession();
                 alterPageController.AlterPage(form, "login");
             }
+        }
+
+        public void DestroySession() {
+            Session.Name = "";
+            Session.CPF = "";
         }
     }
 }

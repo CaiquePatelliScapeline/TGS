@@ -24,9 +24,6 @@ namespace TGS.Views {
         //Classes
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
-        MD5Hash md5Hash = new MD5Hash();
-
-        ConsultsRegistration consult = new ConsultsRegistration();
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -114,10 +111,10 @@ namespace TGS.Views {
             headerController.Minimize(ActiveForm);
         }
 
-
         //Body
         private void btn_Login_Click(object sender, EventArgs e) {
             authenticateController.Login(txt_User.Text, txt_Password.Text, ActiveForm);
+            txt_User.Focus();
         }
     }
 }

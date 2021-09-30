@@ -22,25 +22,29 @@ namespace TGS.Controllers.Criptography {
             if (!(emailValidate.IsMatch(email))) {
                 MyMsgBox.Show("Error", "E-mail inválido!", false);
             } else {
+                string hashPassword = md5Hash.CreateMD5Hash(password);
                 query.Connection = dbConn.Connect();
-                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE FROM TB_EMPLOYEES WHERE EMAIL = '{email}' AND PASSWORD_EMPLOYEE = '{password}';";
-                query.ExecuteNonQuery();
-
+                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE FROM TB_EMPLOYEES WHERE EMAIL = '{email}' AND PASSWORD_EMPLOYEE = '{hashPassword}';";
                 reader = query.ExecuteReader();
-                reader.Read();
-                ENV.name = $"{reader["NAME_EMPLOYEE"]}";
-                ENV.email = $"{reader["CPF_EMPLOYEE"]}";
-                MessageBox.Show($"{reader["CPF_EMPLOYEE"]}", $"{reader["NAME_EMPLOYEE"]}");
+                if (reader.Read()) {
+                    Session.Name = $"{reader["NAME_EMPLOYEE"]}";
+                    Session.CPF = $"{reader["CPF_EMPLOYEE"]}";
+                    // MessageBox.Show($"{reader["CPF_EMPLOYEE"]}", $"{reader["NAME_EMPLOYEE"]}");
+                    reader.Close();
+                    dbConn.Disconnect();
+                    alterPageController.AlterPage(form, "home");
+                } else {
+                    MyMsgBox.Show("Error", "E-mail ou senha inválida!", false);
+                }
                 reader.Close();
-
                 dbConn.Disconnect();
-
-                alterPageController.AlterPage(form, "home");
             }
         }
 
         public void Logout(Form form) {
-            if (MessageBox.Show("Deseja realmente sair?", "Atenção", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+            if (MyMsgBox.Show("Deseja realmente sair?", "Atenção", true) == DialogResult.Yes) {
+                Session.Name = "";
+                Session.CPF = "";
                 alterPageController.AlterPage(form, "login");
             }
         }

@@ -21,7 +21,7 @@ namespace TGS.Views {
             CollapseMenu();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            lbl_Welcome.Text = $"Bem-Vindo(a),  {ENV.name}";
+            lbl_Welcome.Text = $"Bem-Vindo(a), {Session.Name}";
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color

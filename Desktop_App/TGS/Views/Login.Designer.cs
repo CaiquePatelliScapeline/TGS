@@ -54,7 +54,7 @@ namespace TGS.Views {
             this.pnl_Login.Location = new System.Drawing.Point(0, 0);
             this.pnl_Login.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_Login.Name = "pnl_Login";
-            this.pnl_Login.Size = new System.Drawing.Size(1580, 851);
+            this.pnl_Login.Size = new System.Drawing.Size(1264, 681);
             this.pnl_Login.TabIndex = 8;
             // 
             // tableLayoutPanel1
@@ -69,17 +69,17 @@ namespace TGS.Views {
             this.tableLayoutPanel1.Controls.Add(this.lbl_Password, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btn_Login, 1, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 390);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 311);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1580, 461);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 370);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
             // txt_User
@@ -88,10 +88,9 @@ namespace TGS.Views {
             this.txt_User.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_User.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_User.ForeColor = System.Drawing.Color.Black;
-            this.txt_User.Location = new System.Drawing.Point(399, 63);
-            this.txt_User.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_User.Location = new System.Drawing.Point(319, 51);
             this.txt_User.Name = "txt_User";
-            this.txt_User.Size = new System.Drawing.Size(782, 43);
+            this.txt_User.Size = new System.Drawing.Size(626, 36);
             this.txt_User.TabIndex = 17;
             this.txt_User.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -102,10 +101,9 @@ namespace TGS.Views {
             this.lbl_User.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_User.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_User.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.lbl_User.Location = new System.Drawing.Point(399, 0);
-            this.lbl_User.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_User.Location = new System.Drawing.Point(319, 0);
             this.lbl_User.Name = "lbl_User";
-            this.lbl_User.Size = new System.Drawing.Size(782, 59);
+            this.lbl_User.Size = new System.Drawing.Size(626, 48);
             this.lbl_User.TabIndex = 18;
             this.lbl_User.Text = "Usuário";
             this.lbl_User.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -117,11 +115,10 @@ namespace TGS.Views {
             this.txt_Password.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Password.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Password.ForeColor = System.Drawing.Color.Black;
-            this.txt_Password.Location = new System.Drawing.Point(399, 176);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Password.Location = new System.Drawing.Point(319, 142);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
-            this.txt_Password.Size = new System.Drawing.Size(782, 43);
+            this.txt_Password.Size = new System.Drawing.Size(626, 36);
             this.txt_Password.TabIndex = 14;
             this.txt_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -131,10 +128,9 @@ namespace TGS.Views {
             this.lbl_Password.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Password.Font = new System.Drawing.Font("Consolas", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Password.Location = new System.Drawing.Point(399, 113);
-            this.lbl_Password.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_Password.Location = new System.Drawing.Point(319, 91);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(782, 59);
+            this.lbl_Password.Size = new System.Drawing.Size(626, 48);
             this.lbl_Password.TabIndex = 13;
             this.lbl_Password.Text = "Senha";
             this.lbl_Password.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -154,10 +150,9 @@ namespace TGS.Views {
             this.btn_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Login.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Login.ForeColor = System.Drawing.Color.White;
-            this.btn_Login.Location = new System.Drawing.Point(1063, 230);
-            this.btn_Login.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Login.Location = new System.Drawing.Point(851, 185);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(118, 46);
+            this.btn_Login.Size = new System.Drawing.Size(94, 37);
             this.btn_Login.TabIndex = 15;
             this.btn_Login.Text = "Entrar";
             this.btn_Login.TextColor = System.Drawing.Color.White;
@@ -170,10 +165,9 @@ namespace TGS.Views {
             this.lbl_TitleLogin.Dock = System.Windows.Forms.DockStyle.Top;
             this.lbl_TitleLogin.Font = new System.Drawing.Font("Consolas", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleLogin.Location = new System.Drawing.Point(0, 286);
-            this.lbl_TitleLogin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_TitleLogin.Location = new System.Drawing.Point(0, 228);
             this.lbl_TitleLogin.Name = "lbl_TitleLogin";
-            this.lbl_TitleLogin.Size = new System.Drawing.Size(1580, 104);
+            this.lbl_TitleLogin.Size = new System.Drawing.Size(1264, 83);
             this.lbl_TitleLogin.TabIndex = 15;
             this.lbl_TitleLogin.Text = "Seja Bem-Vindo";
             this.lbl_TitleLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -183,10 +177,9 @@ namespace TGS.Views {
             this.img_Logo.BackColor = System.Drawing.Color.Transparent;
             this.img_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.img_Logo.Image = ((System.Drawing.Image)(resources.GetObject("img_Logo.Image")));
-            this.img_Logo.Location = new System.Drawing.Point(0, 98);
-            this.img_Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.img_Logo.Location = new System.Drawing.Point(0, 78);
             this.img_Logo.Name = "img_Logo";
-            this.img_Logo.Size = new System.Drawing.Size(1580, 188);
+            this.img_Logo.Size = new System.Drawing.Size(1264, 150);
             this.img_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_Logo.TabIndex = 14;
             this.img_Logo.TabStop = false;
@@ -200,7 +193,7 @@ namespace TGS.Views {
             this.pnl_HeaderLogin.Location = new System.Drawing.Point(0, 0);
             this.pnl_HeaderLogin.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_HeaderLogin.Name = "pnl_HeaderLogin";
-            this.pnl_HeaderLogin.Size = new System.Drawing.Size(1580, 98);
+            this.pnl_HeaderLogin.Size = new System.Drawing.Size(1264, 78);
             this.pnl_HeaderLogin.TabIndex = 13;
             this.pnl_HeaderLogin.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_HeaderLogin_MouseDown);
             // 
@@ -214,10 +207,10 @@ namespace TGS.Views {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(1482, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(2, 4, 0, 4);
+            this.btn_Minimize.Location = new System.Drawing.Point(1186, 0);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(2, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(51, 32);
+            this.btn_Minimize.Size = new System.Drawing.Size(41, 26);
             this.btn_Minimize.TabIndex = 5;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -232,27 +225,26 @@ namespace TGS.Views {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(1532, 0);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 2, 4);
+            this.btn_Close.Location = new System.Drawing.Point(1226, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(48, 32);
+            this.btn_Close.Size = new System.Drawing.Size(38, 26);
             this.btn_Close.TabIndex = 3;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1580, 851);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnl_Login);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

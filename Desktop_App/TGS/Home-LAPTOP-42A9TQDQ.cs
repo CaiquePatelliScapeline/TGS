@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Web;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -10,25 +11,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class DetailsPage : Form {
-        public DetailsPage(string list) {
-            listRender = list;
+    public partial class Home : Form {
+        
+        public Home() {
             InitializeComponent();
-            Render();
             CollapseMenu();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+            string[] item = new string[6];
+            item[0] = "Miriam";
+            item[1] = " ";
+            item[2] = "Dr. Fernando";
+            item[3] = "diabetes";
+            item[4] = "14:00";
+            item[5] = "1";
+
+            ListViewItem items = new ListViewItem(item);
+            lv_Consults.Items.Add(items);
         }
 
-        string listRender;
 
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
-
+        AlterPageController alterPageController = new AlterPageController();
 
         // Fields
         private int borderSize = 2;
@@ -133,18 +142,18 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(ActiveForm);
+            headerController.Maximize(ActiveForm);
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
-        
+
         //Menu
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
@@ -161,7 +170,7 @@ namespace TGS {
                 img_LogoMenu.Visible = true;
                 btn_MenuHamburger.Dock = DockStyle.None;
                 foreach (Button menuButton in pnl_Menu.Controls.OfType<Button>()) {
-                    menuButton.Text = "  " +  menuButton.Tag.ToString();
+                    menuButton.Text = "  " + menuButton.Tag.ToString();
                     menuButton.ImageAlign = ContentAlignment.MiddleLeft;
                     menuButton.Padding = new Padding(10, 0, 0, 0);
                 }
@@ -171,76 +180,25 @@ namespace TGS {
         private void btn_MenuHamburger_Click(object sender, EventArgs e) {
             CollapseMenu();
         }
-
+        
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "calendar");
+            alterPageController.AlterPage(ActiveForm, "calendar");
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(null, "chat");
+            alterPageController.AlterPage(null,"chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "patients");
+            alterPageController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuOptions_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "options");
+            alterPageController.AlterPage(ActiveForm, "options");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
-            //authenticateController.Logout(ActiveForm);
+            authenticateController.Logout(ActiveForm);
         }
-
-        private void Render() {
-            switch (listRender) {
-                case "employees":
-                    lbl_TitleDetail1.Text = "Nome";
-                    lbl_TitleDetail2.Text = "Sobrenome";
-                    lbl_TitleDetail3.Text = "E-mail";
-                    lbl_TitleDetail4.Text = "Celular";
-                    lbl_TitleDetail5.Text = "Telefone";
-                    lbl_TitleDetail6.Text = "CPF";
-                    lbl_TitleDetail7.Visible = false;
-                    lbl_TitleDetail8.Visible = false;
-                    lbl_TitleDetail9.Visible = false;
-                    lbl_TitleDetail10.Visible = false;
-                    lbl_TitleDetail11.Visible = false;
-                    lbl_TitleDetail12.Visible = false;
-                    lbl_TitleDetail13.Visible = false;
-                    lbl_TitleDetail14.Visible = false;
-                    lbl_TitleDetail15.Visible = false;
-                    lbl_TitleDetail16.Visible = false;
-                    lbl_TitleDetail17.Visible = false;
-                    lbl_TitleDetail18.Visible = false;
-                    txt_Detail7.Visible = false;
-                    txt_Detail8.Visible = false;
-                    txt_Detail9.Visible = false;
-                    txt_Detail10.Visible = false;
-                    txt_Detail11.Visible = false;
-                    txt_Detail12.Visible = false;
-                    txt_Detail13.Visible = false;
-                    txt_Detail14.Visible = false;
-                    txt_Detail15.Visible = false;
-                    txt_Detail16.Visible = false;
-                    txt_Detail17.Visible = false;
-                    txt_Detail18.Visible = false;
-
-                    break;
-                case "patients":
-                    break;
-                case "dentists":
-                    break;
-                case "consults":
-                    break;
-                case "procedures":
-                    break;
-                default:
-                    MyMsgBox.Show("Erro", "Listagem não encontrada", false);
-                    break;                                         
-
-            }
-        }
-
     }
 }

@@ -10,37 +10,33 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TGS {
-    public partial class DetailsPage : Form {
-        public DetailsPage(string list) {
-            listRender = list;
-            InitializeComponent();
-            Render();
-            CollapseMenu();
+    public partial class Options : Form {
 
+        public Options() {
+            InitializeComponent();
+            CollapseMenu();
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+
         }
 
-        string listRender;
-
         //Classes
-        MainController mainController = new MainController();
+        HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
-
+        AlterPageController alterPageController = new AlterPageController();
 
         // Fields
         private int borderSize = 2;
-
-
+        
+        
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-
 
         // Overridden Methods
         protected override void WndProc(ref Message m) {
@@ -105,6 +101,7 @@ namespace TGS {
             base.WndProc(ref m);
         }
 
+
         //Resize Form
         // Events Methods
         private void Home_Resize(object sender, EventArgs e) {
@@ -133,18 +130,18 @@ namespace TGS {
         }
 
         private void btn_Close_Click(object sender, EventArgs e) {
-            mainController.Exit();
+            headerController.Exit();
         }
 
         private void btn_Maximize_Click(object sender, EventArgs e) {
-            mainController.Maximize(ActiveForm);
+            headerController.Maximize(ActiveForm);
         }
 
         private void btn_Minimize_Click(object sender, EventArgs e) {
-            mainController.Minimize(ActiveForm);
+            headerController.Minimize(ActiveForm);
         }
 
-        
+
         //Menu
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
@@ -172,75 +169,74 @@ namespace TGS {
             CollapseMenu();
         }
 
+        private void btn_MenuHome_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "home");
+        }
+
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "calendar");
+            alterPageController.AlterPage(ActiveForm, "calendar");
         }
 
         private void btn_MenuChat_Click(object sender, EventArgs e) {
-            mainController.AlterPage(null, "chat");
+            alterPageController.AlterPage(null, "chat");
         }
 
         private void btn_MenuPacientes_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "patients");
-        }
-
-        private void btn_MenuOptions_Click(object sender, EventArgs e) {
-            mainController.AlterPage(ActiveForm, "options");
+            alterPageController.AlterPage(ActiveForm, "patients");
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
-            //authenticateController.Logout(ActiveForm);
+            authenticateController.Logout(ActiveForm);
         }
 
-        private void Render() {
-            switch (listRender) {
-                case "employees":
-                    lbl_TitleDetail1.Text = "Nome";
-                    lbl_TitleDetail2.Text = "Sobrenome";
-                    lbl_TitleDetail3.Text = "E-mail";
-                    lbl_TitleDetail4.Text = "Celular";
-                    lbl_TitleDetail5.Text = "Telefone";
-                    lbl_TitleDetail6.Text = "CPF";
-                    lbl_TitleDetail7.Visible = false;
-                    lbl_TitleDetail8.Visible = false;
-                    lbl_TitleDetail9.Visible = false;
-                    lbl_TitleDetail10.Visible = false;
-                    lbl_TitleDetail11.Visible = false;
-                    lbl_TitleDetail12.Visible = false;
-                    lbl_TitleDetail13.Visible = false;
-                    lbl_TitleDetail14.Visible = false;
-                    lbl_TitleDetail15.Visible = false;
-                    lbl_TitleDetail16.Visible = false;
-                    lbl_TitleDetail17.Visible = false;
-                    lbl_TitleDetail18.Visible = false;
-                    txt_Detail7.Visible = false;
-                    txt_Detail8.Visible = false;
-                    txt_Detail9.Visible = false;
-                    txt_Detail10.Visible = false;
-                    txt_Detail11.Visible = false;
-                    txt_Detail12.Visible = false;
-                    txt_Detail13.Visible = false;
-                    txt_Detail14.Visible = false;
-                    txt_Detail15.Visible = false;
-                    txt_Detail16.Visible = false;
-                    txt_Detail17.Visible = false;
-                    txt_Detail18.Visible = false;
 
-                    break;
-                case "patients":
-                    break;
-                case "dentists":
-                    break;
-                case "consults":
-                    break;
-                case "procedures":
-                    break;
-                default:
-                    MyMsgBox.Show("Erro", "Listagem não encontrada", false);
-                    break;                                         
-
-            }
+        //Body
+        private void Option1_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "employee-list"); 
         }
 
+        private void Option2_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "consult-category-list");
+        }
+
+        private void Options3_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "support");
+        }
+
+        private void Options4_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "chat-options");
+        }
+
+        private void Option1_MouseHover(object sender, EventArgs e) {
+            pnl_Option1.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option1_MouseLeave(object sender, EventArgs e) {
+            pnl_Option1.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option2_MouseHover(object sender, EventArgs e) {
+            pnl_Option2.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option2_MouseLeave(object sender, EventArgs e) {
+            pnl_Option2.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option3_MouseHover(object sender, EventArgs e) {
+            pnl_Option3.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option3_MouseLeave(object sender, EventArgs e) {
+            pnl_Option3.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void Option4_MouseHover(object sender, EventArgs e) {
+            pnl_Option4.BackColor = Color.FromArgb(212, 231, 255);
+        }
+
+        private void Option4_MouseLeave(object sender, EventArgs e) {
+            pnl_Option4.BackColor = Color.FromArgb(255, 255, 255);
+        }
     }
 }

@@ -11,7 +11,6 @@ namespace TGS.Controllers.Register {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
-        MyMsgBox MyMsgBox = new MyMsgBox();
 
         public void ProcedureRegistration(string procedureTitle) {
             //query.CommandText = "INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES (@procedureTitle)";

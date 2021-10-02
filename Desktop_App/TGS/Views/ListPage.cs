@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using TGS.Controllers;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
+using TGS.Controllers.Consult;
 
 namespace TGS.Views {
     public partial class ListPage : Form {
@@ -30,6 +31,7 @@ namespace TGS.Views {
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
+        ProceduresConsult proceduresConsult = new ProceduresConsult();
 
         // Fields
         private int borderSize = 2;
@@ -233,11 +235,26 @@ namespace TGS.Views {
                     lbl_Title.Text = "Consultas";
                     break;
                 case "consult-categories":
-                    lbl_Title.Text = "Categorias de Consulta";
+                    lbl_Title.Text = "Procedimentos";
+                    lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);
+                    lv_List.Columns.Add("Título", lv_List.Width/2, HorizontalAlignment.Center);
+                    List(proceduresConsult.ProcedureConsult());         
+                    break;
+                case "dentists":
+                    lbl_Title.Text = "Dentistas";
                     break;
                 default:
                     alterPageController.Errors("404", "Pagina não encontrada!");
                     break;
+            }
+        }
+
+        private void List(string[,] items) {
+            for (int i = 0; i < items.GetLength(0); i++) {
+                lv_List.Items.Add("    " + items[i, 0]);
+                for (int j = 1; j < items.GetLength(1); j++) {
+                    lv_List.Items[i].SubItems.Add(items[i, j]);
+                }
             }
         }
     }

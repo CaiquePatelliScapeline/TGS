@@ -49,6 +49,16 @@ namespace TGS.Controllers.Main {
                     Options options = new Options();
                     options.ShowDialog();
                     break;
+                // Go to dentists list
+                case "dentists-list":
+                    ListPage dentists = new ListPage("dentists");
+                    dentists.ShowDialog();
+                    break;
+                // Go to dentists registration
+                case "dentists-registration":
+                    FormPage dentistsRegistration = new FormPage("dentists");
+                    dentistsRegistration.ShowDialog();
+                break;
                 // Go to employees list
                 case "employee-list":
                     ListPage employees = new ListPage("employees");

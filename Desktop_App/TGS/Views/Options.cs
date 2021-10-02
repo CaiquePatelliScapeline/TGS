@@ -206,7 +206,7 @@ namespace TGS.Views {
         }
 
         private void Options4_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "chat-options");
+            alterPageController.AlterPage(ActiveForm, "dentists-list");
         }
 
         private void Option1_MouseHover(object sender, EventArgs e) {

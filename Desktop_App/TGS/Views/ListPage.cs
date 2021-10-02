@@ -205,6 +205,9 @@ namespace TGS.Views {
                 case "employees":
                     alterPageController.AlterPage(ActiveForm, "employee-registration");
                     break;
+                case "dentists":
+                    alterPageController.AlterPage(ActiveForm, "dentists-registration");
+                    break;
                 case "consults":
                     alterPageController.AlterPage(ActiveForm, "consults-registration");
                     break;

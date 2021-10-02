@@ -20,13 +20,17 @@ namespace TGS.Views {
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
         EmployeesRegistration employeesRegistration = new EmployeesRegistration();
+        SchedulingRegistration schedulingRegistration = new SchedulingRegistration();
+        ProceduresRegistration proceduresRegistration = new ProceduresRegistration();
+        PatientsRegistration patientsRegistration = new PatientsRegistration();
+        DentistsRegistration dentistsRegistration = new DentistsRegistration();
         MD5Hash md5Hash = new MD5Hash();
 
         // Fields
         private int borderSize = 2;
         private string formRender;
         private int formPart = 1;
-        string[] patients = new string[20];
+        string[] patients = new string[18];
 
         public FormPage(String form) {
             formRender = form;
@@ -112,7 +116,7 @@ namespace TGS.Views {
             base.WndProc(ref m);
         }
 
-        //Resize Form
+        // Resize Form
         // Events Methods
         private void Home_Resize(object sender, EventArgs e) {
             AdjustForm();
@@ -132,8 +136,7 @@ namespace TGS.Views {
             }
         }
 
-
-        //Header
+        // Header
         private void pnl_TitleBar_MouseDown(object sender, MouseEventArgs e) {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
@@ -152,7 +155,7 @@ namespace TGS.Views {
         }
 
         
-        //Menu
+        // Menu
         private void CollapseMenu() {
             if (this.pnl_Menu.Width > 200) { // Collapse Menu
                 pnl_Menu.Width = 100;
@@ -202,26 +205,47 @@ namespace TGS.Views {
         private void Render() {
             lbl_TitlePart.Visible = false;
             lbl_TitlePart.Visible = false;
+            // Input 1
             lbl_Title1.Visible = true;
-            txt_Input2.Visible = true;
+            txt_Input1.Visible = true;
+            txt_Input1.Text = "";
+            // Input 2
             lbl_Title2.Visible = true;
             txt_Input2.Visible = true;
+            txt_Input2.Text = "";
+            // Input 3
             lbl_Title3.Visible = true;
             txt_Input3.Visible = true;
+            txt_Input3.Text = "";
+            // Input 4
             lbl_Title4.Visible = true;
             txt_Input4.Visible = true;
+            txt_Input4.Text = "";
+            // Input 5
             lbl_Title5.Visible = true;
             txt_Input5.Visible = true;
+            txt_Input5.Text = "";
+            // Input 6
             lbl_Title6.Visible = true;
             txt_Input6.Visible = true;
+            txt_Input6.Text = "";
+            // Input 7
             lbl_Title7.Visible = true;
             txt_Input7.Visible = true;
+            txt_Input7.Text = "";
+            // Input 8
             lbl_Title8.Visible = true;
             txt_Input8.Visible = true;
+            txt_Input8.Text = "";
+            // Input 9
             lbl_Title9.Visible = true;
             txt_Input9.Visible = true;
+            txt_Input9.Text = "";
+            // Input 10
             lbl_Title10.Visible = true;
             txt_Input10.Visible = true;
+            txt_Input10.Text = "";
+
             lbl_Part.Visible   = true;
             btn_Back.Visible   = false;
             btn_Forward.Text = "Cadastrar";
@@ -237,6 +261,26 @@ namespace TGS.Views {
                     lbl_Title6.Text = "CPF";
                     lbl_Title7.Text = "Senha";
                     txt_Input7.PasswordChar = Convert.ToChar("*");
+                    lbl_Title8.Visible = false;
+                    txt_Input8.Visible = false;
+                    lbl_Title9.Visible = false;
+                    txt_Input9.Visible = false;
+                    lbl_Title10.Visible = false;
+                    txt_Input10.Visible = false;
+                    lbl_Part.Visible = false;
+                    break;
+                case "dentists":
+                    lbl_Title.Text = "Cadastro de Denstistas";
+                    lbl_Title1.Text = "CRO";
+                    lbl_Title2.Text = "Nome";
+                    lbl_Title3.Text = "Sobrenome";
+                    lbl_Title4.Text = "Especialidade";
+                    lbl_Title5.Visible = false;
+                    txt_Input5.Visible = false;
+                    lbl_Title6.Visible = false;
+                    txt_Input6.Visible = false;
+                    lbl_Title7.Visible = false;
+                    txt_Input7.Visible = false;
                     lbl_Title8.Visible = false;
                     txt_Input8.Visible = false;
                     lbl_Title9.Visible = false;
@@ -274,15 +318,15 @@ namespace TGS.Views {
                         case 1:
                             lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Dados Básicos";
-                            lbl_Part.Text = "Parte 1 de 4   ";
+                            lbl_Part.Text = "Parte 1 de 3   ";
                             lbl_Title1.Text = "Nome";
-                            lbl_Title2.Text = "Apelido";
-                            lbl_Title3.Text = "Data de Nascimento";
-                            lbl_Title4.Text = "Gênero";
+                            lbl_Title2.Text = "Sobrenome";
+                            lbl_Title3.Text = "Apelido";
+                            lbl_Title4.Text = "Data de Nascimento";
                             lbl_Title5.Text = "CPF";
                             lbl_Title6.Text = "RG";
-                            lbl_Title7.Text = "Estado Civil";
-                            lbl_Title8.Text = "Altura";
+                            lbl_Title7.Text = "Altura";
+                            lbl_Title8.Text = "Peso";
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
                             lbl_Title10.Visible = false;
@@ -292,7 +336,7 @@ namespace TGS.Views {
                         case 2:
                             lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Contato";
-                            lbl_Part.Text = "Parte 2 de 4   ";
+                            lbl_Part.Text = "Parte 2 de 3   ";
                             lbl_Title1.Text = "Celular";
                             lbl_Title2.Text = "Telefone";
                             lbl_Title3.Text = "E-mail";
@@ -315,33 +359,8 @@ namespace TGS.Views {
                             break;
                         case 3:
                             lbl_TitlePart.Visible = true;
-                            lbl_TitlePart.Text = "   Observações";
-                            lbl_Part.Text = "Parte 3 de 4   ";
-                            lbl_Title1.Text = "Como conheceu o consultório?";
-                            lbl_Title2.Text = "Observações";
-                            lbl_Title3.Visible = false;
-                            txt_Input3.Visible = false;
-                            lbl_Title4.Visible = false;
-                            txt_Input4.Visible = false;
-                            lbl_Title5.Visible = false;
-                            txt_Input5.Visible = false;
-                            lbl_Title6.Visible = false;
-                            txt_Input6.Visible = false;
-                            lbl_Title7.Visible = false;
-                            txt_Input7.Visible = false;
-                            lbl_Title8.Visible = false;
-                            txt_Input8.Visible = false;
-                            lbl_Title9.Visible = false;
-                            txt_Input9.Visible = false;
-                            lbl_Title10.Visible = false;
-                            txt_Input10.Visible = false;
-                            btn_Back.Visible = true;
-                            btn_Forward.Text = "Avançar";
-                            break;
-                        case 4:
-                            lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Localidade";
-                            lbl_Part.Text = "Parte 4 de 4   ";
+                            lbl_Part.Text = "Parte 3 de 3   ";
                             lbl_Title1.Text = "Logradouro";
                             lbl_Title2.Text = "Bairro";
                             lbl_Title3.Text = "Número";
@@ -393,16 +412,62 @@ namespace TGS.Views {
                     case "employees":
                         string hashPassword = md5Hash.CreateMD5Hash(txt_Input7.Text);
                         employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, hashPassword);
+                        alterPageController.AlterPage(ActiveForm, "employee-list");
+                        break;
+                    case "consults-categories":
+                        proceduresRegistration.ProcedureRegistration(txt_Input1.Text);
+                        alterPageController.AlterPage(ActiveForm, "consult-category-list");
+                        break;
+                    case "dentists":
+                        dentistsRegistration.DentistRegistration(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text);
+                        alterPageController.AlterPage(ActiveForm, "dentists-list");
+                        break;
+                    case "patients":
+                        patients[11] = txt_Input1.Text;
+                        patients[12] = txt_Input2.Text;
+                        patients[13] = txt_Input5.Text;
+                        patients[14] = txt_Input7.Text;
+                        patients[15] = txt_Input6.Text;
+                        patients[16] = txt_Input4.Text;
+                        patients[17] = txt_Input3.Text;
+                        patientsRegistration.PatientRegistration(patients[0], patients[1], patients[2], patients[3], patients[4], patients[5], patients[6], patients[7], patients[8], patients[9], patients[10], patients[11], patients[12], patients[13], patients[14], patients[15], patients[16], patients[17]);
+                        alterPageController.AlterPage(ActiveForm, "patients");
+                        break;
+                    case "consults":
+                        break;
+                    case "schedule":
+                        break;
+                    default:
+                        alterPageController.Errors("404", "Pagina não encontrada!");
                         break;
                 }
             } else if(btn_Forward.Text == "Avançar") {
+                switch (formPart) {
+                    case 1:
+                        patients[0] = txt_Input5.Text;
+                        patients[1] = txt_Input6.Text;
+                        patients[2] = txt_Input1.Text;
+                        patients[3] = txt_Input2.Text;
+                        patients[4] = txt_Input3.Text;
+                        patients[5] = txt_Input4.Text;
+                        patients[6] = txt_Input7.Text;
+                        patients[7] = txt_Input8.Text;
+                        break;
+                    case 2:
+                        patients[8] = txt_Input3.Text;
+                        patients[9] = txt_Input2.Text;
+                        patients[10] = txt_Input1.Text;
+                        break;
+                    default:
+                        alterPageController.Errors("404", "Pagina não encontrada!");
+                        break;
+                }
                 formPart++;
                 Render();
             } else {
                 alterPageController.Errors("Erro", "Erro desconhecido!");
             }
         }
-
         private void btn_Back_Click(object sender, EventArgs e) {
             formPart--;
             Render();

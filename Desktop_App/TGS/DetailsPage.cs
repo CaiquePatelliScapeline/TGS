@@ -194,6 +194,26 @@ namespace TGS {
 
         private void Render() {
             switch (listRender) {
+                case "patients":
+                    lbl_TitleDetail1.Text = "CPF";
+                    lbl_TitleDetail2.Text = "RG";
+                    lbl_TitleDetail3.Text = "Nome";
+                    lbl_TitleDetail4.Text = "Sobrenome";
+                    lbl_TitleDetail5.Text = "Apelido";
+                    lbl_TitleDetail6.Text = "Data de Nascimento";
+                    lbl_TitleDetail7.Text = "Altura";
+                    lbl_TitleDetail8.Text = "Peso";
+                    lbl_TitleDetail9.Text = "E-mail";
+                    lbl_TitleDetail10.Text = "Telefone";
+                    lbl_TitleDetail11.Text = "Celular";
+                    lbl_TitleDetail12.Text = "Rua";
+                    lbl_TitleDetail13.Text = "Bairro";
+                    lbl_TitleDetail14.Text = "Cidade";
+                    lbl_TitleDetail15.Text = "Estado";
+                    lbl_TitleDetail16.Text = "CEP";
+                    lbl_TitleDetail17.Text = "Complemento";
+                    lbl_TitleDetail18.Text = "Número";
+                    break;
                 case "employees":
                     lbl_TitleDetail1.Text = "Nome";
                     lbl_TitleDetail2.Text = "Sobrenome";
@@ -227,13 +247,109 @@ namespace TGS {
                     txt_Detail18.Visible = false;
 
                     break;
-                case "patients":
-                    break;
                 case "dentists":
+                    lbl_TitleDetail1.Text = "CRO";
+                    lbl_TitleDetail2.Text = "Nome";
+                    lbl_TitleDetail3.Text = "Sobrenome";
+                    lbl_TitleDetail4.Text = "Especialidade";
+                    lbl_TitleDetail5.Visible = false;
+                    lbl_TitleDetail6.Visible = false;
+                    lbl_TitleDetail7.Visible = false;
+                    lbl_TitleDetail8.Visible = false;
+                    lbl_TitleDetail9.Visible = false;
+                    lbl_TitleDetail10.Visible = false;
+                    lbl_TitleDetail11.Visible = false;
+                    lbl_TitleDetail12.Visible = false;
+                    lbl_TitleDetail13.Visible = false;
+                    lbl_TitleDetail14.Visible = false;
+                    lbl_TitleDetail15.Visible = false;
+                    lbl_TitleDetail16.Visible = false;
+                    lbl_TitleDetail17.Visible = false;
+                    lbl_TitleDetail18.Visible = false;
+                    txt_Detail5.Visible = false;
+                    txt_Detail6.Visible = false;
+                    txt_Detail7.Visible = false;
+                    txt_Detail8.Visible = false;
+                    txt_Detail9.Visible = false;
+                    txt_Detail10.Visible = false;
+                    txt_Detail11.Visible = false;
+                    txt_Detail12.Visible = false;
+                    txt_Detail13.Visible = false;
+                    txt_Detail14.Visible = false;
+                    txt_Detail15.Visible = false;
+                    txt_Detail16.Visible = false;
+                    txt_Detail17.Visible = false;
+                    txt_Detail18.Visible = false;
                     break;
                 case "consults":
+                    lbl_TitleDetail1.Text = "CPF Paciente";
+                    lbl_TitleDetail2.Text = "CRO Dentista";
+                    lbl_TitleDetail3.Text = "Data";
+                    lbl_TitleDetail4.Text = "Horário";
+                    lbl_TitleDetail5.Text = "ID";
+                    lbl_TitleDetail6.Visible = false;
+                    lbl_TitleDetail7.Visible = false;
+                    lbl_TitleDetail8.Visible = false;
+                    lbl_TitleDetail9.Visible = false;
+                    lbl_TitleDetail10.Visible = false;
+                    lbl_TitleDetail11.Visible = false;
+                    lbl_TitleDetail12.Visible = false;
+                    lbl_TitleDetail13.Visible = false;
+                    lbl_TitleDetail14.Visible = false;
+                    lbl_TitleDetail15.Visible = false;
+                    lbl_TitleDetail16.Visible = false;
+                    lbl_TitleDetail17.Visible = false;
+                    lbl_TitleDetail18.Visible = false;
+                    txt_Detail6.Visible = false;
+                    txt_Detail7.Visible = false;
+                    txt_Detail8.Visible = false;
+                    txt_Detail9.Visible = false;
+                    txt_Detail10.Visible = false;
+                    txt_Detail11.Visible = false;
+                    txt_Detail12.Visible = false;
+                    txt_Detail13.Visible = false;
+                    txt_Detail14.Visible = false;
+                    txt_Detail15.Visible = false;
+                    txt_Detail16.Visible = false;
+                    txt_Detail17.Visible = false;
+                    txt_Detail18.Visible = false;
                     break;
                 case "procedures":
+                    lbl_TitleDetail1.Text = "Procedimento";
+                    lbl_TitleDetail2.Visible = false;
+                    lbl_TitleDetail3.Visible = false;
+                    lbl_TitleDetail4.Visible = false;
+                    lbl_TitleDetail5.Visible = false;
+                    lbl_TitleDetail6.Visible = false;
+                    lbl_TitleDetail7.Visible = false;
+                    lbl_TitleDetail8.Visible = false;
+                    lbl_TitleDetail9.Visible = false;
+                    lbl_TitleDetail10.Visible = false;
+                    lbl_TitleDetail11.Visible = false;
+                    lbl_TitleDetail12.Visible = false;
+                    lbl_TitleDetail13.Visible = false;
+                    lbl_TitleDetail14.Visible = false;
+                    lbl_TitleDetail15.Visible = false;
+                    lbl_TitleDetail16.Visible = false;
+                    lbl_TitleDetail17.Visible = false;
+                    lbl_TitleDetail18.Visible = false;
+                    txt_Detail2.Visible = false;
+                    txt_Detail3.Visible = false;
+                    txt_Detail4.Visible = false;
+                    txt_Detail5.Visible = false;
+                    txt_Detail6.Visible = false;
+                    txt_Detail7.Visible = false;
+                    txt_Detail8.Visible = false;
+                    txt_Detail9.Visible = false;
+                    txt_Detail10.Visible = false;
+                    txt_Detail11.Visible = false;
+                    txt_Detail12.Visible = false;
+                    txt_Detail13.Visible = false;
+                    txt_Detail14.Visible = false;
+                    txt_Detail15.Visible = false;
+                    txt_Detail16.Visible = false;
+                    txt_Detail17.Visible = false;
+                    txt_Detail18.Visible = false;
                     break;
                 default:
                     MyMsgBox.Show("Erro", "Listagem não encontrada", false);

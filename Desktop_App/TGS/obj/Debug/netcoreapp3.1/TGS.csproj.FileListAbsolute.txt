@@ -85,3 +85,4 @@ C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\T
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.MyMsgBox.resources
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Options.resources
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.SplashScreen.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.DetailsPage.resources

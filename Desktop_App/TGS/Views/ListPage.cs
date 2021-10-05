@@ -32,6 +32,10 @@ namespace TGS.Views {
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
         ProceduresConsult proceduresConsult = new ProceduresConsult();
+        DentistsConsult dentistsConsult = new DentistsConsult();
+        EmployeesConsult employeesConsult = new EmployeesConsult();
+        PatientsConsult patientsConsult = new PatientsConsult();
+        SchedulingConsult schedulingConsult = new SchedulingConsult();
 
         // Fields
         private int borderSize = 2;
@@ -227,12 +231,31 @@ namespace TGS.Views {
             switch (listRender) {
                 case "patients":
                     lbl_Title.Text = "Pacientes";
+                    lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
+                    lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
+                    List(patientsConsult.PatientConsult());
                     break;
                 case "employees":
                     lbl_Title.Text = "Funcionários";
+                    lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
+                    lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
+                    List(employeesConsult.EmployeeConsult());
                     break;
                 case "consults":
                     lbl_Title.Text = "Consultas";
+                    lv_List.Columns.Add("    Data", 220, HorizontalAlignment.Left);
+                    lv_List.Columns.Add("Hora", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Dentista", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Paciente", lv_List.Width / 4, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Procedimento", lv_List.Width / 5, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Status", lv_List.Width / 5, HorizontalAlignment.Center);
+                    List(schedulingConsult.ScheduleConsult());
                     break;
                 case "consult-categories":
                     lbl_Title.Text = "Procedimentos";
@@ -241,7 +264,11 @@ namespace TGS.Views {
                     List(proceduresConsult.ProcedureConsult());         
                     break;
                 case "dentists":
-                    lbl_Title.Text = "Dentistas";
+                    lbl_Title.Text = "Dentistas";                    
+                    lv_List.Columns.Add("    CRO", 170, HorizontalAlignment.Left);
+                    lv_List.Columns.Add("Nome", lv_List.Width / 2, HorizontalAlignment.Center);
+                    lv_List.Columns.Add("Especialidade", lv_List.Width / 2, HorizontalAlignment.Center);
+                    List(dentistsConsult.DentistConsult());
                     break;
                 default:
                     alterPageController.Errors("404", "Pagina não encontrada!");

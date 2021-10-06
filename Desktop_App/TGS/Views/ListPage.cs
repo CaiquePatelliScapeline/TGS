@@ -284,5 +284,9 @@ namespace TGS.Views {
                 }
             }
         }
+
+        private void lv_List_ItemActivate(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "details");
+        }
     }
 }

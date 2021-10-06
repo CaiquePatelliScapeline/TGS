@@ -34,6 +34,11 @@ namespace TGS.Controllers.Main {
                 case "chat":
                     OpenLink(chatLink);
                     break;
+                // Go to details
+                case "details":
+                    ListPage details = new ListPage("details");
+                    details.ShowDialog();
+                    break;
                 // Go to patients list
                 case "patients":
                     ListPage patients = new ListPage("patients");

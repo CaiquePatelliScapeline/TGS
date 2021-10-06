@@ -11,6 +11,8 @@ namespace TGS.Model {
                 dbRoute = caiqueRoute;
             } else if (Environment.MachineName == "LENOVO-AMD-GL") {
                 dbRoute = gianlucaRoute;
+            } else if(Environment.MachineName == "LAPTOP-42A9TQDQ") {
+                dbRoute = miriamRoute; 
             } else {
                 //Rota não identificada
             }
@@ -24,6 +26,7 @@ namespace TGS.Model {
         // Fields 
         private const string caiqueRoute = @"Data Source=LAPTOP-2P9K4L2I\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True";
         private const string gianlucaRoute = @"Data Source=LENOVO-AMD-GL\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True";
+        private const string miriamRoute = @"Data Source=LAPTOP-42A9TQDQ\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True";
         private string dbRoute;
 
         public SqlConnection Connect() {

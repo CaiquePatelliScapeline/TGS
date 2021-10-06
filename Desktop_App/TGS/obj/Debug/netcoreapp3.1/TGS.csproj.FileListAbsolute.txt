@@ -40,15 +40,7 @@ C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcorea
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\TGS.pdb
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\FontAwesome.Sharp.dll
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.AssemblyReference.cache
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.DefaultPage.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.FormPage.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Home.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.ListPage.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Login.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.MyMsgBox.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Options.resources
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Properties.Resources.resources
-C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.SplashScreen.resources
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.csproj.GenerateResource.cache
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfoInputs.cache
 C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.AssemblyInfo.cs
@@ -86,3 +78,18 @@ C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\T
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Options.resources
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.SplashScreen.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.DetailsPage.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.DefaultPage.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.DetailsPage.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.FormPage.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Home.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.ListPage.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Login.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.MyMsgBox.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Options.resources
+C:\Users\miria\OneDrive\Documentos\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.SplashScreen.resources

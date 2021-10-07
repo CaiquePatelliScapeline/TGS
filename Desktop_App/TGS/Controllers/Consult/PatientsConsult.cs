@@ -14,7 +14,7 @@ namespace TGS.Controllers.Consult {
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
 
-        public string[,] PatientConsult() {
+        public string[,] Patients() {
 
             try {
                 query.Connection = dbConn.Connect();
@@ -51,6 +51,47 @@ namespace TGS.Controllers.Consult {
                 return procedures;
             } catch (SqlException e) {
                 MyMsgBox.Show("Error", "Falha ao carregar a listagem de funcionários!", false);
+                return null;
+            }
+        }
+
+        public string[] Patient(string id) {
+            try {
+                query.Connection = dbConn.Connect();
+
+                string[] details = new string[18];
+
+                query.CommandText = $"SELECT * FROM TB_PATIENTS WHERE CPF_PATIENT = '{id}';";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+
+                details[0] = $"{reader["CPF_PATIENT"]}";
+                details[1] = $"{reader["RG_PATIENT"]}";
+                details[2] = $"{reader["NAME_PATIENT"]}";
+                details[3] = $"{reader["LAST_NAME"]}";
+                details[4] = $"{reader["NICKNAME"]}";
+                details[5] = $"{reader["BIRTH_DATE"]}";
+                details[6] = $"{reader["HEIGHT"]}";
+                details[7] = $"{reader["WEIGHT_PATIENT"]}";
+                details[8] = $"{reader["EMAIL"]}";
+                details[9] = $"{reader["TELEPHONE"]}";
+                details[10] = $"{reader["CELLPHONE"]}";
+                details[11] = $"{reader["STREET"]}";
+                details[12] = $"{reader["NEIGHBORHOOD"]}";
+                details[13] = $"{reader["CITY"]}";
+                details[14] = $"{reader["DISTRICT"]}";
+                details[15] = $"{reader["CEP"]}";
+                details[16] = $"{reader["COMPLEMENT"]}";
+                details[17] = $"{reader["NUMBER"]}";
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return details;
+            } catch (SqlException e) {
+                MyMsgBox.Show("Error", "Falha ao carregar os detalhes do paciente!", false);
                 return null;
             }
         }

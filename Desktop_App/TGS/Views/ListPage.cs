@@ -236,7 +236,7 @@ namespace TGS.Views {
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
-                    List(patientsConsult.PatientConsult());
+                    List(patientsConsult.Patients());
                     break;
                 case "employees":
                     lbl_Title.Text = "Funcionários";
@@ -245,7 +245,7 @@ namespace TGS.Views {
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
-                    List(employeesConsult.EmployeeConsult());
+                    List(employeesConsult.Employees());
                     break;
                 case "consults":
                     lbl_Title.Text = "Consultas";
@@ -261,7 +261,7 @@ namespace TGS.Views {
                     lbl_Title.Text = "Procedimentos";
                     lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Título", lv_List.Width/2, HorizontalAlignment.Center);
-                    List(proceduresConsult.ProcedureConsult());         
+                    List(proceduresConsult.Procedures());         
                     break;
                 case "dentists":
                     lbl_Title.Text = "Dentistas";                    

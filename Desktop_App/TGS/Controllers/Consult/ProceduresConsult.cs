@@ -13,7 +13,7 @@ namespace TGS.Controllers.Consult {
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
 
-        public string[,] ProcedureConsult() {
+        public string[,] Procedures() {
 
             try {
                 query.Connection = dbConn.Connect();
@@ -43,6 +43,30 @@ namespace TGS.Controllers.Consult {
                 return procedures;
             } catch (SqlException e) {
                 MyMsgBox.Show("Error", "Falha ao carregar a listagem de procedimentos!", false);
+                return null;
+            }
+        }
+
+        public string[] Procedure(int id) {
+            try {
+                query.Connection = dbConn.Connect();
+
+                string[] details = new string[1];
+
+                query.CommandText = $"SELECT PROCEDURE_TITLE FROM TB_PROCEDURES WHERE ID_PROCEDURE = {id};";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+
+                details[0] = $"{reader["PROCEDURE_TITLE"]}";
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return details;
+            } catch (SqlException e) {
+                MyMsgBox.Show("Error", "Falha ao carregar os detalhes do procedimento!", false);
                 return null;
             }
         }

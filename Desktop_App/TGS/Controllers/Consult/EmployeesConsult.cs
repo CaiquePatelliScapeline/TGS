@@ -13,7 +13,7 @@ namespace TGS.Controllers.Consult {
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
 
-        public string[,] EmployeeConsult() {
+        public string[,] Employees() {
 
             try {
                 query.Connection = dbConn.Connect();
@@ -46,6 +46,35 @@ namespace TGS.Controllers.Consult {
                 return procedures;
             } catch (SqlException e) {
                 MyMsgBox.Show("Error", "Falha ao carregar a listagem de funcionários!", false);
+                return null;
+            }
+        }
+
+        public string[] Employee(string id) {
+            try {
+                query.Connection = dbConn.Connect();
+
+                string[] details = new string[6];
+
+                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_EMPLOYEES WHERE CPF_EMPLOYEE = '{id}';";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+
+                details[0] = $"{reader["CPF_EMPLOYEE"]}";
+                details[1] = $"{reader["NAME_EMPLOYEE"]}";
+                details[2] = $"{reader["LAST_NAME"]}";
+                details[3] = $"{reader["EMAIL"]}";
+                details[4] = $"{reader["TELEPHONE"]}";
+                details[5] = $"{reader["CELLPHONE"]}";
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return details;
+            } catch (SqlException e) {
+                MyMsgBox.Show("Error", "Falha ao carregar os detalhes do funcionário!", false);
                 return null;
             }
         }

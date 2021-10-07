@@ -10,12 +10,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
-using TGS.Controllers.Register;
+using TGS.Controllers.Consult;
 
 namespace TGS.Views {
     public partial class DetailsPage : Form {
-        public DetailsPage(string list) {
+        public DetailsPage(string list, string idDetailItem = null) {
             listRender = list;
+            idDetailsItem = idDetailItem;
             InitializeComponent();
             Render();
             CollapseMenu();
@@ -27,11 +28,13 @@ namespace TGS.Views {
         }
 
         string listRender;
+        string idDetailsItem;
 
         //Classes
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
+        DentistsConsult dentistsConsult = new DentistsConsult();
 
 
         // Fields
@@ -193,12 +196,14 @@ namespace TGS.Views {
         }
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
-            //authenticateController.Logout(ActiveForm);
+            authenticateController.Logout(ActiveForm);
         }
 
         private void Render() {
             switch (listRender) {
-                case "patients":
+                case "patient":
+                    
+                    lbl_DetailsTitle.Text = "Paciente";
                     lbl_TitleDetail1.Text = "CPF";
                     lbl_TitleDetail2.Text = "RG";
                     lbl_TitleDetail3.Text = "Nome";
@@ -218,7 +223,8 @@ namespace TGS.Views {
                     lbl_TitleDetail17.Text = "Complemento";
                     lbl_TitleDetail18.Text = "Número";
                     break;
-                case "employees":
+                case "employee":
+                    lbl_DetailsTitle.Text = "Funcionário";
                     lbl_TitleDetail1.Text = "Nome";
                     lbl_TitleDetail2.Text = "Sobrenome";
                     lbl_TitleDetail3.Text = "E-mail";
@@ -249,13 +255,19 @@ namespace TGS.Views {
                     txt_Detail16.Visible = false;
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
-
+                    tb_Details.AutoScroll = false;
                     break;
-                case "dentists":
+                case "dentist":
+                    string[] details = dentistsConsult.Dentist(idDetailsItem);
+                    lbl_DetailsTitle.Text = "Dentista";
                     lbl_TitleDetail1.Text = "CRO";
+                    txt_Detail1.Text = details[0];
                     lbl_TitleDetail2.Text = "Nome";
+                    txt_Detail2.Text = details[1];
                     lbl_TitleDetail3.Text = "Sobrenome";
+                    txt_Detail3.Text = details[2];
                     lbl_TitleDetail4.Text = "Especialidade";
+                    txt_Detail4.Text = details[3];
                     lbl_TitleDetail5.Visible = false;
                     lbl_TitleDetail6.Visible = false;
                     lbl_TitleDetail7.Visible = false;
@@ -284,8 +296,10 @@ namespace TGS.Views {
                     txt_Detail16.Visible = false;
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
+                    tb_Details.AutoScroll = false;
                     break;
-                case "consults":
+                case "consult":
+                    lbl_DetailsTitle.Text = "Cosulta";
                     lbl_TitleDetail1.Text = "CPF Paciente";
                     lbl_TitleDetail2.Text = "CRO Dentista";
                     lbl_TitleDetail3.Text = "Data";
@@ -317,9 +331,11 @@ namespace TGS.Views {
                     txt_Detail16.Visible = false;
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
+                    tb_Details.AutoScroll = false;
                     break;
-                case "procedures":
-                    lbl_TitleDetail1.Text = "Procedimento";
+                case "consult-category":
+                    lbl_DetailsTitle.Text = "Procedimento";
+                    lbl_TitleDetail1.Text = "Título";
                     lbl_TitleDetail2.Visible = false;
                     lbl_TitleDetail3.Visible = false;
                     lbl_TitleDetail4.Visible = false;
@@ -354,9 +370,10 @@ namespace TGS.Views {
                     txt_Detail16.Visible = false;
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
+                    tb_Details.AutoScroll = false;
                     break;
                 default:
-                    MyMsgBox.Show("Erro", "Listagem não encontrada", false);
+                    MyMsgBox.Show("Erro", "Detalhe não encontrada", false);
                     break;                                         
 
             }

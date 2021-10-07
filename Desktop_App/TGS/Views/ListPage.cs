@@ -268,7 +268,7 @@ namespace TGS.Views {
                     lv_List.Columns.Add("    CRO", 170, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 2, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Especialidade", lv_List.Width / 2, HorizontalAlignment.Center);
-                    List(dentistsConsult.DentistConsult());
+                    List(dentistsConsult.Dentists());
                     break;
                 default:
                     alterPageController.Errors("404", "Pagina não encontrada!");
@@ -278,7 +278,7 @@ namespace TGS.Views {
 
         private void List(string[,] items) {
             for (int i = 0; i < items.GetLength(0); i++) {
-                lv_List.Items.Add("    " + items[i, 0]);
+                lv_List.Items.Add(items[i, 0]);
                 for (int j = 1; j < items.GetLength(1); j++) {
                     lv_List.Items[i].SubItems.Add(items[i, j]);
                 }
@@ -286,7 +286,27 @@ namespace TGS.Views {
         }
 
         private void lv_List_ItemActivate(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "details");
+            switch (listRender) {
+                case "patients":
+                    alterPageController.AlterPage(ActiveForm, "patient-details");
+                    break;
+                case "employees":
+                    alterPageController.AlterPage(ActiveForm, "employee-details");
+                    break;
+                case "consults":
+                    alterPageController.AlterPage(ActiveForm, "consult-details");                    
+                    break;
+                case "consult-categories":
+                    alterPageController.AlterPage(ActiveForm, "consult-category-details");
+                    break;
+                case "dentists":
+                    string id = lv_List.SelectedItems[0].ToString();  //ListViewItem: {00.000}
+                    alterPageController.AlterPage(ActiveForm, "dentist-details", id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1));
+                    break;
+                default:
+                    alterPageController.Errors("404", "Pagina não encontrada!");
+                    break;
+            }
         }
     }
 }

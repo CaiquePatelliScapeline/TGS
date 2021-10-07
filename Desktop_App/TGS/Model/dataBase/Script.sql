@@ -5,7 +5,6 @@ CREATE DATABASE DB_TGS;
 
 /* Usar o banco correto */
 USE DB_TGS;
-USE CaiqueDB;
 
 /* Criar tabela de procedimentos */
 CREATE TABLE TB_PROCEDURES (

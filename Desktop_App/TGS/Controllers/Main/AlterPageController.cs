@@ -22,7 +22,7 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to calendar
                 case "calendar":
-                    ListPage calendar = new ListPage("consults");
+                    SchedulePage calendar = new SchedulePage();
                     calendar.ShowDialog();
                     break;
                 // Go to consults registration

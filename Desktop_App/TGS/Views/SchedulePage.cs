@@ -8,17 +8,13 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TGS.Controllers;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
-using TGS.Controllers.Consult;
 
 namespace TGS.Views {
-    public partial class ListPage : Form {
-        public ListPage(string list) {
-            listRender = list;
+    public partial class SchedulePage : Form {
+        public SchedulePage() {
             InitializeComponent();
-            Render();
             CollapseMenu();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
@@ -31,15 +27,11 @@ namespace TGS.Views {
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
-        ProceduresConsult proceduresConsult = new ProceduresConsult();
-        DentistsConsult dentistsConsult = new DentistsConsult();
-        EmployeesConsult employeesConsult = new EmployeesConsult();
-        PatientsConsult patientsConsult = new PatientsConsult();
-        SchedulingConsult schedulingConsult = new SchedulingConsult();
+
 
         // Fields
         private int borderSize = 2;
-        private string listRender;
+
 
         //Drag Form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -179,10 +171,6 @@ namespace TGS.Views {
             CollapseMenu();
         }
 
-        private void btn_MenuHome_Click(object sender, EventArgs e) {
-            alterPageController.AlterPage(ActiveForm, "home");
-        }
-
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "calendar");
         }
@@ -201,112 +189,6 @@ namespace TGS.Views {
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
             authenticateController.Logout(ActiveForm);
-        }
-
-        private void btn_Register_Click(object sender, EventArgs e) {
-            switch (listRender) {
-                case "patients":
-                    alterPageController.AlterPage(ActiveForm, "patients-registration");
-                    break;
-                case "employees":
-                    alterPageController.AlterPage(ActiveForm, "employee-registration");
-                    break;
-                case "dentists":
-                    alterPageController.AlterPage(ActiveForm, "dentists-registration");
-                    break;
-                case "consults":
-                    alterPageController.AlterPage(ActiveForm, "consults-registration");
-                    break;
-                case "consult-categories":
-                    alterPageController.AlterPage(ActiveForm, "consult-category-registration");
-                    break;
-                default:
-                    alterPageController.Errors("404", "Página não encontrada!");
-                    break;
-            }
-        }
-
-
-        private void Render() {
-            switch (listRender) {
-                case "patients":
-                    lbl_Title.Text = "Pacientes";
-                    lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
-                    List(patientsConsult.PatientConsult());
-                    break;
-                case "employees":
-                    lbl_Title.Text = "Funcionários";
-                    lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Telefone", lv_List.Width / 5, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
-                    List(employeesConsult.EmployeeConsult());
-                    break;
-                case "consults":
-                    lbl_Title.Text = "Consultas";
-                    lv_List.Columns.Add("    Data", 220, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Hora", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Dentista", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Paciente", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Procedimento", lv_List.Width / 5, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Status", lv_List.Width / 5, HorizontalAlignment.Center);
-                    //List(schedulingConsult.());
-                    break;
-                case "consult-categories":
-                    lbl_Title.Text = "Procedimentos";
-                    lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Título", lv_List.Width/2, HorizontalAlignment.Center);
-                    List(proceduresConsult.ProcedureConsult());         
-                    break;
-                case "dentists":
-                    lbl_Title.Text = "Dentistas";                    
-                    lv_List.Columns.Add("    CRO", 170, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Nome", lv_List.Width / 2, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Especialidade", lv_List.Width / 2, HorizontalAlignment.Center);
-                    List(dentistsConsult.Dentists());
-                    break;
-                default:
-                    alterPageController.Errors("404", "Pagina não encontrada!");
-                    break;
-            }
-        }
-
-        private void List(string[,] items) {
-            for (int i = 0; i < items.GetLength(0); i++) {
-                lv_List.Items.Add(items[i, 0]);
-                for (int j = 1; j < items.GetLength(1); j++) {
-                    lv_List.Items[i].SubItems.Add(items[i, j]);
-                }
-            }
-        }
-
-        private void lv_List_ItemActivate(object sender, EventArgs e) {
-            switch (listRender) {
-                case "patients":
-                    alterPageController.AlterPage(ActiveForm, "patient-details");
-                    break;
-                case "employees":
-                    alterPageController.AlterPage(ActiveForm, "employee-details");
-                    break;
-                case "consults":
-                    alterPageController.AlterPage(ActiveForm, "consult-details");                    
-                    break;
-                case "consult-categories":
-                    alterPageController.AlterPage(ActiveForm, "consult-category-details");
-                    break;
-                case "dentists":
-                    string id = lv_List.SelectedItems[0].ToString();  //ListViewItem: {00.000}
-                    alterPageController.AlterPage(ActiveForm, "dentist-details", id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1));
-                    break;
-                default:
-                    alterPageController.Errors("404", "Pagina não encontrada!");
-                    break;
-            }
         }
     }
 }

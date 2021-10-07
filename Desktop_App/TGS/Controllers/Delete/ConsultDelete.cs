@@ -11,7 +11,7 @@ namespace TGS.Controllers.Delete {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
 
-        public void Schedule(string id) {
+        public void Schedule(int id) {
             try {
                 query.Connection = dbConn.Connect();
 
@@ -24,7 +24,7 @@ namespace TGS.Controllers.Delete {
             }
         }
 
-        public void Consult(string id) {
+        public void Consult(int id) {
             try {
                 query.Connection = dbConn.Connect();
 

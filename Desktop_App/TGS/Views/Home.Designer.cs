@@ -456,8 +456,9 @@ namespace TGS.Views {
             // 
             // img_IconReport1
             // 
+            this.img_IconReport1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_IconReport1.BackgroundImage")));
+            this.img_IconReport1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.img_IconReport1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_IconReport1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport1.Image")));
             this.img_IconReport1.Location = new System.Drawing.Point(3, 4);
             this.img_IconReport1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconReport1.Name = "img_IconReport1";
@@ -510,8 +511,9 @@ namespace TGS.Views {
             // 
             // img_IconReport3
             // 
+            this.img_IconReport3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_IconReport3.BackgroundImage")));
+            this.img_IconReport3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.img_IconReport3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_IconReport3.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport3.Image")));
             this.img_IconReport3.Location = new System.Drawing.Point(3, 4);
             this.img_IconReport3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconReport3.Name = "img_IconReport3";
@@ -588,8 +590,9 @@ namespace TGS.Views {
             // 
             // img_IconReport2
             // 
+            this.img_IconReport2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_IconReport2.BackgroundImage")));
+            this.img_IconReport2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.img_IconReport2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_IconReport2.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport2.Image")));
             this.img_IconReport2.Location = new System.Drawing.Point(3, 4);
             this.img_IconReport2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconReport2.Name = "img_IconReport2";
@@ -629,8 +632,9 @@ namespace TGS.Views {
             // 
             // img_IconReport4
             // 
+            this.img_IconReport4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.BackgroundImage")));
+            this.img_IconReport4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.img_IconReport4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.img_IconReport4.Image = ((System.Drawing.Image)(resources.GetObject("img_IconReport4.Image")));
             this.img_IconReport4.Location = new System.Drawing.Point(3, 4);
             this.img_IconReport4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconReport4.Name = "img_IconReport4";

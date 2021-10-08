@@ -171,6 +171,10 @@ namespace TGS.Views {
             CollapseMenu();
         }
 
+        private void btn_MenuHome_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "home");
+        }
+
         private void btn_MenuCalendar_Click(object sender, EventArgs e) {
             alterPageController.AlterPage(ActiveForm, "calendar");
         }
@@ -190,5 +194,7 @@ namespace TGS.Views {
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
             authenticateController.Logout(ActiveForm);
         }
+
+        
     }
 }

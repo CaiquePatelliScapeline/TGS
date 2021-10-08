@@ -18,7 +18,7 @@ namespace TGS.Controllers.Consult {
             try {
                 query.Connection = dbConn.Connect();
 
-                query.CommandText = "SELECT COUNT(ID_CONSULT) FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 1;";
+                query.CommandText = "SELECT COUNT(ID_CONSULT) AS TOTAL FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 1;";
                 reader = query.ExecuteReader();
                 reader.Read();
 
@@ -33,16 +33,20 @@ namespace TGS.Controllers.Consult {
                 int i = 0;
                 while (reader.Read()) {
                     consults[i, 0] = $"{reader["ID_CONSULT"]}";
-                    consults[i, 1] = $"{reader["DATE_CONSULT"]}";
+
+                    string date = Convert.ToString(reader["DATE_CONSULT"]);
+
+                    consults[i, 1] = $"{date.Substring(0, date.IndexOf(' '))}";
                     consults[i, 2] = $"{reader["TIME_CONSULT"]}";
                     consults[i, 3] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME_DENTIST"]}";
-                    consults[i, 4] = $"{reader["PROCEDURE_TITLE"]}";
 
                     if (string.IsNullOrEmpty(Convert.ToString(reader["NICKNAME"]))) {
-                        consults[i, 5] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME_PATIENT"]}";
+                        consults[i, 4] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME_PATIENT"]}";
                     } else {
-                        consults[i, 5] = $"{reader["NICKNAME"]}";
+                        consults[i, 4] = $"{reader["NICKNAME"]}";
                     }
+
+                    consults[i, 5] = $"{reader["PROCEDURE_TITLE"]}";                  
                 }
 
                 reader.Close();

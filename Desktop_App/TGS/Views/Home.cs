@@ -12,29 +12,24 @@ using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
 using TGS.Model;
+using TGS.Controllers.Consult;
 
 namespace TGS.Views {
     public partial class Home : Form {
 
         public Home() {
-            InitializeComponent();
+            InitializeComponent();         
+
+            this.Padding = new Padding(borderSize); // Border Size
+            this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
+
             CollapseMenu();
+            ReportsLoad();
 
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
             lbl_Welcome.Text = $"Bem-Vindo(a), {Session.Name}";
 
-            this.Padding = new Padding(borderSize); // Border Size
-            this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
-            string[] item = new string[6];
-            item[0] = "Miriam";
-            item[1] = " ";
-            item[2] = "Dr. Fernando";
-            item[3] = "diabetes";
-            item[4] = "14:00";
-            item[5] = "1";
-
-            ListViewItem items = new ListViewItem(item);
-            lv_Consults.Items.Add(items);
+            List(schedulingConsult.ScheduleClosedConsult());
         }
 
 
@@ -42,6 +37,8 @@ namespace TGS.Views {
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
+        ReportsConsult reportsConsult = new ReportsConsult();
+        SchedulingConsult schedulingConsult = new SchedulingConsult();
 
         // Fields
         private int borderSize = 2;
@@ -203,6 +200,30 @@ namespace TGS.Views {
 
         private void btn_MenuLogout_Click(object sender, EventArgs e) {
             authenticateController.Logout(ActiveForm);
+        }
+
+
+        private void ReportsLoad() {
+            int[] reportsSearch = { 0, 1, 2, 3 };            
+            string[,] reports = reportsConsult.Reports(reportsSearch);
+
+            lbl_TitleReport1.Text = reports[0, 0];
+            lbl_ValueReport1.Text = reports[0, 1];
+            lbl_TitleReport2.Text = reports[1, 0];
+            lbl_ValueReport2.Text = reports[1, 1];
+            lbl_TitleReport3.Text = reports[2, 0];
+            lbl_ValueReport3.Text = reports[2, 1];
+            lbl_TitleReport4.Text = reports[3, 0];
+            lbl_ValueReport4.Text = reports[3, 1];
+        }
+
+        private void List(string[,] items) {
+            for (int i = 0; i < items.GetLength(0); i++) {
+                lv_Consults.Items.Add(items[i, 0]);
+                for (int j = 1; j < items.GetLength(1); j++) {
+                    lv_Consults.Items[i].SubItems.Add(items[i, j]);
+                }
+            }
         }
     }
 }

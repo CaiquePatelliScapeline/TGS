@@ -495,7 +495,7 @@ namespace TGS.Views {
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.Size = new System.Drawing.Size(90, 94);
             this.btn_Next.TabIndex = 0;
-            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);            
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
             // lv_Schedule
             // 
@@ -504,8 +504,11 @@ namespace TGS.Views {
             this.lv_Schedule.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_Schedule.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lv_Schedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.lv_Schedule.FullRowSelect = true;
+            this.lv_Schedule.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lv_Schedule.HideSelection = false;
             this.lv_Schedule.Location = new System.Drawing.Point(13, 119);
+            this.lv_Schedule.MultiSelect = false;
             this.lv_Schedule.Name = "lv_Schedule";
             this.lv_Schedule.Size = new System.Drawing.Size(1156, 651);
             this.lv_Schedule.TabIndex = 2;

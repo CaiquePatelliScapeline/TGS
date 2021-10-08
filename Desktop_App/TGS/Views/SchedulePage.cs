@@ -237,11 +237,17 @@ namespace TGS.Views {
         }
 
         private void btn_Next_Click(object sender, EventArgs e) {
-
+            DateTime date = Convert.ToDateTime(txt_Date.Text);
+            string newDate = Convert.ToString(date.AddDays(1));
+            txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
+            ListRender();
         }
 
         private void btn_Return_Click(object sender, EventArgs e) {
-
+            DateTime date = Convert.ToDateTime(txt_Date.Text);
+            string newDate = Convert.ToString(date.AddDays(-1));
+            txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
+            ListRender();
         }
     }
 }

@@ -209,58 +209,87 @@ namespace TGS.Views {
             lbl_Title1.Visible = true;
             txt_Input1.Visible = true;
             txt_Input1.Text = "";
+            txt_Input1.Mask = "";
             // Input 2
             lbl_Title2.Visible = true;
             txt_Input2.Visible = true;
             txt_Input2.Text = "";
+            txt_Input2.Mask = "";
             // Input 3
             lbl_Title3.Visible = true;
             txt_Input3.Visible = true;
             txt_Input3.Text = "";
+            txt_Input3.Mask = "";
             // Input 4
             lbl_Title4.Visible = true;
             txt_Input4.Visible = true;
             txt_Input4.Text = "";
+            txt_Input4.Mask = "";
             // Input 5
             lbl_Title5.Visible = true;
             txt_Input5.Visible = true;
             txt_Input5.Text = "";
+            txt_Input5.Mask = "";
             // Input 6
             lbl_Title6.Visible = true;
             txt_Input6.Visible = true;
             txt_Input6.Text = "";
+            txt_Input6.Mask = "";
             // Input 7
             lbl_Title7.Visible = true;
             txt_Input7.Visible = true;
             txt_Input7.Text = "";
+            txt_Input7.Mask = "";
             // Input 8
             lbl_Title8.Visible = true;
             txt_Input8.Visible = true;
             txt_Input8.Text = "";
+            txt_Input8.Mask = "";
             // Input 9
             lbl_Title9.Visible = true;
             txt_Input9.Visible = true;
             txt_Input9.Text = "";
+            txt_Input9.Mask = "";
             // Input 10
             lbl_Title10.Visible = true;
             txt_Input10.Visible = true;
             txt_Input10.Text = "";
+            txt_Input10.Mask = "";
 
             lbl_Part.Visible   = true;
             btn_Back.Visible   = false;
             btn_Forward.Text = "Cadastrar";
 
             switch (formRender) {
+                // Employees
                 case "employees":
                     lbl_Title.Text = "Cadastro de Funcionários";
+                    // Name
                     lbl_Title1.Text = "Nome";
+                    txt_Input1.MaxLength = 20;
+                    // Last Name
                     lbl_Title2.Text = "Sobrenome";
+                    txt_Input2.MaxLength = 40;
+                    // E-mail
                     lbl_Title3.Text = "E-mail";
+                    txt_Input3.MaxLength = 40;
+                    // Telephone
                     lbl_Title4.Text = "Telefone";
+                    txt_Input4.Mask = "(00)0000-0000";
+                    txt_Input4.MaxLength = 13;
+                    // Cellphone
                     lbl_Title5.Text = "Celular";
+                    txt_Input5.Mask = "(00)00000-0000";
+                    txt_Input5.MaxLength = 14;
+                    // CPF
                     lbl_Title6.Text = "CPF";
+                    txt_Input6.Mask = "000.000.000-00";
+                    txt_Input6.MaxLength = 14;
+                    // Password
                     lbl_Title7.Text = "Senha";
                     txt_Input7.PasswordChar = Convert.ToChar("*");
+                    txt_Input7.MaxLength = 26;
+                    // Other Inputs
                     lbl_Title8.Visible = false;
                     txt_Input8.Visible = false;
                     lbl_Title9.Visible = false;
@@ -269,12 +298,23 @@ namespace TGS.Views {
                     txt_Input10.Visible = false;
                     lbl_Part.Visible = false;
                     break;
+                // Dentists
                 case "dentists":
                     lbl_Title.Text = "Cadastro de Denstistas";
+                    // CRO
                     lbl_Title1.Text = "CRO";
+                    txt_Input1.Mask = "00.000";
+                    txt_Input1.MaxLength = 6;
+                    // Name
                     lbl_Title2.Text = "Nome";
+                    txt_Input2.MaxLength = 20;
+                    // Last Name
                     lbl_Title3.Text = "Sobrenome";
+                    txt_Input3.MaxLength = 40;
+                    // Expertise
                     lbl_Title4.Text = "Especialidade";
+                    txt_Input4.MaxLength = 15;
+                    // Other Inputs
                     lbl_Title5.Visible = false;
                     txt_Input5.Visible = false;
                     lbl_Title6.Visible = false;
@@ -291,7 +331,10 @@ namespace TGS.Views {
                     break;
                 case "consults-categories":
                     lbl_Title.Text = "Cadastro de Categoria de Consulta";
+                    // Title
                     lbl_Title1.Text = "Título da Categoria";
+                    txt_Input1.MaxLength = 20;
+                    // Other Inputs
                     lbl_Title2.Visible = false;
                     txt_Input2.Visible = false;
                     lbl_Title3.Visible = false;
@@ -315,31 +358,64 @@ namespace TGS.Views {
                 case "patients":
                     lbl_Title.Text = "Cadastro de Pacientes";
                     switch (formPart) {
+                        // Basic Data
                         case 1:
                             lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Dados Básicos";
                             lbl_Part.Text = "Parte 1 de 3   ";
+                            // Name
                             lbl_Title1.Text = "Nome";
+                            txt_Input1.MaxLength = 20;
+                            // Last Name
                             lbl_Title2.Text = "Sobrenome";
+                            txt_Input2.MaxLength = 40;
+                            // Nickname
                             lbl_Title3.Text = "Apelido";
+                            txt_Input3.MaxLength = 20;
+                            // Birth Date
                             lbl_Title4.Text = "Data de Nascimento";
+                            txt_Input4.Mask = "00/00/000";
+                            txt_Input4.MaxLength = 9;
+                            // CPF
                             lbl_Title5.Text = "CPF";
+                            txt_Input5.Mask = "000.000.000-00";
+                            txt_Input5.MaxLength = 14;
+                            // RG
                             lbl_Title6.Text = "RG";
+                            txt_Input6.Mask = "00.000.000-A";
+                            txt_Input6.MaxLength = 12;
+                            // Height
                             lbl_Title7.Text = "Altura";
+                            txt_Input7.Mask = "0,00";
+                            txt_Input7.MaxLength = 4;
+                            // Weight
                             lbl_Title8.Text = "Peso";
+                            txt_Input8.Mask = "000,00";
+                            txt_Input8.MaxLength = 6;
+                            // Other Inputs
                             lbl_Title9.Visible = false;
                             txt_Input9.Visible = false;
                             lbl_Title10.Visible = false;
                             txt_Input10.Visible = false;
                             btn_Forward.Text = "Avançar";
                             break;
+                        // Contact
                         case 2:
                             lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Contato";
                             lbl_Part.Text = "Parte 2 de 3   ";
+                            // Cellphone
                             lbl_Title1.Text = "Celular";
+                            txt_Input1.Mask = "(00)00000-0000";
+                            txt_Input1.MaxLength = 14;
+                            // Telephone
                             lbl_Title2.Text = "Telefone";
+                            txt_Input2.Mask = "(00)0000-0000";
+                            txt_Input2.MaxLength = 13;
+                            // E-mail
                             lbl_Title3.Text = "E-mail";
+                            txt_Input3.MaxLength = 40;
+                            // Other Inputs
                             lbl_Title4.Visible = false;
                             txt_Input4.Visible = false;
                             lbl_Title5.Visible = false;
@@ -357,17 +433,34 @@ namespace TGS.Views {
                             btn_Back.Visible = true;
                             btn_Forward.Text = "Avançar";
                             break;
+                        // Address
                         case 3:
                             lbl_TitlePart.Visible = true;
                             lbl_TitlePart.Text = "   Localidade";
                             lbl_Part.Text = "Parte 3 de 3   ";
+                            // Street
                             lbl_Title1.Text = "Logradouro";
+                            txt_Input1.MaxLength = 50;
+                            // Neighborhood
                             lbl_Title2.Text = "Bairro";
+                            txt_Input2.MaxLength = 20;
+                            // Number
                             lbl_Title3.Text = "Número";
+                            txt_Input3.MaxLength = 4;
+                            // Complement
                             lbl_Title4.Text = "Complemento";
+                            txt_Input4.MaxLength = 15;
+                            // City
                             lbl_Title5.Text = "Cidade";
+                            txt_Input5.MaxLength = 30;
+                            // CEP
                             lbl_Title6.Text = "CEP";
+                            txt_Input6.Mask = "00.000-000";
+                            txt_Input6.MaxLength = 10;
+                            // District
                             lbl_Title7.Text = "Estado";
+                            txt_Input7.MaxLength = 20;
+                            // Other Inputs
                             lbl_Title8.Visible = false;
                             txt_Input8.Visible = false;
                             lbl_Title9.Visible = false;
@@ -381,15 +474,30 @@ namespace TGS.Views {
                             break;
                     }
                     break;
+                // Consults
                 case "consults":
                     lbl_TitlePart.Visible = false;
                     lbl_Title.Text = "Cadastro de Consultas";
-                    lbl_Title1.Text = "Nome do Paciente";
-                    lbl_Title2.Text = "Profissional";
-                    lbl_Title3.Text = "Dia";
-                    lbl_Title4.Text = "Mês";
-                    lbl_Title5.Text = "Horário";
-                    lbl_Title6.Text = "Categoria da Consulta";
+                    // Patient Name
+                    lbl_Title1.Text = "CPF do Paciente";
+                    txt_Input1.Mask = "000.000.000-00";
+                    txt_Input1.MaxLength = 14;
+                    // Date
+                    lbl_Title2.Text = "Data";
+                    txt_Input2.Mask = "00/00/0000";
+                    txt_Input2.MaxLength = 9;
+                    // Time
+                    lbl_Title3.Text = "Horário";
+                    txt_Input3.Mask = "00:00";
+                    txt_Input3.MaxLength = 5;
+                    // Procedure
+                    lbl_Title4.Text = "Categoria da Consulta";
+                    txt_Input4.MaxLength = 20;
+                    // Other Inputs
+                    lbl_Title5.Visible = false;
+                    txt_Input5.Visible = false;
+                    lbl_Title6.Visible = false;
+                    txt_Input6.Visible = false;
                     lbl_Title7.Visible = false;
                     txt_Input7.Visible = false;
                     lbl_Title8.Visible = false;

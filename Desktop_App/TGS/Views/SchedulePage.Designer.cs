@@ -79,6 +79,7 @@ namespace TGS.Views {
             // 
             // btn_MenuLogout
             // 
+            this.btn_MenuLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_MenuLogout.FlatAppearance.BorderSize = 0;
             this.btn_MenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -103,6 +104,7 @@ namespace TGS.Views {
             // 
             // btn_MenuOptions
             // 
+            this.btn_MenuOptions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuOptions.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuOptions.FlatAppearance.BorderSize = 0;
             this.btn_MenuOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -127,6 +129,7 @@ namespace TGS.Views {
             // 
             // btn_MenuPacientes
             // 
+            this.btn_MenuPacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuPacientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuPacientes.FlatAppearance.BorderSize = 0;
             this.btn_MenuPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -151,6 +154,7 @@ namespace TGS.Views {
             // 
             // btn_MenuChat
             // 
+            this.btn_MenuChat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuChat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuChat.FlatAppearance.BorderSize = 0;
             this.btn_MenuChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -175,6 +179,7 @@ namespace TGS.Views {
             // 
             // btn_MenuCalendar
             // 
+            this.btn_MenuCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuCalendar.FlatAppearance.BorderSize = 0;
             this.btn_MenuCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -199,6 +204,7 @@ namespace TGS.Views {
             // 
             // btn_MenuHome
             // 
+            this.btn_MenuHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuHome.FlatAppearance.BorderSize = 0;
             this.btn_MenuHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -242,6 +248,7 @@ namespace TGS.Views {
             // 
             // btn_MenuHamburger
             // 
+            this.btn_MenuHamburger.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHamburger.FlatAppearance.BorderSize = 0;
             this.btn_MenuHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MenuHamburger.IconChar = FontAwesome.Sharp.IconChar.Bars;
@@ -286,7 +293,7 @@ namespace TGS.Views {
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Date.Location = new System.Drawing.Point(93, 36);
+            this.lbl_Date.Location = new System.Drawing.Point(84, 41);
             this.lbl_Date.Name = "lbl_Date";
             this.lbl_Date.Size = new System.Drawing.Size(97, 30);
             this.lbl_Date.TabIndex = 6;
@@ -297,7 +304,7 @@ namespace TGS.Views {
             this.lbl_Welcome.AutoSize = true;
             this.lbl_Welcome.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Welcome.Location = new System.Drawing.Point(84, 3);
+            this.lbl_Welcome.Location = new System.Drawing.Point(77, 3);
             this.lbl_Welcome.Name = "lbl_Welcome";
             this.lbl_Welcome.Size = new System.Drawing.Size(143, 38);
             this.lbl_Welcome.TabIndex = 5;
@@ -307,6 +314,7 @@ namespace TGS.Views {
             // 
             this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.FlatAppearance.BorderSize = 0;
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Minimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
@@ -325,6 +333,7 @@ namespace TGS.Views {
             // 
             this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Maximize.FlatAppearance.BorderSize = 0;
             this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Maximize.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
@@ -343,6 +352,7 @@ namespace TGS.Views {
             // 
             this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(74)))), ((int)(((byte)(130)))));
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Close.FlatAppearance.BorderSize = 0;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Close.IconChar = FontAwesome.Sharp.IconChar.Times;
@@ -453,6 +463,7 @@ namespace TGS.Views {
             // 
             this.btn_Return.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Return.BackgroundImage")));
             this.btn_Return.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Return.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Return.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_Return.Location = new System.Drawing.Point(0, 0);
             this.btn_Return.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -464,6 +475,7 @@ namespace TGS.Views {
             // 
             this.btn_Next.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Next.BackgroundImage")));
             this.btn_Next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_Next.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Next.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_Next.Location = new System.Drawing.Point(931, 0);
             this.btn_Next.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

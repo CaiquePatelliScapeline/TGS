@@ -502,7 +502,7 @@ namespace TGS.Views {
             this.lbl_TitleOptions2.Name = "lbl_TitleOptions2";
             this.lbl_TitleOptions2.Size = new System.Drawing.Size(765, 83);
             this.lbl_TitleOptions2.TabIndex = 1;
-            this.lbl_TitleOptions2.Text = "Cadastro de Categoria de Consulta";
+            this.lbl_TitleOptions2.Text = "Cadastro de Procedimentos";
             this.lbl_TitleOptions2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_TitleOptions2.Click += new System.EventHandler(this.Option2_Click);
             this.lbl_TitleOptions2.MouseLeave += new System.EventHandler(this.Option2_MouseLeave);
@@ -541,9 +541,9 @@ namespace TGS.Views {
             // pnl_Option3
             // 
             this.pnl_Option3.BackColor = System.Drawing.Color.White;
-            this.pnl_Option3.Controls.Add(this.lbl_TitleOptions3);
-            this.pnl_Option3.Controls.Add(this.img_TitleOptions3);
-            this.pnl_Option3.Controls.Add(this.img_ArrowOptions3);
+            this.pnl_Option3.Controls.Add(this.lbl_TitleOptions4);
+            this.pnl_Option3.Controls.Add(this.img_ArrowOptions4);
+            this.pnl_Option3.Controls.Add(this.img_TitleOptions4);
             this.pnl_Option3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Option3.Location = new System.Drawing.Point(54, 244);
             this.pnl_Option3.Name = "pnl_Option3";
@@ -598,9 +598,9 @@ namespace TGS.Views {
             // pnl_Option4
             // 
             this.pnl_Option4.BackColor = System.Drawing.Color.White;
-            this.pnl_Option4.Controls.Add(this.lbl_TitleOptions4);
-            this.pnl_Option4.Controls.Add(this.img_TitleOptions4);
-            this.pnl_Option4.Controls.Add(this.img_ArrowOptions4);
+            this.pnl_Option4.Controls.Add(this.lbl_TitleOptions3);
+            this.pnl_Option4.Controls.Add(this.img_TitleOptions3);
+            this.pnl_Option4.Controls.Add(this.img_ArrowOptions3);
             this.pnl_Option4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Option4.Location = new System.Drawing.Point(54, 356);
             this.pnl_Option4.Name = "pnl_Option4";

@@ -205,6 +205,7 @@ namespace TGS.Views {
             // 
             // btn_MenuLogout
             // 
+            this.btn_MenuLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_MenuLogout.FlatAppearance.BorderSize = 0;
             this.btn_MenuLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -229,6 +230,7 @@ namespace TGS.Views {
             // 
             // btn_MenuOptions
             // 
+            this.btn_MenuOptions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuOptions.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuOptions.FlatAppearance.BorderSize = 0;
             this.btn_MenuOptions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -253,6 +255,7 @@ namespace TGS.Views {
             // 
             // btn_MenuPacientes
             // 
+            this.btn_MenuPacientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuPacientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuPacientes.FlatAppearance.BorderSize = 0;
             this.btn_MenuPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -277,6 +280,7 @@ namespace TGS.Views {
             // 
             // btn_MenuChat
             // 
+            this.btn_MenuChat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuChat.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuChat.FlatAppearance.BorderSize = 0;
             this.btn_MenuChat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -301,6 +305,7 @@ namespace TGS.Views {
             // 
             // btn_MenuCalendar
             // 
+            this.btn_MenuCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuCalendar.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuCalendar.FlatAppearance.BorderSize = 0;
             this.btn_MenuCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -325,6 +330,7 @@ namespace TGS.Views {
             // 
             // btn_MenuHome
             // 
+            this.btn_MenuHome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHome.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_MenuHome.FlatAppearance.BorderSize = 0;
             this.btn_MenuHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -368,6 +374,7 @@ namespace TGS.Views {
             // 
             // btn_MenuHamburger
             // 
+            this.btn_MenuHamburger.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_MenuHamburger.FlatAppearance.BorderSize = 0;
             this.btn_MenuHamburger.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_MenuHamburger.IconChar = FontAwesome.Sharp.IconChar.Bars;
@@ -693,6 +700,7 @@ namespace TGS.Views {
             // 
             this.btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btn_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Minimize.FlatAppearance.BorderSize = 0;
             this.btn_Minimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Minimize.IconChar = FontAwesome.Sharp.IconChar.Minus;
@@ -711,6 +719,7 @@ namespace TGS.Views {
             // 
             this.btn_Maximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Maximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.btn_Maximize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Maximize.FlatAppearance.BorderSize = 0;
             this.btn_Maximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Maximize.IconChar = FontAwesome.Sharp.IconChar.ExternalLinkAlt;
@@ -729,6 +738,7 @@ namespace TGS.Views {
             // 
             this.btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(74)))), ((int)(((byte)(130)))));
+            this.btn_Close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Close.FlatAppearance.BorderSize = 0;
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Close.IconChar = FontAwesome.Sharp.IconChar.Times;

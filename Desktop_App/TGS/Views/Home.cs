@@ -29,7 +29,7 @@ namespace TGS.Views {
             lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
             lbl_Welcome.Text = $"Bem-Vindo(a), {Session.Name}";
 
-            List(schedulingConsult.ScheduleClosedConsult());
+            List(schedulingConsult.ScheduleClosedConsult(lbl_Date.Text));
         }
 
 

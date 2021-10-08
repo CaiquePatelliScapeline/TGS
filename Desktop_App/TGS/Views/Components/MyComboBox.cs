@@ -232,6 +232,7 @@ namespace TGS.Views.Components {
             cmbList.ForeColor = listTextColor;
             cmbList.SelectedIndexChanged += new EventHandler(ComboBox_SelectedIndexChanged); // Default event
             cmbList.TextChanged += new EventHandler(ComboBox_TextChanged); // Refresh text
+            //cmbList.TextUpdate += new EventHandler(ComboBox_TextUpdated);
 
             // Button: Icon
             btnIcon.Dock = DockStyle.Right;

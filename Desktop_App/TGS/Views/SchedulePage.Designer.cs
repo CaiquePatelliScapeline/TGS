@@ -455,6 +455,7 @@ namespace TGS.Views {
             this.cb_TypeSchedule.Size = new System.Drawing.Size(286, 52);
             this.cb_TypeSchedule.TabIndex = 4;
             this.cb_TypeSchedule.Texts = "Agenda Livre";
+            this.cb_TypeSchedule.OnSelectedIndexChanged += new System.EventHandler(this.cb_TypeSchedule_OnSelectedIndexChanged);
             // 
             // txt_Date
             // 
@@ -470,6 +471,7 @@ namespace TGS.Views {
             this.txt_Date.TabIndex = 3;
             this.txt_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Date.ValidatingType = typeof(System.DateTime);
+            this.txt_Date.TextChanged += new System.EventHandler(this.txt_Date_TextChanged);
             // 
             // btn_Return
             // 
@@ -481,6 +483,7 @@ namespace TGS.Views {
             this.btn_Return.Name = "btn_Return";
             this.btn_Return.Size = new System.Drawing.Size(90, 94);
             this.btn_Return.TabIndex = 1;
+            this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
             // 
             // btn_Next
             // 
@@ -492,6 +495,7 @@ namespace TGS.Views {
             this.btn_Next.Name = "btn_Next";
             this.btn_Next.Size = new System.Drawing.Size(90, 94);
             this.btn_Next.TabIndex = 0;
+            this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);            
             // 
             // lv_Schedule
             // 

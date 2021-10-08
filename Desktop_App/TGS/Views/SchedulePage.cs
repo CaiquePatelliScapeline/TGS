@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
+using TGS.Controllers.Consult;
 
 namespace TGS.Views {
     public partial class SchedulePage : Form {
@@ -17,7 +18,9 @@ namespace TGS.Views {
             InitializeComponent();
             CollapseMenu();
 
-            lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            txt_Date.Text = lbl_Date.Text = DateTime.Now.ToString("dd/MM/yyyy");
+
+            ListRender();
 
             this.Padding = new Padding(borderSize); // Border Size
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
@@ -27,6 +30,7 @@ namespace TGS.Views {
         HeaderController headerController = new HeaderController();
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
+        SchedulingConsult schedulingConsult = new SchedulingConsult();
 
 
         // Fields
@@ -195,6 +199,49 @@ namespace TGS.Views {
             authenticateController.Logout(ActiveForm);
         }
 
-        
+        private void cb_TypeSchedule_OnSelectedIndexChanged(object sender, EventArgs e) {
+            ListRender();
+        }
+
+        private void ListRender() {
+            if (cb_TypeSchedule.Texts == "Agenda Livre") {
+                lv_Schedule.Clear();
+                lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
+                lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Dentista", 400, HorizontalAlignment.Center);
+                List(schedulingConsult.ScheduleOpenedConsult(txt_Date.Text));
+            } else {
+                lv_Schedule.Clear();
+                lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
+                lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Dentista", 300, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Paciente", 300, HorizontalAlignment.Center);
+                lv_Schedule.Columns.Add("Procedimento", 200, HorizontalAlignment.Center);
+                List(schedulingConsult.ScheduleClosedConsult(txt_Date.Text));
+            }
+        }
+
+        private void List(string[,] items) {
+            for (int i = 0; i < items.GetLength(0); i++) {
+                lv_Schedule.Items.Add(items[i, 0]);
+                for (int j = 1; j < items.GetLength(1); j++) {
+                    lv_Schedule.Items[i].SubItems.Add(items[i, j]);
+                }
+            }
+        }
+
+        private void txt_Date_TextChanged(object sender, EventArgs e) {
+            ListRender();
+        }
+
+        private void btn_Next_Click(object sender, EventArgs e) {
+
+        }
+
+        private void btn_Return_Click(object sender, EventArgs e) {
+
+        }
     }
 }

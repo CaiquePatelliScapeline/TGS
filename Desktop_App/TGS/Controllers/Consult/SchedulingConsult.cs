@@ -14,11 +14,11 @@ namespace TGS.Controllers.Consult {
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
 
-        public string[,] ScheduleClosedConsult() {
+        public string[,] ScheduleClosedConsult(string dateSearch) {
             try {
                 query.Connection = dbConn.Connect();
 
-                query.CommandText = "SELECT COUNT(ID_CONSULT) AS TOTAL FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 1;";
+                query.CommandText = $"SELECT COUNT(ID_CONSULT) AS TOTAL FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 1 AND DATE_CONSULT = '{dateSearch}';";
                 reader = query.ExecuteReader();
                 reader.Read();
 
@@ -27,7 +27,7 @@ namespace TGS.Controllers.Consult {
 
                 reader.Close();
 
-                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE, P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE ORDER BY C.ID_CONSULT;";
+                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE, P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
@@ -91,11 +91,11 @@ namespace TGS.Controllers.Consult {
             }
         }
 
-        public string[,] ScheduleOpenedConsult() {
+        public string[,] ScheduleOpenedConsult(string dateSearch) {
             try {
                 query.Connection = dbConn.Connect();
 
-                query.CommandText = "SELECT COUNT(ID_CONSULT) FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 0;";
+                query.CommandText = $"SELECT COUNT(ID_CONSULT) AS TOTAL FROM TB_CONSULTS WHERE STATUS_SCHEDULE = 0 AND DATE_CONSULT = '{dateSearch}';";
                 reader = query.ExecuteReader();
                 reader.Read();
 
@@ -104,7 +104,7 @@ namespace TGS.Controllers.Consult {
 
                 reader.Close();
 
-                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE FROM TB_DENTISTS AS D, TB_CONSULTS AS C WHERE C.STATUS_SCHEDULE = 0 AND C.CRO_DENTIST = D.CRO_DENTIST ORDER BY C.ID_CONSULT;";
+                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE FROM TB_DENTISTS AS D, TB_CONSULTS AS C WHERE C.STATUS_SCHEDULE = 0 AND C.CRO_DENTIST = D.CRO_DENTIST AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT;";
                 reader = query.ExecuteReader();
 
                 int i = 0;

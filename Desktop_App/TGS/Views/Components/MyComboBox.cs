@@ -24,7 +24,6 @@ namespace TGS.Views.Components {
         private Button btnIcon;
 
         // Properties
-
         [Category("ComboBox Apperance")]
         public new Color BackColor {
             get => backColor;
@@ -276,6 +275,12 @@ namespace TGS.Views.Components {
             };
         }
 
+        // Overridden methods
+        protected override void OnResize(EventArgs e) {
+            base.OnResize(e);
+            AdjustComboBoxDimensions();
+        }
+
         // Event Methods
         // Default Event
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e) {
@@ -313,8 +318,7 @@ namespace TGS.Views.Components {
             Graphics graph = e.Graphics;
             // Draw arrow down icon
             using (GraphicsPath path = new GraphicsPath())
-            using (Pen pen = new Pen(iconColor, 2))
-            {
+            using (Pen pen = new Pen(iconColor, 2)) {
                 graph.SmoothingMode = SmoothingMode.AntiAlias;
                 path.AddLine(rectIcon.X, rectIcon.Y, rectIcon.X + (iconWidht / 2), rectIcon.Bottom);
                 path.AddLine(rectIcon.X + (iconWidht / 2), rectIcon.Bottom, rectIcon.Right, rectIcon.Y);

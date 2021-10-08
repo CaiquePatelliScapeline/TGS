@@ -44,6 +44,8 @@ namespace TGS.Views {
             this.btn_Close = new FontAwesome.Sharp.IconButton();
             this.tb_Content = new System.Windows.Forms.TableLayoutPanel();
             this.pnl_HeaderList = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.cb_TypeSchedule = new TGS.Views.Components.MyComboBox();
             this.txt_Date = new System.Windows.Forms.MaskedTextBox();
             this.btn_Return = new System.Windows.Forms.Panel();
             this.btn_Next = new System.Windows.Forms.Panel();
@@ -55,6 +57,7 @@ namespace TGS.Views {
             this.pnl_TitleBar.SuspendLayout();
             this.tb_Content.SuspendLayout();
             this.pnl_HeaderList.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Menu
@@ -381,6 +384,7 @@ namespace TGS.Views {
             // pnl_HeaderList
             // 
             this.pnl_HeaderList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.pnl_HeaderList.Controls.Add(this.tableLayoutPanel1);
             this.pnl_HeaderList.Controls.Add(this.txt_Date);
             this.pnl_HeaderList.Controls.Add(this.btn_Return);
             this.pnl_HeaderList.Controls.Add(this.btn_Next);
@@ -390,6 +394,44 @@ namespace TGS.Views {
             this.pnl_HeaderList.Name = "pnl_HeaderList";
             this.pnl_HeaderList.Size = new System.Drawing.Size(1010, 71);
             this.pnl_HeaderList.TabIndex = 1;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
+            this.tableLayoutPanel1.Controls.Add(this.cb_TypeSchedule, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(79, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(852, 44);
+            this.tableLayoutPanel1.TabIndex = 4;
+            // 
+            // cb_TypeSchedule
+            // 
+            this.cb_TypeSchedule.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cb_TypeSchedule.BackColor = System.Drawing.Color.Transparent;
+            this.cb_TypeSchedule.BorderColor = System.Drawing.Color.Transparent;
+            this.cb_TypeSchedule.BorderSize = 0;
+            this.cb_TypeSchedule.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cb_TypeSchedule.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cb_TypeSchedule.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cb_TypeSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.cb_TypeSchedule.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.cb_TypeSchedule.Items.AddRange(new object[] {
+            "Agenda Livre",
+            "Agenda Ocupada"});
+            this.cb_TypeSchedule.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
+            this.cb_TypeSchedule.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.cb_TypeSchedule.Location = new System.Drawing.Point(301, 3);
+            this.cb_TypeSchedule.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cb_TypeSchedule.Name = "cb_TypeSchedule";
+            this.cb_TypeSchedule.Size = new System.Drawing.Size(249, 38);
+            this.cb_TypeSchedule.TabIndex = 4;
+            this.cb_TypeSchedule.Texts = "Agenda Livre";
             // 
             // txt_Date
             // 
@@ -467,6 +509,7 @@ namespace TGS.Views {
             this.tb_Content.ResumeLayout(false);
             this.pnl_HeaderList.ResumeLayout(false);
             this.pnl_HeaderList.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -496,5 +539,7 @@ namespace TGS.Views {
         private System.Windows.Forms.Panel btn_Return;
         private System.Windows.Forms.Panel btn_Next;
         private System.Windows.Forms.MaskedTextBox txt_Date;
+        private Components.MyComboBox cb_TypeSchedule;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

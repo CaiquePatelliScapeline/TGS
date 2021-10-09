@@ -205,7 +205,8 @@ namespace TGS.Views {
 
         private void txt_Date_TextChanged(object sender, EventArgs e) {
             if (txt_Date.Text.Length == 10) {
-                if (!ValidateDate(txt_Date.Text)) {
+                ValidateController validateController = new ValidateController();
+                if (!validateController.ValidateDate(txt_Date.Text)) {
                     txt_Date.Text = lbl_Date.Text;
                 }
                 ListRender();
@@ -256,7 +257,8 @@ namespace TGS.Views {
         }
 
         private void AddDays(int days) {
-            if (ValidateDate(txt_Date.Text)) {
+            ValidateController validateController = new ValidateController();
+            if (validateController.ValidateDate(txt_Date.Text)) {
                 DateTime date = Convert.ToDateTime(txt_Date.Text);
                 string newDate = Convert.ToString(date.AddDays(days));
                 txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
@@ -264,6 +266,7 @@ namespace TGS.Views {
                 txt_Date.Text = lbl_Date.Text;
             }
         }
+<<<<<<< Updated upstream
 
         private bool ValidateDate(string date) {
             return DateTime.TryParse(date, out DateTime time);
@@ -285,5 +288,7 @@ namespace TGS.Views {
                 alterPageController.AlterPage(ActiveForm, "consult-details");
             }
         }
+=======
+>>>>>>> Stashed changes
     }
 }

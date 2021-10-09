@@ -17,11 +17,9 @@ namespace TGS.Controllers.Criptography {
         MD5Hash md5Hash = new MD5Hash();
 
         public void Login(String email, String password, Form form) {
-            Regex emailValidate = new Regex(@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$");
+            ValidateController validateController = new ValidateController();
 
-            if (!(emailValidate.IsMatch(email))) {
-                MyMsgBox.Show("Error", "E-mail inválido!", false);
-            } else {
+            if (validateController.ValidateEmail(email)) {                      
                 string hashPassword = md5Hash.CreateMD5Hash(password);
                 query.Connection = dbConn.Connect();
                 query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE FROM TB_EMPLOYEES WHERE EMAIL = '{email}' AND PASSWORD_EMPLOYEE = '{hashPassword}';";
@@ -38,6 +36,8 @@ namespace TGS.Controllers.Criptography {
                 }
                 reader.Close();
                 dbConn.Disconnect();
+            } else {
+                MyMsgBox.Show("Error", "E-mail inválido!", false);
             }
         }
 

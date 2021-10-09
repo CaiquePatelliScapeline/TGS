@@ -2,25 +2,24 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Text;
-using System.Text.RegularExpressions;
 using TGS.Model;
 using TGS.Views;
+using TGS.Controllers.Main;
+using TGS.Controllers.Criptography;
 
 namespace TGS.Controllers.Register {
     class EmployeesRegistration {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
-        MyMsgBox MyMsgBox = new MyMsgBox();
+        MD5Hash md5Hash = new MD5Hash();
 
-        public void EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password) {
-            Regex emailValidate = new Regex(@"^(?("")("".+?""@)|(([0-9a-zA-Z]((\.(?!\.))|[-!#\$%&'\*\+/=\?\^`\{\}\|~\w])*)(?<=[0-9a-zA-Z])@))(?(\[)(\[(\d{1,3}\.){3}\d{1,3}\])|(([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,6}))$");
+        public void EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password) {        
+            string hashPassword = md5Hash.CreateMD5Hash(password);
 
-            string hashPassword = password;
+            ValidateController validateController = new ValidateController();
 
-            if (!(emailValidate.IsMatch(email))) {
-                MyMsgBox.Show("Error", "E-mail inválido!", false);
-            } else {
+            if (validateController.ValidateEmail(email)) {
                 query.CommandText = $"INSERT INTO TB_EMPLOYEES (CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE, PASSWORD_EMPLOYEE) VALUES ('{cpf}', '{name}', '{lastName}', '{email}', '{telephone}', '{cellphone}', '{hashPassword}');";
                 try {
                     query.Connection = dbConn.Connect();
@@ -30,6 +29,8 @@ namespace TGS.Controllers.Register {
                 } catch (SqlException e) {
                     MyMsgBox.Show("Error", "Falha no cadastro do funcionário!", false);
                 }
+            } else {
+                MyMsgBox.Show("Error", "E-mail inválido!", false);
             }
         }
     }

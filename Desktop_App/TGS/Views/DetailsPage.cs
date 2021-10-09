@@ -14,9 +14,9 @@ using TGS.Controllers.Consult;
 
 namespace TGS.Views {
     public partial class DetailsPage : Form {
-        public DetailsPage(string list, string idDetailItem = null) {
+        public DetailsPage(string list, string idDetailItem) {
             listRender = list;
-            idDetailsItem = idDetailItem;
+            idDetailsItem = idDetailItem;            
             InitializeComponent();
             Render();
             CollapseMenu();
@@ -202,35 +202,65 @@ namespace TGS.Views {
         private void Render() {
             switch (listRender) {
                 case "patient":
-                    
+                    PatientsConsult patientsConsult = new PatientsConsult();
+                    string[] patientFields = patientsConsult.Patient(idDetailsItem);
+
+                    lbl_Welcome.Text = "Detalhes do Paciente";
                     lbl_DetailsTitle.Text = "Paciente";
                     lbl_TitleDetail1.Text = "CPF";
+                    txt_Detail1.Text = patientFields[0];
                     lbl_TitleDetail2.Text = "RG";
+                    txt_Detail2.Text = patientFields[1];
                     lbl_TitleDetail3.Text = "Nome";
+                    txt_Detail3.Text = patientFields[2];
                     lbl_TitleDetail4.Text = "Sobrenome";
+                    txt_Detail4.Text = patientFields[3];
                     lbl_TitleDetail5.Text = "Apelido";
+                    txt_Detail5.Text = patientFields[4];
                     lbl_TitleDetail6.Text = "Data de Nascimento";
+                    txt_Detail6.Text = patientFields[5];
                     lbl_TitleDetail7.Text = "Altura";
+                    txt_Detail7.Text = patientFields[6];
                     lbl_TitleDetail8.Text = "Peso";
+                    txt_Detail8.Text = patientFields[7];
                     lbl_TitleDetail9.Text = "E-mail";
+                    txt_Detail9.Text = patientFields[8];
                     lbl_TitleDetail10.Text = "Telefone";
+                    txt_Detail10.Text = patientFields[9];
                     lbl_TitleDetail11.Text = "Celular";
+                    txt_Detail11.Text = patientFields[10];
                     lbl_TitleDetail12.Text = "Rua";
+                    txt_Detail12.Text = patientFields[11];
                     lbl_TitleDetail13.Text = "Bairro";
+                    txt_Detail13.Text = patientFields[12];
                     lbl_TitleDetail14.Text = "Cidade";
+                    txt_Detail14.Text = patientFields[13];
                     lbl_TitleDetail15.Text = "Estado";
+                    txt_Detail15.Text = patientFields[14];
                     lbl_TitleDetail16.Text = "CEP";
+                    txt_Detail16.Text = patientFields[15];
                     lbl_TitleDetail17.Text = "Complemento";
+                    txt_Detail17.Text = patientFields[16];
                     lbl_TitleDetail18.Text = "Número";
+                    txt_Detail18.Text = patientFields[17];
                     break;
                 case "employee":
+                    EmployeesConsult employeesConsult = new EmployeesConsult();
+                    string[] employeeFields = employeesConsult.Employee(idDetailsItem);
+                    lbl_Welcome.Text = "Detalhes do Funcionário";
                     lbl_DetailsTitle.Text = "Funcionário";
                     lbl_TitleDetail1.Text = "Nome";
+                    txt_Detail1.Text = employeeFields[1];
                     lbl_TitleDetail2.Text = "Sobrenome";
+                    txt_Detail2.Text = employeeFields[2];
                     lbl_TitleDetail3.Text = "E-mail";
+                    txt_Detail3.Text = employeeFields[3];
                     lbl_TitleDetail4.Text = "Celular";
+                    txt_Detail4.Text = employeeFields[4];
                     lbl_TitleDetail5.Text = "Telefone";
+                    txt_Detail5.Text = employeeFields[5];
                     lbl_TitleDetail6.Text = "CPF";
+                    txt_Detail6.Text = employeeFields[0];
                     lbl_TitleDetail7.Visible = false;
                     lbl_TitleDetail8.Visible = false;
                     lbl_TitleDetail9.Visible = false;
@@ -258,16 +288,17 @@ namespace TGS.Views {
                     tb_Details.AutoScroll = false;
                     break;
                 case "dentist":
-                    string[] details = dentistsConsult.Dentist(idDetailsItem);
+                    string[] employeeFileds = dentistsConsult.Dentist(idDetailsItem);
+                    lbl_Welcome.Text = "Detalhes do Dentista";
                     lbl_DetailsTitle.Text = "Dentista";
                     lbl_TitleDetail1.Text = "CRO";
-                    txt_Detail1.Text = details[0];
+                    txt_Detail1.Text = employeeFileds[0];
                     lbl_TitleDetail2.Text = "Nome";
-                    txt_Detail2.Text = details[1];
+                    txt_Detail2.Text = employeeFileds[1];
                     lbl_TitleDetail3.Text = "Sobrenome";
-                    txt_Detail3.Text = details[2];
+                    txt_Detail3.Text = employeeFileds[2];
                     lbl_TitleDetail4.Text = "Especialidade";
-                    txt_Detail4.Text = details[3];
+                    txt_Detail4.Text = employeeFileds[3];
                     lbl_TitleDetail5.Visible = false;
                     lbl_TitleDetail6.Visible = false;
                     lbl_TitleDetail7.Visible = false;
@@ -299,12 +330,20 @@ namespace TGS.Views {
                     tb_Details.AutoScroll = false;
                     break;
                 case "consult":
-                    lbl_DetailsTitle.Text = "Cosulta";
+                    SchedulingConsult schedulingConsult = new SchedulingConsult();
+                    string[] consultFields = schedulingConsult.ClosedConsult(int.Parse(idDetailsItem));
+                    lbl_Welcome.Text = "Detalhes da Consulta";
+                    lbl_DetailsTitle.Text = "Consulta";
                     lbl_TitleDetail1.Text = "CPF Paciente";
+                    txt_Detail1.Text = consultFields[0];
                     lbl_TitleDetail2.Text = "CRO Dentista";
+                    txt_Detail1.Text = consultFields[0];
                     lbl_TitleDetail3.Text = "Data";
+                    txt_Detail1.Text = consultFields[0];
                     lbl_TitleDetail4.Text = "Horário";
-                    lbl_TitleDetail5.Text = "ID";
+                    txt_Detail1.Text = consultFields[0];
+                    lbl_TitleDetail5.Text = "Procedimento";
+                    txt_Detail1.Text = consultFields[0];
                     lbl_TitleDetail6.Visible = false;
                     lbl_TitleDetail7.Visible = false;
                     lbl_TitleDetail8.Visible = false;
@@ -334,8 +373,12 @@ namespace TGS.Views {
                     tb_Details.AutoScroll = false;
                     break;
                 case "consult-category":
+                    ProceduresConsult procedureConsult = new ProceduresConsult();
+                    string[] procedureFields = procedureConsult.Procedure(int.Parse(idDetailsItem));
+                    lbl_Welcome.Text = "Detalhes do Procedimento";
                     lbl_DetailsTitle.Text = "Procedimento";
                     lbl_TitleDetail1.Text = "Título";
+                    txt_Detail1.Text = procedureFields[0];
                     lbl_TitleDetail2.Visible = false;
                     lbl_TitleDetail3.Visible = false;
                     lbl_TitleDetail4.Visible = false;
@@ -379,5 +422,30 @@ namespace TGS.Views {
             }
         }
 
+        private void btn_Edit_Click(object sender, EventArgs e) {
+            if (btn_Edit.Text == "Editar") {
+                txt_Detail1.Enabled = true;
+                txt_Detail2.Enabled = true;
+                txt_Detail3.Enabled = true;
+                txt_Detail4.Enabled = true;
+                txt_Detail5.Enabled = true;
+                txt_Detail6.Enabled = true;
+                txt_Detail7.Enabled = true;
+                txt_Detail8.Enabled = true;
+                txt_Detail9.Enabled = true;
+                txt_Detail10.Enabled = true;
+                txt_Detail11.Enabled = true;
+                txt_Detail12.Enabled = true;
+                txt_Detail13.Enabled = true;
+                txt_Detail14.Enabled = true;
+                txt_Detail15.Enabled = true;
+                txt_Detail16.Enabled = true;
+                txt_Detail17.Enabled = true;
+                txt_Detail18.Enabled = true;
+                btn_Edit.Text = "Salvar";
+            } else if (btn_Edit.Text == "Salvar") {
+                //Update
+            }
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace TGS.Controllers.Main {
         //Fields
         private String chatLink = "whatsapp://";
 
-        public void AlterPage(Form formAtual, String formDestino, String IdDetailItem = null, string dateSchedule = null, string timeSchedule = null, string idConsult = null) {
+        public void AlterPage(Form formAtual, String formDestino, String id = null, string dateSchedule = null, string timeSchedule = null) {
             if (!(formAtual is null)) {
                 formAtual.Hide();
             }
@@ -27,12 +27,12 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to consults registration
                 case "consults-registration":
-                    FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, idConsult);
+                    FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, id);
                     consultsRegistration.ShowDialog();
                     break;
                 // Go to employee details
                 case "consult-details":
-                    DetailsPage consultsDetails = new DetailsPage("consult");
+                    DetailsPage consultsDetails = new DetailsPage("consult", id);
                     consultsDetails.ShowDialog();
                     break;
                 // Go to chat
@@ -51,7 +51,7 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to patient details
                 case "patient-details":
-                    DetailsPage patientDetails = new DetailsPage("patient");
+                    DetailsPage patientDetails = new DetailsPage("patient", id);
                     patientDetails.ShowDialog();
                     break;
                 // Go to options
@@ -71,7 +71,7 @@ namespace TGS.Controllers.Main {
                 break;
                 // Go to dentist details
                 case "dentist-details":
-                    DetailsPage dentistDetails = new DetailsPage("dentist", IdDetailItem);
+                    DetailsPage dentistDetails = new DetailsPage("dentist", id);
                     dentistDetails.ShowDialog();
                     break;
                 // Go to employees list
@@ -86,7 +86,7 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to employee details
                 case "employee-details":
-                    DetailsPage employeeDetails = new DetailsPage("employee");
+                    DetailsPage employeeDetails = new DetailsPage("employee", id);
                     employeeDetails.ShowDialog();
                     break;
                 // Go to consults category list
@@ -101,7 +101,7 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to employee details
                 case "consult-category-details":
-                    DetailsPage consultsCategoryDetails = new DetailsPage("consult-category");
+                    DetailsPage consultsCategoryDetails = new DetailsPage("consult-category", id);
                     consultsCategoryDetails.ShowDialog();
                     break;
                 // Go to support

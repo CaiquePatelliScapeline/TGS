@@ -59,7 +59,7 @@ namespace TGS.Controllers.Consult {
             }
         }
 
-        public string[] ClosedConsult(string id) {
+        public string[] ClosedConsult(int id) {
             try {
                 query.Connection = dbConn.Connect();
 

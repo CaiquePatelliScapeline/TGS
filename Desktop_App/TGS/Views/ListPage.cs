@@ -278,20 +278,29 @@ namespace TGS.Views {
         private void lv_List_ItemActivate(object sender, EventArgs e) {
             switch (listRender) {
                 case "patients":
-                    alterPageController.AlterPage(ActiveForm, "patient-details");
+                    string idPatient = lv_List.SelectedItems[0].ToString();
+                    idPatient = idPatient.Substring(idPatient.IndexOf('{') + 1, idPatient.IndexOf('}') - idPatient.IndexOf('{') - 1);
+                    alterPageController.AlterPage(ActiveForm, "patient-details", idPatient);
                     break;
                 case "employees":
-                    alterPageController.AlterPage(ActiveForm, "employee-details");
+                    string idEmployee = lv_List.SelectedItems[0].ToString();
+                    idEmployee = idEmployee.Substring(idEmployee.IndexOf('{') + 1, idEmployee.IndexOf('}') - idEmployee.IndexOf('{') - 1);
+                    alterPageController.AlterPage(ActiveForm, "employee-details", idEmployee);
                     break;
                 case "consults":
-                    alterPageController.AlterPage(ActiveForm, "consult-details");                    
+                    string idConsult = lv_List.SelectedItems[0].ToString();
+                    idConsult = idConsult.Substring(idConsult.IndexOf('{') + 1, idConsult.IndexOf('}') - idConsult.IndexOf('{') - 1);
+                    alterPageController.AlterPage(ActiveForm, "consult-details", idConsult);                    
                     break;
                 case "consult-categories":
-                    alterPageController.AlterPage(ActiveForm, "consult-category-details");
+                    string idProcedure = lv_List.SelectedItems[0].ToString();
+                    idProcedure = idProcedure.Substring(idProcedure.IndexOf('{') + 1, idProcedure.IndexOf('}') - idProcedure.IndexOf('{') - 1);
+                    alterPageController.AlterPage(ActiveForm, "consult-category-details", idProcedure);
                     break;
                 case "dentists":
-                    string id = lv_List.SelectedItems[0].ToString();  //ListViewItem: {00.000}
-                    alterPageController.AlterPage(ActiveForm, "dentist-details", id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1));
+                    string idDentist = lv_List.SelectedItems[0].ToString();
+                    idDentist = idDentist.Substring(idDentist.IndexOf('{') + 1, idDentist.IndexOf('}') - idDentist.IndexOf('{') - 1);
+                    alterPageController.AlterPage(ActiveForm, "dentist-details", idDentist);
                     break;
                 default:
                     alterPageController.Errors("404", "Pagina não encontrada!");

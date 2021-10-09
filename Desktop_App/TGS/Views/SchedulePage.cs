@@ -266,7 +266,6 @@ namespace TGS.Views {
                 txt_Date.Text = lbl_Date.Text;
             }
         }
-<<<<<<< Updated upstream
 
         private bool ValidateDate(string date) {
             return DateTime.TryParse(date, out DateTime time);
@@ -283,12 +282,12 @@ namespace TGS.Views {
 
                 string id = lv_Schedule.SelectedItems[0].ToString();
                 id = id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1);
-                alterPageController.AlterPage(ActiveForm, "consults-registration", null, date.Substring(0, date.IndexOf(' ')), time, id);
+                alterPageController.AlterPage(ActiveForm, "consults-registration", id, date.Substring(0, date.IndexOf(' ')), time);
             } else {
-                alterPageController.AlterPage(ActiveForm, "consult-details");
+                string id = lv_Schedule.SelectedItems[0].ToString();
+                id = id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1);
+                alterPageController.AlterPage(ActiveForm, "consult-details", id);
             }
         }
-=======
->>>>>>> Stashed changes
     }
 }

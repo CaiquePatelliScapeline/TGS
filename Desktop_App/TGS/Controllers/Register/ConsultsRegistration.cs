@@ -12,7 +12,7 @@ namespace TGS.Controllers.Register {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
 
-        public void ConsultRegistration(string croDentist, string dateConsult, string timeConsult) {          
+        public void ConsultOpen(string croDentist, string dateConsult, string timeConsult) {          
             try {
                 query.Connection = dbConn.Connect();
 
@@ -27,7 +27,7 @@ namespace TGS.Controllers.Register {
             }
         }
 
-        public void ConsultOpen(string cpfPatient, int idProcedure, int idConsulta) {
+        public void ConsultRegistration(string cpfPatient, int idProcedure, int idConsulta) {
             try {
                 query.Connection = dbConn.Connect();
 

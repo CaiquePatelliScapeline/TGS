@@ -20,7 +20,7 @@ namespace TGS.Views {
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
         EmployeesRegistration employeesRegistration = new EmployeesRegistration();
-        SchedulingRegistration schedulingRegistration = new SchedulingRegistration();
+        ConsultsRegistration consultsRegistration = new ConsultsRegistration();
         ProceduresRegistration proceduresRegistration = new ProceduresRegistration();
         PatientsRegistration patientsRegistration = new PatientsRegistration();
         DentistsRegistration dentistsRegistration = new DentistsRegistration();
@@ -30,10 +30,14 @@ namespace TGS.Views {
         private int borderSize = 2;
         private string formRender;
         private int formPart = 1;
+        private string date, time, id;
         string[] patients = new string[18];
 
-        public FormPage(String form) {
+        public FormPage(String form, string dateSchedule = null, string timeSchedule = null, string idConsult = null) {
             formRender = form;
+            date = dateSchedule;
+            time = timeSchedule;
+            id = idConsult;
             InitializeComponent();
             Render();
             CollapseMenu();
@@ -374,23 +378,23 @@ namespace TGS.Views {
                             txt_Input3.MaxLength = 20;
                             // Birth Date
                             lbl_Title4.Text = "Data de Nascimento";
-                            txt_Input4.Mask = "00/00/000";
-                            txt_Input4.MaxLength = 9;
+                            txt_Input4.Mask = "00/00/0000";
+                            txt_Input4.MaxLength = 10;
                             // CPF
                             lbl_Title5.Text = "CPF";
-                            txt_Input5.Mask = "000.000.000-00";
+                            txt_Input5.Mask = "000,000,000-00";
                             txt_Input5.MaxLength = 14;
                             // RG
                             lbl_Title6.Text = "RG";
-                            txt_Input6.Mask = "00.000.000-A";
+                            txt_Input6.Mask = "00,000,000-A";
                             txt_Input6.MaxLength = 12;
                             // Height
                             lbl_Title7.Text = "Altura";
-                            txt_Input7.Mask = "0,00";
+                            txt_Input7.Mask = "0.00";
                             txt_Input7.MaxLength = 4;
                             // Weight
                             lbl_Title8.Text = "Peso";
-                            txt_Input8.Mask = "000,00";
+                            txt_Input8.Mask = "000.00";
                             txt_Input8.MaxLength = 6;
                             // Other Inputs
                             lbl_Title9.Visible = false;
@@ -455,7 +459,7 @@ namespace TGS.Views {
                             txt_Input5.MaxLength = 30;
                             // CEP
                             lbl_Title6.Text = "CEP";
-                            txt_Input6.Mask = "00.000-000";
+                            txt_Input6.Mask = "00,000-000";
                             txt_Input6.MaxLength = 10;
                             // District
                             lbl_Title7.Text = "Estado";
@@ -479,23 +483,27 @@ namespace TGS.Views {
                     lbl_TitlePart.Visible = false;
                     lbl_Title.Text = "Cadastro de Consultas";
                     // Patient Name
-                    lbl_Title1.Text = "CPF do Paciente";
-                    txt_Input1.Mask = "000.000.000-00";
-                    txt_Input1.MaxLength = 14;
+                    lbl_Title1.Text = "Data";
+                    txt_Input1.Mask = "00/00/0000";
+                    txt_Input1.Text = date;
+                    txt_Input1.Enabled = false;
+
                     // Date
-                    lbl_Title2.Text = "Data";
-                    txt_Input2.Mask = "00/00/0000";
-                    txt_Input2.MaxLength = 9;
+                    lbl_Title2.Text = "Horário";
+                    txt_Input2.Mask = "00:00";
+                    txt_Input2.Text = time;
+                    txt_Input2.Enabled = false;
                     // Time
-                    lbl_Title3.Text = "Horário";
-                    txt_Input3.Mask = "00:00";
-                    txt_Input3.MaxLength = 5;
+                    lbl_Title3.Text = "CPF do Paciente";
+                    txt_Input3.Mask = "000,000,000-00";
+                    txt_Input3.MaxLength = 14;
                     // Procedure
                     lbl_Title4.Text = "Categoria da Consulta";
                     txt_Input4.MaxLength = 20;
                     // Other Inputs
                     lbl_Title5.Visible = false;
                     txt_Input5.Visible = false;
+                    txt_Input5.Text = id;
                     lbl_Title6.Visible = false;
                     txt_Input6.Visible = false;
                     lbl_Title7.Visible = false;
@@ -542,8 +550,8 @@ namespace TGS.Views {
                         alterPageController.AlterPage(ActiveForm, "patients");
                         break;
                     case "consults":
-                        break;
-                    case "schedule":
+                        consultsRegistration.ConsultRegistration(txt_Input3.Text, int.Parse(txt_Input4.Text), int.Parse(txt_Input5.Text));
+                        alterPageController.AlterPage(ActiveForm, "calendar");
                         break;
                     default:
                         alterPageController.Errors("404", "Pagina não encontrada!");

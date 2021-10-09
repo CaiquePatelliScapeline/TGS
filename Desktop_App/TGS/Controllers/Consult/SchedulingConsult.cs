@@ -27,14 +27,15 @@ namespace TGS.Controllers.Consult {
 
                 reader.Close();
 
-                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE, P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT;";
+                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE, P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT ASC;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
                 while (reader.Read()) {
+                    string date = Convert.ToString(reader["DATE_CONSULT"]);
+
                     consults[i, 0] = $"{reader["ID_CONSULT"]}";
 
-                    string date = Convert.ToString(reader["DATE_CONSULT"]);
 
                     consults[i, 1] = $"{date.Substring(0, date.IndexOf(' '))}";
                     consults[i, 2] = $"{reader["TIME_CONSULT"]}";
@@ -46,7 +47,7 @@ namespace TGS.Controllers.Consult {
                         consults[i, 4] = $"{reader["NICKNAME"]}";
                     }
 
-                    consults[i, 5] = $"{reader["PROCEDURE_TITLE"]}";                  
+                    consults[i++, 5] = $"{reader["PROCEDURE_TITLE"]}";                  
                 }
 
                 reader.Close();
@@ -104,7 +105,7 @@ namespace TGS.Controllers.Consult {
 
                 reader.Close();
 
-                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE FROM TB_DENTISTS AS D, TB_CONSULTS AS C WHERE C.STATUS_SCHEDULE = 0 AND C.CRO_DENTIST = D.CRO_DENTIST AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT;";
+                query.CommandText = $"SELECT C.ID_CONSULT, C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, C.STATUS_SCHEDULE FROM TB_DENTISTS AS D, TB_CONSULTS AS C WHERE C.STATUS_SCHEDULE = 0 AND C.CRO_DENTIST = D.CRO_DENTIST AND DATE_CONSULT = '{dateSearch}' ORDER BY C.TIME_CONSULT ASC;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
@@ -112,7 +113,7 @@ namespace TGS.Controllers.Consult {
                     consults[i, 0] = $"{reader["ID_CONSULT"]}";
                     consults[i, 1] = $"{reader["DATE_CONSULT"]}";
                     consults[i, 2] = $"{reader["TIME_CONSULT"]}";
-                    consults[i, 3] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME_DENTIST"]}";
+                    consults[i++, 3] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME_DENTIST"]}";
                 }
 
                 reader.Close();

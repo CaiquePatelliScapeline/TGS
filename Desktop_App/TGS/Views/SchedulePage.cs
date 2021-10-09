@@ -268,5 +268,22 @@ namespace TGS.Views {
         private bool ValidateDate(string date) {
             return DateTime.TryParse(date, out DateTime time);
         }
+
+        private void lv_Schedule_ItemActivate(object sender, EventArgs e) {
+            if (cb_TypeSchedule.Texts == "Agenda Livre") {
+
+                string date = lv_Schedule.SelectedItems[0].SubItems[1].ToString();
+                date = date.Substring(date.IndexOf('{') + 1, date.IndexOf('}') - date.IndexOf('{') - 1);
+
+                string time = lv_Schedule.SelectedItems[0].SubItems[2].ToString();
+                time = time.Substring(time.IndexOf('{') + 1, time.IndexOf('}') - time.IndexOf('{') - 1);
+
+                string id = lv_Schedule.SelectedItems[0].ToString();
+                id = id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1);
+                alterPageController.AlterPage(ActiveForm, "consults-registration", null, date.Substring(0, date.IndexOf(' ')), time, id);
+            } else {
+                alterPageController.AlterPage(ActiveForm, "consult-details");
+            }
+        }
     }
 }

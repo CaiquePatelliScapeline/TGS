@@ -247,16 +247,6 @@ namespace TGS.Views {
                     lv_List.Columns.Add("Celular", lv_List.Width / 5, HorizontalAlignment.Center);
                     List(employeesConsult.Employees());
                     break;
-                case "consults":
-                    lbl_Title.Text = "Consultas";
-                    lv_List.Columns.Add("    Data", 220, HorizontalAlignment.Left);
-                    lv_List.Columns.Add("Hora", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Dentista", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Paciente", lv_List.Width / 4, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Procedimento", lv_List.Width / 5, HorizontalAlignment.Center);
-                    lv_List.Columns.Add("Status", lv_List.Width / 5, HorizontalAlignment.Center);
-                    //List(schedulingConsult.());
-                    break;
                 case "consult-categories":
                     lbl_Title.Text = "Procedimentos";
                     lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);

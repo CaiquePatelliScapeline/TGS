@@ -9,7 +9,7 @@ namespace TGS.Controllers.Main {
         //Fields
         private String chatLink = "whatsapp://";
 
-        public void AlterPage(Form formAtual, String formDestino, String IdDetailItem = null) {
+        public void AlterPage(Form formAtual, String formDestino, String IdDetailItem = null, string dateSchedule = null, string timeSchedule = null, string idConsult = null) {
             if (!(formAtual is null)) {
                 formAtual.Hide();
             }
@@ -27,7 +27,7 @@ namespace TGS.Controllers.Main {
                     break;
                 // Go to consults registration
                 case "consults-registration":
-                    FormPage consultsRegistration = new FormPage("consults");
+                    FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, idConsult);
                     consultsRegistration.ShowDialog();
                     break;
                 // Go to employee details

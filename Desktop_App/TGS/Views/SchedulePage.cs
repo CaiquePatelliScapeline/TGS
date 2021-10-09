@@ -201,53 +201,72 @@ namespace TGS.Views {
 
         private void cb_TypeSchedule_OnSelectedIndexChanged(object sender, EventArgs e) {
             ListRender();
-        }
-
-        private void ListRender() {
-            if (cb_TypeSchedule.Texts == "Agenda Livre") {
-                lv_Schedule.Clear();
-                lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
-                lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Dentista", 400, HorizontalAlignment.Center);
-                List(schedulingConsult.ScheduleOpenedConsult(txt_Date.Text));
-            } else {
-                lv_Schedule.Clear();
-                lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
-                lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Dentista", 300, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Paciente", 300, HorizontalAlignment.Center);
-                lv_Schedule.Columns.Add("Procedimento", 200, HorizontalAlignment.Center);
-                List(schedulingConsult.ScheduleClosedConsult(txt_Date.Text));
-            }
-        }
-
-        private void List(string[,] items) {
-            for (int i = 0; i < items.GetLength(0); i++) {
-                lv_Schedule.Items.Add(items[i, 0]);
-                for (int j = 1; j < items.GetLength(1); j++) {
-                    lv_Schedule.Items[i].SubItems.Add(items[i, j]);
-                }
-            }
-        }
+        }      
 
         private void txt_Date_TextChanged(object sender, EventArgs e) {
-            ListRender();
+            if (txt_Date.Text.Length == 10) {
+                if (!ValidateDate(txt_Date.Text)) {
+                    txt_Date.Text = lbl_Date.Text;
+                }
+                ListRender();
+            }
         }
 
         private void btn_Next_Click(object sender, EventArgs e) {
-            DateTime date = Convert.ToDateTime(txt_Date.Text);
-            string newDate = Convert.ToString(date.AddDays(1));
-            txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
+            AddDays(1);
             ListRender();
         }
 
         private void btn_Return_Click(object sender, EventArgs e) {
-            DateTime date = Convert.ToDateTime(txt_Date.Text);
-            string newDate = Convert.ToString(date.AddDays(-1));
-            txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
+            AddDays(-1);
             ListRender();
+        }
+
+        private void ListRender() {
+            if (txt_Date.Text.Length == 10) {
+                if (cb_TypeSchedule.Texts == "Agenda Livre") {
+                    lv_Schedule.Clear();
+                    lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
+                    lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Dentista", 400, HorizontalAlignment.Center);
+                    List(schedulingConsult.ScheduleOpenedConsult(txt_Date.Text));
+                } else {
+                    lv_Schedule.Clear();
+                    lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
+                    lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Dentista", 300, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Paciente", 300, HorizontalAlignment.Center);
+                    lv_Schedule.Columns.Add("Procedimento", 200, HorizontalAlignment.Center);
+                    List(schedulingConsult.ScheduleClosedConsult(txt_Date.Text));
+                }
+            }
+        }
+
+        private void List(string[,] items) {
+            if (items != null) {
+                for (int i = 0; i < items.GetLength(0); i++) {
+                    lv_Schedule.Items.Add(items[i, 0]);
+                    for (int j = 1; j < items.GetLength(1); j++) {
+                        lv_Schedule.Items[i].SubItems.Add(items[i, j]);
+                    }
+                }
+            }
+        }
+
+        private void AddDays(int days) {
+            if (ValidateDate(txt_Date.Text)) {
+                DateTime date = Convert.ToDateTime(txt_Date.Text);
+                string newDate = Convert.ToString(date.AddDays(days));
+                txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));
+            } else {
+                txt_Date.Text = lbl_Date.Text;
+            }
+        }
+
+        private bool ValidateDate(string date) {
+            return DateTime.TryParse(date, out DateTime time);
         }
     }
 }

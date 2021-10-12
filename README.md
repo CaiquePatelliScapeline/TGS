@@ -31,7 +31,7 @@
 
 :white_check_mark: Chat via WhatsApp;
 
-:white_check_mark: Suporte 24 horas;
+
 
 
 

@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Text;
 using TGS.Model;
 using TGS.Views;
+using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
     class ProceduresRegistration {
@@ -11,12 +12,11 @@ namespace TGS.Controllers.Register {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
+        ValidateController validateController = new ValidateController();
 
         public void ProcedureRegistration(string procedureTitle) {
-            //query.CommandText = "INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES (@procedureTitle)";
-            //query.Parameters.AddWithValue("@procedureTitle", procedureTitle);
-            query.CommandText = $"INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES ('{procedureTitle}')";
             try {
+                query.CommandText = $"INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES ('{validateController.ToTitleCase(procedureTitle)}')";
                 query.Connection = dbConn.Connect();
                 query.ExecuteNonQuery();
                 dbConn.Disconnect();

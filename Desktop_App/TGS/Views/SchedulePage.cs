@@ -206,7 +206,7 @@ namespace TGS.Views {
         private void txt_Date_TextChanged(object sender, EventArgs e) {
             if (txt_Date.Text.Length == 10) {
                 ValidateController validateController = new ValidateController();
-                if (!validateController.ValidateDate(txt_Date.Text)) {
+                if (!validateController.Date(txt_Date.Text)) {
                     txt_Date.Text = lbl_Date.Text;
                 }
                 ListRender();
@@ -258,7 +258,7 @@ namespace TGS.Views {
 
         private void AddDays(int days) {
             ValidateController validateController = new ValidateController();
-            if (validateController.ValidateDate(txt_Date.Text)) {
+            if (validateController.Date(txt_Date.Text)) {
                 DateTime date = Convert.ToDateTime(txt_Date.Text);
                 string newDate = Convert.ToString(date.AddDays(days));
                 txt_Date.Text = newDate.Substring(0, newDate.IndexOf(' '));

@@ -19,7 +19,7 @@ namespace TGS.Controllers.Criptography {
         public void Login(String email, String password, Form form) {
             ValidateController validateController = new ValidateController();
 
-            if (validateController.ValidateEmail(email)) {                      
+            if (validateController.Email(email)) {                      
                 string hashPassword = md5Hash.CreateMD5Hash(password);
                 query.Connection = dbConn.Connect();
                 query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE FROM TB_EMPLOYEES WHERE EMAIL = '{email}' AND PASSWORD_EMPLOYEE = '{hashPassword}';";

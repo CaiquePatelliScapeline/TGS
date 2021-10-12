@@ -13,14 +13,13 @@ namespace TGS.Controllers.Register {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         MD5Hash md5Hash = new MD5Hash();
+        ValidateController validateController = new ValidateController();
 
         public void EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password) {        
             string hashPassword = md5Hash.CreateMD5Hash(password);
 
-            ValidateController validateController = new ValidateController();
-
-            if (validateController.ValidateEmail(email)) {
-                query.CommandText = $"INSERT INTO TB_EMPLOYEES (CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE, PASSWORD_EMPLOYEE) VALUES ('{cpf}', '{name}', '{lastName}', '{email}', '{telephone}', '{cellphone}', '{hashPassword}');";
+            if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
+                query.CommandText = $"INSERT INTO TB_EMPLOYEES (CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE, PASSWORD_EMPLOYEE) VALUES ('{cpf}', '{validateController.ToTitleCase(name)}', '{validateController.ToTitleCase(lastName)}', '{email}', '{telephone}', '{cellphone}', '{hashPassword}');";
                 try {
                     query.Connection = dbConn.Connect();
                     query.ExecuteNonQuery();

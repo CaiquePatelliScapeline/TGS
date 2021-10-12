@@ -31,12 +31,13 @@ namespace TGS.Controllers.Main {
         }
 
         public bool CRO(string cro) {
-            Regex croValidate = new Regex(@"/^(\d{2}).(\d{3})$/");
+            Regex croValidate = new Regex(@"/^(\d{2})\.(\d{3})$/");
             return croValidate.IsMatch(cro);
         }
 
         public bool CEP(string cep) {
-            return true;
+            Regex cepValidate = new Regex(@"/^(\d{2})\.(\d{3})-(\d{3})$/");
+            return cepValidate.IsMatch(cep);
         }
 
         public bool Telephone(string telephone) {

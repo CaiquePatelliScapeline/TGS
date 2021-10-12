@@ -28,8 +28,5 @@
     <Compile Update="Views\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\SwitchKey.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
 </Project>

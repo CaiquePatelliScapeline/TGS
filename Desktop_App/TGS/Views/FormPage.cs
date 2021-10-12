@@ -287,7 +287,7 @@ namespace TGS.Views {
                     txt_Input5.MaxLength = 14;
                     // CPF
                     lbl_Title6.Text = "CPF";
-                    txt_Input6.Mask = "000.000.000-00";
+                    txt_Input6.Mask = "000,000,000-00";
                     txt_Input6.MaxLength = 14;
                     // Password
                     lbl_Title7.Text = "Senha";
@@ -307,7 +307,7 @@ namespace TGS.Views {
                     lbl_Title.Text = "Cadastro de Denstistas";
                     // CRO
                     lbl_Title1.Text = "CRO";
-                    txt_Input1.Mask = "00.000";
+                    txt_Input1.Mask = "00,000";
                     txt_Input1.MaxLength = 6;
                     // Name
                     lbl_Title2.Text = "Nome";

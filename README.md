@@ -59,7 +59,7 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 💡Tanto o Visual Studio 2019 e SQL Server, precisa estar em execução para o projeto funcionar perfeitamente. 
 
 ### 🎲  Rodando o Backend (servidor) - SQL Server
-#### 🧭  Rodando a aplicação web (Frontend) - Visual Studio
+#### 🧭  Rodando a aplicação (Frontend) - Visual Studio
 
 
 # 🛠  Tecnologias
@@ -70,11 +70,11 @@ Foi usado nesse projeto:
 
 
 # 📝  Licença
-ooo
+Todos os Direitos Reservados aos Autores.
 
 # Versões do README
 Inglês (depois)
-Sem emoji (depois)
+
 
 # 🦸  Autores 
 <table>

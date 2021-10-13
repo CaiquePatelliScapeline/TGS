@@ -4,7 +4,7 @@
 </h4>
 
 
-![Logo](https://res.cloudinary.com/murilo-corporation/image/upload/v1633803722/Captura_de_Tela_93_jvugfu.png)
+![Logo](https://github.com/CaiquePatelliScapeline/TGS/blob/ReadMe/Readme%20assets/Tgs.png)
 
 ![](https://img.shields.io/badge/-C%23%20e%20SQL%20Server-blue)   ![](https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green)  
 
@@ -35,19 +35,19 @@
 
 
 
-# Layout
+# 🧠 Layout
 
 O layout da aplicação já [está disponível no Figma !](https://www.figma.com/community/file/1012833819051900162/TGS)
 
 
-![](https://res.cloudinary.com/murilo-corporation/image/upload/v1633998350/Captura_de_Tela_99_lionff.png)
+![](https://github.com/CaiquePatelliScapeline/TGS/blob/ReadMe/Readme%20assets/1.png)
 
-![](https://res.cloudinary.com/murilo-corporation/image/upload/v1633998131/Captura_de_Tela_97_aii1zn.png)
+![](https://github.com/CaiquePatelliScapeline/TGS/blob/ReadMe/Readme%20assets/2.png)
 
 
 
 # 🚀  Como executar o projeto ?
-# Como executar o projeto ?
+
 
 
 ### Pré-requisitos
@@ -60,6 +60,10 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 
 ### 🎲  Rodando o Backend (servidor) - SQL Server
 #### 🧭  Rodando a aplicação (Frontend) - Visual Studio
+1. Baixe o arquivo em Zip;
+2. Ou clone o repositorio, direto no Visual Studio.
+
+Execute e seja feliz ;) 
 
 
 
@@ -80,8 +84,8 @@ Inglês (depois)
 # 🦸  Autores 
 <table>
   <tr>
-   <td align="center"><a href="https://github.com/CaiquePatelliScapeline"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56651727?v=4" width="100px;" alt=""/><br /><sub><b>Caique Patelli </b></sub></a><br /><a href>🖖</a></td><td align="center"><a href="https://github.com/GianlucaDeMicheli"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56308126?v=4" width="100px;" alt=""/><br /><sub><b>Gianluca Dias</b></sub></a><br /><a hre>🤔</a></td><td align="center"><a href="https://github.com/MZequini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88983177?v=4" width="100px;" alt=""/><br /><sub><b>Miram Zequini</b></sub></a><br /><a href>🖥️</a></td><td align="center">
-  </tr>
+   <td align="center"><a href="https://github.com/CaiquePatelliScapeline"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56651727?v=4" width="100px;" alt=""/><br /><sub><b>Caique Patelli </b></sub></a><br/><a>🖖</a></td> <td align="center"><a href="https://github.com/GianlucaDeMicheli"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/56308126?v=4" width="100px;" alt=""/><br /><sub><b>Gianluca Dias</b></sub></a><br/><a>😛</a></td>    <td align="center"><a href="https://github.com/MZequini"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/88983177?v=4" width="100px;" alt=""/><br /><sub><b>Miram Zequini</b></sub></a><br/><a>🤗	</a></td>     <td align="center"><a href="https://github.com/MuriloSchali"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/89110560?v=4" width="100px;" alt=""/><br /><sub><b>Murilo Schali</b></sub></a><br/><a>🧐</a></td>
+    </tr>
 
 
 

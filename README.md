@@ -10,7 +10,11 @@
 
 
 # Table of Contents
-1. [# 💻 Sobre o projeto](#💻Sobreoprojeto)
+[💻 Sobre o projeto](#💻Sobreoprojeto)
+[⚙️ Funcionalidades](#⚙️Funcionalidades)
+[🚀  Como executar o projeto ?](#🚀Comoexecutaroprojeto?)
+[#💻 Sobre o projeto](#💻Sobreoprojeto)
+[#💻 Sobre o projeto](#💻Sobreoprojeto)
   
 
 # 💻 Sobre o projeto

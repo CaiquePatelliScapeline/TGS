@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Globalization;
+using TGS.Views;
 
 namespace TGS.Controllers.Main {
     class ValidateController {
@@ -11,7 +12,8 @@ namespace TGS.Controllers.Main {
         }
 
         public bool Time(string time) {
-            Regex timeValidate = new Regex(@"/^(\d{2})\:(\d{2})\.?(\d{4})?$/");
+            Regex timeValidate = new Regex(@"/^(\d{2})\:(\d{2})\:(\d{2})\.?(\d{4})?$/");
+            MyMsgBox.Show("Time", $"{timeValidate.IsMatch(time)}", false);
             return timeValidate.IsMatch(time);
         }
 
@@ -27,11 +29,14 @@ namespace TGS.Controllers.Main {
 
         public bool CPF(string cpf) {
             Regex cpfValidate = new Regex(@"/^((\d{3})\.(\d{3})\.(\d{3})\-(\d{2}))$/");
+            MyMsgBox.Show("CPF", $"{cpf.Length}", false);
+            MyMsgBox.Show("CPF", $"{cpfValidate.IsMatch(cpf)}", false);
             return cpfValidate.IsMatch(cpf);
         }
 
         public bool CRO(string cro) {
             Regex croValidate = new Regex(@"/^(\d{2})\.(\d{3})$/");
+            MyMsgBox.Show("CRO", $"{croValidate.IsMatch(cro)}", false);
             return croValidate.IsMatch(cro);
         }
 

@@ -11,11 +11,13 @@ using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
 using TGS.Controllers.Consult;
+using TGS.Controllers.Delete;
+using TGS.Controllers.Update;
 
 namespace TGS.Views {
     public partial class DetailsPage : Form {
         public DetailsPage(string list, string idDetailItem) {
-            listRender = list;
+            detailRender = list;
             idDetailsItem = idDetailItem;            
             InitializeComponent();
             Render();
@@ -27,7 +29,7 @@ namespace TGS.Views {
             this.BackColor = Color.FromArgb(237, 245, 255); // Border Color
         }
 
-        string listRender;
+        string detailRender;
         string idDetailsItem;
 
         //Classes
@@ -200,7 +202,7 @@ namespace TGS.Views {
         }
 
         private void Render() {
-            switch (listRender) {
+            switch (detailRender) {
                 case "patient":
                     PatientsConsult patientsConsult = new PatientsConsult();
                     string[] patientFields = patientsConsult.Patient(idDetailsItem);
@@ -243,7 +245,7 @@ namespace TGS.Views {
                     txt_Detail17.Text = patientFields[16];
                     lbl_TitleDetail18.Text = "Número";
                     txt_Detail18.Text = patientFields[17];
-                    break;
+                break;
                 case "employee":
                     EmployeesConsult employeesConsult = new EmployeesConsult();
                     string[] employeeFields = employeesConsult.Employee(idDetailsItem);
@@ -286,7 +288,7 @@ namespace TGS.Views {
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
                     tb_Details.AutoScroll = false;
-                    break;
+                break;
                 case "dentist":
                     string[] employeeFileds = dentistsConsult.Dentist(idDetailsItem);
                     lbl_Welcome.Text = "Detalhes do Dentista";
@@ -328,24 +330,31 @@ namespace TGS.Views {
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
                     tb_Details.AutoScroll = false;
-                    break;
+                break;
                 case "consult":
                     SchedulingConsult schedulingConsult = new SchedulingConsult();
                     string[] consultFields = schedulingConsult.ClosedConsult(int.Parse(idDetailsItem));
                     lbl_Welcome.Text = "Detalhes da Consulta";
                     lbl_DetailsTitle.Text = "Consulta";
+                    // Patient
                     lbl_TitleDetail1.Text = "CPF Paciente";
-                    txt_Detail1.Text = consultFields[0];
-                    lbl_TitleDetail2.Text = "CRO Dentista";
-                    txt_Detail1.Text = consultFields[0];
-                    lbl_TitleDetail3.Text = "Data";
-                    txt_Detail1.Text = consultFields[0];
-                    lbl_TitleDetail4.Text = "Horário";
-                    txt_Detail1.Text = consultFields[0];
-                    lbl_TitleDetail5.Text = "Procedimento";
-                    txt_Detail1.Text = consultFields[0];
-                    lbl_TitleDetail6.Visible = false;
-                    lbl_TitleDetail7.Visible = false;
+                    txt_Detail1.Text = consultFields[4];
+                    lbl_TitleDetail2.Text = "Nome Paciente";
+                    txt_Detail2.Text = consultFields[5];
+                    // Dentist
+                    lbl_TitleDetail3.Text = "CRO Dentista";
+                    txt_Detail3.Text = consultFields[2];
+                    lbl_TitleDetail4.Text = "Nome Dentista";
+                    txt_Detail4.Text = consultFields[3];
+                    // Date and Time
+                    lbl_TitleDetail5.Text = "Data";
+                    txt_Detail5.Text = consultFields[0];
+                    lbl_TitleDetail6.Text = "Horário";
+                    txt_Detail6.Text = consultFields[1];
+                    // Procedure Title
+                    lbl_TitleDetail7.Text = "Procedimento";
+                    txt_Detail7.Text = consultFields[6];
+                    // Other Fields
                     lbl_TitleDetail8.Visible = false;
                     lbl_TitleDetail9.Visible = false;
                     lbl_TitleDetail10.Visible = false;
@@ -357,8 +366,6 @@ namespace TGS.Views {
                     lbl_TitleDetail16.Visible = false;
                     lbl_TitleDetail17.Visible = false;
                     lbl_TitleDetail18.Visible = false;
-                    txt_Detail6.Visible = false;
-                    txt_Detail7.Visible = false;
                     txt_Detail8.Visible = false;
                     txt_Detail9.Visible = false;
                     txt_Detail10.Visible = false;
@@ -371,7 +378,7 @@ namespace TGS.Views {
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
                     tb_Details.AutoScroll = false;
-                    break;
+                break;
                 case "consult-category":
                     ProceduresConsult procedureConsult = new ProceduresConsult();
                     string[] procedureFields = procedureConsult.Procedure(int.Parse(idDetailsItem));
@@ -414,11 +421,10 @@ namespace TGS.Views {
                     txt_Detail17.Visible = false;
                     txt_Detail18.Visible = false;
                     tb_Details.AutoScroll = false;
-                    break;
+                break;
                 default:
                     MyMsgBox.Show("Erro", "Detalhe não encontrada", false);
-                    break;                                         
-
+                break;
             }
         }
 
@@ -444,7 +450,107 @@ namespace TGS.Views {
                 txt_Detail18.Enabled = true;
                 btn_Edit.Text = "Salvar";
             } else if (btn_Edit.Text == "Salvar") {
-                //Update
+                switch (detailRender) {
+                    case "patient":
+                        PatientUpdate patientUpdate = new PatientUpdate();
+                        patientUpdate.Patient(idDetailsItem, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail4.Text, txt_Detail5.Text, txt_Detail6.Text, txt_Detail7.Text, txt_Detail8.Text, txt_Detail9.Text, txt_Detail10.Text, txt_Detail11.Text, txt_Detail12.Text, txt_Detail13.Text, txt_Detail14.Text, txt_Detail15.Text, txt_Detail16.Text, txt_Detail17.Text, int.Parse(txt_Detail18.Text));
+                    break;
+
+                    case "employee":
+                        EmployeeUpdate employeeUpdate = new EmployeeUpdate();
+                        employeeUpdate.Employee(idDetailsItem, txt_Detail6.Text, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail5.Text, txt_Detail4.Text);
+                        break;
+
+                    case "dentist":
+                        DentistUpdate dentistUpdate = new DentistUpdate();
+                        dentistUpdate.Dentist(idDetailsItem, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail4.Text);
+                    break;
+
+                    case "consult":
+                        ScheduleUpdate scheduleUpdate = new ScheduleUpdate();
+                        scheduleUpdate.ScheduleUpdating(txt_Detail1.Text, txt_Detail5.Text, txt_Detail6.Text, int.Parse(idDetailsItem), txt_Detail6.Text);
+                    break;
+
+                    case "consult-category":
+                        ProcedureUpdate procedureUpdate = new ProcedureUpdate();
+                        procedureUpdate.Procedure(int.Parse(idDetailsItem), txt_Detail1.Text);
+                    break;
+
+                    default:
+                        MyMsgBox.Show("Erro", "Falha ao atualizar o registro", false);
+                        break;
+                }
+            }
+        }
+
+        private void btn_Back_Click(object sender, EventArgs e) {
+            switch (detailRender) {
+                case "patient":
+                    alterPageController.AlterPage(ActiveForm, "patients");
+                break;
+
+                case "employee":
+                    alterPageController.AlterPage(ActiveForm, "employee-list");
+                break;
+
+                case "dentist":
+                    alterPageController.AlterPage(ActiveForm, "dentists-list");
+                break;
+
+                case "consult":
+                    alterPageController.AlterPage(ActiveForm, "calendar");
+                break;
+
+                case "consult-category":
+                    alterPageController.AlterPage(ActiveForm, "consult-category-list");
+                break;
+
+                default:
+                    MyMsgBox.Show("404", "Página não encontrada", false);
+                break;
+            }
+        }
+
+        private void btn_Delet_Click(object sender, EventArgs e) {
+            switch (detailRender) {
+                case "patient":
+                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                        PatientDelete patientDelete = new PatientDelete();
+                        patientDelete.Patient(idDetailsItem);
+                    }
+                break;
+
+                case "employee":
+                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                        EmployeeDelete employeeDelete= new EmployeeDelete();
+                        employeeDelete.Employee(idDetailsItem);
+                    }
+                break;
+
+                case "dentist":
+                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                        DentistDelete dentistDelete = new DentistDelete();
+                        dentistDelete.Dentist(idDetailsItem);
+                    }
+                break;
+
+                case "consult":
+                    if (MyMsgBox.Show("Alerta", "Deseja realmente limpar esse horário?", true) == DialogResult.Yes) {
+                        ConsultDelete consultDelete = new ConsultDelete();
+                        consultDelete.Consult(int.Parse(idDetailsItem));
+                    }
+                break;
+
+                case "consult-category":
+                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                        ProcedureDelete procedureDelete = new ProcedureDelete();
+                        procedureDelete.Procedure(int.Parse(idDetailsItem));
+                    }
+                break;
+
+                default:
+                    MyMsgBox.Show("Erro", "Erro ao deletar o registro!", false);
+                    break;
             }
         }
     }

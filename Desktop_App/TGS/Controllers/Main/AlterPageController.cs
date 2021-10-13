@@ -15,111 +15,120 @@ namespace TGS.Controllers.Main {
             }
 
             switch (formDestino) {
-                // Go to home
+                /* ---- MENU PAGES ---- */
+                // Home
                 case "home":
                     Home home = new Home();
                     home.ShowDialog();
-                    break;
-                // Go to calendar
+                break;
+                // Calendar
                 case "calendar":
                     SchedulePage calendar = new SchedulePage();
                     calendar.ShowDialog();
-                    break;
-                // Go to consults registration
-                case "consults-registration":
-                    FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, id);
-                    consultsRegistration.ShowDialog();
-                    break;
-                // Go to employee details
-                case "consult-details":
-                    DetailsPage consultsDetails = new DetailsPage("consult", id);
-                    consultsDetails.ShowDialog();
-                    break;
-                // Go to chat
+                break;
+                // Chat
                 case "chat":
                     OpenLink(chatLink);
-                    break;
-                // Go to patients list
+                break;
+                // Patients List
                 case "patients":
                     ListPage patients = new ListPage("patients");
                     patients.ShowDialog();
-                    break;
-                // Go to patientes registration
-                case "patients-registration":
-                    FormPage patientsRegistration = new FormPage("patients");
-                    patientsRegistration.ShowDialog();
-                    break;
-                // Go to patient details
-                case "patient-details":
-                    DetailsPage patientDetails = new DetailsPage("patient", id);
-                    patientDetails.ShowDialog();
-                    break;
-                // Go to options
+                break;
+                // Options
                 case "options":
                     Options options = new Options();
                     options.ShowDialog();
-                    break;
-                // Go to dentists list
-                case "dentists-list":
-                    ListPage dentists = new ListPage("dentists");
-                    dentists.ShowDialog();
-                    break;
-                // Go to dentists registration
+                break;
+                /* ---- END MENU PAGES ---- */
+
+                /* ---- REGISTRATION PAGES ---- */
+                // Patients
+                case "patients-registration":
+                    FormPage patientsRegistration = new FormPage("patients");
+                    patientsRegistration.ShowDialog();
+                break;
+                // Dentists
                 case "dentists-registration":
                     FormPage dentistsRegistration = new FormPage("dentists");
                     dentistsRegistration.ShowDialog();
                 break;
-                // Go to dentist details
-                case "dentist-details":
-                    DetailsPage dentistDetails = new DetailsPage("dentist", id);
-                    dentistDetails.ShowDialog();
-                    break;
-                // Go to employees list
-                case "employee-list":
-                    ListPage employees = new ListPage("employees");
-                    employees.ShowDialog();
-                    break;
-                // Go to employees registration
+                // Consults
+                case "consults-registration":
+                    FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, id);
+                    consultsRegistration.ShowDialog();
+                break;
+                // Employees
                 case "employee-registration":
                     FormPage employeesRegistration = new FormPage("employees");
                     employeesRegistration.ShowDialog();
-                    break;
-                // Go to employee details
-                case "employee-details":
-                    DetailsPage employeeDetails = new DetailsPage("employee", id);
-                    employeeDetails.ShowDialog();
-                    break;
-                // Go to consults category list
-                case "consult-category-list":
-                    ListPage consultsCategory = new ListPage("consult-categories");
-                    consultsCategory.ShowDialog();
-                    break;
-                // Go to consults category registration
+                break;
+                // Consult Categories
                 case "consult-category-registration":
                     FormPage consultsCategoryRegistration = new FormPage("consults-categories");
                     consultsCategoryRegistration.ShowDialog();
-                    break;
-                // Go to employee details
+                break;
+                /* ---- END REGISTRATION PAGES ---- */
+
+                /* ---- LIST PAGES ---- */
+                // Dentists
+                case "dentists-list":
+                    ListPage dentists = new ListPage("dentists");
+                    dentists.ShowDialog();
+                break;
+                // Employees
+                case "employee-list":
+                    ListPage employees = new ListPage("employees");
+                    employees.ShowDialog();
+                break;
+                // Consult Categories
+                case "consult-category-list":
+                    ListPage consultsCategory = new ListPage("consult-categories");
+                    consultsCategory.ShowDialog();
+                break;
+                /* ---- END LIST PAGES ---- */
+
+                /* ---- DETAIL PAGES ---- */
+                // Patients
+                case "patient-details":
+                    DetailsPage patientDetails = new DetailsPage("patient", id);
+                    patientDetails.ShowDialog();
+                break;
+                // Dentists
+                case "dentist-details":
+                    DetailsPage dentistDetails = new DetailsPage("dentist", id);
+                    dentistDetails.ShowDialog();
+                break;
+                // Employee
+                case "employee-details":
+                    DetailsPage employeeDetails = new DetailsPage("employee", id);
+                    employeeDetails.ShowDialog();
+                break;
+                // Consults
+                case "consult-details":
+                    DetailsPage consultsDetails = new DetailsPage("consult", id);
+                    consultsDetails.ShowDialog();
+                break;
+                // Consult Categories
                 case "consult-category-details":
                     DetailsPage consultsCategoryDetails = new DetailsPage("consult-category", id);
                     consultsCategoryDetails.ShowDialog();
-                    break;
-                // Go to support
+                break;
+                /* ---- END DETAIL PAGES ---- */
+
+                /* ---- OTHER PAGES ---- */
+                // Support
                 case "support":
                     Errors("404", "Não tem KK");
-                    break;
-                // Go to chat options
-                case "chat-options":
-
-                    break;
-                // Go to login
+                break;
+                // Logout
                 case "login":
                     Login login = new Login();
                     login.ShowDialog();
-                    break;
+                break;
                 default:
                     Errors("404", "Página não encontrada!");
-                    break;
+                break;
             }
         }
 

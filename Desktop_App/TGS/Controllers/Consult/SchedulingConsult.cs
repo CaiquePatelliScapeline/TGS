@@ -63,9 +63,9 @@ namespace TGS.Controllers.Consult {
             try {
                 query.Connection = dbConn.Connect();
 
-                string[] consult = new string[5];
+                string[] consult = new string[7];
 
-                query.CommandText = $"SELECT C.DATE_CONSULT, C.TIME_CONSULT, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.ID_CONSULT = {id} AND C.STATUS_SCHEDULE = 1 AND C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE ORDER BY C.ID_CONSULT;";
+                query.CommandText = $"SELECT C.DATE_CONSULT, C.TIME_CONSULT, D.CRO_DENTIST, D.NAME_DENTIST, D.LAST_NAME AS LAST_NAME_DENTIST, P.CPF_PATIENT,  P.NAME_PATIENT, P.LAST_NAME AS LAST_NAME_PATIENT, P.NICKNAME, PR.PROCEDURE_TITLE FROM TB_DENTISTS AS D, TB_CONSULTS AS C, TB_PATIENTS AS P, TB_PROCEDURES AS PR WHERE C.ID_CONSULT = {id} AND C.STATUS_SCHEDULE = 1 AND C.CRO_DENTIST = D.CRO_DENTIST AND C.CPF_PATIENT = P.CPF_PATIENT AND C.ID_PROCEDURE = PR.ID_PROCEDURE ORDER BY C.ID_CONSULT;";
 
                 reader = query.ExecuteReader();
 
@@ -73,13 +73,15 @@ namespace TGS.Controllers.Consult {
 
                 consult[0] = $"{reader["DATE_CONSULT"]}";
                 consult[1] = $"{reader["TIME_CONSULT"]}";
-                consult[2] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME_DENTIST"]}";
+                consult[2] = $"{reader["CRO_DENTIST"]}";
+                consult[3] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME_DENTIST"]}";
+                consult[4] = $"{reader["CPF_PATIENT"]}";
                 if (string.IsNullOrEmpty(Convert.ToString(reader["NICKNAME"]))) {
-                    consult[3] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME_PATIENT"]}";
+                    consult[5] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME_PATIENT"]}";
                 } else {
-                    consult[3] = $"{reader["NICKNAME"]}";
+                    consult[5] = $"{reader["NICKNAME"]}";
                 }
-                consult[4] = $"{reader["PROCEDURE_TITLE"]}";
+                consult[6] = $"{reader["PROCEDURE_TITLE"]}";
 
                 reader.Close();
 

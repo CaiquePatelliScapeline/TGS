@@ -33,7 +33,7 @@ namespace TGS.Controllers.Delete {
 
                 dbConn.Disconnect();
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao deletar o agendamento!", false);
+                MyMsgBox.Show("Error", "Falha a liberar o horário!", false);
             }
         }
     }

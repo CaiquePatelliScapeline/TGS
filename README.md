@@ -10,8 +10,9 @@
 
 
 # Table of Contents
-[💻 Sobre o projeto](#💻Sobreoprojeto)
-[⚙️ Funcionalidades](#⚙️Funcionalidades)
+* [💻 Sobre o projeto](#💻Sobreoprojeto)
+* [⚙️ Funcionalidades](#Comoexecutaroprojeto?)
+* * [⚙️ Funcionalidades](#-Como-executar-o-projeto-?)
 [🚀  Como executar o projeto ?](#🚀Comoexecutaroprojeto?)
 [#💻 Sobre o projeto](#💻Sobreoprojeto)
 [#💻 Sobre o projeto](#💻Sobreoprojeto)
@@ -54,6 +55,8 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 
 
 # 🚀  Como executar o projeto ?
+# Como executar o projeto ?
+
 
 ### Pré-requisitos
 

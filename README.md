@@ -11,7 +11,7 @@
 
 # Table of Contents
 * [💻 Sobre o projeto](#💻Sobreoprojeto)
-* [⚙️ Funcionalidades](#Comoexecutaroprojeto?)
+* [⚙️ Funcionalidades](# Como executar o projeto ?)
 * * [⚙️ Funcionalidades](#-Como-executar-o-projeto-?)
 [🚀  Como executar o projeto ?](#🚀Comoexecutaroprojeto?)
 [#💻 Sobre o projeto](#💻Sobreoprojeto)

@@ -8,16 +8,6 @@
 
 ![](https://img.shields.io/badge/-C%23%20e%20SQL%20Server-blue)   ![](https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green)  
 
-
-# Table of Contents
-* [💻 Sobre o projeto](⚙️ Funcionalidades(#Comoexecutaroprojeto?))
-* * [💻 Sobre o projeto](#Comoexecutaroprojeto?)
-* [💻 Sobre o projeto](* [⚙️ Funcionalidades](#Comoexecutaroprojeto?))
-
-* * [⚙️ Funcionalidades](#-Como-executar-o-projeto-?)
-[🚀  Como executar o projeto ?](#🚀Comoexecutaroprojeto?)
-[#💻 Sobre o projeto](#💻Sobreoprojeto)
-[#💻 Sobre o projeto](#💻Sobreoprojeto)
   
 
 # 💻 Sobre o projeto

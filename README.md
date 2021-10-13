@@ -9,7 +9,8 @@
 ![](https://img.shields.io/badge/-C%23%20e%20SQL%20Server-blue)   ![](https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green)  
 
 
-
+# Table of Contents
+1. [Example](#-Layout)
   
 
 # 💻 Sobre o projeto
@@ -37,7 +38,7 @@
 
 
 
-# 🎨 Layout
+# Layout
 
 O layout da aplicação já [está disponível no Figma !](https://www.figma.com/community/file/1012833819051900162/TGS)
 
@@ -60,6 +61,7 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 
 ### 🎲  Rodando o Backend (servidor) - SQL Server
 #### 🧭  Rodando a aplicação (Frontend) - Visual Studio
+
 
 
 # 🛠  Tecnologias

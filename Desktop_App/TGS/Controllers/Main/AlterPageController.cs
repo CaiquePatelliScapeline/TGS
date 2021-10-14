@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using TGS.Views;
 
 namespace TGS.Controllers.Main {
     class AlterPageController {
+        // Classes
+        StatusController statusController = new StatusController();
+
         //Fields
         private String chatLink = "whatsapp://";
 
@@ -119,15 +120,17 @@ namespace TGS.Controllers.Main {
                 /* ---- OTHER PAGES ---- */
                 // Support
                 case "support":
-                    Errors("404", "Não tem KK");
-                break;
+                    statusController.PageNotFound();
+                    AlterPage(null, "home");
+                    break;
                 // Logout
                 case "login":
                     Login login = new Login();
                     login.ShowDialog();
                 break;
                 default:
-                    Errors("404", "Página não encontrada!");
+                    statusController.PageNotFound();
+                    AlterPage(null, "home");
                 break;
             }
         }
@@ -136,7 +139,8 @@ namespace TGS.Controllers.Main {
             try {
                 System.Diagnostics.Process.Start("cmd", $"/c start {link}");
             } catch (Exception ex) {
-                Errors("Erro", "Não foi possível abrir o aplicativo de mensagem!");
+                statusController.PageNotFound();
+                AlterPage(null, "home");
             }
         }
 

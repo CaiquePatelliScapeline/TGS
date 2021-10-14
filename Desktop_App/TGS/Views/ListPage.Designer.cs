@@ -73,10 +73,9 @@ namespace TGS.Views {
             this.pnl_Menu.Controls.Add(this.panel1);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.pnl_Menu.Size = new System.Drawing.Size(263, 749);
+            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -92,11 +91,10 @@ namespace TGS.Views {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 682);
-            this.btn_MenuLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
-            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(263, 47);
+            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -118,11 +116,10 @@ namespace TGS.Views {
             this.btn_MenuOptions.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuOptions.IconSize = 30;
             this.btn_MenuOptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 501);
-            this.btn_MenuOptions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
-            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -144,11 +141,10 @@ namespace TGS.Views {
             this.btn_MenuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuPacientes.IconSize = 30;
             this.btn_MenuPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 400);
-            this.btn_MenuPacientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
-            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -170,11 +166,10 @@ namespace TGS.Views {
             this.btn_MenuChat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuChat.IconSize = 30;
             this.btn_MenuChat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuChat.Location = new System.Drawing.Point(0, 299);
-            this.btn_MenuChat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
             this.btn_MenuChat.Name = "btn_MenuChat";
-            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -196,11 +191,10 @@ namespace TGS.Views {
             this.btn_MenuCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuCalendar.IconSize = 30;
             this.btn_MenuCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 198);
-            this.btn_MenuCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
-            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -222,11 +216,10 @@ namespace TGS.Views {
             this.btn_MenuHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHome.IconSize = 30;
             this.btn_MenuHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuHome.Location = new System.Drawing.Point(0, 97);
-            this.btn_MenuHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
             this.btn_MenuHome.Name = "btn_MenuHome";
-            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -241,18 +234,16 @@ namespace TGS.Views {
             this.panel1.Controls.Add(this.btn_MenuHamburger);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 97);
+            this.panel1.Size = new System.Drawing.Size(230, 73);
             this.panel1.TabIndex = 0;
             // 
             // img_LogoMenu
             // 
             this.img_LogoMenu.Image = ((System.Drawing.Image)(resources.GetObject("img_LogoMenu.Image")));
-            this.img_LogoMenu.Location = new System.Drawing.Point(38, 16);
-            this.img_LogoMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_LogoMenu.Location = new System.Drawing.Point(33, 12);
             this.img_LogoMenu.Name = "img_LogoMenu";
-            this.img_LogoMenu.Size = new System.Drawing.Size(119, 67);
+            this.img_LogoMenu.Size = new System.Drawing.Size(104, 50);
             this.img_LogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_LogoMenu.TabIndex = 2;
             this.img_LogoMenu.TabStop = false;
@@ -266,10 +257,9 @@ namespace TGS.Views {
             this.btn_MenuHamburger.IconColor = System.Drawing.Color.White;
             this.btn_MenuHamburger.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHamburger.IconSize = 30;
-            this.btn_MenuHamburger.Location = new System.Drawing.Point(187, 16);
-            this.btn_MenuHamburger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuHamburger.Location = new System.Drawing.Point(164, 12);
             this.btn_MenuHamburger.Name = "btn_MenuHamburger";
-            this.btn_MenuHamburger.Size = new System.Drawing.Size(69, 80);
+            this.btn_MenuHamburger.Size = new System.Drawing.Size(60, 60);
             this.btn_MenuHamburger.TabIndex = 1;
             this.btn_MenuHamburger.UseVisualStyleBackColor = true;
             this.btn_MenuHamburger.Click += new System.EventHandler(this.btn_MenuHamburger_Click);
@@ -277,10 +267,9 @@ namespace TGS.Views {
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(7, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(82, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(72, 63);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -295,10 +284,9 @@ namespace TGS.Views {
             this.pnl_TitleBar.Controls.Add(this.btn_Maximize);
             this.pnl_TitleBar.Controls.Add(this.btn_Close);
             this.pnl_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_TitleBar.Location = new System.Drawing.Point(263, 0);
-            this.pnl_TitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_TitleBar.Location = new System.Drawing.Point(230, 0);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(1107, 97);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1034, 73);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -307,9 +295,9 @@ namespace TGS.Views {
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Date.Location = new System.Drawing.Point(106, 48);
+            this.lbl_Date.Location = new System.Drawing.Point(93, 36);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(123, 37);
+            this.lbl_Date.Size = new System.Drawing.Size(97, 30);
             this.lbl_Date.TabIndex = 6;
             this.lbl_Date.Text = "--/--/----";
             // 
@@ -318,9 +306,9 @@ namespace TGS.Views {
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Title.Location = new System.Drawing.Point(96, 4);
+            this.lbl_Title.Location = new System.Drawing.Point(84, 3);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(95, 47);
+            this.lbl_Title.Size = new System.Drawing.Size(76, 38);
             this.lbl_Title.TabIndex = 5;
             this.lbl_Title.Text = "Title";
             // 
@@ -335,10 +323,10 @@ namespace TGS.Views {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(953, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
+            this.btn_Minimize.Location = new System.Drawing.Point(899, 0);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(51, 33);
+            this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
             this.btn_Minimize.TabIndex = 4;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -354,10 +342,10 @@ namespace TGS.Views {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(1005, 0);
-            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.btn_Maximize.Location = new System.Drawing.Point(944, 0);
+            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(51, 33);
+            this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
             this.btn_Maximize.TabIndex = 3;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
@@ -373,10 +361,10 @@ namespace TGS.Views {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(1056, 0);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
+            this.btn_Close.Location = new System.Drawing.Point(989, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(51, 33);
+            this.btn_Close.Size = new System.Drawing.Size(45, 25);
             this.btn_Close.TabIndex = 2;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -386,10 +374,9 @@ namespace TGS.Views {
             this.pnl_Content.Controls.Add(this.lv_List);
             this.pnl_Content.Controls.Add(this.pnl_Filter);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Content.Location = new System.Drawing.Point(263, 97);
-            this.pnl_Content.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Content.Location = new System.Drawing.Point(230, 73);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(1107, 652);
+            this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
             // lv_List
@@ -401,11 +388,10 @@ namespace TGS.Views {
             this.lv_List.FullRowSelect = true;
             this.lv_List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lv_List.HideSelection = false;
-            this.lv_List.Location = new System.Drawing.Point(0, 161);
-            this.lv_List.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lv_List.Location = new System.Drawing.Point(0, 121);
             this.lv_List.MultiSelect = false;
             this.lv_List.Name = "lv_List";
-            this.lv_List.Size = new System.Drawing.Size(1107, 491);
+            this.lv_List.Size = new System.Drawing.Size(1034, 487);
             this.lv_List.TabIndex = 1;
             this.lv_List.UseCompatibleStateImageBehavior = false;
             this.lv_List.View = System.Windows.Forms.View.Details;
@@ -417,9 +403,8 @@ namespace TGS.Views {
             this.pnl_Filter.Controls.Add(this.tb_Filter);
             this.pnl_Filter.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_Filter.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Filter.Name = "pnl_Filter";
-            this.pnl_Filter.Size = new System.Drawing.Size(1107, 161);
+            this.pnl_Filter.Size = new System.Drawing.Size(1034, 121);
             this.pnl_Filter.TabIndex = 0;
             // 
             // tb_Filter
@@ -437,14 +422,13 @@ namespace TGS.Views {
             this.tb_Filter.Controls.Add(this.btn_Register, 3, 1);
             this.tb_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tb_Filter.Location = new System.Drawing.Point(0, 0);
-            this.tb_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tb_Filter.Name = "tb_Filter";
             this.tb_Filter.RowCount = 4;
             this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
             this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47F));
             this.tb_Filter.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3F));
-            this.tb_Filter.Size = new System.Drawing.Size(1107, 161);
+            this.tb_Filter.Size = new System.Drawing.Size(1034, 121);
             this.tb_Filter.TabIndex = 0;
             // 
             // label1
@@ -452,7 +436,7 @@ namespace TGS.Views {
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 4);
+            this.label1.Size = new System.Drawing.Size(38, 3);
             this.label1.TabIndex = 0;
             this.label1.Text = "label1";
             // 
@@ -461,9 +445,9 @@ namespace TGS.Views {
             this.lbl_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Filter.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Filter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Filter.Location = new System.Drawing.Point(58, 4);
+            this.lbl_Filter.Location = new System.Drawing.Point(54, 3);
             this.lbl_Filter.Name = "lbl_Filter";
-            this.lbl_Filter.Size = new System.Drawing.Size(674, 75);
+            this.lbl_Filter.Size = new System.Drawing.Size(629, 56);
             this.lbl_Filter.TabIndex = 1;
             this.lbl_Filter.Text = "Filtro";
             this.lbl_Filter.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -472,10 +456,9 @@ namespace TGS.Views {
             // 
             this.txt_Filter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Filter.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Filter.Location = new System.Drawing.Point(58, 83);
-            this.txt_Filter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_Filter.Location = new System.Drawing.Point(54, 62);
             this.txt_Filter.Name = "txt_Filter";
-            this.txt_Filter.Size = new System.Drawing.Size(674, 37);
+            this.txt_Filter.Size = new System.Drawing.Size(629, 31);
             this.txt_Filter.TabIndex = 2;
             // 
             // cbx_FilterType
@@ -483,10 +466,9 @@ namespace TGS.Views {
             this.cbx_FilterType.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbx_FilterType.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbx_FilterType.FormattingEnabled = true;
-            this.cbx_FilterType.Location = new System.Drawing.Point(824, 83);
-            this.cbx_FilterType.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cbx_FilterType.Location = new System.Drawing.Point(769, 62);
             this.cbx_FilterType.Name = "cbx_FilterType";
-            this.cbx_FilterType.Size = new System.Drawing.Size(223, 38);
+            this.cbx_FilterType.Size = new System.Drawing.Size(208, 30);
             this.cbx_FilterType.TabIndex = 3;
             // 
             // btn_Register
@@ -502,9 +484,10 @@ namespace TGS.Views {
             this.btn_Register.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Register.IconSize = 26;
             this.btn_Register.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_Register.Location = new System.Drawing.Point(887, 7);
+            this.btn_Register.Location = new System.Drawing.Point(837, 5);
+            this.btn_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Register.Name = "btn_Register";
-            this.btn_Register.Size = new System.Drawing.Size(160, 47);
+            this.btn_Register.Size = new System.Drawing.Size(140, 35);
             this.btn_Register.TabIndex = 3;
             this.btn_Register.Text = "Cadastrar";
             this.btn_Register.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -514,15 +497,14 @@ namespace TGS.Views {
             // 
             // ListPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ListPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

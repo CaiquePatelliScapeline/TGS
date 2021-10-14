@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
@@ -12,6 +8,7 @@ namespace TGS.Controllers.Update {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void Employee(string id, string cpf, string name, string lastName, string email, string telephone, string cellphone) {
             if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
@@ -22,11 +19,12 @@ namespace TGS.Controllers.Update {
                     query.ExecuteNonQuery();
 
                     dbConn.Disconnect();
+                    statusController.Updated();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Erro", "Falha ao atualizar o registro do funcionário!", false);
+                    statusController.NonUpdated();
                 }
             } else {
-                MyMsgBox.Show("Erro", "Dados inválidos!", false);
+                statusController.NotAcceptable();
             }
         }
     }

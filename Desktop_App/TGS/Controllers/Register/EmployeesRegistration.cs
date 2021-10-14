@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Text;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
 
@@ -14,6 +10,7 @@ namespace TGS.Controllers.Register {
         DBConnection dbConn = new DBConnection();
         MD5Hash md5Hash = new MD5Hash();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password) {        
             string hashPassword = md5Hash.CreateMD5Hash(password);
@@ -24,12 +21,12 @@ namespace TGS.Controllers.Register {
                     query.Connection = dbConn.Connect();
                     query.ExecuteNonQuery();
                     dbConn.Disconnect();
-                    MyMsgBox.Show("Success", "Funcionário cadastrado com sucesso!", false);
+                    statusController.Created();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Error", "Falha no cadastro do funcionário!", false);
+                    statusController.NonCreated();
                 }
             } else {
-                MyMsgBox.Show("Error", "E-mail inválido!", false);
+                statusController.NotAcceptable();
             }
         }
     }

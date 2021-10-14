@@ -74,7 +74,7 @@ namespace TGS.Views {
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.pnl_Menu.Size = new System.Drawing.Size(230, 661);
+            this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -90,7 +90,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 611);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
@@ -389,7 +389,7 @@ namespace TGS.Views {
             this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
             this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tb_Content.Size = new System.Drawing.Size(1034, 588);
+            this.tb_Content.Size = new System.Drawing.Size(1034, 608);
             this.tb_Content.TabIndex = 2;
             // 
             // pnl_HeaderList
@@ -502,7 +502,7 @@ namespace TGS.Views {
             this.lv_Schedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lv_Schedule.MultiSelect = false;
             this.lv_Schedule.Name = "lv_Schedule";
-            this.lv_Schedule.Size = new System.Drawing.Size(1010, 489);
+            this.lv_Schedule.Size = new System.Drawing.Size(1010, 509);
             this.lv_Schedule.TabIndex = 2;
             this.lv_Schedule.UseCompatibleStateImageBehavior = false;
             this.lv_Schedule.View = System.Windows.Forms.View.Details;
@@ -513,12 +513,13 @@ namespace TGS.Views {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1264, 661);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.tb_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SchedulePage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Resize += new System.EventHandler(this.Home_Resize);
             this.pnl_Menu.ResumeLayout(false);

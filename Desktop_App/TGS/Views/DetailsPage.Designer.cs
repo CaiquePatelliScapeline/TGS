@@ -111,7 +111,7 @@ namespace TGS.Views {
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
             this.pnl_Menu.Name = "pnl_Menu";
             this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.pnl_Menu.Size = new System.Drawing.Size(230, 562);
+            this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -127,7 +127,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 512);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
@@ -321,7 +321,7 @@ namespace TGS.Views {
             this.pnl_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_TitleBar.Location = new System.Drawing.Point(230, 0);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(969, 73);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1034, 73);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -358,7 +358,7 @@ namespace TGS.Views {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(834, 0);
+            this.btn_Minimize.Location = new System.Drawing.Point(899, 0);
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
@@ -377,7 +377,7 @@ namespace TGS.Views {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(879, 0);
+            this.btn_Maximize.Location = new System.Drawing.Point(944, 0);
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
@@ -396,7 +396,7 @@ namespace TGS.Views {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(924, 0);
+            this.btn_Close.Location = new System.Drawing.Point(989, 0);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(45, 25);
@@ -411,7 +411,7 @@ namespace TGS.Views {
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Content.Location = new System.Drawing.Point(230, 73);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(969, 489);
+            this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
             // tb_Details
@@ -423,7 +423,7 @@ namespace TGS.Views {
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tb_Details.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 21F));
             this.tb_Details.Controls.Add(this.lbl_DetailsTitle, 1, 1);
             this.tb_Details.Controls.Add(this.lbl_TitleDetail1, 1, 2);
             this.tb_Details.Controls.Add(this.lbl_TitleDetail2, 3, 2);
@@ -486,7 +486,7 @@ namespace TGS.Views {
             this.tb_Details.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tb_Details.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tb_Details.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tb_Details.Size = new System.Drawing.Size(969, 439);
+            this.tb_Details.Size = new System.Drawing.Size(1034, 558);
             this.tb_Details.TabIndex = 2;
             // 
             // lbl_DetailsTitle
@@ -497,7 +497,7 @@ namespace TGS.Views {
             this.lbl_DetailsTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_DetailsTitle.Location = new System.Drawing.Point(23, 10);
             this.lbl_DetailsTitle.Name = "lbl_DetailsTitle";
-            this.lbl_DetailsTitle.Size = new System.Drawing.Size(446, 30);
+            this.lbl_DetailsTitle.Size = new System.Drawing.Size(478, 30);
             this.lbl_DetailsTitle.TabIndex = 0;
             this.lbl_DetailsTitle.Text = "Title";
             this.lbl_DetailsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -510,7 +510,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail1.Location = new System.Drawing.Point(23, 40);
             this.lbl_TitleDetail1.Name = "lbl_TitleDetail1";
-            this.lbl_TitleDetail1.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail1.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail1.TabIndex = 1;
             this.lbl_TitleDetail1.Text = "TitleDetails";
             this.lbl_TitleDetail1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -521,9 +521,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail2.Location = new System.Drawing.Point(500, 40);
+            this.lbl_TitleDetail2.Location = new System.Drawing.Point(532, 40);
             this.lbl_TitleDetail2.Name = "lbl_TitleDetail2";
-            this.lbl_TitleDetail2.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail2.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail2.TabIndex = 2;
             this.lbl_TitleDetail2.Text = "TitleDetails";
             this.lbl_TitleDetail2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -536,7 +536,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail3.Location = new System.Drawing.Point(23, 105);
             this.lbl_TitleDetail3.Name = "lbl_TitleDetail3";
-            this.lbl_TitleDetail3.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail3.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail3.TabIndex = 3;
             this.lbl_TitleDetail3.Text = "TitleDetails";
             this.lbl_TitleDetail3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -547,9 +547,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail4.Location = new System.Drawing.Point(500, 105);
+            this.lbl_TitleDetail4.Location = new System.Drawing.Point(532, 105);
             this.lbl_TitleDetail4.Name = "lbl_TitleDetail4";
-            this.lbl_TitleDetail4.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail4.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail4.TabIndex = 4;
             this.lbl_TitleDetail4.Text = "TitleDetails";
             this.lbl_TitleDetail4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -562,7 +562,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail5.Location = new System.Drawing.Point(23, 170);
             this.lbl_TitleDetail5.Name = "lbl_TitleDetail5";
-            this.lbl_TitleDetail5.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail5.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail5.TabIndex = 5;
             this.lbl_TitleDetail5.Text = "TitleDetails";
             this.lbl_TitleDetail5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -573,9 +573,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail6.Location = new System.Drawing.Point(500, 170);
+            this.lbl_TitleDetail6.Location = new System.Drawing.Point(532, 170);
             this.lbl_TitleDetail6.Name = "lbl_TitleDetail6";
-            this.lbl_TitleDetail6.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail6.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail6.TabIndex = 6;
             this.lbl_TitleDetail6.Text = "TitleDetails";
             this.lbl_TitleDetail6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -588,7 +588,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail7.Location = new System.Drawing.Point(23, 235);
             this.lbl_TitleDetail7.Name = "lbl_TitleDetail7";
-            this.lbl_TitleDetail7.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail7.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail7.TabIndex = 7;
             this.lbl_TitleDetail7.Text = "TitleDetails";
             this.lbl_TitleDetail7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -599,9 +599,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail8.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail8.Location = new System.Drawing.Point(500, 235);
+            this.lbl_TitleDetail8.Location = new System.Drawing.Point(532, 235);
             this.lbl_TitleDetail8.Name = "lbl_TitleDetail8";
-            this.lbl_TitleDetail8.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail8.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail8.TabIndex = 8;
             this.lbl_TitleDetail8.Text = "TitleDetails";
             this.lbl_TitleDetail8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -614,7 +614,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail9.Location = new System.Drawing.Point(23, 300);
             this.lbl_TitleDetail9.Name = "lbl_TitleDetail9";
-            this.lbl_TitleDetail9.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail9.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail9.TabIndex = 9;
             this.lbl_TitleDetail9.Text = "TitleDetails";
             this.lbl_TitleDetail9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -625,9 +625,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail10.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail10.Location = new System.Drawing.Point(500, 300);
+            this.lbl_TitleDetail10.Location = new System.Drawing.Point(532, 300);
             this.lbl_TitleDetail10.Name = "lbl_TitleDetail10";
-            this.lbl_TitleDetail10.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail10.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail10.TabIndex = 10;
             this.lbl_TitleDetail10.Text = "TitleDetails";
             this.lbl_TitleDetail10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -640,7 +640,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail11.Location = new System.Drawing.Point(23, 365);
             this.lbl_TitleDetail11.Name = "lbl_TitleDetail11";
-            this.lbl_TitleDetail11.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail11.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail11.TabIndex = 11;
             this.lbl_TitleDetail11.Text = "TitleDetails";
             this.lbl_TitleDetail11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -651,9 +651,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail12.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail12.Location = new System.Drawing.Point(500, 365);
+            this.lbl_TitleDetail12.Location = new System.Drawing.Point(532, 365);
             this.lbl_TitleDetail12.Name = "lbl_TitleDetail12";
-            this.lbl_TitleDetail12.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail12.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail12.TabIndex = 12;
             this.lbl_TitleDetail12.Text = "TitleDetails";
             this.lbl_TitleDetail12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -666,7 +666,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail13.Location = new System.Drawing.Point(23, 430);
             this.lbl_TitleDetail13.Name = "lbl_TitleDetail13";
-            this.lbl_TitleDetail13.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail13.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail13.TabIndex = 13;
             this.lbl_TitleDetail13.Text = "TitleDetails";
             this.lbl_TitleDetail13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -677,9 +677,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail14.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail14.Location = new System.Drawing.Point(500, 430);
+            this.lbl_TitleDetail14.Location = new System.Drawing.Point(532, 430);
             this.lbl_TitleDetail14.Name = "lbl_TitleDetail14";
-            this.lbl_TitleDetail14.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail14.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail14.TabIndex = 14;
             this.lbl_TitleDetail14.Text = "TitleDetails";
             this.lbl_TitleDetail14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -692,7 +692,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail15.Location = new System.Drawing.Point(23, 495);
             this.lbl_TitleDetail15.Name = "lbl_TitleDetail15";
-            this.lbl_TitleDetail15.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail15.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail15.TabIndex = 15;
             this.lbl_TitleDetail15.Text = "TitleDetails";
             this.lbl_TitleDetail15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -703,9 +703,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail16.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail16.Location = new System.Drawing.Point(500, 495);
+            this.lbl_TitleDetail16.Location = new System.Drawing.Point(532, 495);
             this.lbl_TitleDetail16.Name = "lbl_TitleDetail16";
-            this.lbl_TitleDetail16.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail16.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail16.TabIndex = 16;
             this.lbl_TitleDetail16.Text = "TitleDetails";
             this.lbl_TitleDetail16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -718,7 +718,7 @@ namespace TGS.Views {
             this.lbl_TitleDetail17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
             this.lbl_TitleDetail17.Location = new System.Drawing.Point(23, 560);
             this.lbl_TitleDetail17.Name = "lbl_TitleDetail17";
-            this.lbl_TitleDetail17.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail17.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail17.TabIndex = 17;
             this.lbl_TitleDetail17.Text = "TitleDetails";
             this.lbl_TitleDetail17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -729,9 +729,9 @@ namespace TGS.Views {
             this.lbl_TitleDetail18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleDetail18.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_TitleDetail18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_TitleDetail18.Location = new System.Drawing.Point(500, 560);
+            this.lbl_TitleDetail18.Location = new System.Drawing.Point(532, 560);
             this.lbl_TitleDetail18.Name = "lbl_TitleDetail18";
-            this.lbl_TitleDetail18.Size = new System.Drawing.Size(446, 30);
+            this.lbl_TitleDetail18.Size = new System.Drawing.Size(478, 30);
             this.lbl_TitleDetail18.TabIndex = 18;
             this.lbl_TitleDetail18.Text = "TitleDetails";
             this.lbl_TitleDetail18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -745,7 +745,7 @@ namespace TGS.Views {
             this.txt_Detail1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail1.Location = new System.Drawing.Point(23, 73);
             this.txt_Detail1.Name = "txt_Detail1";
-            this.txt_Detail1.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail1.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail1.TabIndex = 19;
             // 
             // txt_Detail2
@@ -755,9 +755,9 @@ namespace TGS.Views {
             this.txt_Detail2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail2.Enabled = false;
             this.txt_Detail2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail2.Location = new System.Drawing.Point(500, 73);
+            this.txt_Detail2.Location = new System.Drawing.Point(532, 73);
             this.txt_Detail2.Name = "txt_Detail2";
-            this.txt_Detail2.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail2.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail2.TabIndex = 20;
             // 
             // txt_Detail3
@@ -769,7 +769,7 @@ namespace TGS.Views {
             this.txt_Detail3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail3.Location = new System.Drawing.Point(23, 138);
             this.txt_Detail3.Name = "txt_Detail3";
-            this.txt_Detail3.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail3.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail3.TabIndex = 21;
             // 
             // txt_Detail4
@@ -779,9 +779,9 @@ namespace TGS.Views {
             this.txt_Detail4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail4.Enabled = false;
             this.txt_Detail4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail4.Location = new System.Drawing.Point(500, 138);
+            this.txt_Detail4.Location = new System.Drawing.Point(532, 138);
             this.txt_Detail4.Name = "txt_Detail4";
-            this.txt_Detail4.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail4.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail4.TabIndex = 22;
             // 
             // txt_Detail5
@@ -793,7 +793,7 @@ namespace TGS.Views {
             this.txt_Detail5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail5.Location = new System.Drawing.Point(23, 203);
             this.txt_Detail5.Name = "txt_Detail5";
-            this.txt_Detail5.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail5.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail5.TabIndex = 23;
             // 
             // txt_Detail6
@@ -803,9 +803,9 @@ namespace TGS.Views {
             this.txt_Detail6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail6.Enabled = false;
             this.txt_Detail6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail6.Location = new System.Drawing.Point(500, 203);
+            this.txt_Detail6.Location = new System.Drawing.Point(532, 203);
             this.txt_Detail6.Name = "txt_Detail6";
-            this.txt_Detail6.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail6.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail6.TabIndex = 24;
             // 
             // txt_Detail7
@@ -817,7 +817,7 @@ namespace TGS.Views {
             this.txt_Detail7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail7.Location = new System.Drawing.Point(23, 268);
             this.txt_Detail7.Name = "txt_Detail7";
-            this.txt_Detail7.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail7.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail7.TabIndex = 25;
             // 
             // txt_Detail8
@@ -827,9 +827,9 @@ namespace TGS.Views {
             this.txt_Detail8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail8.Enabled = false;
             this.txt_Detail8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail8.Location = new System.Drawing.Point(500, 268);
+            this.txt_Detail8.Location = new System.Drawing.Point(532, 268);
             this.txt_Detail8.Name = "txt_Detail8";
-            this.txt_Detail8.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail8.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail8.TabIndex = 26;
             // 
             // txt_Detail9
@@ -841,7 +841,7 @@ namespace TGS.Views {
             this.txt_Detail9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail9.Location = new System.Drawing.Point(23, 333);
             this.txt_Detail9.Name = "txt_Detail9";
-            this.txt_Detail9.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail9.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail9.TabIndex = 27;
             // 
             // txt_Detail10
@@ -851,9 +851,9 @@ namespace TGS.Views {
             this.txt_Detail10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail10.Enabled = false;
             this.txt_Detail10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail10.Location = new System.Drawing.Point(500, 333);
+            this.txt_Detail10.Location = new System.Drawing.Point(532, 333);
             this.txt_Detail10.Name = "txt_Detail10";
-            this.txt_Detail10.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail10.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail10.TabIndex = 28;
             // 
             // txt_Detail11
@@ -865,7 +865,7 @@ namespace TGS.Views {
             this.txt_Detail11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail11.Location = new System.Drawing.Point(23, 398);
             this.txt_Detail11.Name = "txt_Detail11";
-            this.txt_Detail11.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail11.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail11.TabIndex = 29;
             // 
             // txt_Detail12
@@ -875,9 +875,9 @@ namespace TGS.Views {
             this.txt_Detail12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail12.Enabled = false;
             this.txt_Detail12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail12.Location = new System.Drawing.Point(500, 398);
+            this.txt_Detail12.Location = new System.Drawing.Point(532, 398);
             this.txt_Detail12.Name = "txt_Detail12";
-            this.txt_Detail12.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail12.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail12.TabIndex = 30;
             // 
             // txt_Detail13
@@ -889,7 +889,7 @@ namespace TGS.Views {
             this.txt_Detail13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail13.Location = new System.Drawing.Point(23, 463);
             this.txt_Detail13.Name = "txt_Detail13";
-            this.txt_Detail13.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail13.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail13.TabIndex = 31;
             // 
             // txt_Detail14
@@ -899,9 +899,9 @@ namespace TGS.Views {
             this.txt_Detail14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail14.Enabled = false;
             this.txt_Detail14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail14.Location = new System.Drawing.Point(500, 463);
+            this.txt_Detail14.Location = new System.Drawing.Point(532, 463);
             this.txt_Detail14.Name = "txt_Detail14";
-            this.txt_Detail14.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail14.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail14.TabIndex = 32;
             // 
             // txt_Detail15
@@ -913,7 +913,7 @@ namespace TGS.Views {
             this.txt_Detail15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail15.Location = new System.Drawing.Point(23, 528);
             this.txt_Detail15.Name = "txt_Detail15";
-            this.txt_Detail15.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail15.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail15.TabIndex = 33;
             // 
             // txt_Detail16
@@ -923,9 +923,9 @@ namespace TGS.Views {
             this.txt_Detail16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail16.Enabled = false;
             this.txt_Detail16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail16.Location = new System.Drawing.Point(500, 528);
+            this.txt_Detail16.Location = new System.Drawing.Point(532, 528);
             this.txt_Detail16.Name = "txt_Detail16";
-            this.txt_Detail16.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail16.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail16.TabIndex = 34;
             // 
             // txt_Detail17
@@ -937,7 +937,7 @@ namespace TGS.Views {
             this.txt_Detail17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail17.Location = new System.Drawing.Point(23, 593);
             this.txt_Detail17.Name = "txt_Detail17";
-            this.txt_Detail17.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail17.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail17.TabIndex = 35;
             // 
             // txt_Detail18
@@ -947,19 +947,19 @@ namespace TGS.Views {
             this.txt_Detail18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_Detail18.Enabled = false;
             this.txt_Detail18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail18.Location = new System.Drawing.Point(500, 593);
+            this.txt_Detail18.Location = new System.Drawing.Point(532, 593);
             this.txt_Detail18.Name = "txt_Detail18";
-            this.txt_Detail18.Size = new System.Drawing.Size(446, 31);
+            this.txt_Detail18.Size = new System.Drawing.Size(478, 31);
             this.txt_Detail18.TabIndex = 36;
             // 
             // pnl_Buttons
             // 
             this.pnl_Buttons.Controls.Add(this.tb_Buttons);
             this.pnl_Buttons.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_Buttons.Location = new System.Drawing.Point(0, 439);
+            this.pnl_Buttons.Location = new System.Drawing.Point(0, 558);
             this.pnl_Buttons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_Buttons.Name = "pnl_Buttons";
-            this.pnl_Buttons.Size = new System.Drawing.Size(969, 50);
+            this.pnl_Buttons.Size = new System.Drawing.Size(1034, 50);
             this.pnl_Buttons.TabIndex = 1;
             // 
             // tb_Buttons
@@ -982,7 +982,7 @@ namespace TGS.Views {
             this.tb_Buttons.RowCount = 2;
             this.tb_Buttons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tb_Buttons.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tb_Buttons.Size = new System.Drawing.Size(969, 50);
+            this.tb_Buttons.Size = new System.Drawing.Size(1034, 50);
             this.tb_Buttons.TabIndex = 46;
             // 
             // btn_Back
@@ -1009,7 +1009,7 @@ namespace TGS.Views {
             this.btn_Delet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delet.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Delet.ForeColor = System.Drawing.Color.White;
-            this.btn_Delet.Location = new System.Drawing.Point(821, 3);
+            this.btn_Delet.Location = new System.Drawing.Point(886, 3);
             this.btn_Delet.Name = "btn_Delet";
             this.btn_Delet.Size = new System.Drawing.Size(125, 36);
             this.btn_Delet.TabIndex = 42;
@@ -1025,7 +1025,7 @@ namespace TGS.Views {
             this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Edit.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(664, 3);
+            this.btn_Edit.Location = new System.Drawing.Point(729, 3);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(125, 36);
             this.btn_Edit.TabIndex = 44;
@@ -1038,7 +1038,7 @@ namespace TGS.Views {
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1199, 562);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);

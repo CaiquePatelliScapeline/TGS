@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
@@ -12,6 +8,7 @@ namespace TGS.Controllers.Register {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void DentistRegistration(string croDentist, string nameDentist, string lastName, string expertise) {
             if (validateController.CRO(croDentist)) {
@@ -20,12 +17,12 @@ namespace TGS.Controllers.Register {
                     query.Connection = dbConn.Connect();
                     query.ExecuteNonQuery();
                     dbConn.Disconnect();
-                    MyMsgBox.Show("Success", "Dentista cadastrado com sucesso!", false);
+                    statusController.Created();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Erro", "Falha no cadastro do dentista!", false);
+                    statusController.NonCreated();
                 }
             } else {
-                MyMsgBox.Show("Erro", "Dados inválidos!", false);
+                statusController.NotAcceptable();
             }
         }
     }

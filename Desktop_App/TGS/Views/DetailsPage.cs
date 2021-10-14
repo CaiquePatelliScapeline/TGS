@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
@@ -468,7 +463,7 @@ namespace TGS.Views {
 
                     case "consult":
                         ScheduleUpdate scheduleUpdate = new ScheduleUpdate();
-                        scheduleUpdate.ScheduleUpdating(txt_Detail1.Text, txt_Detail5.Text, txt_Detail6.Text, int.Parse(idDetailsItem), txt_Detail6.Text);
+                        scheduleUpdate.ScheduleUpdating(txt_Detail1.Text, txt_Detail5.Text, txt_Detail6.Text, int.Parse(idDetailsItem), txt_Detail7.Text);
                     break;
 
                     case "consult-category":

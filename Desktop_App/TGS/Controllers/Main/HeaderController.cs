@@ -1,27 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Web;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using TGS.Views;
-using TGS.Model;
+﻿using System.Windows.Forms;
 using TGS.Controllers.Criptography;
 
 namespace TGS.Controllers.Main {
     class HeaderController {
 
         // Classes
-        MyMsgBox MyMsgBox = new MyMsgBox();
         AuthenticateController authenticateController = new AuthenticateController();
+        StatusController statusController = new StatusController();
 
         public void Exit() {
-            if (MyMsgBox.Show("", "Deseja realmente sair?", true) == DialogResult.Yes) {
+            if (statusController.Exit()) {
                 authenticateController.DestroySession();
                 Application.Exit();
             }

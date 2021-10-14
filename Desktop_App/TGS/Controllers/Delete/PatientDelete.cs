@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
+using TGS.Controllers.Main;
 
 
 namespace TGS.Controllers.Delete {
@@ -11,6 +8,7 @@ namespace TGS.Controllers.Delete {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
+        StatusController statusController = new StatusController();
 
         public void Patient(string id) {
             try {
@@ -20,8 +18,9 @@ namespace TGS.Controllers.Delete {
                 query.ExecuteNonQuery();
 
                 dbConn.Disconnect();
+                statusController.Deleted();
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao deletar o registro do paciente!", false);
+                statusController.NonDeleted();
             }
         }
     }

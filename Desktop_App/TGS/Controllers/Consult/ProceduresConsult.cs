@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
+using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Consult {
     class ProceduresConsult {
@@ -12,6 +8,7 @@ namespace TGS.Controllers.Consult {
         SqlCommand query = new SqlCommand();
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
+        StatusController statusController = new StatusController();
 
         public string[,] Procedures() {
 
@@ -42,7 +39,7 @@ namespace TGS.Controllers.Consult {
 
                 return procedures;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar a listagem de procedimentos!", false);
+                statusController.InternalError();
                 return null;
             }
         }
@@ -66,7 +63,7 @@ namespace TGS.Controllers.Consult {
 
                 return details;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar os detalhes do procedimento!", false);
+                statusController.InternalError();
                 return null;
             }
         }

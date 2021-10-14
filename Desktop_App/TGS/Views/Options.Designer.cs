@@ -93,10 +93,9 @@ namespace TGS.Views {
             this.pnl_Menu.Controls.Add(this.panel1);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.pnl_Menu.Size = new System.Drawing.Size(263, 881);
+            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -112,11 +111,10 @@ namespace TGS.Views {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 814);
-            this.btn_MenuLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
-            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(263, 47);
+            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -138,11 +136,10 @@ namespace TGS.Views {
             this.btn_MenuOptions.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuOptions.IconSize = 30;
             this.btn_MenuOptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 501);
-            this.btn_MenuOptions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
-            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -163,11 +160,10 @@ namespace TGS.Views {
             this.btn_MenuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuPacientes.IconSize = 30;
             this.btn_MenuPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 400);
-            this.btn_MenuPacientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
-            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -189,11 +185,10 @@ namespace TGS.Views {
             this.btn_MenuChat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuChat.IconSize = 30;
             this.btn_MenuChat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuChat.Location = new System.Drawing.Point(0, 299);
-            this.btn_MenuChat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
             this.btn_MenuChat.Name = "btn_MenuChat";
-            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -215,11 +210,10 @@ namespace TGS.Views {
             this.btn_MenuCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuCalendar.IconSize = 30;
             this.btn_MenuCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 198);
-            this.btn_MenuCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
-            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -241,11 +235,10 @@ namespace TGS.Views {
             this.btn_MenuHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHome.IconSize = 30;
             this.btn_MenuHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuHome.Location = new System.Drawing.Point(0, 97);
-            this.btn_MenuHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
             this.btn_MenuHome.Name = "btn_MenuHome";
-            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(263, 101);
+            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -260,18 +253,16 @@ namespace TGS.Views {
             this.panel1.Controls.Add(this.btn_MenuHamburger);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 97);
+            this.panel1.Size = new System.Drawing.Size(230, 73);
             this.panel1.TabIndex = 0;
             // 
             // img_LogoMenu
             // 
             this.img_LogoMenu.Image = ((System.Drawing.Image)(resources.GetObject("img_LogoMenu.Image")));
-            this.img_LogoMenu.Location = new System.Drawing.Point(38, 16);
-            this.img_LogoMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_LogoMenu.Location = new System.Drawing.Point(33, 12);
             this.img_LogoMenu.Name = "img_LogoMenu";
-            this.img_LogoMenu.Size = new System.Drawing.Size(119, 67);
+            this.img_LogoMenu.Size = new System.Drawing.Size(104, 50);
             this.img_LogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_LogoMenu.TabIndex = 2;
             this.img_LogoMenu.TabStop = false;
@@ -285,10 +276,9 @@ namespace TGS.Views {
             this.btn_MenuHamburger.IconColor = System.Drawing.Color.White;
             this.btn_MenuHamburger.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHamburger.IconSize = 30;
-            this.btn_MenuHamburger.Location = new System.Drawing.Point(187, 16);
-            this.btn_MenuHamburger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_MenuHamburger.Location = new System.Drawing.Point(164, 12);
             this.btn_MenuHamburger.Name = "btn_MenuHamburger";
-            this.btn_MenuHamburger.Size = new System.Drawing.Size(69, 80);
+            this.btn_MenuHamburger.Size = new System.Drawing.Size(60, 60);
             this.btn_MenuHamburger.TabIndex = 1;
             this.btn_MenuHamburger.UseVisualStyleBackColor = true;
             this.btn_MenuHamburger.Click += new System.EventHandler(this.btn_MenuHamburger_Click);
@@ -296,10 +286,9 @@ namespace TGS.Views {
             // img_Logo
             // 
             this.img_Logo.Image = ((System.Drawing.Image)(resources.GetObject("img_Logo.Image")));
-            this.img_Logo.Location = new System.Drawing.Point(7, 4);
-            this.img_Logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_Logo.Location = new System.Drawing.Point(6, 3);
             this.img_Logo.Name = "img_Logo";
-            this.img_Logo.Size = new System.Drawing.Size(82, 84);
+            this.img_Logo.Size = new System.Drawing.Size(72, 63);
             this.img_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_Logo.TabIndex = 0;
             this.img_Logo.TabStop = false;
@@ -314,10 +303,9 @@ namespace TGS.Views {
             this.pnl_TitleBar.Controls.Add(this.btn_Maximize);
             this.pnl_TitleBar.Controls.Add(this.btn_Close);
             this.pnl_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_TitleBar.Location = new System.Drawing.Point(263, 0);
-            this.pnl_TitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_TitleBar.Location = new System.Drawing.Point(230, 0);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(1182, 97);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1034, 73);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -326,9 +314,9 @@ namespace TGS.Views {
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Date.Location = new System.Drawing.Point(106, 54);
+            this.lbl_Date.Location = new System.Drawing.Point(93, 40);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(123, 37);
+            this.lbl_Date.Size = new System.Drawing.Size(97, 30);
             this.lbl_Date.TabIndex = 6;
             this.lbl_Date.Text = "--/--/----";
             // 
@@ -337,9 +325,9 @@ namespace TGS.Views {
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Title.Location = new System.Drawing.Point(96, 4);
+            this.lbl_Title.Location = new System.Drawing.Point(84, 3);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(307, 47);
+            this.lbl_Title.Size = new System.Drawing.Size(243, 38);
             this.lbl_Title.TabIndex = 5;
             this.lbl_Title.Text = "Configurações";
             // 
@@ -354,10 +342,10 @@ namespace TGS.Views {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(1029, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
+            this.btn_Minimize.Location = new System.Drawing.Point(900, 0);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(51, 33);
+            this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
             this.btn_Minimize.TabIndex = 4;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -373,10 +361,10 @@ namespace TGS.Views {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(1080, 0);
-            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            this.btn_Maximize.Location = new System.Drawing.Point(945, 0);
+            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(51, 33);
+            this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
             this.btn_Maximize.TabIndex = 3;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
@@ -392,10 +380,10 @@ namespace TGS.Views {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(1131, 0);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
+            this.btn_Close.Location = new System.Drawing.Point(990, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(51, 33);
+            this.btn_Close.Size = new System.Drawing.Size(45, 25);
             this.btn_Close.TabIndex = 2;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -404,10 +392,9 @@ namespace TGS.Views {
             // 
             this.pnl_Content.Controls.Add(this.tableLayoutPanel1);
             this.pnl_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Content.Location = new System.Drawing.Point(263, 97);
-            this.pnl_Content.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Content.Location = new System.Drawing.Point(230, 73);
             this.pnl_Content.Name = "pnl_Content";
-            this.pnl_Content.Size = new System.Drawing.Size(1182, 784);
+            this.pnl_Content.Size = new System.Drawing.Size(1034, 608);
             this.pnl_Content.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -422,7 +409,6 @@ namespace TGS.Views {
             this.tableLayoutPanel1.Controls.Add(this.pnl_Option4, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.030303F));
@@ -434,7 +420,7 @@ namespace TGS.Views {
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.040404F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.15152F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.24242F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1182, 784);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1034, 608);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pnl_Option1
@@ -445,10 +431,9 @@ namespace TGS.Views {
             this.pnl_Option1.Controls.Add(this.img_IconOption1);
             this.pnl_Option1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_Option1.ForeColor = System.Drawing.Color.Black;
-            this.pnl_Option1.Location = new System.Drawing.Point(62, 27);
-            this.pnl_Option1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option1.Location = new System.Drawing.Point(54, 21);
             this.pnl_Option1.Name = "pnl_Option1";
-            this.pnl_Option1.Size = new System.Drawing.Size(1057, 110);
+            this.pnl_Option1.Size = new System.Drawing.Size(924, 86);
             this.pnl_Option1.TabIndex = 0;
             // 
             // lbl_TitleOption1
@@ -456,9 +441,9 @@ namespace TGS.Views {
             this.lbl_TitleOption1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOption1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOption1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleOption1.Location = new System.Drawing.Point(91, 0);
+            this.lbl_TitleOption1.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOption1.Name = "lbl_TitleOption1";
-            this.lbl_TitleOption1.Size = new System.Drawing.Size(876, 110);
+            this.lbl_TitleOption1.Size = new System.Drawing.Size(765, 86);
             this.lbl_TitleOption1.TabIndex = 3;
             this.lbl_TitleOption1.Text = "Cadastro de Funcionários";
             this.lbl_TitleOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -471,10 +456,9 @@ namespace TGS.Views {
             this.img_ArrowOption1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOption1.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOption1.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOption1.Image")));
-            this.img_ArrowOption1.Location = new System.Drawing.Point(967, 0);
-            this.img_ArrowOption1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_ArrowOption1.Location = new System.Drawing.Point(845, 0);
             this.img_ArrowOption1.Name = "img_ArrowOption1";
-            this.img_ArrowOption1.Size = new System.Drawing.Size(90, 110);
+            this.img_ArrowOption1.Size = new System.Drawing.Size(79, 86);
             this.img_ArrowOption1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOption1.TabIndex = 2;
             this.img_ArrowOption1.TabStop = false;
@@ -488,9 +472,8 @@ namespace TGS.Views {
             this.img_IconOption1.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_IconOption1.Image = ((System.Drawing.Image)(resources.GetObject("img_IconOption1.Image")));
             this.img_IconOption1.Location = new System.Drawing.Point(0, 0);
-            this.img_IconOption1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_IconOption1.Name = "img_IconOption1";
-            this.img_IconOption1.Size = new System.Drawing.Size(91, 110);
+            this.img_IconOption1.Size = new System.Drawing.Size(80, 86);
             this.img_IconOption1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_IconOption1.TabIndex = 0;
             this.img_IconOption1.TabStop = false;
@@ -505,10 +488,9 @@ namespace TGS.Views {
             this.pnl_Option2.Controls.Add(this.img_TitleOption2);
             this.pnl_Option2.Controls.Add(this.img_ArrowOptions2);
             this.pnl_Option2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Option2.Location = new System.Drawing.Point(62, 176);
-            this.pnl_Option2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option2.Location = new System.Drawing.Point(54, 137);
             this.pnl_Option2.Name = "pnl_Option2";
-            this.pnl_Option2.Size = new System.Drawing.Size(1057, 110);
+            this.pnl_Option2.Size = new System.Drawing.Size(924, 86);
             this.pnl_Option2.TabIndex = 1;
             // 
             // lbl_TitleOptions2
@@ -516,9 +498,9 @@ namespace TGS.Views {
             this.lbl_TitleOptions2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions2.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleOptions2.Location = new System.Drawing.Point(91, 0);
+            this.lbl_TitleOptions2.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions2.Name = "lbl_TitleOptions2";
-            this.lbl_TitleOptions2.Size = new System.Drawing.Size(876, 110);
+            this.lbl_TitleOptions2.Size = new System.Drawing.Size(765, 86);
             this.lbl_TitleOptions2.TabIndex = 1;
             this.lbl_TitleOptions2.Text = "Cadastro de Procedimentos";
             this.lbl_TitleOptions2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -532,9 +514,8 @@ namespace TGS.Views {
             this.img_TitleOption2.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOption2.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOption2.Image")));
             this.img_TitleOption2.Location = new System.Drawing.Point(0, 0);
-            this.img_TitleOption2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_TitleOption2.Name = "img_TitleOption2";
-            this.img_TitleOption2.Size = new System.Drawing.Size(91, 110);
+            this.img_TitleOption2.Size = new System.Drawing.Size(80, 86);
             this.img_TitleOption2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOption2.TabIndex = 0;
             this.img_TitleOption2.TabStop = false;
@@ -547,10 +528,9 @@ namespace TGS.Views {
             this.img_ArrowOptions2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions2.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions2.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions2.Image")));
-            this.img_ArrowOptions2.Location = new System.Drawing.Point(967, 0);
-            this.img_ArrowOptions2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_ArrowOptions2.Location = new System.Drawing.Point(845, 0);
             this.img_ArrowOptions2.Name = "img_ArrowOptions2";
-            this.img_ArrowOptions2.Size = new System.Drawing.Size(90, 110);
+            this.img_ArrowOptions2.Size = new System.Drawing.Size(79, 86);
             this.img_ArrowOptions2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions2.TabIndex = 2;
             this.img_ArrowOptions2.TabStop = false;
@@ -565,10 +545,9 @@ namespace TGS.Views {
             this.pnl_Option3.Controls.Add(this.img_ArrowOptions4);
             this.pnl_Option3.Controls.Add(this.img_TitleOptions4);
             this.pnl_Option3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Option3.Location = new System.Drawing.Point(62, 325);
-            this.pnl_Option3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option3.Location = new System.Drawing.Point(54, 253);
             this.pnl_Option3.Name = "pnl_Option3";
-            this.pnl_Option3.Size = new System.Drawing.Size(1057, 110);
+            this.pnl_Option3.Size = new System.Drawing.Size(924, 86);
             this.pnl_Option3.TabIndex = 2;
             // 
             // lbl_TitleOptions4
@@ -576,31 +555,30 @@ namespace TGS.Views {
             this.lbl_TitleOptions4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions4.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleOptions4.Location = new System.Drawing.Point(91, 0);
+            this.lbl_TitleOptions4.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions4.Name = "lbl_TitleOptions4";
-            this.lbl_TitleOptions4.Size = new System.Drawing.Size(876, 110);
+            this.lbl_TitleOptions4.Size = new System.Drawing.Size(765, 86);
             this.lbl_TitleOptions4.TabIndex = 5;
             this.lbl_TitleOptions4.Text = "Cadastro de Dentistas";
             this.lbl_TitleOptions4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOptions4.Click += new System.EventHandler(this.Options4_Click);
-            this.lbl_TitleOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
-            this.lbl_TitleOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
+            this.lbl_TitleOptions4.Click += new System.EventHandler(this.Options3_Click);
+            this.lbl_TitleOptions4.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.lbl_TitleOptions4.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
             // img_ArrowOptions4
             // 
             this.img_ArrowOptions4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions4.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions4.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions4.Image")));
-            this.img_ArrowOptions4.Location = new System.Drawing.Point(967, 0);
-            this.img_ArrowOptions4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_ArrowOptions4.Location = new System.Drawing.Point(845, 0);
             this.img_ArrowOptions4.Name = "img_ArrowOptions4";
-            this.img_ArrowOptions4.Size = new System.Drawing.Size(90, 110);
+            this.img_ArrowOptions4.Size = new System.Drawing.Size(79, 86);
             this.img_ArrowOptions4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions4.TabIndex = 4;
             this.img_ArrowOptions4.TabStop = false;
-            this.img_ArrowOptions4.Click += new System.EventHandler(this.Options4_Click);
-            this.img_ArrowOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
-            this.img_ArrowOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
+            this.img_ArrowOptions4.Click += new System.EventHandler(this.Options3_Click);
+            this.img_ArrowOptions4.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.img_ArrowOptions4.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
             // img_TitleOptions4
             // 
@@ -608,15 +586,14 @@ namespace TGS.Views {
             this.img_TitleOptions4.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOptions4.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOptions4.Image")));
             this.img_TitleOptions4.Location = new System.Drawing.Point(0, 0);
-            this.img_TitleOptions4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_TitleOptions4.Name = "img_TitleOptions4";
-            this.img_TitleOptions4.Size = new System.Drawing.Size(91, 110);
+            this.img_TitleOptions4.Size = new System.Drawing.Size(80, 86);
             this.img_TitleOptions4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOptions4.TabIndex = 4;
             this.img_TitleOptions4.TabStop = false;
-            this.img_TitleOptions4.Click += new System.EventHandler(this.Options4_Click);
-            this.img_TitleOptions4.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
-            this.img_TitleOptions4.MouseHover += new System.EventHandler(this.Option4_MouseHover);
+            this.img_TitleOptions4.Click += new System.EventHandler(this.Options3_Click);
+            this.img_TitleOptions4.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
+            this.img_TitleOptions4.MouseHover += new System.EventHandler(this.Option3_MouseHover);
             // 
             // pnl_Option4
             // 
@@ -625,10 +602,9 @@ namespace TGS.Views {
             this.pnl_Option4.Controls.Add(this.img_TitleOptions3);
             this.pnl_Option4.Controls.Add(this.img_ArrowOptions3);
             this.pnl_Option4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_Option4.Location = new System.Drawing.Point(62, 474);
-            this.pnl_Option4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnl_Option4.Location = new System.Drawing.Point(54, 369);
             this.pnl_Option4.Name = "pnl_Option4";
-            this.pnl_Option4.Size = new System.Drawing.Size(1057, 110);
+            this.pnl_Option4.Size = new System.Drawing.Size(924, 86);
             this.pnl_Option4.TabIndex = 3;
             // 
             // lbl_TitleOptions3
@@ -636,15 +612,15 @@ namespace TGS.Views {
             this.lbl_TitleOptions3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbl_TitleOptions3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_TitleOptions3.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lbl_TitleOptions3.Location = new System.Drawing.Point(91, 0);
+            this.lbl_TitleOptions3.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions3.Name = "lbl_TitleOptions3";
-            this.lbl_TitleOptions3.Size = new System.Drawing.Size(876, 110);
+            this.lbl_TitleOptions3.Size = new System.Drawing.Size(765, 86);
             this.lbl_TitleOptions3.TabIndex = 1;
             this.lbl_TitleOptions3.Text = "Suporte";
             this.lbl_TitleOptions3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lbl_TitleOptions3.Click += new System.EventHandler(this.Options3_Click);
-            this.lbl_TitleOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
-            this.lbl_TitleOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
+            this.lbl_TitleOptions3.Click += new System.EventHandler(this.Options4_Click);
+            this.lbl_TitleOptions3.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.lbl_TitleOptions3.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // img_TitleOptions3
             // 
@@ -652,43 +628,40 @@ namespace TGS.Views {
             this.img_TitleOptions3.Dock = System.Windows.Forms.DockStyle.Left;
             this.img_TitleOptions3.Image = ((System.Drawing.Image)(resources.GetObject("img_TitleOptions3.Image")));
             this.img_TitleOptions3.Location = new System.Drawing.Point(0, 0);
-            this.img_TitleOptions3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_TitleOptions3.Name = "img_TitleOptions3";
-            this.img_TitleOptions3.Size = new System.Drawing.Size(91, 110);
+            this.img_TitleOptions3.Size = new System.Drawing.Size(80, 86);
             this.img_TitleOptions3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_TitleOptions3.TabIndex = 0;
             this.img_TitleOptions3.TabStop = false;
-            this.img_TitleOptions3.Click += new System.EventHandler(this.Options3_Click);
-            this.img_TitleOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
-            this.img_TitleOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
+            this.img_TitleOptions3.Click += new System.EventHandler(this.Options4_Click);
+            this.img_TitleOptions3.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.img_TitleOptions3.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // img_ArrowOptions3
             // 
             this.img_ArrowOptions3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.img_ArrowOptions3.Dock = System.Windows.Forms.DockStyle.Right;
             this.img_ArrowOptions3.Image = ((System.Drawing.Image)(resources.GetObject("img_ArrowOptions3.Image")));
-            this.img_ArrowOptions3.Location = new System.Drawing.Point(967, 0);
-            this.img_ArrowOptions3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.img_ArrowOptions3.Location = new System.Drawing.Point(845, 0);
             this.img_ArrowOptions3.Name = "img_ArrowOptions3";
-            this.img_ArrowOptions3.Size = new System.Drawing.Size(90, 110);
+            this.img_ArrowOptions3.Size = new System.Drawing.Size(79, 86);
             this.img_ArrowOptions3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_ArrowOptions3.TabIndex = 3;
             this.img_ArrowOptions3.TabStop = false;
-            this.img_ArrowOptions3.Click += new System.EventHandler(this.Options3_Click);
-            this.img_ArrowOptions3.MouseLeave += new System.EventHandler(this.Option3_MouseLeave);
-            this.img_ArrowOptions3.MouseHover += new System.EventHandler(this.Option3_MouseHover);
+            this.img_ArrowOptions3.Click += new System.EventHandler(this.Options4_Click);
+            this.img_ArrowOptions3.MouseLeave += new System.EventHandler(this.Option4_MouseLeave);
+            this.img_ArrowOptions3.MouseHover += new System.EventHandler(this.Option4_MouseHover);
             // 
             // Options
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1445, 881);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pnl_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";

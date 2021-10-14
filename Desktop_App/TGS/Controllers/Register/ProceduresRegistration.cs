@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Text;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
@@ -13,6 +9,7 @@ namespace TGS.Controllers.Register {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void ProcedureRegistration(string procedureTitle) {
             try {
@@ -20,9 +17,9 @@ namespace TGS.Controllers.Register {
                 query.Connection = dbConn.Connect();
                 query.ExecuteNonQuery();
                 dbConn.Disconnect();
-                MyMsgBox.Show("Success", "Procedimento cadastrado com sucesso!", false);
+                statusController.Created();
             } catch(SqlException e) {
-                MyMsgBox.Show("Error", "Falha no cadastro do procedimento!", false);
+                statusController.NonCreated();
             }
         }
     }

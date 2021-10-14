@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Text;
-using System.Text.RegularExpressions;
 using TGS.Model;
-using TGS.Views;
+using TGS.Controllers.Main;
 
 
 namespace TGS.Controllers.Consult {
@@ -13,6 +10,7 @@ namespace TGS.Controllers.Consult {
         SqlCommand query = new SqlCommand();
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
+        StatusController statusController = new StatusController();
 
         public string[,] ScheduleClosedConsult(string dateSearch) {
             try {
@@ -54,7 +52,7 @@ namespace TGS.Controllers.Consult {
                 dbConn.Disconnect();
                 return consults;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar a listagem de consultas!", false);
+                statusController.InternalError();
                 return null;
             }
         }
@@ -89,7 +87,7 @@ namespace TGS.Controllers.Consult {
 
                 return consult;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar o detalhe da consulta!", false);
+                statusController.InternalError();
                 return null;
             }
         }
@@ -122,7 +120,7 @@ namespace TGS.Controllers.Consult {
                 dbConn.Disconnect();
                 return consults;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar a listagem de horários livres!", false);
+                statusController.InternalError();
                 return null;
             }
         }
@@ -149,7 +147,7 @@ namespace TGS.Controllers.Consult {
 
                 return consult;
             } catch (SqlException e) {
-                MyMsgBox.Show("Error", "Falha ao carregar os detalhes do horário livre!", false);
+                statusController.InternalError();
                 return null;
             }
         }

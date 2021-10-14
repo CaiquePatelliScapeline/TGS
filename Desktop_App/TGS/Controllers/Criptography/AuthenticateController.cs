@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using TGS.Controllers.Main;
-using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 
 namespace TGS.Controllers.Criptography {
     class AuthenticateController {
@@ -15,6 +11,7 @@ namespace TGS.Controllers.Criptography {
         SqlDataReader reader = null;
         DBConnection dbConn = new DBConnection();
         MD5Hash md5Hash = new MD5Hash();
+        StatusController statusController = new StatusController();
 
         public void Login(String email, String password, Form form) {
             ValidateController validateController = new ValidateController();
@@ -27,17 +24,16 @@ namespace TGS.Controllers.Criptography {
                 if (reader.Read()) {
                     Session.Name = $"{reader["NAME_EMPLOYEE"]}";
                     Session.CPF = $"{reader["CPF_EMPLOYEE"]}";
-                    // MessageBox.Show($"{reader["CPF_EMPLOYEE"]}", $"{reader["NAME_EMPLOYEE"]}");
                     reader.Close();
                     dbConn.Disconnect();
                     alterPageController.AlterPage(form, "home");
                 } else {
-                    MyMsgBox.Show("Error", "E-mail ou senha inválida!", false);
+                    statusController.LoginFail();
                 }
                 reader.Close();
                 dbConn.Disconnect();
             } else {
-                MyMsgBox.Show("Error", "E-mail inválido!", false);
+                statusController.LoginFail();
             }
         }
 

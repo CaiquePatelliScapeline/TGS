@@ -165,7 +165,7 @@ namespace TGS.Views {
             this.Name = "MyMsgBox";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MyMsgBox";
             this.pnl_MsgBox.ResumeLayout(false);
             this.tb_MsgBox.ResumeLayout(false);

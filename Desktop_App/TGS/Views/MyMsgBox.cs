@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace TGS.Views {
@@ -28,7 +23,7 @@ namespace TGS.Views {
             private set;
         }
 
-        public static DialogResult Show(string title, string message, bool buttons) {
+        public static DialogResult Show(string message, string title = null, bool buttons = false) {
             var MsgBox = new MyMsgBox();
             MsgBox.lbl_MsgBoxTitle.Text = title;
             MsgBox.lbl_MsgBoxMessage.Text = message;

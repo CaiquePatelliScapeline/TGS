@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
@@ -13,6 +8,7 @@ namespace TGS.Controllers.Register {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void ConsultOpen(string croDentist, string dateConsult, string timeConsult) {
             if (validateController.CRO(croDentist) && validateController.Date(dateConsult) && validateController.Time(timeConsult)) {
@@ -24,12 +20,12 @@ namespace TGS.Controllers.Register {
 
                     dbConn.Disconnect();
 
-                    MyMsgBox.Show("Success", "Consulta aberta com sucesso!", false);
+                    statusController.Created();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Erro", "Falha na abertura da consulta!", false);
+                    statusController.NonCreated();
                 }
             } else {
-                MyMsgBox.Show("Erro", "Dados inválidos!", false);
+                statusController.NotAcceptable();
             }
         }
 
@@ -43,12 +39,12 @@ namespace TGS.Controllers.Register {
 
                     dbConn.Disconnect();
 
-                    MyMsgBox.Show("Success", "Consulta marcada com sucesso!", false);
+                    statusController.Created();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Error", "Falha no cadastro da consulta!", false);
+                    statusController.NonCreated();
                 }
             } else {
-                MyMsgBox.Show("Erro", "Dados inválidos!", false);
+                statusController.NotAcceptable();
             }
         }
     }

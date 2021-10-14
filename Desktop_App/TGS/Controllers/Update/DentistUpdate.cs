@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using TGS.Model;
-using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
@@ -12,6 +8,7 @@ namespace TGS.Controllers.Update {
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
+        StatusController statusController = new StatusController();
 
         public void Dentist(string id, string cro, string name, string lastName, string expertise) {
             if (validateController.CRO(cro)) {
@@ -22,8 +19,9 @@ namespace TGS.Controllers.Update {
                     query.ExecuteNonQuery();
 
                     dbConn.Disconnect();
+                    statusController.Updated();
                 } catch (SqlException e) {
-                    MyMsgBox.Show("Error", "Falha ao atualizar o registro do dentista!", false);
+                    statusController.NonUpdated();
                 }
             }
         }

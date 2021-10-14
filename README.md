@@ -1,9 +1,4 @@
 
-<h4 align="left"> 
-  TGS em construção...  🚧
-</h4>
-
-
 ![Logo](https://github.com/CaiquePatelliScapeline/TGS/blob/ReadMe/Readme%20assets/Tgs.png)
 
 ![](https://img.shields.io/badge/-C%23%20e%20SQL%20Server-blue)   ![](https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green)  
@@ -60,10 +55,6 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 
 ### 🎲  Rodando o Projeto 🧭  
 
-1. Baixe o arquivo em Zip;
-2. Ou clone o repositorio, direto no Visual Studio.
-
-Execute e seja feliz ;) 
 
 
 

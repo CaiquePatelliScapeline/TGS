@@ -38,7 +38,7 @@ namespace TGS.Controllers.Criptography {
         }
 
         public void Logout(Form form) {
-            if (MyMsgBox.Show("Atenção", "Deseja realmente sair?", true) == DialogResult.Yes) {
+            if (statusController.Exit()) {
                 DestroySession();
                 alterPageController.AlterPage(form, "login");
             }

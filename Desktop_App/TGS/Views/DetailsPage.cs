@@ -32,7 +32,7 @@ namespace TGS.Views {
         AuthenticateController authenticateController = new AuthenticateController();
         AlterPageController alterPageController = new AlterPageController();
         DentistsConsult dentistsConsult = new DentistsConsult();
-
+        StatusController statusController = new StatusController();
 
         // Fields
         private int borderSize = 2;
@@ -418,7 +418,7 @@ namespace TGS.Views {
                     tb_Details.AutoScroll = false;
                 break;
                 default:
-                    MyMsgBox.Show("Erro", "Detalhe não encontrada", false);
+                    statusController.PageNotFound();
                 break;
             }
         }
@@ -449,26 +449,31 @@ namespace TGS.Views {
                     case "patient":
                         PatientUpdate patientUpdate = new PatientUpdate();
                         patientUpdate.Patient(idDetailsItem, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail4.Text, txt_Detail5.Text, txt_Detail6.Text, txt_Detail7.Text, txt_Detail8.Text, txt_Detail9.Text, txt_Detail10.Text, txt_Detail11.Text, txt_Detail12.Text, txt_Detail13.Text, txt_Detail14.Text, txt_Detail15.Text, txt_Detail16.Text, txt_Detail17.Text, int.Parse(txt_Detail18.Text));
+                        alterPageController.AlterPage(ActiveForm, "patient-details", idDetailsItem);
                     break;
 
                     case "employee":
                         EmployeeUpdate employeeUpdate = new EmployeeUpdate();
                         employeeUpdate.Employee(idDetailsItem, txt_Detail6.Text, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail5.Text, txt_Detail4.Text);
-                        break;
+                        alterPageController.AlterPage(ActiveForm, "employee-details", idDetailsItem);
+                    break;
 
                     case "dentist":
                         DentistUpdate dentistUpdate = new DentistUpdate();
                         dentistUpdate.Dentist(idDetailsItem, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail4.Text);
+                        alterPageController.AlterPage(ActiveForm, "dentist-details", idDetailsItem);
                     break;
 
                     case "consult":
                         ScheduleUpdate scheduleUpdate = new ScheduleUpdate();
                         scheduleUpdate.ScheduleUpdating(txt_Detail1.Text, txt_Detail5.Text, txt_Detail6.Text, int.Parse(idDetailsItem), txt_Detail7.Text);
+                        alterPageController.AlterPage(ActiveForm, "consult-details", idDetailsItem);
                     break;
 
                     case "consult-category":
                         ProcedureUpdate procedureUpdate = new ProcedureUpdate();
                         procedureUpdate.Procedure(int.Parse(idDetailsItem), txt_Detail1.Text);
+                        alterPageController.AlterPage(ActiveForm, "consult-category-details", idDetailsItem);
                     break;
 
                     default:
@@ -509,43 +514,43 @@ namespace TGS.Views {
         private void btn_Delet_Click(object sender, EventArgs e) {
             switch (detailRender) {
                 case "patient":
-                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                    if (statusController.Warning()) {
                         PatientDelete patientDelete = new PatientDelete();
                         patientDelete.Patient(idDetailsItem);
                     }
                 break;
 
                 case "employee":
-                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                    if (statusController.Warning()) {
                         EmployeeDelete employeeDelete= new EmployeeDelete();
                         employeeDelete.Employee(idDetailsItem);
                     }
                 break;
 
                 case "dentist":
-                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                    if (statusController.Warning()) {
                         DentistDelete dentistDelete = new DentistDelete();
                         dentistDelete.Dentist(idDetailsItem);
                     }
                 break;
 
                 case "consult":
-                    if (MyMsgBox.Show("Alerta", "Deseja realmente limpar esse horário?", true) == DialogResult.Yes) {
+                    if (statusController.Warning()) {
                         ConsultDelete consultDelete = new ConsultDelete();
                         consultDelete.Consult(int.Parse(idDetailsItem));
                     }
                 break;
 
                 case "consult-category":
-                    if (MyMsgBox.Show("Alerta", "Deseja realmente excluir esse registro?", true) == DialogResult.Yes) {
+                    if (statusController.Warning()) {
                         ProcedureDelete procedureDelete = new ProcedureDelete();
                         procedureDelete.Procedure(int.Parse(idDetailsItem));
                     }
                 break;
 
                 default:
-                    MyMsgBox.Show("Erro", "Erro ao deletar o registro!", false);
-                    break;
+                    statusController.NonDeleted();
+                break;
             }
         }
     }

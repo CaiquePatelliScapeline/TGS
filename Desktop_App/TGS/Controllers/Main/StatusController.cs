@@ -36,7 +36,7 @@ namespace TGS.Controllers.Main {
         }
 
         public void NotAcceptable() {
-            MyMsgBox.Show("Dados Inváldios!", "406");
+            MyMsgBox.Show("Dados Inválidos!", "406");
         }
 
         public void Deleted() {
@@ -51,8 +51,8 @@ namespace TGS.Controllers.Main {
             return MyMsgBox.Show("Deseja realmente sair?", "", true) == DialogResult.Yes;
         }
 
-        public void Warning() {
-            MyMsgBox.Show("Algo de errado não está certo! ;)", "Aviso");
+        public bool Warning() {
+            return MyMsgBox.Show("Deseja realmente excluir esse registro?", "Alerta", true) == DialogResult.Yes;
         }
     }
 }

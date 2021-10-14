@@ -75,7 +75,7 @@ Foi usado nesse projeto:
 
 
 # 📝  Licença
-Todos os Direitos Reservados aos Autores.
+© Todos os Direitos Reservados aos Autores ©.
 
 # Versões do README
 Inglês (depois)

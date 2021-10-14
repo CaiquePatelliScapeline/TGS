@@ -51,7 +51,7 @@ O layout da aplicação já [está disponível no Figma !](https://www.figma.com
 * [Microsoft SQL Server ](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
 
  
-💡Tanto o Visual Studio 2019 e SQL Server, precisa estar em execução para o projeto funcionar perfeitamente. 
+💡 O Visual Studio 2019 e SQL Server, precisam estar em execução para o projeto funcionar perfeitamente. 
 
 ### 🎲  Rodando o Projeto 🧭  
 

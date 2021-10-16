@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 using System.Globalization;
 
 namespace TGS.Controllers.Main {
-    class ValidateController {
+    public class ValidateController {
         public bool Date(string date) {
             return DateTime.TryParse(date, out DateTime dateTime);
         }

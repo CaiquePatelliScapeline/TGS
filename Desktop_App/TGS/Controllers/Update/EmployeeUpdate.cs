@@ -3,14 +3,14 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
-    class EmployeeUpdate {
+    public class EmployeeUpdate {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void Employee(string id, string cpf, string name, string lastName, string email, string telephone, string cellphone) {
+        public bool Employee(string id, string cpf, string name, string lastName, string email, string telephone, string cellphone, bool testing = false) {
             if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -19,12 +19,16 @@ namespace TGS.Controllers.Update {
                     query.ExecuteNonQuery();
 
                     dbConn.Disconnect();
-                    statusController.Updated();
+
+                    if(!testing) statusController.Updated();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonUpdated();
+                    if (!testing) statusController.NonUpdated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

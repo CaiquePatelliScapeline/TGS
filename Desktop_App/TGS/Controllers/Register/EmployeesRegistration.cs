@@ -4,7 +4,7 @@ using TGS.Controllers.Main;
 using TGS.Controllers.Criptography;
 
 namespace TGS.Controllers.Register {
-    class EmployeesRegistration {
+    public class EmployeesRegistration {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
@@ -12,7 +12,7 @@ namespace TGS.Controllers.Register {
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password) {        
+        public bool EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password, bool testing = false) {        
             string hashPassword = md5Hash.CreateMD5Hash(password);
 
             if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
@@ -21,12 +21,16 @@ namespace TGS.Controllers.Register {
                     query.Connection = dbConn.Connect();
                     query.ExecuteNonQuery();
                     dbConn.Disconnect();
-                    statusController.Created();
+
+                    if (!testing) statusController.Created();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonCreated();
+                    if (!testing) statusController.NonCreated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

@@ -4,14 +4,14 @@ using TGS.Views;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
-    class PatientUpdate {
+    public class PatientUpdate {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void Patient(string id, string cpf, string rg, string name, string lastName, string nickname, string birthDate, string height, string weight, string email, string telephone, string cellphone, string street, string neighborhood, string city, string district, string cep, string complement, int number) {
+        public bool Patient(string id, string cpf, string rg, string name, string lastName, string nickname, string birthDate, string height, string weight, string email, string telephone, string cellphone, string street, string neighborhood, string city, string district, string cep, string complement, int number, bool testing = false) {
             if (validateController.CPF(cpf) && validateController.RG(rg) && validateController.Date(birthDate) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone) && validateController.CEP(cep)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -19,12 +19,16 @@ namespace TGS.Controllers.Update {
                     query.ExecuteNonQuery();
 
                     dbConn.Disconnect();
-                    statusController.Updated();
+
+                    if (!testing) statusController.Updated();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonUpdated();
+                    if (!testing) statusController.NonUpdated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

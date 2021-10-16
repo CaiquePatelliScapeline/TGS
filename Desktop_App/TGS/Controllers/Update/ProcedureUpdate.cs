@@ -3,14 +3,14 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
-    class ProcedureUpdate {
+    public class ProcedureUpdate {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void Procedure(int id, string title) {
+        public bool Procedure(int id, string title, bool testing = false) {
             try {
                 query.Connection = dbConn.Connect();
 
@@ -18,9 +18,12 @@ namespace TGS.Controllers.Update {
                 query.ExecuteNonQuery();
 
                 dbConn.Disconnect();
-                statusController.Updated();
+
+                if (!testing) statusController.Updated();
+                return true;
             } catch (SqlException e) {
-                statusController.NonUpdated();
+                if (!testing) statusController.NonUpdated();
+                return false;
             }
         }
     }

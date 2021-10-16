@@ -3,14 +3,14 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
-    class DentistUpdate {
+    public class DentistUpdate {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void Dentist(string id, string cro, string name, string lastName, string expertise) {
+        public bool Dentist(string id, string cro, string name, string lastName, string expertise, bool testing = false) {
             if (validateController.CRO(cro)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -19,10 +19,16 @@ namespace TGS.Controllers.Update {
                     query.ExecuteNonQuery();
 
                     dbConn.Disconnect();
-                    statusController.Updated();
+
+                    if(!testing) statusController.Updated();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonUpdated();
+                    if (!testing) statusController.NonUpdated();
+                    return false;
                 }
+            } else {
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

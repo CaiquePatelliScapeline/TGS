@@ -3,7 +3,7 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
-    class ProceduresRegistration {
+    public class ProceduresRegistration {
         
         // Classes
         SqlCommand query = new SqlCommand();
@@ -11,15 +11,18 @@ namespace TGS.Controllers.Register {
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void ProcedureRegistration(string procedureTitle) {
+        public bool ProcedureRegistration(string procedureTitle, bool testing = false) {
             try {
                 query.CommandText = $"INSERT INTO TB_PROCEDURES (PROCEDURE_TITLE) VALUES ('{validateController.ToTitleCase(procedureTitle)}')";
                 query.Connection = dbConn.Connect();
                 query.ExecuteNonQuery();
                 dbConn.Disconnect();
-                statusController.Created();
+
+                if (!testing) statusController.Created();
+                return true;
             } catch(SqlException e) {
-                statusController.NonCreated();
+                if (!testing) statusController.NonCreated();
+                return false;
             }
         }
     }

@@ -3,14 +3,14 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Register {
-    class ConsultsRegistration {
+    public class ConsultsRegistration {
         // Classes
         SqlCommand query = new SqlCommand();
         DBConnection dbConn = new DBConnection();
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void ConsultOpen(string croDentist, string dateConsult, string timeConsult) {
+        public bool ConsultOpen(string croDentist, string dateConsult, string timeConsult, bool testing = false) {
             if (validateController.CRO(croDentist) && validateController.Date(dateConsult) && validateController.Time(timeConsult)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -20,16 +20,19 @@ namespace TGS.Controllers.Register {
 
                     dbConn.Disconnect();
 
-                    statusController.Created();
+                    if(!testing) statusController.Created();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonCreated();
+                    if (!testing) statusController.NonCreated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
 
-        public void ConsultRegistration(string cpfPatient, int idProcedure, int idConsulta) {
+        public bool ConsultRegistration(string cpfPatient, int idProcedure, int idConsulta, bool testing = false) {
             if (validateController.CPF(cpfPatient)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -39,12 +42,15 @@ namespace TGS.Controllers.Register {
 
                     dbConn.Disconnect();
 
-                    statusController.Created();
+                    if (!testing) statusController.Created();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonCreated();
+                    if (!testing) statusController.NonCreated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

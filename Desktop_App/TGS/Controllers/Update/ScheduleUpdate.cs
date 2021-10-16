@@ -3,7 +3,7 @@ using TGS.Model;
 using TGS.Controllers.Main;
 
 namespace TGS.Controllers.Update {
-    class ScheduleUpdate {
+    public class ScheduleUpdate {
         // Classes
         SqlCommand query = new SqlCommand();
         SqlDataReader reader = null;
@@ -11,7 +11,7 @@ namespace TGS.Controllers.Update {
         ValidateController validateController = new ValidateController();
         StatusController statusController = new StatusController();
 
-        public void ScheduleUpdating(string cpfPatient, string dateSchedule,string timeSchedule, int oldId, string procedureTitle) {
+        public bool ScheduleUpdating(string cpfPatient, string dateSchedule,string timeSchedule, int oldId, string procedureTitle, bool testing = false) {
             if (validateController.CPF(cpfPatient) && validateController.Date(dateSchedule) && validateController.Time(timeSchedule)) {
                 try {
                     query.Connection = dbConn.Connect();
@@ -26,12 +26,16 @@ namespace TGS.Controllers.Update {
                     query.CommandText = $"UPDATE TB_CONSULTS SET STATUS_SCHEDULE = 1, CPF_EMPLOYEE = '{Session.CPF}', CPF_PATIENT = '{cpfPatient}', ID_PROCEDURE = {idProcedure} WHERE DATE_CONSULT = '{dateSchedule}' AND TIME_CONSULT = '{timeSchedule}';";
                     query.ExecuteNonQuery();
                     dbConn.Disconnect();
-                    statusController.Updated();
+
+                    if (!testing) statusController.Updated();
+                    return true;
                 } catch (SqlException e) {
-                    statusController.NonUpdated();
+                    if (!testing) statusController.NonUpdated();
+                    return false;
                 }
             } else {
-                statusController.NotAcceptable();
+                if (!testing) statusController.NotAcceptable();
+                return false;
             }
         }
     }

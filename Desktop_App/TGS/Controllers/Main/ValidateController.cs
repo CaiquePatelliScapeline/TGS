@@ -48,6 +48,11 @@ namespace TGS.Controllers.Main {
             return cellphoneValidate.IsMatch(cellphone);
         }
 
+        public bool DurationConsult(string duration) {
+            Regex durationValidate = new Regex(@"^(\d)?\d\,\d(\d)?$");
+            return durationValidate.IsMatch(duration);
+        }
+
         public string ToTitleCase(string str) {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str.ToLower());
         }

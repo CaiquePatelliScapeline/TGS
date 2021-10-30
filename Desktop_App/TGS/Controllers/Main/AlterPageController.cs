@@ -54,6 +54,11 @@ namespace TGS.Controllers.Main {
                     FormPage dentistsRegistration = new FormPage("dentists");
                     dentistsRegistration.ShowDialog();
                 break;
+                // Schedule
+                case "schedule-open":
+                    FormPage scheduleOpen = new FormPage("schedule");
+                    scheduleOpen.ShowDialog();
+                break;
                 // Consults
                 case "consults-registration":
                     FormPage consultsRegistration = new FormPage("consults", dateSchedule, timeSchedule, id);

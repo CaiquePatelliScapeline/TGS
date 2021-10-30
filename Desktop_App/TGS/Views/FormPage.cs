@@ -202,62 +202,7 @@ namespace TGS.Views {
         }
 
         private void Render() {
-            lbl_TitlePart.Visible = false;
-            lbl_TitlePart.Visible = false;
-            // Input 1
-            lbl_Title1.Visible = true;
-            txt_Input1.Visible = true;
-            txt_Input1.Text = "";
-            txt_Input1.Mask = "";
-            // Input 2
-            lbl_Title2.Visible = true;
-            txt_Input2.Visible = true;
-            txt_Input2.Text = "";
-            txt_Input2.Mask = "";
-            // Input 3
-            lbl_Title3.Visible = true;
-            txt_Input3.Visible = true;
-            txt_Input3.Text = "";
-            txt_Input3.Mask = "";
-            // Input 4
-            lbl_Title4.Visible = true;
-            txt_Input4.Visible = true;
-            txt_Input4.Text = "";
-            txt_Input4.Mask = "";
-            // Input 5
-            lbl_Title5.Visible = true;
-            txt_Input5.Visible = true;
-            txt_Input5.Text = "";
-            txt_Input5.Mask = "";
-            // Input 6
-            lbl_Title6.Visible = true;
-            txt_Input6.Visible = true;
-            txt_Input6.Text = "";
-            txt_Input6.Mask = "";
-            // Input 7
-            lbl_Title7.Visible = true;
-            txt_Input7.Visible = true;
-            txt_Input7.Text = "";
-            txt_Input7.Mask = "";
-            // Input 8
-            lbl_Title8.Visible = true;
-            txt_Input8.Visible = true;
-            txt_Input8.Text = "";
-            txt_Input8.Mask = "";
-            // Input 9
-            lbl_Title9.Visible = true;
-            txt_Input9.Visible = true;
-            txt_Input9.Text = "";
-            txt_Input9.Mask = "";
-            // Input 10
-            lbl_Title10.Visible = true;
-            txt_Input10.Visible = true;
-            txt_Input10.Text = "";
-            txt_Input10.Mask = "";
-
-            lbl_Part.Visible   = true;
-            btn_Back.Visible   = false;
-            btn_Forward.Text = "Cadastrar";
+            DefaultForm();
 
             switch (formRender) {
                 // Employees
@@ -473,6 +418,43 @@ namespace TGS.Views {
                             break;
                     }
                     break;
+                // Schedule
+                case "schedule":
+                    lbl_TitlePart.Visible = false;
+                    lbl_Title.Text = "Abrir Agenda";
+
+                    lbl_Title1.Text = "CRO do Dentista";
+                    txt_Input1.Mask = "00,000";
+
+                    lbl_Title2.Text = "Tempo de Consulta";
+                    txt_Input2.Mask = "0.00";
+
+                    lbl_Title3.Text = "Data Inicial";
+                    txt_Input3.Mask = "00/00/0000";
+
+                    lbl_Title4.Text = "Data Final";
+                    txt_Input4.Mask = "00/00/0000";
+
+                    lbl_Title5.Text = "Inicio do Expediente";
+                    txt_Input5.Mask = "00:00";
+
+                    lbl_Title6.Text = "Fim do Expediente";
+                    txt_Input6.Mask = "00:00";
+
+                    lbl_Title7.Text = "Inicio do Almoço";
+                    txt_Input7.Mask = "00:00";
+
+                    lbl_Title8.Text = "Fim do Almoço";
+                    txt_Input8.Mask = "00:00";
+
+                    
+                    lbl_Title9.Visible = false;
+                    txt_Input9.Visible = false;
+                    lbl_Title10.Visible = false;
+                    txt_Input10.Visible = false;
+                    lbl_Part.Visible = false;
+
+                    break;
                 // Consults
                 case "consults":
                     lbl_TitlePart.Visible = false;
@@ -517,6 +499,65 @@ namespace TGS.Views {
             }
         }
 
+        private void DefaultForm() {
+            lbl_TitlePart.Visible = false;
+            lbl_TitlePart.Visible = false;
+            // Input 1
+            lbl_Title1.Visible = true;
+            txt_Input1.Visible = true;
+            txt_Input1.Text = "";
+            txt_Input1.Mask = "";
+            // Input 2
+            lbl_Title2.Visible = true;
+            txt_Input2.Visible = true;
+            txt_Input2.Text = "";
+            txt_Input2.Mask = "";
+            // Input 3
+            lbl_Title3.Visible = true;
+            txt_Input3.Visible = true;
+            txt_Input3.Text = "";
+            txt_Input3.Mask = "";
+            // Input 4
+            lbl_Title4.Visible = true;
+            txt_Input4.Visible = true;
+            txt_Input4.Text = "";
+            txt_Input4.Mask = "";
+            // Input 5
+            lbl_Title5.Visible = true;
+            txt_Input5.Visible = true;
+            txt_Input5.Text = "";
+            txt_Input5.Mask = "";
+            // Input 6
+            lbl_Title6.Visible = true;
+            txt_Input6.Visible = true;
+            txt_Input6.Text = "";
+            txt_Input6.Mask = "";
+            // Input 7
+            lbl_Title7.Visible = true;
+            txt_Input7.Visible = true;
+            txt_Input7.Text = "";
+            txt_Input7.Mask = "";
+            // Input 8
+            lbl_Title8.Visible = true;
+            txt_Input8.Visible = true;
+            txt_Input8.Text = "";
+            txt_Input8.Mask = "";
+            // Input 9
+            lbl_Title9.Visible = true;
+            txt_Input9.Visible = true;
+            txt_Input9.Text = "";
+            txt_Input9.Mask = "";
+            // Input 10
+            lbl_Title10.Visible = true;
+            txt_Input10.Visible = true;
+            txt_Input10.Text = "";
+            txt_Input10.Mask = "";
+
+            lbl_Part.Visible = true;
+            btn_Back.Visible = false;
+            btn_Forward.Text = "Cadastrar";
+        }
+
         private void btn_Forward_Click(object sender, EventArgs e) {
             if(btn_Forward.Text == "Cadastrar") {
                 switch (formRender) {
@@ -543,6 +584,9 @@ namespace TGS.Views {
                         patients[17] = txt_Input3.Text;
                         patientsRegistration.PatientRegistration(patients[0], patients[1], patients[2], patients[3], patients[4], patients[5], patients[6], patients[7], patients[8], patients[9], patients[10], patients[11], patients[12], patients[13], patients[14], patients[15], patients[16], patients[17]);
                         alterPageController.AlterPage(ActiveForm, "patients");
+                        break;
+                    case "schedule":
+                        consultsRegistration.ConsultOpen(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, txt_Input6.Text, txt_Input7.Text, txt_Input8.Text);
                         break;
                     case "consults":
                         consultsRegistration.ConsultRegistration(txt_Input3.Text, int.Parse(txt_Input4.Text), int.Parse(txt_Input5.Text));

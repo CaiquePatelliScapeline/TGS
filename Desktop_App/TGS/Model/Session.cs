@@ -1,7 +1,7 @@
 ﻿namespace TGS.Model {
     public class Session {
-        private static string name;
-        private static string cpf;
+        private static string name = "Admin";
+        private static string cpf = "000.000.000-00";
 
         public static string Name {
             get {return Session.name;}

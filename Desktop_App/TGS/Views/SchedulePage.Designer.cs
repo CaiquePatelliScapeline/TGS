@@ -50,6 +50,7 @@ namespace TGS.Views {
             this.btn_Return = new System.Windows.Forms.Panel();
             this.btn_Next = new System.Windows.Forms.Panel();
             this.lv_Schedule = new System.Windows.Forms.ListView();
+            this.btn_OpenSchedule = new FontAwesome.Sharp.IconButton();
             this.pnl_Menu.SuspendLayout();
             this.pnl_MenuLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_LogoMenu)).BeginInit();
@@ -72,9 +73,10 @@ namespace TGS.Views {
             this.pnl_Menu.Controls.Add(this.pnl_MenuLogo);
             this.pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Menu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_Menu.Name = "pnl_Menu";
-            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
-            this.pnl_Menu.Size = new System.Drawing.Size(230, 681);
+            this.pnl_Menu.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.pnl_Menu.Size = new System.Drawing.Size(263, 908);
             this.pnl_Menu.TabIndex = 0;
             // 
             // btn_MenuLogout
@@ -90,10 +92,11 @@ namespace TGS.Views {
             this.btn_MenuLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuLogout.IconSize = 30;
             this.btn_MenuLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 631);
+            this.btn_MenuLogout.Location = new System.Drawing.Point(0, 841);
+            this.btn_MenuLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuLogout.Name = "btn_MenuLogout";
-            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
+            this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuLogout.Size = new System.Drawing.Size(263, 47);
             this.btn_MenuLogout.TabIndex = 6;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
@@ -115,10 +118,11 @@ namespace TGS.Views {
             this.btn_MenuOptions.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuOptions.IconSize = 30;
             this.btn_MenuOptions.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 377);
+            this.btn_MenuOptions.Location = new System.Drawing.Point(0, 501);
+            this.btn_MenuOptions.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuOptions.Name = "btn_MenuOptions";
-            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuOptions.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuOptions.TabIndex = 5;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
@@ -140,10 +144,11 @@ namespace TGS.Views {
             this.btn_MenuPacientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuPacientes.IconSize = 30;
             this.btn_MenuPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 301);
+            this.btn_MenuPacientes.Location = new System.Drawing.Point(0, 400);
+            this.btn_MenuPacientes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
-            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuPacientes.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuPacientes.TabIndex = 4;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
@@ -165,10 +170,11 @@ namespace TGS.Views {
             this.btn_MenuChat.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuChat.IconSize = 30;
             this.btn_MenuChat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuChat.Location = new System.Drawing.Point(0, 225);
+            this.btn_MenuChat.Location = new System.Drawing.Point(0, 299);
+            this.btn_MenuChat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuChat.Name = "btn_MenuChat";
-            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuChat.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuChat.TabIndex = 3;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
@@ -190,10 +196,11 @@ namespace TGS.Views {
             this.btn_MenuCalendar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuCalendar.IconSize = 30;
             this.btn_MenuCalendar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 149);
+            this.btn_MenuCalendar.Location = new System.Drawing.Point(0, 198);
+            this.btn_MenuCalendar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
-            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuCalendar.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuCalendar.TabIndex = 2;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
@@ -215,10 +222,11 @@ namespace TGS.Views {
             this.btn_MenuHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHome.IconSize = 30;
             this.btn_MenuHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_MenuHome.Location = new System.Drawing.Point(0, 73);
+            this.btn_MenuHome.Location = new System.Drawing.Point(0, 97);
+            this.btn_MenuHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuHome.Name = "btn_MenuHome";
-            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
+            this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btn_MenuHome.Size = new System.Drawing.Size(263, 101);
             this.btn_MenuHome.TabIndex = 1;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
@@ -233,16 +241,18 @@ namespace TGS.Views {
             this.pnl_MenuLogo.Controls.Add(this.btn_MenuHamburger);
             this.pnl_MenuLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_MenuLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnl_MenuLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_MenuLogo.Name = "pnl_MenuLogo";
-            this.pnl_MenuLogo.Size = new System.Drawing.Size(230, 73);
+            this.pnl_MenuLogo.Size = new System.Drawing.Size(263, 97);
             this.pnl_MenuLogo.TabIndex = 0;
             // 
             // img_LogoMenu
             // 
             this.img_LogoMenu.Image = ((System.Drawing.Image)(resources.GetObject("img_LogoMenu.Image")));
-            this.img_LogoMenu.Location = new System.Drawing.Point(33, 12);
+            this.img_LogoMenu.Location = new System.Drawing.Point(38, 16);
+            this.img_LogoMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_LogoMenu.Name = "img_LogoMenu";
-            this.img_LogoMenu.Size = new System.Drawing.Size(104, 50);
+            this.img_LogoMenu.Size = new System.Drawing.Size(119, 67);
             this.img_LogoMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_LogoMenu.TabIndex = 2;
             this.img_LogoMenu.TabStop = false;
@@ -256,9 +266,10 @@ namespace TGS.Views {
             this.btn_MenuHamburger.IconColor = System.Drawing.Color.White;
             this.btn_MenuHamburger.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_MenuHamburger.IconSize = 30;
-            this.btn_MenuHamburger.Location = new System.Drawing.Point(164, 12);
+            this.btn_MenuHamburger.Location = new System.Drawing.Point(187, 16);
+            this.btn_MenuHamburger.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_MenuHamburger.Name = "btn_MenuHamburger";
-            this.btn_MenuHamburger.Size = new System.Drawing.Size(60, 60);
+            this.btn_MenuHamburger.Size = new System.Drawing.Size(69, 80);
             this.btn_MenuHamburger.TabIndex = 1;
             this.btn_MenuHamburger.UseVisualStyleBackColor = true;
             this.btn_MenuHamburger.Click += new System.EventHandler(this.btn_MenuHamburger_Click);
@@ -266,9 +277,10 @@ namespace TGS.Views {
             // img_Logo
             // 
             this.img_Logo.Image = ((System.Drawing.Image)(resources.GetObject("img_Logo.Image")));
-            this.img_Logo.Location = new System.Drawing.Point(6, 3);
+            this.img_Logo.Location = new System.Drawing.Point(7, 4);
+            this.img_Logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.img_Logo.Name = "img_Logo";
-            this.img_Logo.Size = new System.Drawing.Size(72, 63);
+            this.img_Logo.Size = new System.Drawing.Size(82, 84);
             this.img_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.img_Logo.TabIndex = 0;
             this.img_Logo.TabStop = false;
@@ -283,9 +295,10 @@ namespace TGS.Views {
             this.pnl_TitleBar.Controls.Add(this.btn_Maximize);
             this.pnl_TitleBar.Controls.Add(this.btn_Close);
             this.pnl_TitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_TitleBar.Location = new System.Drawing.Point(230, 0);
+            this.pnl_TitleBar.Location = new System.Drawing.Point(263, 0);
+            this.pnl_TitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pnl_TitleBar.Name = "pnl_TitleBar";
-            this.pnl_TitleBar.Size = new System.Drawing.Size(1034, 73);
+            this.pnl_TitleBar.Size = new System.Drawing.Size(1182, 97);
             this.pnl_TitleBar.TabIndex = 1;
             this.pnl_TitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnl_TitleBar_MouseDown);
             // 
@@ -294,9 +307,9 @@ namespace TGS.Views {
             this.lbl_Date.AutoSize = true;
             this.lbl_Date.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbl_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Date.Location = new System.Drawing.Point(84, 41);
+            this.lbl_Date.Location = new System.Drawing.Point(96, 55);
             this.lbl_Date.Name = "lbl_Date";
-            this.lbl_Date.Size = new System.Drawing.Size(97, 30);
+            this.lbl_Date.Size = new System.Drawing.Size(123, 37);
             this.lbl_Date.TabIndex = 6;
             this.lbl_Date.Text = "--/--/----";
             // 
@@ -305,9 +318,9 @@ namespace TGS.Views {
             this.lbl_Welcome.AutoSize = true;
             this.lbl_Welcome.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbl_Welcome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.lbl_Welcome.Location = new System.Drawing.Point(77, 3);
+            this.lbl_Welcome.Location = new System.Drawing.Point(88, 4);
             this.lbl_Welcome.Name = "lbl_Welcome";
-            this.lbl_Welcome.Size = new System.Drawing.Size(143, 38);
+            this.lbl_Welcome.Size = new System.Drawing.Size(178, 47);
             this.lbl_Welcome.TabIndex = 5;
             this.lbl_Welcome.Text = "Agenda";
             // 
@@ -322,10 +335,10 @@ namespace TGS.Views {
             this.btn_Minimize.IconColor = System.Drawing.Color.White;
             this.btn_Minimize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Minimize.IconSize = 20;
-            this.btn_Minimize.Location = new System.Drawing.Point(899, 0);
-            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
+            this.btn_Minimize.Location = new System.Drawing.Point(1027, 0);
+            this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 4, 0, 4);
             this.btn_Minimize.Name = "btn_Minimize";
-            this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
+            this.btn_Minimize.Size = new System.Drawing.Size(51, 33);
             this.btn_Minimize.TabIndex = 4;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
@@ -341,10 +354,10 @@ namespace TGS.Views {
             this.btn_Maximize.IconColor = System.Drawing.Color.White;
             this.btn_Maximize.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Maximize.IconSize = 20;
-            this.btn_Maximize.Location = new System.Drawing.Point(944, 0);
-            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.btn_Maximize.Location = new System.Drawing.Point(1079, 0);
+            this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 4, 0, 4);
             this.btn_Maximize.Name = "btn_Maximize";
-            this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
+            this.btn_Maximize.Size = new System.Drawing.Size(51, 33);
             this.btn_Maximize.TabIndex = 3;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
@@ -360,10 +373,10 @@ namespace TGS.Views {
             this.btn_Close.IconColor = System.Drawing.Color.White;
             this.btn_Close.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Close.IconSize = 20;
-            this.btn_Close.Location = new System.Drawing.Point(989, 0);
-            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.btn_Close.Location = new System.Drawing.Point(1130, 0);
+            this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 4, 3, 4);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(45, 25);
+            this.btn_Close.Size = new System.Drawing.Size(51, 33);
             this.btn_Close.TabIndex = 2;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
@@ -372,24 +385,23 @@ namespace TGS.Views {
             // 
             this.tb_Content.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
             this.tb_Content.ColumnCount = 3;
-            this.tb_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tb_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tb_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tb_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 9F));
+            this.tb_Content.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tb_Content.Controls.Add(this.pnl_HeaderList, 1, 1);
             this.tb_Content.Controls.Add(this.lv_Schedule, 1, 3);
             this.tb_Content.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tb_Content.Location = new System.Drawing.Point(230, 73);
-            this.tb_Content.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tb_Content.Location = new System.Drawing.Point(263, 97);
             this.tb_Content.Name = "tb_Content";
             this.tb_Content.RowCount = 5;
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 4F));
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 5F));
             this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 8F));
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tb_Content.Size = new System.Drawing.Size(1034, 608);
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tb_Content.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tb_Content.Size = new System.Drawing.Size(1182, 811);
             this.tb_Content.TabIndex = 2;
             // 
             // pnl_HeaderList
@@ -400,10 +412,9 @@ namespace TGS.Views {
             this.pnl_HeaderList.Controls.Add(this.btn_Return);
             this.pnl_HeaderList.Controls.Add(this.btn_Next);
             this.pnl_HeaderList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_HeaderList.Location = new System.Drawing.Point(12, 10);
-            this.pnl_HeaderList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pnl_HeaderList.Location = new System.Drawing.Point(13, 14);
             this.pnl_HeaderList.Name = "pnl_HeaderList";
-            this.pnl_HeaderList.Size = new System.Drawing.Size(1010, 71);
+            this.pnl_HeaderList.Size = new System.Drawing.Size(1156, 94);
             this.pnl_HeaderList.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -413,12 +424,14 @@ namespace TGS.Views {
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35F));
             this.tableLayoutPanel1.Controls.Add(this.cb_TypeSchedule, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_OpenSchedule, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(79, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(90, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(852, 44);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(976, 60);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // cb_TypeSchedule
@@ -437,10 +450,11 @@ namespace TGS.Views {
             "Agenda Ocupada"});
             this.cb_TypeSchedule.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(130)))), ((int)(((byte)(219)))));
             this.cb_TypeSchedule.ListTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.cb_TypeSchedule.Location = new System.Drawing.Point(301, 3);
-            this.cb_TypeSchedule.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cb_TypeSchedule.Location = new System.Drawing.Point(344, 4);
+            this.cb_TypeSchedule.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cb_TypeSchedule.MinimumSize = new System.Drawing.Size(229, 40);
             this.cb_TypeSchedule.Name = "cb_TypeSchedule";
-            this.cb_TypeSchedule.Size = new System.Drawing.Size(249, 38);
+            this.cb_TypeSchedule.Size = new System.Drawing.Size(286, 52);
             this.cb_TypeSchedule.TabIndex = 4;
             this.cb_TypeSchedule.Texts = "Agenda Livre";
             this.cb_TypeSchedule.OnSelectedIndexChanged += new System.EventHandler(this.cb_TypeSchedule_OnSelectedIndexChanged);
@@ -452,11 +466,10 @@ namespace TGS.Views {
             this.txt_Date.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.txt_Date.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.txt_Date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
-            this.txt_Date.Location = new System.Drawing.Point(79, 44);
-            this.txt_Date.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Date.Location = new System.Drawing.Point(90, 60);
             this.txt_Date.Mask = "00/00/0000";
             this.txt_Date.Name = "txt_Date";
-            this.txt_Date.Size = new System.Drawing.Size(852, 27);
+            this.txt_Date.Size = new System.Drawing.Size(976, 34);
             this.txt_Date.TabIndex = 3;
             this.txt_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_Date.ValidatingType = typeof(System.DateTime);
@@ -469,9 +482,8 @@ namespace TGS.Views {
             this.btn_Return.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Return.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_Return.Location = new System.Drawing.Point(0, 0);
-            this.btn_Return.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Return.Name = "btn_Return";
-            this.btn_Return.Size = new System.Drawing.Size(79, 71);
+            this.btn_Return.Size = new System.Drawing.Size(90, 94);
             this.btn_Return.TabIndex = 1;
             this.btn_Return.Click += new System.EventHandler(this.btn_Return_Click);
             // 
@@ -481,10 +493,9 @@ namespace TGS.Views {
             this.btn_Next.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_Next.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Next.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btn_Next.Location = new System.Drawing.Point(931, 0);
-            this.btn_Next.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Next.Location = new System.Drawing.Point(1066, 0);
             this.btn_Next.Name = "btn_Next";
-            this.btn_Next.Size = new System.Drawing.Size(79, 71);
+            this.btn_Next.Size = new System.Drawing.Size(90, 94);
             this.btn_Next.TabIndex = 0;
             this.btn_Next.Click += new System.EventHandler(this.btn_Next_Click);
             // 
@@ -498,26 +509,47 @@ namespace TGS.Views {
             this.lv_Schedule.FullRowSelect = true;
             this.lv_Schedule.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.lv_Schedule.HideSelection = false;
-            this.lv_Schedule.Location = new System.Drawing.Point(12, 89);
-            this.lv_Schedule.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lv_Schedule.Location = new System.Drawing.Point(13, 119);
             this.lv_Schedule.MultiSelect = false;
             this.lv_Schedule.Name = "lv_Schedule";
-            this.lv_Schedule.Size = new System.Drawing.Size(1010, 509);
+            this.lv_Schedule.Size = new System.Drawing.Size(1156, 678);
             this.lv_Schedule.TabIndex = 2;
             this.lv_Schedule.UseCompatibleStateImageBehavior = false;
             this.lv_Schedule.View = System.Windows.Forms.View.Details;
             this.lv_Schedule.ItemActivate += new System.EventHandler(this.lv_Schedule_ItemActivate);
             // 
+            // btn_OpenSchedule
+            // 
+            this.btn_OpenSchedule.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(88)))), ((int)(((byte)(145)))));
+            this.btn_OpenSchedule.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btn_OpenSchedule.FlatAppearance.BorderSize = 0;
+            this.btn_OpenSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_OpenSchedule.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_OpenSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.btn_OpenSchedule.IconChar = FontAwesome.Sharp.IconChar.Calendar;
+            this.btn_OpenSchedule.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(235)))), ((int)(((byte)(252)))));
+            this.btn_OpenSchedule.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_OpenSchedule.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_OpenSchedule.Location = new System.Drawing.Point(762, 3);
+            this.btn_OpenSchedule.Name = "btn_OpenSchedule";
+            this.btn_OpenSchedule.Size = new System.Drawing.Size(211, 54);
+            this.btn_OpenSchedule.TabIndex = 8;
+            this.btn_OpenSchedule.Text = "Abrir Agenda";
+            this.btn_OpenSchedule.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_OpenSchedule.UseVisualStyleBackColor = false;
+            this.btn_OpenSchedule.Click += new System.EventHandler(this.btn_OpenSchedule_Click);
+            // 
             // SchedulePage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(245)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1445, 908);
             this.Controls.Add(this.tb_Content);
             this.Controls.Add(this.pnl_TitleBar);
             this.Controls.Add(this.pnl_Menu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "SchedulePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -563,5 +595,6 @@ namespace TGS.Views {
         private System.Windows.Forms.MaskedTextBox txt_Date;
         private Components.MyComboBox cb_TypeSchedule;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private FontAwesome.Sharp.IconButton btn_OpenSchedule;
     }
 }

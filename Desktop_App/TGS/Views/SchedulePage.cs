@@ -284,5 +284,9 @@ namespace TGS.Views {
                 alterPageController.AlterPage(ActiveForm, "consult-details", id);
             }
         }
+
+        private void btn_OpenSchedule_Click(object sender, EventArgs e) {
+            alterPageController.AlterPage(ActiveForm, "schedule-open");
+        }
     }
 }

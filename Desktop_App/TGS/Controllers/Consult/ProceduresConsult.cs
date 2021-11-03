@@ -67,5 +67,39 @@ namespace TGS.Controllers.Consult {
                 return null;
             }
         }
+
+        public string[,] Filter(string value) {
+
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(ID_PROCEDURE) AS TOTAL FROM TB_PROCEDURES WHERE PROCEDURE_TITLE LIKE '%{value}%';";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] procedures = new string[int.Parse(total), 2];
+                reader.Close();
+
+
+                query.CommandText = $"SELECT * FROM TB_PROCEDURES WHERE PROCEDURE_TITLE LIKE '%{value}%' ORDER BY ID_PROCEDURE;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    procedures[i, 0] = $"{reader["ID_PROCEDURE"]}";
+                    procedures[i++, 1] = $"{reader["PROCEDURE_TITLE"]}";
+                }
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return procedures;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
     }
 }

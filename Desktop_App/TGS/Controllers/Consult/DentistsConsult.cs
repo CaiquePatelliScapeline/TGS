@@ -20,25 +20,25 @@ namespace TGS.Controllers.Consult {
 
                 reader.Read();
                 string total = $"{reader["TOTAL"]}";
-                string[,] procedures = new string[int.Parse(total), 3];
+                string[,] result = new string[int.Parse(total), 3];
                 reader.Close();
 
 
-                query.CommandText = $"SELECT * FROM TB_DENTISTS ORDER BY CRO_DENTIST;";
+                query.CommandText = $"SELECT * FROM TB_DENTISTS ORDER BY NAME_DENTIST;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
                 while (reader.Read()) {
-                    procedures[i, 0] = $"{reader["CRO_DENTIST"]}";
-                    procedures[i, 1] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME"]}";
-                    procedures[i++, 2] = $"{reader["EXPERTISE"]}";
+                    result[i, 0] = $"{reader["CRO_DENTIST"]}";
+                    result[i, 1] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME"]}";
+                    result[i++, 2] = $"{reader["EXPERTISE"]}";
                 }
 
                 reader.Close();
 
                 dbConn.Disconnect();
 
-                return procedures;
+                return result;
             } catch (SqlException e) {
                 statusController.InternalError();
                 return null;
@@ -66,6 +66,40 @@ namespace TGS.Controllers.Consult {
                 dbConn.Disconnect();
 
                 return details;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
+
+        public string[,] Filter(string value) {
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(CRO_DENTIST) AS TOTAL FROM TB_DENTISTS WHERE CRO_DENTIST LIKE '%{value}%' OR NAME_DENTIST + ' ' + LAST_NAME LIKE '%{value}%';";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] result = new string[int.Parse(total), 3];
+                reader.Close();
+
+
+                query.CommandText = $"SELECT * FROM TB_DENTISTS WHERE CRO_DENTIST LIKE '%{value}%' OR NAME_DENTIST + ' ' + LAST_NAME LIKE '%{value}%' ORDER BY NAME_DENTIST;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    result[i, 0] = $"{reader["CRO_DENTIST"]}";
+                    result[i, 1] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME"]}";
+                    result[i++, 2] = $"{reader["EXPERTISE"]}";
+                }
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return result;
             } catch (SqlException e) {
                 statusController.InternalError();
                 return null;

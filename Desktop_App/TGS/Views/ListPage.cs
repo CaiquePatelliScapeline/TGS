@@ -28,8 +28,8 @@ namespace TGS.Views {
         ProceduresConsult proceduresConsult = new ProceduresConsult();
         DentistsConsult dentistsConsult = new DentistsConsult();
         EmployeesConsult employeesConsult = new EmployeesConsult();
-        PatientsConsult patientsConsult = new PatientsConsult();
-        SchedulingConsult schedulingConsult = new SchedulingConsult();
+        PatientsConsult patientsConsult = new PatientsConsult();      
+        StatusController statusController = new StatusController();
 
         // Fields
         private int borderSize = 2;
@@ -215,7 +215,7 @@ namespace TGS.Views {
                     alterPageController.AlterPage(ActiveForm, "consult-category-registration");
                     break;
                 default:
-                    alterPageController.Errors("404", "Página não encontrada!");
+                    statusController.PageNotFound();
                     break;
             }
         }
@@ -223,8 +223,8 @@ namespace TGS.Views {
 
         private void Render() {
             switch (listRender) {
-                case "patients":
-                    lbl_Title.Text = "Pacientes";
+                case "patients":                    
+                    lbl_ListTitle.Text = lbl_Title.Text = "Pacientes";
                     lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
@@ -233,7 +233,7 @@ namespace TGS.Views {
                     List(patientsConsult.Patients());
                     break;
                 case "employees":
-                    lbl_Title.Text = "Funcionários";
+                    lbl_ListTitle.Text = lbl_Title.Text = "Funcionários";
                     lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
@@ -242,25 +242,26 @@ namespace TGS.Views {
                     List(employeesConsult.Employees());
                     break;
                 case "consult-categories":
-                    lbl_Title.Text = "Procedimentos";
+                    lbl_ListTitle.Text = lbl_Title.Text = "Procedimentos";
                     lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Título", lv_List.Width/2, HorizontalAlignment.Center);
                     List(proceduresConsult.Procedures());         
                     break;
                 case "dentists":
-                    lbl_Title.Text = "Dentistas";                    
+                    lbl_ListTitle.Text = lbl_Title.Text = "Dentistas";                    
                     lv_List.Columns.Add("    CRO", 170, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 2, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Especialidade", lv_List.Width / 2, HorizontalAlignment.Center);
                     List(dentistsConsult.Dentists());
                     break;
                 default:
-                    alterPageController.Errors("404", "Pagina não encontrada!");
+                    statusController.PageNotFound();
                     break;
             }
         }
 
         private void List(string[,] items) {
+            lv_List.Items.Clear();
             for (int i = 0; i < items.GetLength(0); i++) {
                 lv_List.Items.Add(items[i, 0]);
                 for (int j = 1; j < items.GetLength(1); j++) {
@@ -280,12 +281,7 @@ namespace TGS.Views {
                     string idEmployee = lv_List.SelectedItems[0].ToString();
                     idEmployee = idEmployee.Substring(idEmployee.IndexOf('{') + 1, idEmployee.IndexOf('}') - idEmployee.IndexOf('{') - 1);
                     alterPageController.AlterPage(ActiveForm, "employee-details", idEmployee);
-                    break;
-                case "consults":
-                    string idConsult = lv_List.SelectedItems[0].ToString();
-                    idConsult = idConsult.Substring(idConsult.IndexOf('{') + 1, idConsult.IndexOf('}') - idConsult.IndexOf('{') - 1);
-                    alterPageController.AlterPage(ActiveForm, "consult-details", idConsult);                    
-                    break;
+                    break;                
                 case "consult-categories":
                     string idProcedure = lv_List.SelectedItems[0].ToString();
                     idProcedure = idProcedure.Substring(idProcedure.IndexOf('{') + 1, idProcedure.IndexOf('}') - idProcedure.IndexOf('{') - 1);
@@ -297,8 +293,30 @@ namespace TGS.Views {
                     alterPageController.AlterPage(ActiveForm, "dentist-details", idDentist);
                     break;
                 default:
-                    alterPageController.Errors("404", "Pagina não encontrada!");
+                    statusController.PageNotFound();
                     break;
+            }
+        }
+
+        private void txt_Filter_TextChanged(object sender, EventArgs e) {
+            if (txt_Filter.Text != null) {
+                switch (listRender) {
+                    case "patients":
+                        List(patientsConsult.Filter(txt_Filter.Text));
+                        break;
+                    case "employees":
+                        List(employeesConsult.Filter(txt_Filter.Text));
+                        break;                    
+                    case "consult-categories":
+                        List(proceduresConsult.Filter(txt_Filter.Text));
+                        break;
+                    case "dentists":
+                        List(dentistsConsult.Filter(txt_Filter.Text));
+                        break;
+                    default:
+                        statusController.NonCreated();
+                        break;
+                }
             }
         }
     }

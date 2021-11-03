@@ -2,7 +2,6 @@
 using System.Data.SqlClient;
 using TGS.Model;
 using TGS.Controllers.Main;
-using TGS.Views;
 
 namespace TGS.Controllers.Register {
     public class ConsultsRegistration {
@@ -32,6 +31,7 @@ namespace TGS.Controllers.Register {
                     string id = $"{reader["CRO_DENTIST"]}";
 
                     reader.Close();
+                    dbConn.Disconnect();
                 } catch (Exception e) {
                     if (!testing) statusController.NonCreated();
                     return false;

@@ -22,31 +22,31 @@ namespace TGS.Controllers.Consult {
 
                 reader.Read();
                 string total = $"{reader["TOTAL"]}";
-                string[,] procedures = new string[int.Parse(total), 5];
+                string[,] result = new string[int.Parse(total), 5];
                 reader.Close();
 
 
-                query.CommandText = $"SELECT CPF_PATIENT, NAME_PATIENT, LAST_NAME, NICKNAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_PATIENTS ORDER BY CPF_PATIENT;";
+                query.CommandText = $"SELECT CPF_PATIENT, NAME_PATIENT, LAST_NAME, NICKNAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_PATIENTS ORDER BY NAME_PATIENT;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
                 while (reader.Read()) {
-                    procedures[i, 0] = $"{reader["CPF_PATIENT"]}";
+                    result[i, 0] = $"{reader["CPF_PATIENT"]}";
                     if (string.IsNullOrEmpty(Convert.ToString(reader["NICKNAME"]))) {
-                        procedures[i, 1] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME"]}";
+                        result[i, 1] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME"]}";
                     } else {
-                        procedures[i, 1] = $"{reader["NICKNAME"]}";
-                    }                
-                    procedures[i, 2] = $"{reader["EMAIL"]}";
-                    procedures[i, 3] = $"{reader["TELEPHONE"]}";
-                    procedures[i++, 4] = $"{reader["CELLPHONE"]}";
+                        result[i, 1] = $"{reader["NICKNAME"]}";
+                    }
+                    result[i, 2] = $"{reader["EMAIL"]}";
+                    result[i, 3] = $"{reader["TELEPHONE"]}";
+                    result[i++, 4] = $"{reader["CELLPHONE"]}";
                 }
 
                 reader.Close();
 
                 dbConn.Disconnect();
 
-                return procedures;
+                return result;
             } catch (SqlException e) {
                 statusController.InternalError();
                 return null;
@@ -93,5 +93,46 @@ namespace TGS.Controllers.Consult {
                 return null;
             }
         }
-    }
+
+        public string[,] Filter(string value) {
+
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(CPF_PATIENT) AS TOTAL FROM TB_PATIENTS WHERE CPF_PATIENT LIKE '%{value}%' OR NAME_PATIENT + ' ' + LAST_NAME LIKE '%{value}%' OR NICKNAME LIKE '%{value}%';";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] result = new string[int.Parse(total), 5];
+                reader.Close();
+
+
+                query.CommandText = $"SELECT CPF_PATIENT, NAME_PATIENT, LAST_NAME, NICKNAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_PATIENTS WHERE CPF_PATIENT LIKE '%{value}%' OR NAME_PATIENT + ' ' + LAST_NAME LIKE '%{value}%' OR NICKNAME LIKE '%{value}%' ORDER BY NAME_PATIENT;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    result[i, 0] = $"{reader["CPF_PATIENT"]}";
+                    if (string.IsNullOrEmpty(Convert.ToString(reader["NICKNAME"]))) {
+                        result[i, 1] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME"]}";
+                    } else {
+                        result[i, 1] = $"{reader["NICKNAME"]}";
+                    }
+                    result[i, 2] = $"{reader["EMAIL"]}";
+                    result[i, 3] = $"{reader["TELEPHONE"]}";
+                    result[i++, 4] = $"{reader["CELLPHONE"]}";
+                }
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return result;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
+    }    
 }

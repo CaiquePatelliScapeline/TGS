@@ -24,7 +24,7 @@ namespace TGS.Controllers.Consult {
                 reader.Close();
 
 
-                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_EMPLOYEES ORDER BY CPF_EMPLOYEE;";
+                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_EMPLOYEES ORDER BY NAME_EMPLOYEE;";
                 reader = query.ExecuteReader();
 
                 int i = 0;
@@ -70,6 +70,43 @@ namespace TGS.Controllers.Consult {
                 dbConn.Disconnect();
 
                 return details;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
+
+        public string[,] Filter(string value) {
+
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(CPF_EMPLOYEE) AS TOTAL FROM TB_EMPLOYEES WHERE CPF_EMPLOYEE LIKE '%{value}%' OR NAME_EMPLOYEE + ' ' + LAST_NAME LIKE '%{value}%';";
+                reader = query.ExecuteReader();
+                
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] procedures = new string[int.Parse(total), 5];
+                reader.Close();
+
+
+                query.CommandText = $"SELECT CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE FROM TB_EMPLOYEES WHERE CPF_EMPLOYEE LIKE '%{value}%' OR NAME_EMPLOYEE + ' ' + LAST_NAME LIKE '%{value}%' ORDER BY NAME_EMPLOYEE;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    procedures[i, 0] = $"{reader["CPF_EMPLOYEE"]}";
+                    procedures[i, 1] = $"{reader["NAME_EMPLOYEE"]} {reader["LAST_NAME"]}";
+                    procedures[i, 2] = $"{reader["EMAIL"]}";
+                    procedures[i, 3] = $"{reader["TELEPHONE"]}";
+                    procedures[i++, 4] = $"{reader["CELLPHONE"]}";
+                }
+
+                reader.Close();
+
+                dbConn.Disconnect();
+
+                return procedures;
             } catch (SqlException e) {
                 statusController.InternalError();
                 return null;

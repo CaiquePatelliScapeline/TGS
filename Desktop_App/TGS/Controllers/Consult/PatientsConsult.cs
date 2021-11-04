@@ -134,5 +134,38 @@ namespace TGS.Controllers.Consult {
                 return null;
             }
         }
+
+        public string[,] SelectPatient() {
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(CPF_PATIENT) AS TOTAL FROM TB_PATIENTS;";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] result = new string[int.Parse(total), 2];
+                reader.Close();
+
+                query.CommandText = $"SELECT CPF_PATIENT, NAME_PATIENT, LAST_NAME, NICKNAME FROM TB_PATIENTS ORDER BY NAME_PATIENT;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    result[i, 0] = $"{reader["CPF_PATIENT"]}";
+                    if (string.IsNullOrEmpty(Convert.ToString(reader["NICKNAME"]))) {
+                        result[i++, 1] = $"{reader["NAME_PATIENT"]} {reader["LAST_NAME"]}";
+                    } else {
+                        result[i++, 1] = $"{reader["NICKNAME"]}";
+                    }
+                }
+                reader.Close();
+                dbConn.Disconnect();
+                return result;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
     }    
 }

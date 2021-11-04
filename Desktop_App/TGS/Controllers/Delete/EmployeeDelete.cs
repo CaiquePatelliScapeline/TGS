@@ -9,7 +9,7 @@ namespace TGS.Controllers.Delete {
         DBConnection dbConn = new DBConnection();
         StatusController statusController = new StatusController();
 
-        public void Employee(string id) {
+        public bool Employee(string id) {
             try {
                 query.Connection = dbConn.Connect();
 
@@ -18,8 +18,10 @@ namespace TGS.Controllers.Delete {
 
                 dbConn.Disconnect();
                 statusController.Deleted();
+                return true;
             } catch (SqlException e) {
                 statusController.NonDeleted();
+                return false;
             }
         }
     }

@@ -19,6 +19,7 @@ namespace TGS.Views {
         ProceduresRegistration proceduresRegistration = new ProceduresRegistration();
         PatientsRegistration patientsRegistration = new PatientsRegistration();
         DentistsRegistration dentistsRegistration = new DentistsRegistration();
+        StatusController statusController = new StatusController();
         MD5Hash md5Hash = new MD5Hash();
 
         // Fields
@@ -414,7 +415,7 @@ namespace TGS.Views {
                             btn_Back.Visible = true;
                             break;
                         default:
-                            alterPageController.Errors("404", "Pagina não encontrada!");
+                            statusController.PageNotFound();
                             break;
                     }
                     break;
@@ -475,7 +476,7 @@ namespace TGS.Views {
                     txt_Input3.Mask = "000,000,000-00";
                     txt_Input3.MaxLength = 14;
                     // Procedure
-                    lbl_Title4.Text = "Categoria da Consulta";
+                    lbl_Title4.Text = "Nome do Procedimento";
                     txt_Input4.MaxLength = 20;
                     // Other Inputs
                     lbl_Title5.Visible = false;
@@ -494,7 +495,7 @@ namespace TGS.Views {
                     lbl_Part.Visible = false;
                     break;
                 default:
-                    alterPageController.Errors("404", "Pagina não encontrada!");
+                    statusController.PageNotFound();
                     break;
             }
         }
@@ -563,16 +564,19 @@ namespace TGS.Views {
                 switch (formRender) {
                     case "employees":
                         string hashPassword = md5Hash.CreateMD5Hash(txt_Input7.Text);
-                        employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, hashPassword);
-                        alterPageController.AlterPage(ActiveForm, "employee-list");
+                        if (employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, hashPassword)) {
+                            alterPageController.AlterPage(ActiveForm, "employee-list");
+                        }
                         break;
                     case "consults-categories":
-                        proceduresRegistration.ProcedureRegistration(txt_Input1.Text);
-                        alterPageController.AlterPage(ActiveForm, "consult-category-list");
+                        if (proceduresRegistration.ProcedureRegistration(txt_Input1.Text)) {
+                            alterPageController.AlterPage(ActiveForm, "consult-category-list");
+                        }
                         break;
                     case "dentists":
-                        dentistsRegistration.DentistRegistration(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text);
-                        alterPageController.AlterPage(ActiveForm, "dentists-list");
+                        if (dentistsRegistration.DentistRegistration(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text)) {
+                            alterPageController.AlterPage(ActiveForm, "dentists-list");
+                        }
                         break;
                     case "patients":
                         patients[11] = txt_Input1.Text;
@@ -582,18 +586,22 @@ namespace TGS.Views {
                         patients[15] = txt_Input6.Text;
                         patients[16] = txt_Input4.Text;
                         patients[17] = txt_Input3.Text;
-                        patientsRegistration.PatientRegistration(patients[0], patients[1], patients[2], patients[3], patients[4], patients[5], patients[6], patients[7], patients[8], patients[9], patients[10], patients[11], patients[12], patients[13], patients[14], patients[15], patients[16], patients[17]);
-                        alterPageController.AlterPage(ActiveForm, "patients");
+                        if (patientsRegistration.PatientRegistration(patients[0], patients[1], patients[2], patients[3], patients[4], patients[5], patients[6], patients[7], patients[8], patients[9], patients[10], patients[11], patients[12], patients[13], patients[14], patients[15], patients[16], patients[17])) {
+                            alterPageController.AlterPage(ActiveForm, "patients");
+                        }
                         break;
                     case "schedule":
-                        consultsRegistration.ConsultOpen(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, txt_Input6.Text, txt_Input7.Text, txt_Input8.Text);
+                        if (consultsRegistration.ConsultOpen(txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, txt_Input6.Text, txt_Input7.Text, txt_Input8.Text)) {
+                            alterPageController.AlterPage(ActiveForm, "calendar");
+                        }
                         break;
                     case "consults":
-                        consultsRegistration.ConsultRegistration(txt_Input3.Text, int.Parse(txt_Input4.Text), int.Parse(txt_Input5.Text));
-                        alterPageController.AlterPage(ActiveForm, "calendar");
+                        if (consultsRegistration.ConsultRegistration(txt_Input3.Text, txt_Input4.Text, int.Parse(txt_Input5.Text))) {
+                            alterPageController.AlterPage(ActiveForm, "calendar");
+                        }
                         break;
                     default:
-                        alterPageController.Errors("404", "Pagina não encontrada!");
+                        statusController.PageNotFound();
                         break;
                 }
             } else if(btn_Forward.Text == "Avançar") {
@@ -614,18 +622,18 @@ namespace TGS.Views {
                         patients[10] = txt_Input1.Text;
                         break;
                     default:
-                        alterPageController.Errors("404", "Pagina não encontrada!");
+                        statusController.PageNotFound();
                         break;
                 }
                 formPart++;
                 Render();
             } else {
-                alterPageController.Errors("Erro", "Erro desconhecido!");
+                statusController.InternalError();
             }
         }
         private void btn_Back_Click(object sender, EventArgs e) {
             formPart--;
             Render();
-        }  
+        }
     }
 }

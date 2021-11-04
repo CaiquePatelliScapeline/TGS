@@ -9,7 +9,7 @@ namespace TGS.Controllers.Delete {
         DBConnection dbConn = new DBConnection();
         StatusController statusController = new StatusController();
 
-        public void Schedule(int id) {
+        public bool Schedule(int id) {
             try {
                 query.Connection = dbConn.Connect();
 
@@ -18,12 +18,14 @@ namespace TGS.Controllers.Delete {
 
                 dbConn.Disconnect();
                 statusController.Deleted();
+                return true;
             } catch (SqlException e) {
                 statusController.NonDeleted();
+                return false;
             }
         }
 
-        public void Consult(int id) {
+        public bool Consult(int id) {
             try {
                 query.Connection = dbConn.Connect();
 
@@ -32,8 +34,10 @@ namespace TGS.Controllers.Delete {
 
                 dbConn.Disconnect();
                 statusController.Deleted();
+                return true;
             } catch (SqlException e) {
                 statusController.NonDeleted();
+                return false;
             }
         }
     }

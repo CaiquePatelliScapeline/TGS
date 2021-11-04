@@ -19,7 +19,7 @@
     <Compile Update="Views\Components\MyButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Views\MyMsgBox.cs">
+    <Compile Update="Views\Components\MyMsgBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Options.cs">

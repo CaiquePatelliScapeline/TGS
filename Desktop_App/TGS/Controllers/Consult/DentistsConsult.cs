@@ -105,5 +105,35 @@ namespace TGS.Controllers.Consult {
                 return null;
             }
         }
+
+        public string[,] SelectDentist() {
+            try {
+                query.Connection = dbConn.Connect();
+
+                query.CommandText = $"SELECT COUNT(CRO_DENTIST) AS TOTAL FROM TB_DENTISTS;";
+                reader = query.ExecuteReader();
+
+                reader.Read();
+                string total = $"{reader["TOTAL"]}";
+                string[,] result = new string[int.Parse(total), 2];
+                reader.Close();
+
+                query.CommandText = $"SELECT CRO_DENTIST, NAME_DENTIST, LAST_NAME FROM TB_DENTISTS ORDER BY NAME_DENTIST;";
+                reader = query.ExecuteReader();
+
+                int i = 0;
+                while (reader.Read()) {
+                    result[i, 0] = $"{reader["CRO_DENTIST"]}";
+                    result[i++, 1] = $"{reader["NAME_DENTIST"]} {reader["LAST_NAME"]}";
+                }
+
+                reader.Close();
+                dbConn.Disconnect();
+                return result;
+            } catch (SqlException e) {
+                statusController.InternalError();
+                return null;
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-namespace TGS.Views {
+namespace TGS.Views.Components {
     partial class MyMsgBox {
         /// <summary>
         /// Required designer variable.

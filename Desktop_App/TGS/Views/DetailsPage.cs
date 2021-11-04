@@ -8,6 +8,7 @@ using TGS.Controllers.Criptography;
 using TGS.Controllers.Consult;
 using TGS.Controllers.Delete;
 using TGS.Controllers.Update;
+using TGS.Views.Components;
 
 namespace TGS.Views {
     public partial class DetailsPage : Form {
@@ -215,7 +216,8 @@ namespace TGS.Views {
                     lbl_TitleDetail5.Text = "Apelido";
                     txt_Detail5.Text = patientFields[4];
                     lbl_TitleDetail6.Text = "Data de Nascimento";
-                    txt_Detail6.Text = patientFields[5];
+                    string birthDate = patientFields[5];
+                    txt_Detail6.Text = birthDate.Substring(0, birthDate.IndexOf(' '));
                     lbl_TitleDetail7.Text = "Altura";
                     txt_Detail7.Text = patientFields[6];
                     lbl_TitleDetail8.Text = "Peso";
@@ -477,7 +479,7 @@ namespace TGS.Views {
                     break;
 
                     default:
-                        MyMsgBox.Show("Erro", "Falha ao atualizar o registro", false);
+                        statusController.NonCreated();
                         break;
                 }
             }
@@ -506,7 +508,7 @@ namespace TGS.Views {
                 break;
 
                 default:
-                    MyMsgBox.Show("404", "Página não encontrada", false);
+                    statusController.PageNotFound();
                 break;
             }
         }
@@ -516,35 +518,45 @@ namespace TGS.Views {
                 case "patient":
                     if (statusController.Warning()) {
                         PatientDelete patientDelete = new PatientDelete();
-                        patientDelete.Patient(idDetailsItem);
+                        if (patientDelete.Patient(idDetailsItem)) {
+                            alterPageController.AlterPage(ActiveForm, "patients");
+                        }
                     }
                 break;
 
                 case "employee":
                     if (statusController.Warning()) {
                         EmployeeDelete employeeDelete= new EmployeeDelete();
-                        employeeDelete.Employee(idDetailsItem);
+                        if (employeeDelete.Employee(idDetailsItem)) {
+                            alterPageController.AlterPage(ActiveForm, "employee-list");
+                        }
                     }
                 break;
 
                 case "dentist":
                     if (statusController.Warning()) {
                         DentistDelete dentistDelete = new DentistDelete();
-                        dentistDelete.Dentist(idDetailsItem);
+                        if (dentistDelete.Dentist(idDetailsItem)) {
+                            alterPageController.AlterPage(ActiveForm, "dentists-list");
+                        }
                     }
                 break;
 
                 case "consult":
                     if (statusController.Warning()) {
                         ConsultDelete consultDelete = new ConsultDelete();
-                        consultDelete.Consult(int.Parse(idDetailsItem));
+                        if (consultDelete.Consult(int.Parse(idDetailsItem))) {
+                            alterPageController.AlterPage(ActiveForm, "calendar");
+                        }
                     }
                 break;
 
                 case "consult-category":
                     if (statusController.Warning()) {
                         ProcedureDelete procedureDelete = new ProcedureDelete();
-                        procedureDelete.Procedure(int.Parse(idDetailsItem));
+                        if (procedureDelete.Procedure(int.Parse(idDetailsItem))) {
+                            alterPageController.AlterPage(ActiveForm, "consult-category-list");
+                        }
                     }
                 break;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TGS.Views {
+namespace TGS.Views.Components {
     public partial class MyMsgBox : Form {
         public MyMsgBox() {
             InitializeComponent();

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using TGS.Views;
+using TGS.Views.Components;
 
 namespace TGS.Controllers.Main {
     class AlterPageController {

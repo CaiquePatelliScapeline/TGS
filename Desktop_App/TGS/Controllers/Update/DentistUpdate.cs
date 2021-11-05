@@ -11,7 +11,7 @@ namespace TGS.Controllers.Update {
         StatusController statusController = new StatusController();
 
         public bool Dentist(string id, string cro, string name, string lastName, string expertise, bool testing = false) {
-            if (validateController.CRO(cro)) {
+            if (validateController.CRO(croDentist) && validateController.Text(nameDentist) && validateController.Text(lastName) && validateController.Text(expertise)) {
                 try {
                     query.Connection = dbConn.Connect();
 

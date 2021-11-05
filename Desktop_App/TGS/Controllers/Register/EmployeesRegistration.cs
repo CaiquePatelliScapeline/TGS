@@ -15,7 +15,7 @@ namespace TGS.Controllers.Register {
         public bool EmployeeRegistration(string cpf, string name, string lastName, string email, string telephone, string cellphone, string password, bool testing = false) {        
             string hashPassword = md5Hash.CreateMD5Hash(password);
 
-            if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
+            if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone) && validateController.Text(name) && validateController.Text(lastName)) {
                 query.CommandText = $"INSERT INTO TB_EMPLOYEES (CPF_EMPLOYEE, NAME_EMPLOYEE, LAST_NAME, EMAIL, TELEPHONE, CELLPHONE, PASSWORD_EMPLOYEE) VALUES ('{cpf}', '{validateController.ToTitleCase(name)}', '{validateController.ToTitleCase(lastName)}', '{email}', '{telephone}', '{cellphone}', '{hashPassword}');";
                 try {
                     query.Connection = dbConn.Connect();

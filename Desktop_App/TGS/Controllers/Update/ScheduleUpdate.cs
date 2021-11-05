@@ -12,7 +12,7 @@ namespace TGS.Controllers.Update {
         StatusController statusController = new StatusController();
 
         public bool ScheduleUpdating(string cpfPatient, string dateSchedule,string timeSchedule, int oldId, string procedureTitle, bool testing = false) {
-            if (validateController.CPF(cpfPatient) && validateController.Date(dateSchedule) && validateController.Time(timeSchedule)) {
+            if (validateController.CPF(cpfPatient) && validateController.Date(dateSchedule) && validateController.Time(timeSchedule) && validateController.Text(procedureTitle)) {
                 try {
                     query.Connection = dbConn.Connect();
 

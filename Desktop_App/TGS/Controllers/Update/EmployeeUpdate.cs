@@ -11,7 +11,7 @@ namespace TGS.Controllers.Update {
         StatusController statusController = new StatusController();
 
         public bool Employee(string id, string cpf, string name, string lastName, string email, string telephone, string cellphone, bool testing = false) {
-            if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone)) {
+            if (validateController.CPF(cpf) && validateController.Email(email) && validateController.Telephone(telephone) && validateController.Cellphone(cellphone) && validateController.Text(name) && validateController.Text(lastName)) {
                 try {
                     query.Connection = dbConn.Connect();
 

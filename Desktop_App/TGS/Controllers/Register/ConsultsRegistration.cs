@@ -112,15 +112,20 @@ namespace TGS.Controllers.Register {
         }
 
         public bool ConsultRegistration(string cpfPatient, string procedureTitle, int idConsulta, bool testing = false) {
-            if (validateController.CPF(cpfPatient)) {
+            if (validateController.CPF(cpfPatient) && validateController.Text(procedureTitle)) {
                 try {
                     query.Connection = dbConn.Connect();
-
-                    query.CommandText = $"SELECT ID_PROCEDURE FROM TB_PROCEDURES WHERE PROCEDURE_TITLE = '{procedureTitle}';";
-                    reader = query.ExecuteReader();
-                    reader.Read();
-                    int idProcedure = int.Parse($"{reader["ID_PROCEDURE"]}");
-                    reader.Close();
+                    int idProcedure;
+                    try {
+                        query.CommandText = $"SELECT ID_PROCEDURE FROM TB_PROCEDURES WHERE PROCEDURE_TITLE = '{procedureTitle}';";
+                        reader = query.ExecuteReader();
+                        reader.Read();
+                        idProcedure = int.Parse($"{reader["ID_PROCEDURE"]}");
+                        reader.Close();
+                    } catch (Exception e) {
+                        statusController.NonCreated();
+                        return false;
+                    }
 
                     query.CommandText = $"UPDATE TB_CONSULTS SET STATUS_SCHEDULE = 1, CPF_EMPLOYEE = '{Session.CPF}', CPF_PATIENT = '{cpfPatient}', ID_PROCEDURE = {idProcedure} WHERE ID_CONSULT = {idConsulta};";
                     query.ExecuteNonQuery();

@@ -56,5 +56,10 @@ namespace TGS.Controllers.Main {
         public string ToTitleCase(string str) {
             return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str.ToLower());
         }
+
+        public bool Text(string text) {
+            Regex textValidate = new Regex(@"^([a-zA-Z]\w){1,50}$");
+            return textValidate.IsMatch(text);
+        }
     }
 }

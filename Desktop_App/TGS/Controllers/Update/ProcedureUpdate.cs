@@ -11,18 +11,25 @@ namespace TGS.Controllers.Update {
         StatusController statusController = new StatusController();
 
         public bool Procedure(int id, string title, bool testing = false) {
-            try {
-                query.Connection = dbConn.Connect();
+            if (validateController.Text(title)) {
+                try {
+                    query.Connection = dbConn.Connect();
 
-                query.CommandText = $"UPDATE TB_PROCEDURES SET PROCEDURE_TITLE = '{validateController.ToTitleCase(title)}' WHERE ID_PROCEDURE = {id};";
-                query.ExecuteNonQuery();
+                    query.CommandText = $"UPDATE TB_PROCEDURES SET PROCEDURE_TITLE = '{validateController.ToTitleCase(title)}' WHERE ID_PROCEDURE = {id};";
+                    query.ExecuteNonQuery();
 
-                dbConn.Disconnect();
+                    dbConn.Disconnect();
 
-                if (!testing) statusController.Updated();
-                return true;
-            } catch (SqlException e) {
-                if (!testing) statusController.NonUpdated();
+                    if (!testing)
+                        statusController.Updated();
+                    return true;
+                } catch (SqlException e) {
+                    if (!testing)
+                        statusController.NonUpdated();
+                    return false;
+                }
+            } else {
+                statusController.NonUpdated();
                 return false;
             }
         }

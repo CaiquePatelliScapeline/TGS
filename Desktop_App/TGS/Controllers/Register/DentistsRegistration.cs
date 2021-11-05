@@ -11,7 +11,7 @@ namespace TGS.Controllers.Register {
         StatusController statusController = new StatusController();
 
         public bool DentistRegistration(string croDentist, string nameDentist, string lastName, string expertise, bool testing = false) {
-            if (validateController.CRO(croDentist)) {
+            if (validateController.CRO(croDentist) && validateController.Text(nameDentist) && validateController.Text(lastName) && validateController.Text(expertise)) {
                 try {
                     query.CommandText = $"INSERT INTO TB_DENTISTS (CRO_DENTIST, NAME_DENTIST, LAST_NAME, EXPERTISE) VALUES ('{croDentist}', '{validateController.ToTitleCase(nameDentist)}', '{validateController.ToTitleCase(lastName)}', '{validateController.ToTitleCase(expertise)}');";
                     query.Connection = dbConn.Connect();

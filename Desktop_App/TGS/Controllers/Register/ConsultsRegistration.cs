@@ -2,6 +2,7 @@
 using System.Data.SqlClient;
 using TGS.Model;
 using TGS.Controllers.Main;
+using TGS.Views.Components;
 
 namespace TGS.Controllers.Register {
     public class ConsultsRegistration {
@@ -34,6 +35,7 @@ namespace TGS.Controllers.Register {
                     reader.Close();
                     dbConn.Disconnect();
                 } catch (Exception e) {
+                    dbConn.Disconnect();
                     if (!testing) statusController.NonCreated();
                     return false;
                 }
@@ -63,6 +65,7 @@ namespace TGS.Controllers.Register {
                         if (!testing) statusController.Created();
                         return true;
                     } catch (SqlException e) {
+                        dbConn.Disconnect();
                         if (!testing) statusController.NonCreated();
                         return false;
                     }
@@ -97,25 +100,45 @@ namespace TGS.Controllers.Register {
                             if (!testing) statusController.Created();
                             return true;
                         } catch (SqlException e) {
+                            dbConn.Disconnect();
                             if (!testing) statusController.NonCreated();
                             return false;
                         }
                     } else {
+                        dbConn.Disconnect();
                         if (!testing) statusController.NonCreated();
                         return false;
                     }
                 }              
             } else {
+                dbConn.Disconnect();
                 if (!testing) statusController.NotAcceptable();
                 return false;
             }
         }
 
-        public bool ConsultRegistration(string cpfPatient, string procedureTitle, int idConsulta, bool testing = false) {
+        public bool ConsultRegistration(string cpfPatient, string procedureTitle, int[] idConsult, bool testing = false) {
             if (validateController.CPF(cpfPatient) && validateController.Text(procedureTitle)) {
+                query.Connection = dbConn.Connect();
+
+                int length = idConsult.Length;
+
+                for (int i = 0; i < length; i++) {
+                    query.CommandText = $"SELECT STATUS_SCHEDULE FROM TB_CONSULTS WHERE ID_CONSULT = '{idConsult[i]}';";
+                    reader = query.ExecuteReader();
+                    reader.Read();
+                    if (bool.Parse($"{reader["STATUS_SCHEDULE"]}")) {
+                        reader.Close();
+                        dbConn.Disconnect();
+                        statusController.NonCreated();
+                        return false;
+                    }
+                    reader.Close();
+                }
+
                 try {
-                    query.Connection = dbConn.Connect();
                     int idProcedure;
+
                     try {
                         query.CommandText = $"SELECT ID_PROCEDURE FROM TB_PROCEDURES WHERE PROCEDURE_TITLE = '{procedureTitle}';";
                         reader = query.ExecuteReader();
@@ -123,22 +146,27 @@ namespace TGS.Controllers.Register {
                         idProcedure = int.Parse($"{reader["ID_PROCEDURE"]}");
                         reader.Close();
                     } catch (Exception e) {
+                        dbConn.Disconnect();
                         statusController.NonCreated();
                         return false;
                     }
 
-                    query.CommandText = $"UPDATE TB_CONSULTS SET STATUS_SCHEDULE = 1, CPF_EMPLOYEE = '{Session.CPF}', CPF_PATIENT = '{cpfPatient}', ID_PROCEDURE = {idProcedure} WHERE ID_CONSULT = {idConsulta};";
-                    query.ExecuteNonQuery();
+                    for (int j = 0; j < length; j++) {
+                        query.CommandText = $"UPDATE TB_CONSULTS SET STATUS_SCHEDULE = 1, CPF_EMPLOYEE = '{Session.CPF}', CPF_PATIENT = '{cpfPatient}', ID_PROCEDURE = {idProcedure} WHERE ID_CONSULT = {idConsult[j]};";
+                        query.ExecuteNonQuery();
+                    }
 
                     dbConn.Disconnect();
 
                     if (!testing) statusController.Created();
                     return true;
                 } catch (SqlException e) {
+                    dbConn.Disconnect();
                     if (!testing) statusController.NonCreated();
                     return false;
                 }
             } else {
+                dbConn.Disconnect();
                 if (!testing) statusController.NotAcceptable();
                 return false;
             }

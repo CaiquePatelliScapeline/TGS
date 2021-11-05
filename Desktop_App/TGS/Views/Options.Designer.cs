@@ -115,7 +115,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
-            this.btn_MenuLogout.TabIndex = 6;
+            this.btn_MenuLogout.TabIndex = 7;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
             this.btn_MenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -140,7 +140,7 @@ namespace TGS.Views {
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuOptions.TabIndex = 5;
+            this.btn_MenuOptions.TabIndex = 6;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
             this.btn_MenuOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,7 +164,7 @@ namespace TGS.Views {
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuPacientes.TabIndex = 4;
+            this.btn_MenuPacientes.TabIndex = 5;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
             this.btn_MenuPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +189,7 @@ namespace TGS.Views {
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuChat.TabIndex = 3;
+            this.btn_MenuChat.TabIndex = 4;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
             this.btn_MenuChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,7 +214,7 @@ namespace TGS.Views {
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuCalendar.TabIndex = 2;
+            this.btn_MenuCalendar.TabIndex = 3;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
             this.btn_MenuCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,7 +239,7 @@ namespace TGS.Views {
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuHome.TabIndex = 1;
+            this.btn_MenuHome.TabIndex = 2;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
             this.btn_MenuHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,7 +346,7 @@ namespace TGS.Views {
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Minimize.TabIndex = 4;
+            this.btn_Minimize.TabIndex = 14;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
             // 
@@ -365,7 +365,7 @@ namespace TGS.Views {
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Maximize.TabIndex = 3;
+            this.btn_Maximize.TabIndex = 13;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
@@ -384,7 +384,7 @@ namespace TGS.Views {
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(45, 25);
-            this.btn_Close.TabIndex = 2;
+            this.btn_Close.TabIndex = 12;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
@@ -444,7 +444,7 @@ namespace TGS.Views {
             this.lbl_TitleOption1.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOption1.Name = "lbl_TitleOption1";
             this.lbl_TitleOption1.Size = new System.Drawing.Size(765, 86);
-            this.lbl_TitleOption1.TabIndex = 3;
+            this.lbl_TitleOption1.TabIndex = 8;
             this.lbl_TitleOption1.Text = "Cadastro de Funcionários";
             this.lbl_TitleOption1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_TitleOption1.Click += new System.EventHandler(this.Option1_Click);
@@ -501,7 +501,7 @@ namespace TGS.Views {
             this.lbl_TitleOptions2.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions2.Name = "lbl_TitleOptions2";
             this.lbl_TitleOptions2.Size = new System.Drawing.Size(765, 86);
-            this.lbl_TitleOptions2.TabIndex = 1;
+            this.lbl_TitleOptions2.TabIndex = 9;
             this.lbl_TitleOptions2.Text = "Cadastro de Procedimentos";
             this.lbl_TitleOptions2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_TitleOptions2.Click += new System.EventHandler(this.Option2_Click);
@@ -558,7 +558,7 @@ namespace TGS.Views {
             this.lbl_TitleOptions4.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions4.Name = "lbl_TitleOptions4";
             this.lbl_TitleOptions4.Size = new System.Drawing.Size(765, 86);
-            this.lbl_TitleOptions4.TabIndex = 5;
+            this.lbl_TitleOptions4.TabIndex = 10;
             this.lbl_TitleOptions4.Text = "Cadastro de Dentistas";
             this.lbl_TitleOptions4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_TitleOptions4.Click += new System.EventHandler(this.Options3_Click);
@@ -615,7 +615,7 @@ namespace TGS.Views {
             this.lbl_TitleOptions3.Location = new System.Drawing.Point(80, 0);
             this.lbl_TitleOptions3.Name = "lbl_TitleOptions3";
             this.lbl_TitleOptions3.Size = new System.Drawing.Size(765, 86);
-            this.lbl_TitleOptions3.TabIndex = 1;
+            this.lbl_TitleOptions3.TabIndex = 11;
             this.lbl_TitleOptions3.Text = "Suporte";
             this.lbl_TitleOptions3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lbl_TitleOptions3.Click += new System.EventHandler(this.Options4_Click);

@@ -63,24 +63,24 @@ namespace TGS.Views {
             this.lbl_TitleDetail16 = new System.Windows.Forms.Label();
             this.lbl_TitleDetail17 = new System.Windows.Forms.Label();
             this.lbl_TitleDetail18 = new System.Windows.Forms.Label();
-            this.txt_Detail1 = new System.Windows.Forms.TextBox();
-            this.txt_Detail2 = new System.Windows.Forms.TextBox();
-            this.txt_Detail3 = new System.Windows.Forms.TextBox();
-            this.txt_Detail4 = new System.Windows.Forms.TextBox();
-            this.txt_Detail5 = new System.Windows.Forms.TextBox();
-            this.txt_Detail6 = new System.Windows.Forms.TextBox();
-            this.txt_Detail7 = new System.Windows.Forms.TextBox();
-            this.txt_Detail8 = new System.Windows.Forms.TextBox();
-            this.txt_Detail9 = new System.Windows.Forms.TextBox();
-            this.txt_Detail10 = new System.Windows.Forms.TextBox();
-            this.txt_Detail11 = new System.Windows.Forms.TextBox();
-            this.txt_Detail12 = new System.Windows.Forms.TextBox();
-            this.txt_Detail13 = new System.Windows.Forms.TextBox();
-            this.txt_Detail14 = new System.Windows.Forms.TextBox();
-            this.txt_Detail15 = new System.Windows.Forms.TextBox();
-            this.txt_Detail16 = new System.Windows.Forms.TextBox();
-            this.txt_Detail17 = new System.Windows.Forms.TextBox();
-            this.txt_Detail18 = new System.Windows.Forms.TextBox();
+            this.txt_Detail1 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail2 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail3 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail4 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail5 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail6 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail7 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail8 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail9 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail10 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail12 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail13 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail14 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail11 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail15 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail16 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail17 = new System.Windows.Forms.MaskedTextBox();
+            this.txt_Detail18 = new System.Windows.Forms.MaskedTextBox();
             this.pnl_Buttons = new System.Windows.Forms.Panel();
             this.tb_Buttons = new System.Windows.Forms.TableLayoutPanel();
             this.btn_Back = new System.Windows.Forms.Button();
@@ -131,7 +131,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
-            this.btn_MenuLogout.TabIndex = 6;
+            this.btn_MenuLogout.TabIndex = 7;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
             this.btn_MenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -156,7 +156,7 @@ namespace TGS.Views {
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuOptions.TabIndex = 5;
+            this.btn_MenuOptions.TabIndex = 6;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
             this.btn_MenuOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -181,7 +181,7 @@ namespace TGS.Views {
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuPacientes.TabIndex = 4;
+            this.btn_MenuPacientes.TabIndex = 5;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
             this.btn_MenuPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -206,7 +206,7 @@ namespace TGS.Views {
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuChat.TabIndex = 3;
+            this.btn_MenuChat.TabIndex = 4;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
             this.btn_MenuChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,7 +231,7 @@ namespace TGS.Views {
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuCalendar.TabIndex = 2;
+            this.btn_MenuCalendar.TabIndex = 3;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
             this.btn_MenuCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -256,7 +256,7 @@ namespace TGS.Views {
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuHome.TabIndex = 1;
+            this.btn_MenuHome.TabIndex = 2;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
             this.btn_MenuHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -362,7 +362,7 @@ namespace TGS.Views {
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Minimize.TabIndex = 4;
+            this.btn_Minimize.TabIndex = 31;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
             // 
@@ -381,7 +381,7 @@ namespace TGS.Views {
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Maximize.TabIndex = 3;
+            this.btn_Maximize.TabIndex = 30;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
@@ -400,7 +400,7 @@ namespace TGS.Views {
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(45, 25);
-            this.btn_Close.TabIndex = 2;
+            this.btn_Close.TabIndex = 29;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
@@ -453,10 +453,10 @@ namespace TGS.Views {
             this.tb_Details.Controls.Add(this.txt_Detail8, 3, 9);
             this.tb_Details.Controls.Add(this.txt_Detail9, 1, 11);
             this.tb_Details.Controls.Add(this.txt_Detail10, 3, 11);
-            this.tb_Details.Controls.Add(this.txt_Detail11, 1, 13);
             this.tb_Details.Controls.Add(this.txt_Detail12, 3, 13);
             this.tb_Details.Controls.Add(this.txt_Detail13, 1, 15);
             this.tb_Details.Controls.Add(this.txt_Detail14, 3, 15);
+            this.tb_Details.Controls.Add(this.txt_Detail11, 1, 13);
             this.tb_Details.Controls.Add(this.txt_Detail15, 1, 17);
             this.tb_Details.Controls.Add(this.txt_Detail16, 3, 17);
             this.tb_Details.Controls.Add(this.txt_Detail17, 1, 19);
@@ -738,219 +738,165 @@ namespace TGS.Views {
             // 
             // txt_Detail1
             // 
-            this.txt_Detail1.BackColor = System.Drawing.Color.White;
-            this.txt_Detail1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail1.Enabled = false;
             this.txt_Detail1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail1.Location = new System.Drawing.Point(23, 73);
             this.txt_Detail1.Name = "txt_Detail1";
             this.txt_Detail1.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail1.TabIndex = 19;
+            this.txt_Detail1.TabIndex = 8;
             // 
             // txt_Detail2
             // 
-            this.txt_Detail2.BackColor = System.Drawing.Color.White;
-            this.txt_Detail2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail2.Enabled = false;
             this.txt_Detail2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail2.Location = new System.Drawing.Point(532, 73);
             this.txt_Detail2.Name = "txt_Detail2";
             this.txt_Detail2.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail2.TabIndex = 20;
+            this.txt_Detail2.TabIndex = 9;
             // 
             // txt_Detail3
             // 
-            this.txt_Detail3.BackColor = System.Drawing.Color.White;
-            this.txt_Detail3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail3.Enabled = false;
             this.txt_Detail3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail3.Location = new System.Drawing.Point(23, 138);
             this.txt_Detail3.Name = "txt_Detail3";
             this.txt_Detail3.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail3.TabIndex = 21;
+            this.txt_Detail3.TabIndex = 10;
             // 
             // txt_Detail4
             // 
-            this.txt_Detail4.BackColor = System.Drawing.Color.White;
-            this.txt_Detail4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail4.Enabled = false;
             this.txt_Detail4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail4.Location = new System.Drawing.Point(532, 138);
             this.txt_Detail4.Name = "txt_Detail4";
             this.txt_Detail4.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail4.TabIndex = 22;
+            this.txt_Detail4.TabIndex = 11;
             // 
             // txt_Detail5
             // 
-            this.txt_Detail5.BackColor = System.Drawing.Color.White;
-            this.txt_Detail5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail5.Enabled = false;
             this.txt_Detail5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail5.Location = new System.Drawing.Point(23, 203);
             this.txt_Detail5.Name = "txt_Detail5";
             this.txt_Detail5.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail5.TabIndex = 23;
+            this.txt_Detail5.TabIndex = 12;
             // 
             // txt_Detail6
             // 
-            this.txt_Detail6.BackColor = System.Drawing.Color.White;
-            this.txt_Detail6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail6.Enabled = false;
             this.txt_Detail6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail6.Location = new System.Drawing.Point(532, 203);
             this.txt_Detail6.Name = "txt_Detail6";
             this.txt_Detail6.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail6.TabIndex = 24;
+            this.txt_Detail6.TabIndex = 13;
             // 
             // txt_Detail7
             // 
-            this.txt_Detail7.BackColor = System.Drawing.Color.White;
-            this.txt_Detail7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail7.Enabled = false;
             this.txt_Detail7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail7.Location = new System.Drawing.Point(23, 268);
             this.txt_Detail7.Name = "txt_Detail7";
             this.txt_Detail7.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail7.TabIndex = 25;
+            this.txt_Detail7.TabIndex = 14;
             // 
             // txt_Detail8
             // 
-            this.txt_Detail8.BackColor = System.Drawing.Color.White;
-            this.txt_Detail8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail8.Enabled = false;
             this.txt_Detail8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail8.Location = new System.Drawing.Point(532, 268);
             this.txt_Detail8.Name = "txt_Detail8";
             this.txt_Detail8.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail8.TabIndex = 26;
+            this.txt_Detail8.TabIndex = 15;
             // 
             // txt_Detail9
             // 
-            this.txt_Detail9.BackColor = System.Drawing.Color.White;
-            this.txt_Detail9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail9.Enabled = false;
             this.txt_Detail9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail9.Location = new System.Drawing.Point(23, 333);
             this.txt_Detail9.Name = "txt_Detail9";
             this.txt_Detail9.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail9.TabIndex = 27;
+            this.txt_Detail9.TabIndex = 16;
             // 
             // txt_Detail10
             // 
-            this.txt_Detail10.BackColor = System.Drawing.Color.White;
-            this.txt_Detail10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail10.Enabled = false;
             this.txt_Detail10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail10.Location = new System.Drawing.Point(532, 333);
             this.txt_Detail10.Name = "txt_Detail10";
             this.txt_Detail10.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail10.TabIndex = 28;
-            // 
-            // txt_Detail11
-            // 
-            this.txt_Detail11.BackColor = System.Drawing.Color.White;
-            this.txt_Detail11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txt_Detail11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail11.Enabled = false;
-            this.txt_Detail11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Detail11.Location = new System.Drawing.Point(23, 398);
-            this.txt_Detail11.Name = "txt_Detail11";
-            this.txt_Detail11.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail11.TabIndex = 29;
+            this.txt_Detail10.TabIndex = 17;
             // 
             // txt_Detail12
             // 
-            this.txt_Detail12.BackColor = System.Drawing.Color.White;
-            this.txt_Detail12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail12.Enabled = false;
             this.txt_Detail12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail12.Location = new System.Drawing.Point(532, 398);
             this.txt_Detail12.Name = "txt_Detail12";
             this.txt_Detail12.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail12.TabIndex = 30;
+            this.txt_Detail12.TabIndex = 19;
             // 
             // txt_Detail13
             // 
-            this.txt_Detail13.BackColor = System.Drawing.Color.White;
-            this.txt_Detail13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail13.Enabled = false;
             this.txt_Detail13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail13.Location = new System.Drawing.Point(23, 463);
             this.txt_Detail13.Name = "txt_Detail13";
             this.txt_Detail13.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail13.TabIndex = 31;
+            this.txt_Detail13.TabIndex = 20;
             // 
             // txt_Detail14
             // 
-            this.txt_Detail14.BackColor = System.Drawing.Color.White;
-            this.txt_Detail14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail14.Enabled = false;
             this.txt_Detail14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail14.Location = new System.Drawing.Point(532, 463);
             this.txt_Detail14.Name = "txt_Detail14";
             this.txt_Detail14.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail14.TabIndex = 32;
+            this.txt_Detail14.TabIndex = 21;
+            // 
+            // txt_Detail11
+            // 
+            this.txt_Detail11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Detail11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Detail11.Location = new System.Drawing.Point(23, 398);
+            this.txt_Detail11.Name = "txt_Detail11";
+            this.txt_Detail11.Size = new System.Drawing.Size(478, 31);
+            this.txt_Detail11.TabIndex = 18;
             // 
             // txt_Detail15
             // 
-            this.txt_Detail15.BackColor = System.Drawing.Color.White;
-            this.txt_Detail15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail15.Enabled = false;
             this.txt_Detail15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail15.Location = new System.Drawing.Point(23, 528);
             this.txt_Detail15.Name = "txt_Detail15";
             this.txt_Detail15.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail15.TabIndex = 33;
+            this.txt_Detail15.TabIndex = 22;
             // 
             // txt_Detail16
             // 
-            this.txt_Detail16.BackColor = System.Drawing.Color.White;
-            this.txt_Detail16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail16.Enabled = false;
             this.txt_Detail16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail16.Location = new System.Drawing.Point(532, 528);
             this.txt_Detail16.Name = "txt_Detail16";
             this.txt_Detail16.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail16.TabIndex = 34;
+            this.txt_Detail16.TabIndex = 23;
             // 
             // txt_Detail17
             // 
-            this.txt_Detail17.BackColor = System.Drawing.Color.White;
-            this.txt_Detail17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail17.Enabled = false;
             this.txt_Detail17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail17.Location = new System.Drawing.Point(23, 593);
             this.txt_Detail17.Name = "txt_Detail17";
             this.txt_Detail17.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail17.TabIndex = 35;
+            this.txt_Detail17.TabIndex = 24;
             // 
             // txt_Detail18
             // 
-            this.txt_Detail18.BackColor = System.Drawing.Color.White;
-            this.txt_Detail18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txt_Detail18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Detail18.Enabled = false;
             this.txt_Detail18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txt_Detail18.Location = new System.Drawing.Point(532, 593);
             this.txt_Detail18.Name = "txt_Detail18";
             this.txt_Detail18.Size = new System.Drawing.Size(478, 31);
-            this.txt_Detail18.TabIndex = 36;
+            this.txt_Detail18.TabIndex = 25;
             // 
             // pnl_Buttons
             // 
@@ -996,7 +942,7 @@ namespace TGS.Views {
             this.btn_Back.Location = new System.Drawing.Point(23, 3);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(125, 36);
-            this.btn_Back.TabIndex = 45;
+            this.btn_Back.TabIndex = 26;
             this.btn_Back.Text = "Voltar";
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Back_Click);
@@ -1012,7 +958,7 @@ namespace TGS.Views {
             this.btn_Delet.Location = new System.Drawing.Point(886, 3);
             this.btn_Delet.Name = "btn_Delet";
             this.btn_Delet.Size = new System.Drawing.Size(125, 36);
-            this.btn_Delet.TabIndex = 42;
+            this.btn_Delet.TabIndex = 28;
             this.btn_Delet.Text = "Excluir";
             this.btn_Delet.UseVisualStyleBackColor = false;
             this.btn_Delet.Click += new System.EventHandler(this.btn_Delet_Click);
@@ -1028,7 +974,7 @@ namespace TGS.Views {
             this.btn_Edit.Location = new System.Drawing.Point(729, 3);
             this.btn_Edit.Name = "btn_Edit";
             this.btn_Edit.Size = new System.Drawing.Size(125, 36);
-            this.btn_Edit.TabIndex = 44;
+            this.btn_Edit.TabIndex = 27;
             this.btn_Edit.Text = "Editar";
             this.btn_Edit.UseVisualStyleBackColor = false;
             this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
@@ -1102,28 +1048,28 @@ namespace TGS.Views {
         private System.Windows.Forms.Label lbl_TitleDetail16;
         private System.Windows.Forms.Label lbl_TitleDetail17;
         private System.Windows.Forms.Label lbl_TitleDetail18;
-        private System.Windows.Forms.TextBox txt_Detail1;
-        private System.Windows.Forms.TextBox txt_Detail2;
-        private System.Windows.Forms.TextBox txt_Detail3;
-        private System.Windows.Forms.TextBox txt_Detail4;
-        private System.Windows.Forms.TextBox txt_Detail5;
-        private System.Windows.Forms.TextBox txt_Detail6;
-        private System.Windows.Forms.TextBox txt_Detail7;
-        private System.Windows.Forms.TextBox txt_Detail8;
-        private System.Windows.Forms.TextBox txt_Detail9;
-        private System.Windows.Forms.TextBox txt_Detail10;
-        private System.Windows.Forms.TextBox txt_Detail11;
-        private System.Windows.Forms.TextBox txt_Detail12;
-        private System.Windows.Forms.TextBox txt_Detail13;
-        private System.Windows.Forms.TextBox txt_Detail14;
-        private System.Windows.Forms.TextBox txt_Detail15;
-        private System.Windows.Forms.TextBox txt_Detail16;
-        private System.Windows.Forms.TextBox txt_Detail17;
-        private System.Windows.Forms.TextBox txt_Detail18;
         private System.Windows.Forms.Panel pnl_Buttons;
         private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_Delet;
         private System.Windows.Forms.TableLayoutPanel tb_Buttons;
+        private System.Windows.Forms.MaskedTextBox txt_Detail1;
+        private System.Windows.Forms.MaskedTextBox txt_Detail2;
+        private System.Windows.Forms.MaskedTextBox txt_Detail3;
+        private System.Windows.Forms.MaskedTextBox txt_Detail4;
+        private System.Windows.Forms.MaskedTextBox txt_Detail5;
+        private System.Windows.Forms.MaskedTextBox txt_Detail6;
+        private System.Windows.Forms.MaskedTextBox txt_Detail7;
+        private System.Windows.Forms.MaskedTextBox txt_Detail8;
+        private System.Windows.Forms.MaskedTextBox txt_Detail9;
+        private System.Windows.Forms.MaskedTextBox txt_Detail10;
+        private System.Windows.Forms.MaskedTextBox txt_Detail12;
+        private System.Windows.Forms.MaskedTextBox txt_Detail13;
+        private System.Windows.Forms.MaskedTextBox txt_Detail14;
+        private System.Windows.Forms.MaskedTextBox txt_Detail11;
+        private System.Windows.Forms.MaskedTextBox txt_Detail15;
+        private System.Windows.Forms.MaskedTextBox txt_Detail16;
+        private System.Windows.Forms.MaskedTextBox txt_Detail17;
+        private System.Windows.Forms.MaskedTextBox txt_Detail18;
     }
 }

@@ -23,11 +23,12 @@ namespace TGS.Controllers.Register {
                         statusController.Created();
                     return true;
                 } catch (SqlException e) {
-                    if (!testing)
-                        statusController.NonCreated();
+                    dbConn.Disconnect();
+                    if (!testing) statusController.NonCreated();
                     return false;
                 }
             } else {
+                dbConn.Disconnect();
                 statusController.NonCreated();
                 return false;
             }

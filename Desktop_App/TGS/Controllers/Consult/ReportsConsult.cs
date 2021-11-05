@@ -43,6 +43,7 @@ namespace TGS.Controllers.Consult {
                 dbConn.Disconnect();
                 return reports;
             } catch (SqlException e) {
+                dbConn.Disconnect();
                 statusController.InternalError();
                 return null;
             }

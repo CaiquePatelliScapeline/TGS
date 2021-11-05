@@ -114,7 +114,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
-            this.btn_MenuLogout.TabIndex = 6;
+            this.btn_MenuLogout.TabIndex = 7;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
             this.btn_MenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -139,7 +139,7 @@ namespace TGS.Views {
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuOptions.TabIndex = 5;
+            this.btn_MenuOptions.TabIndex = 6;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
             this.btn_MenuOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,7 +164,7 @@ namespace TGS.Views {
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuPacientes.TabIndex = 4;
+            this.btn_MenuPacientes.TabIndex = 5;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
             this.btn_MenuPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -189,7 +189,7 @@ namespace TGS.Views {
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuChat.TabIndex = 3;
+            this.btn_MenuChat.TabIndex = 4;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
             this.btn_MenuChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,7 +214,7 @@ namespace TGS.Views {
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuCalendar.TabIndex = 2;
+            this.btn_MenuCalendar.TabIndex = 3;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
             this.btn_MenuCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -239,7 +239,7 @@ namespace TGS.Views {
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuHome.TabIndex = 1;
+            this.btn_MenuHome.TabIndex = 2;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
             this.btn_MenuHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -345,7 +345,7 @@ namespace TGS.Views {
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Minimize.TabIndex = 4;
+            this.btn_Minimize.TabIndex = 22;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
             // 
@@ -364,7 +364,7 @@ namespace TGS.Views {
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Maximize.TabIndex = 3;
+            this.btn_Maximize.TabIndex = 21;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
@@ -383,7 +383,7 @@ namespace TGS.Views {
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(45, 25);
-            this.btn_Close.TabIndex = 2;
+            this.btn_Close.TabIndex = 20;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
@@ -609,7 +609,7 @@ namespace TGS.Views {
             this.btn_Back.Location = new System.Drawing.Point(209, 0);
             this.btn_Back.Name = "btn_Back";
             this.btn_Back.Size = new System.Drawing.Size(94, 39);
-            this.btn_Back.TabIndex = 21;
+            this.btn_Back.TabIndex = 19;
             this.btn_Back.Text = "Voltar";
             this.btn_Back.TextColor = System.Drawing.Color.White;
             this.btn_Back.UseVisualStyleBackColor = false;
@@ -681,7 +681,7 @@ namespace TGS.Views {
             this.txt_Input1.Location = new System.Drawing.Point(34, 83);
             this.txt_Input1.Name = "txt_Input1";
             this.txt_Input1.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input1.TabIndex = 1;
+            this.txt_Input1.TabIndex = 8;
             // 
             // txt_Input2
             // 
@@ -690,7 +690,7 @@ namespace TGS.Views {
             this.txt_Input2.Location = new System.Drawing.Point(550, 83);
             this.txt_Input2.Name = "txt_Input2";
             this.txt_Input2.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input2.TabIndex = 2;
+            this.txt_Input2.TabIndex = 9;
             // 
             // txt_Input3
             // 
@@ -699,7 +699,7 @@ namespace TGS.Views {
             this.txt_Input3.Location = new System.Drawing.Point(34, 158);
             this.txt_Input3.Name = "txt_Input3";
             this.txt_Input3.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input3.TabIndex = 3;
+            this.txt_Input3.TabIndex = 10;
             // 
             // txt_Input4
             // 
@@ -708,7 +708,7 @@ namespace TGS.Views {
             this.txt_Input4.Location = new System.Drawing.Point(550, 158);
             this.txt_Input4.Name = "txt_Input4";
             this.txt_Input4.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input4.TabIndex = 4;
+            this.txt_Input4.TabIndex = 11;
             // 
             // txt_Input5
             // 
@@ -717,7 +717,7 @@ namespace TGS.Views {
             this.txt_Input5.Location = new System.Drawing.Point(34, 233);
             this.txt_Input5.Name = "txt_Input5";
             this.txt_Input5.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input5.TabIndex = 5;
+            this.txt_Input5.TabIndex = 12;
             // 
             // txt_Input6
             // 
@@ -726,7 +726,7 @@ namespace TGS.Views {
             this.txt_Input6.Location = new System.Drawing.Point(550, 233);
             this.txt_Input6.Name = "txt_Input6";
             this.txt_Input6.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input6.TabIndex = 6;
+            this.txt_Input6.TabIndex = 13;
             // 
             // txt_Input7
             // 
@@ -735,7 +735,7 @@ namespace TGS.Views {
             this.txt_Input7.Location = new System.Drawing.Point(34, 308);
             this.txt_Input7.Name = "txt_Input7";
             this.txt_Input7.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input7.TabIndex = 7;
+            this.txt_Input7.TabIndex = 14;
             // 
             // txt_Input8
             // 
@@ -744,7 +744,7 @@ namespace TGS.Views {
             this.txt_Input8.Location = new System.Drawing.Point(550, 308);
             this.txt_Input8.Name = "txt_Input8";
             this.txt_Input8.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input8.TabIndex = 8;
+            this.txt_Input8.TabIndex = 15;
             // 
             // txt_Input9
             // 
@@ -753,7 +753,7 @@ namespace TGS.Views {
             this.txt_Input9.Location = new System.Drawing.Point(34, 383);
             this.txt_Input9.Name = "txt_Input9";
             this.txt_Input9.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input9.TabIndex = 9;
+            this.txt_Input9.TabIndex = 16;
             // 
             // txt_Input10
             // 
@@ -762,7 +762,7 @@ namespace TGS.Views {
             this.txt_Input10.Location = new System.Drawing.Point(550, 383);
             this.txt_Input10.Name = "txt_Input10";
             this.txt_Input10.Size = new System.Drawing.Size(448, 33);
-            this.txt_Input10.TabIndex = 10;
+            this.txt_Input10.TabIndex = 17;
             // 
             // FormPage
             // 

@@ -91,7 +91,7 @@ namespace TGS.Views {
             this.txt_User.Location = new System.Drawing.Point(319, 51);
             this.txt_User.Name = "txt_User";
             this.txt_User.Size = new System.Drawing.Size(626, 36);
-            this.txt_User.TabIndex = 17;
+            this.txt_User.TabIndex = 1;
             this.txt_User.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_User
@@ -119,7 +119,7 @@ namespace TGS.Views {
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(626, 36);
-            this.txt_Password.TabIndex = 14;
+            this.txt_Password.TabIndex = 2;
             this.txt_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lbl_Password
@@ -153,7 +153,7 @@ namespace TGS.Views {
             this.btn_Login.Location = new System.Drawing.Point(851, 185);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(94, 37);
-            this.btn_Login.TabIndex = 15;
+            this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Entrar";
             this.btn_Login.TextColor = System.Drawing.Color.White;
             this.btn_Login.UseVisualStyleBackColor = false;
@@ -231,7 +231,7 @@ namespace TGS.Views {
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 2, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(38, 26);
-            this.btn_Close.TabIndex = 3;
+            this.btn_Close.TabIndex = 4;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 

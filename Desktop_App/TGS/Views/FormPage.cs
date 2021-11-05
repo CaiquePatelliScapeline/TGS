@@ -26,14 +26,15 @@ namespace TGS.Views {
         private int borderSize = 2;
         private string formRender;
         private int formPart = 1;
+        private int[] ids;
         private string date, time, id;
         string[] patients = new string[18];
 
-        public FormPage(String form, string dateSchedule = null, string timeSchedule = null, string idConsult = null) {
+        public FormPage(String form, string dateSchedule = null, string timeSchedule = null, int[] idList = null) {
             formRender = form;
             date = dateSchedule;
             time = timeSchedule;
-            id = idConsult;
+            ids = idList;
             InitializeComponent();
             Render();
             CollapseMenu();
@@ -481,7 +482,6 @@ namespace TGS.Views {
                     // Other Inputs
                     lbl_Title5.Visible = false;
                     txt_Input5.Visible = false;
-                    txt_Input5.Text = id;
                     lbl_Title6.Visible = false;
                     txt_Input6.Visible = false;
                     lbl_Title7.Visible = false;
@@ -596,7 +596,7 @@ namespace TGS.Views {
                         }
                         break;
                     case "consults":
-                        if (consultsRegistration.ConsultRegistration(txt_Input3.Text, txt_Input4.Text, int.Parse(txt_Input5.Text))) {
+                        if (consultsRegistration.ConsultRegistration(txt_Input3.Text, txt_Input4.Text, ids)) {
                             alterPageController.AlterPage(ActiveForm, "calendar");
                         }
                         break;

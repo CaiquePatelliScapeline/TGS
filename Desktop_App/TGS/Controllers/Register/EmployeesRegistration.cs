@@ -25,10 +25,12 @@ namespace TGS.Controllers.Register {
                     if (!testing) statusController.Created();
                     return true;
                 } catch (SqlException e) {
+                    dbConn.Disconnect();
                     if (!testing) statusController.NonCreated();
                     return false;
                 }
             } else {
+                dbConn.Disconnect();
                 if (!testing) statusController.NotAcceptable();
                 return false;
             }

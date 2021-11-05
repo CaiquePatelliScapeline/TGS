@@ -39,6 +39,7 @@ namespace TGS.Controllers.Consult {
 
                 return procedures;
             } catch (SqlException e) {
+                dbConn.Disconnect();
                 statusController.InternalError();
                 return null;
             }
@@ -63,6 +64,7 @@ namespace TGS.Controllers.Consult {
 
                 return details;
             } catch (SqlException e) {
+                dbConn.Disconnect();
                 statusController.InternalError();
                 return null;
             }
@@ -97,6 +99,7 @@ namespace TGS.Controllers.Consult {
 
                 return procedures;
             } catch (SqlException e) {
+                dbConn.Disconnect();
                 statusController.InternalError();
                 return null;
             }

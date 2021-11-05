@@ -30,10 +30,12 @@ namespace TGS.Controllers.Update {
                     if (!testing) statusController.Updated();
                     return true;
                 } catch (SqlException e) {
+                    dbConn.Disconnect();
                     if (!testing) statusController.NonUpdated();
                     return false;
                 }
             } else {
+                dbConn.Disconnect();
                 if (!testing) statusController.NotAcceptable();
                 return false;
             }

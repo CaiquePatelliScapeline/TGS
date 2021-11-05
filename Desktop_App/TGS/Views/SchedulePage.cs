@@ -222,6 +222,7 @@ namespace TGS.Views {
             if (txt_Date.Text.Length == 10) {
                 if (cb_TypeSchedule.Texts == "Agenda Livre") {
                     lv_Schedule.Clear();
+                    lv_Schedule.MultiSelect = true;
                     lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
                     lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
                     lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
@@ -229,6 +230,7 @@ namespace TGS.Views {
                     List(schedulingConsult.ScheduleOpenedConsult(txt_Date.Text));
                 } else {
                     lv_Schedule.Clear();
+                    lv_Schedule.MultiSelect = false;
                     lv_Schedule.Columns.Add("ID", 0, HorizontalAlignment.Left);
                     lv_Schedule.Columns.Add("Data", 0, HorizontalAlignment.Center);
                     lv_Schedule.Columns.Add("Horário", 140, HorizontalAlignment.Center);
@@ -269,15 +271,21 @@ namespace TGS.Views {
         private void lv_Schedule_ItemActivate(object sender, EventArgs e) {
             if (cb_TypeSchedule.Texts == "Agenda Livre") {
 
+
                 string date = lv_Schedule.SelectedItems[0].SubItems[1].ToString();
                 date = date.Substring(date.IndexOf('{') + 1, date.IndexOf('}') - date.IndexOf('{') - 1);
 
                 string time = lv_Schedule.SelectedItems[0].SubItems[2].ToString();
                 time = time.Substring(time.IndexOf('{') + 1, time.IndexOf('}') - time.IndexOf('{') - 1);
 
-                string id = lv_Schedule.SelectedItems[0].ToString();
-                id = id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1);
-                alterPageController.AlterPage(ActiveForm, "consults-registration", id, date.Substring(0, date.IndexOf(' ')), time);
+                int selectedItem = lv_Schedule.SelectedItems.Count;
+                int[] idList = new int[selectedItem];
+
+                for (int i = 0; i < selectedItem; i++) {
+                    string id = lv_Schedule.SelectedItems[i].SubItems[0].ToString();
+                    idList[i] = int.Parse(id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1));
+                }
+                alterPageController.AlterPage(ActiveForm, "consults-registration", null, date.Substring(0, date.IndexOf(' ')), time, idList);
             } else {
                 string id = lv_Schedule.SelectedItems[0].ToString();
                 id = id.Substring(id.IndexOf('{') + 1, id.IndexOf('}') - id.IndexOf('{') - 1);

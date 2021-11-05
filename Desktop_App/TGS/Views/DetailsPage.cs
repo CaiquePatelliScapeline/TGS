@@ -205,61 +205,111 @@ namespace TGS.Views {
 
                     lbl_Welcome.Text = "Detalhes do Paciente";
                     lbl_DetailsTitle.Text = "Paciente";
+                    // CPF
                     lbl_TitleDetail1.Text = "CPF";
                     txt_Detail1.Text = patientFields[0];
+                    txt_Detail1.Mask = "000,000,000-00";
+                    // RG
                     lbl_TitleDetail2.Text = "RG";
                     txt_Detail2.Text = patientFields[1];
+                    txt_Detail2.Mask = "00,000,000-A";
+                    // Name
                     lbl_TitleDetail3.Text = "Nome";
                     txt_Detail3.Text = patientFields[2];
+                    txt_Detail3.MaxLength = 20;
+                    // Last Name
                     lbl_TitleDetail4.Text = "Sobrenome";
                     txt_Detail4.Text = patientFields[3];
+                    txt_Detail4.MaxLength = 40;
+                    // Nickname
                     lbl_TitleDetail5.Text = "Apelido";
                     txt_Detail5.Text = patientFields[4];
+                    txt_Detail3.MaxLength = 20;
+                    // Birth Date
                     lbl_TitleDetail6.Text = "Data de Nascimento";
                     string birthDate = patientFields[5];
                     txt_Detail6.Text = birthDate.Substring(0, birthDate.IndexOf(' '));
+                    txt_Detail6.Mask = "00/00/0000";
+                    // Height
                     lbl_TitleDetail7.Text = "Altura";
                     txt_Detail7.Text = patientFields[6];
+                    txt_Detail7.Mask = "0.00";
+                    txt_Detail7.MaxLength = 4;
+                    // Weight
                     lbl_TitleDetail8.Text = "Peso";
                     txt_Detail8.Text = patientFields[7];
+                    txt_Detail8.Mask = "000.00";
+                    txt_Detail8.MaxLength = 6;
+                    // E-mail
                     lbl_TitleDetail9.Text = "E-mail";
                     txt_Detail9.Text = patientFields[8];
+                    txt_Detail9.MaxLength = 40;
+                    // Telephone
                     lbl_TitleDetail10.Text = "Telefone";
                     txt_Detail10.Text = patientFields[9];
+                    txt_Detail10.Mask = "(00)0000-0000";
+                    // Cellphone
                     lbl_TitleDetail11.Text = "Celular";
                     txt_Detail11.Text = patientFields[10];
+                    txt_Detail11.Mask = "(00)00000-0000";
+                    // Street
                     lbl_TitleDetail12.Text = "Rua";
                     txt_Detail12.Text = patientFields[11];
+                    txt_Detail12.MaxLength = 50;
+                    // Neighborhood
                     lbl_TitleDetail13.Text = "Bairro";
                     txt_Detail13.Text = patientFields[12];
+                    txt_Detail13.MaxLength = 20;
+                    // City
                     lbl_TitleDetail14.Text = "Cidade";
                     txt_Detail14.Text = patientFields[13];
+                    txt_Detail14.MaxLength = 30;
+                    // District
                     lbl_TitleDetail15.Text = "Estado";
                     txt_Detail15.Text = patientFields[14];
+                    txt_Detail15.MaxLength = 20;
+                    // CEP
                     lbl_TitleDetail16.Text = "CEP";
                     txt_Detail16.Text = patientFields[15];
+                    txt_Detail16.Mask = "00,000-000";
+                    // Complement
                     lbl_TitleDetail17.Text = "Complemento";
                     txt_Detail17.Text = patientFields[16];
+                    txt_Detail17.MaxLength = 15;
+                    // Number
                     lbl_TitleDetail18.Text = "Número";
                     txt_Detail18.Text = patientFields[17];
-                break;
+                    txt_Detail18.MaxLength = 4;
+                    break;
                 case "employee":
                     EmployeesConsult employeesConsult = new EmployeesConsult();
                     string[] employeeFields = employeesConsult.Employee(idDetailsItem);
                     lbl_Welcome.Text = "Detalhes do Funcionário";
                     lbl_DetailsTitle.Text = "Funcionário";
+                    // Name
                     lbl_TitleDetail1.Text = "Nome";
                     txt_Detail1.Text = employeeFields[1];
+                    txt_Detail1.MaxLength = 20;
+                    // Last Name
                     lbl_TitleDetail2.Text = "Sobrenome";
                     txt_Detail2.Text = employeeFields[2];
+                    txt_Detail2.MaxLength = 40;
+                    // E=mail
                     lbl_TitleDetail3.Text = "E-mail";
                     txt_Detail3.Text = employeeFields[3];
+                    txt_Detail3.MaxLength = 40;
+                    // Cellhpone
                     lbl_TitleDetail4.Text = "Celular";
                     txt_Detail4.Text = employeeFields[4];
+                    txt_Detail4.Mask = "(00)00000-0000";
+                    // Telephone
                     lbl_TitleDetail5.Text = "Telefone";
                     txt_Detail5.Text = employeeFields[5];
+                    txt_Detail5.Mask = "(00)0000-0000";
+                    // CPF
                     lbl_TitleDetail6.Text = "CPF";
                     txt_Detail6.Text = employeeFields[0];
+                    txt_Detail6.Mask = "000,000,000-00";
                     lbl_TitleDetail7.Visible = false;
                     lbl_TitleDetail8.Visible = false;
                     lbl_TitleDetail9.Visible = false;
@@ -290,14 +340,22 @@ namespace TGS.Views {
                     string[] employeeFileds = dentistsConsult.Dentist(idDetailsItem);
                     lbl_Welcome.Text = "Detalhes do Dentista";
                     lbl_DetailsTitle.Text = "Dentista";
+                    // CRO
                     lbl_TitleDetail1.Text = "CRO";
                     txt_Detail1.Text = employeeFileds[0];
+                    txt_Detail1.Mask = "00,000";
+                    // Name
                     lbl_TitleDetail2.Text = "Nome";
                     txt_Detail2.Text = employeeFileds[1];
+                    txt_Detail2.MaxLength = 20;
+                    // Last Name
                     lbl_TitleDetail3.Text = "Sobrenome";
                     txt_Detail3.Text = employeeFileds[2];
+                    txt_Detail3.MaxLength = 40;
+                    // Expertise
                     lbl_TitleDetail4.Text = "Especialidade";
                     txt_Detail4.Text = employeeFileds[3];
+                    txt_Detail4.MaxLength = 15;
                     lbl_TitleDetail5.Visible = false;
                     lbl_TitleDetail6.Visible = false;
                     lbl_TitleDetail7.Visible = false;
@@ -336,21 +394,28 @@ namespace TGS.Views {
                     // Patient
                     lbl_TitleDetail1.Text = "CPF Paciente";
                     txt_Detail1.Text = consultFields[4];
+                    txt_Detail1.Mask = "000,000,000-00";
                     lbl_TitleDetail2.Text = "Nome Paciente";
                     txt_Detail2.Text = consultFields[5];
+                    txt_Detail2.MaxLength = 20;
                     // Dentist
                     lbl_TitleDetail3.Text = "CRO Dentista";
                     txt_Detail3.Text = consultFields[2];
+                    txt_Detail3.Mask = "00,000";
                     lbl_TitleDetail4.Text = "Nome Dentista";
                     txt_Detail4.Text = consultFields[3];
+                    txt_Detail4.MaxLength = 20;
                     // Date and Time
                     lbl_TitleDetail5.Text = "Data";
                     txt_Detail5.Text = consultFields[0];
+                    txt_Detail5.Mask = "00/00/0000";
                     lbl_TitleDetail6.Text = "Horário";
                     txt_Detail6.Text = consultFields[1];
+                    txt_Detail6.Mask = "00:00";
                     // Procedure Title
                     lbl_TitleDetail7.Text = "Procedimento";
                     txt_Detail7.Text = consultFields[6];
+                    txt_Detail7.MaxLength = 20;
                     // Other Fields
                     lbl_TitleDetail8.Visible = false;
                     lbl_TitleDetail9.Visible = false;
@@ -381,8 +446,10 @@ namespace TGS.Views {
                     string[] procedureFields = procedureConsult.Procedure(int.Parse(idDetailsItem));
                     lbl_Welcome.Text = "Detalhes do Procedimento";
                     lbl_DetailsTitle.Text = "Procedimento";
+                    // Title
                     lbl_TitleDetail1.Text = "Título";
                     txt_Detail1.Text = procedureFields[0];
+                    txt_Detail1.MaxLength = 20;
                     lbl_TitleDetail2.Visible = false;
                     lbl_TitleDetail3.Visible = false;
                     lbl_TitleDetail4.Visible = false;

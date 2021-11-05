@@ -24,11 +24,12 @@ namespace TGS.Controllers.Update {
                         statusController.Updated();
                     return true;
                 } catch (SqlException e) {
-                    if (!testing)
-                        statusController.NonUpdated();
+                    dbConn.Disconnect();
+                    if (!testing) statusController.NonUpdated();
                     return false;
                 }
             } else {
+                dbConn.Disconnect();
                 statusController.NonUpdated();
                 return false;
             }

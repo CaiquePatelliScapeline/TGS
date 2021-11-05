@@ -21,6 +21,7 @@ namespace TGS.Controllers.Delete {
                 statusController.Deleted();
                 return true;
             } catch (SqlException e) {
+                dbConn.Disconnect();
                 statusController.NonDeleted();
                 return false;
             }

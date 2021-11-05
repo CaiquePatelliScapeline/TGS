@@ -97,7 +97,7 @@ namespace TGS.Views {
             this.btn_MenuLogout.Name = "btn_MenuLogout";
             this.btn_MenuLogout.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuLogout.Size = new System.Drawing.Size(230, 35);
-            this.btn_MenuLogout.TabIndex = 6;
+            this.btn_MenuLogout.TabIndex = 7;
             this.btn_MenuLogout.Tag = "Logout";
             this.btn_MenuLogout.Text = "  Logout";
             this.btn_MenuLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,7 +122,7 @@ namespace TGS.Views {
             this.btn_MenuOptions.Name = "btn_MenuOptions";
             this.btn_MenuOptions.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuOptions.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuOptions.TabIndex = 5;
+            this.btn_MenuOptions.TabIndex = 6;
             this.btn_MenuOptions.Tag = "Options";
             this.btn_MenuOptions.Text = "  Configurações";
             this.btn_MenuOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,7 +147,7 @@ namespace TGS.Views {
             this.btn_MenuPacientes.Name = "btn_MenuPacientes";
             this.btn_MenuPacientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuPacientes.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuPacientes.TabIndex = 4;
+            this.btn_MenuPacientes.TabIndex = 5;
             this.btn_MenuPacientes.Tag = "Patients";
             this.btn_MenuPacientes.Text = "  Pacientes";
             this.btn_MenuPacientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -172,7 +172,7 @@ namespace TGS.Views {
             this.btn_MenuChat.Name = "btn_MenuChat";
             this.btn_MenuChat.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuChat.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuChat.TabIndex = 3;
+            this.btn_MenuChat.TabIndex = 4;
             this.btn_MenuChat.Tag = "Chat";
             this.btn_MenuChat.Text = "  Chat";
             this.btn_MenuChat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -197,7 +197,7 @@ namespace TGS.Views {
             this.btn_MenuCalendar.Name = "btn_MenuCalendar";
             this.btn_MenuCalendar.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuCalendar.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuCalendar.TabIndex = 2;
+            this.btn_MenuCalendar.TabIndex = 3;
             this.btn_MenuCalendar.Tag = "Calendar";
             this.btn_MenuCalendar.Text = "  Calendário";
             this.btn_MenuCalendar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -222,7 +222,7 @@ namespace TGS.Views {
             this.btn_MenuHome.Name = "btn_MenuHome";
             this.btn_MenuHome.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_MenuHome.Size = new System.Drawing.Size(230, 76);
-            this.btn_MenuHome.TabIndex = 1;
+            this.btn_MenuHome.TabIndex = 2;
             this.btn_MenuHome.Tag = "Home";
             this.btn_MenuHome.Text = "  Home";
             this.btn_MenuHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -329,7 +329,7 @@ namespace TGS.Views {
             this.btn_Minimize.Margin = new System.Windows.Forms.Padding(3, 3, 0, 3);
             this.btn_Minimize.Name = "btn_Minimize";
             this.btn_Minimize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Minimize.TabIndex = 4;
+            this.btn_Minimize.TabIndex = 12;
             this.btn_Minimize.UseVisualStyleBackColor = false;
             this.btn_Minimize.Click += new System.EventHandler(this.btn_Minimize_Click);
             // 
@@ -348,7 +348,7 @@ namespace TGS.Views {
             this.btn_Maximize.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.btn_Maximize.Name = "btn_Maximize";
             this.btn_Maximize.Size = new System.Drawing.Size(45, 25);
-            this.btn_Maximize.TabIndex = 3;
+            this.btn_Maximize.TabIndex = 11;
             this.btn_Maximize.UseVisualStyleBackColor = false;
             this.btn_Maximize.Click += new System.EventHandler(this.btn_Maximize_Click);
             // 
@@ -367,7 +367,7 @@ namespace TGS.Views {
             this.btn_Close.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
             this.btn_Close.Name = "btn_Close";
             this.btn_Close.Size = new System.Drawing.Size(45, 25);
-            this.btn_Close.TabIndex = 2;
+            this.btn_Close.TabIndex = 10;
             this.btn_Close.UseVisualStyleBackColor = false;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
@@ -492,7 +492,7 @@ namespace TGS.Views {
             this.txt_Filter.Location = new System.Drawing.Point(54, 62);
             this.txt_Filter.Name = "txt_Filter";
             this.txt_Filter.Size = new System.Drawing.Size(614, 31);
-            this.txt_Filter.TabIndex = 2;
+            this.txt_Filter.TabIndex = 8;
             this.txt_Filter.TextChanged += new System.EventHandler(this.txt_Filter_TextChanged);
             // 
             // btn_Register
@@ -512,7 +512,7 @@ namespace TGS.Views {
             this.btn_Register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(140, 35);
-            this.btn_Register.TabIndex = 3;
+            this.btn_Register.TabIndex = 9;
             this.btn_Register.Text = "Cadastrar";
             this.btn_Register.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Register.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

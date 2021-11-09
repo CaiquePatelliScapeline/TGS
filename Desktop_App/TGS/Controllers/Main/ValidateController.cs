@@ -58,8 +58,9 @@ namespace TGS.Controllers.Main {
         }
 
         public bool Text(string text) {
-            Regex textValidate = new Regex(@"^([a-zA-Z]\w){1,50}$");
+            Regex textValidate = new Regex(@"^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$");
             return textValidate.IsMatch(text);
+            //return true;
         }
     }
 }

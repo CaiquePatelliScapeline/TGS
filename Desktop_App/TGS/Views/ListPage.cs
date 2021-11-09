@@ -223,8 +223,9 @@ namespace TGS.Views {
 
         private void Render() {
             switch (listRender) {
-                case "patients":                    
+                case "patients":
                     lbl_ListTitle.Text = lbl_Title.Text = "Pacientes";
+                    lbl_Filter.Text = "Filtro (Nome / CPF)";
                     lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
@@ -234,6 +235,7 @@ namespace TGS.Views {
                     break;
                 case "employees":
                     lbl_ListTitle.Text = lbl_Title.Text = "Funcionários";
+                    lbl_Filter.Text = "Filtro (Nome / CPF)";
                     lv_List.Columns.Add("    CPF", 220, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 4, HorizontalAlignment.Center);
                     lv_List.Columns.Add("E-mail", lv_List.Width / 4, HorizontalAlignment.Center);
@@ -243,12 +245,14 @@ namespace TGS.Views {
                     break;
                 case "consult-categories":
                     lbl_ListTitle.Text = lbl_Title.Text = "Procedimentos";
+                    lbl_Filter.Text = "Filtro (Título)";
                     lv_List.Columns.Add("    ID", 100, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Título", lv_List.Width/2, HorizontalAlignment.Center);
                     List(proceduresConsult.Procedures());         
                     break;
                 case "dentists":
-                    lbl_ListTitle.Text = lbl_Title.Text = "Dentistas";                    
+                    lbl_ListTitle.Text = lbl_Title.Text = "Dentistas";
+                    lbl_Filter.Text = "Filtro (Nome / CRO)";
                     lv_List.Columns.Add("    CRO", 170, HorizontalAlignment.Left);
                     lv_List.Columns.Add("Nome", lv_List.Width / 2, HorizontalAlignment.Center);
                     lv_List.Columns.Add("Especialidade", lv_List.Width / 2, HorizontalAlignment.Center);

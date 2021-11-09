@@ -11,8 +11,9 @@ namespace TGS.Controllers.Consult {
         DBConnection dbConn = new DBConnection();
         StatusController statusController = new StatusController();
 
-        public string[,] Reports(int[] reportsSearch) {
+        public string[,] Reports() {
             try {
+                int[] reportsSearch = Configs.ReportsList;
                 string[,] reports = new string[reportsSearch.Length, 2];
                 query.Connection = dbConn.Connect();
                 int i = 0;

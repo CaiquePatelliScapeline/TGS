@@ -19,8 +19,9 @@ namespace TGS.Views {
             base.WndProc(ref m);
         }
 
-        private void timer1_Tick(object sender, EventArgs e) {
-            timer1.Enabled = false;
+        private void SplashScreen_Shown(object sender, EventArgs e) {
+            LoadConfigsController loadConfigs = new LoadConfigsController();
+            loadConfigs.Load();
             alterPageController.AlterPage(ActiveForm, "login");
         }
     }

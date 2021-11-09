@@ -98,3 +98,4 @@ C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\T
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Components.MyComboBox.resources
 C:\Users\Gianluca\Documents\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Components.MyMsgBox.resources
 D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\obj\Debug\netcoreapp3.1\TGS.Views.Components.MyMsgBox.resources
+D:\Users\Caique Patelli\Projects\GitHub\TGS\Desktop_App\TGS\bin\Debug\netcoreapp3.1\Configs\configs.txt

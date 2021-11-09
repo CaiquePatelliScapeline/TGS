@@ -41,7 +41,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
 ### 🎲  Rodando o Projeto 🧭
 
 * Primeiro é necessário criar o banco de dados com base no script.sql;
-* Em seguida é necessário informar a rota do banco em DBConnection.cs;
+* Em seguida é necessário informar a rota do banco em Configs/configs.txt;
 * Agora é só executar o projeto no seu Visual Studio;
 * O primeiro acesso na apliação é feito com login: admin@admin.com - senha: admin;
 

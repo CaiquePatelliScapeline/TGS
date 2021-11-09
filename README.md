@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/Tgs.png" />
+</p>
 
-![Logo](https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/Tgs.png)
-
-
-![](https://img.shields.io/badge/-C%23-blue)   ![](https://img.shields.io/badge/-SQL%20Server-blue)   ![](https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green)  
+<p align="center">
+  <img src="https://img.shields.io/badge/-C%23-blue" />
+  <img src="https://img.shields.io/badge/-SQL%20Server-blue" />
+  <img src="https://img.shields.io/badge/TGS-Em%20constru%C3%A7%C3%A3o-green" />
+</p>
   
 
 # 💻 Sobre o projeto

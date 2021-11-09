@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Configs\" />
     <Folder Include="Resources\" />
   </ItemGroup>
 

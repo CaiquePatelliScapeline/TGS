@@ -75,7 +75,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
     </td>   
     <td>
       <a href="https://github.com/GianlucaDeMicheli">
-        <img style="border-radius: 20px" src="https://avatars.githubusercontent.com/u/56308126?v=4" width="100px" alt="Gianluca De Micheli" />
+        <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/56308126?v=4" width="100px" alt="Gianluca De Micheli" />
         <br>
         <b>Gianluca<br>De Micheli</b>
         <br>

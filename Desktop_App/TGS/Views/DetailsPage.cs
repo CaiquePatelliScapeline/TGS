@@ -299,13 +299,13 @@ namespace TGS.Views {
                     txt_Detail3.Text = employeeFields[3];
                     txt_Detail3.MaxLength = 40;
                     // Cellhpone
-                    lbl_TitleDetail4.Text = "Celular";
+                    lbl_TitleDetail4.Text = "Telefone";
                     txt_Detail4.Text = employeeFields[4];
-                    txt_Detail4.Mask = "(00)00000-0000";
+                    txt_Detail4.Mask = "(00)0000-0000";
                     // Telephone
-                    lbl_TitleDetail5.Text = "Telefone";
+                    lbl_TitleDetail5.Text = "Celular";
                     txt_Detail5.Text = employeeFields[5];
-                    txt_Detail5.Mask = "(00)0000-0000";
+                    txt_Detail5.Mask = "(00)00000-0000";
                     // CPF
                     lbl_TitleDetail6.Text = "CPF";
                     txt_Detail6.Text = employeeFields[0];
@@ -523,7 +523,7 @@ namespace TGS.Views {
 
                     case "employee":
                         EmployeeUpdate employeeUpdate = new EmployeeUpdate();
-                        employeeUpdate.Employee(idDetailsItem, txt_Detail6.Text, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail5.Text, txt_Detail4.Text);
+                        employeeUpdate.Employee(idDetailsItem, txt_Detail6.Text, txt_Detail1.Text, txt_Detail2.Text, txt_Detail3.Text, txt_Detail4.Text, txt_Detail5.Text);
                         alterPageController.AlterPage(ActiveForm, "employee-details", idDetailsItem);
                     break;
 

@@ -24,11 +24,9 @@ namespace TGS.Views {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashScreen));
             this.panel1 = new System.Windows.Forms.Panel();
             this.img_Logo = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_Logo)).BeginInit();
             this.SuspendLayout();
@@ -57,12 +55,6 @@ namespace TGS.Views {
             this.img_Logo.TabIndex = 1;
             this.img_Logo.TabStop = false;
             // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 5000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // SplashScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -76,6 +68,7 @@ namespace TGS.Views {
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreen";
             this.TopMost = true;
+            this.Shown += new System.EventHandler(this.SplashScreen_Shown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_Logo)).EndInit();
             this.ResumeLayout(false);
@@ -86,6 +79,5 @@ namespace TGS.Views {
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox img_Logo;
-        private System.Windows.Forms.Timer timer1;
     }
 }

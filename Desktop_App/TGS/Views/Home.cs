@@ -197,9 +197,8 @@ namespace TGS.Views {
         }
 
 
-        private void ReportsLoad() {
-            int[] reportsSearch = { 0, 1, 2, 3 };            
-            string[,] reports = reportsConsult.Reports(reportsSearch);
+        private void ReportsLoad() {           
+            string[,] reports = reportsConsult.Reports();
 
             lbl_TitleReport1.Text = reports[0, 0];
             lbl_ValueReport1.Text = reports[0, 1];

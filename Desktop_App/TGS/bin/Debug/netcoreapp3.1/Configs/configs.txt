@@ -1,2 +1,2 @@
-﻿<DB_ROUTE></DB_ROUTE>
+﻿<DB_ROUTE>Data Source=LAPTOP-2P9K4L2I\SQLEXPRESS;Initial Catalog=DB_TGS;Integrated Security=True</DB_ROUTE>
 <REPORTS_LIST>0,1,2,3</REPORTS_LIST>

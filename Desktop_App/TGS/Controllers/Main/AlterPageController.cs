@@ -126,7 +126,7 @@ namespace TGS.Controllers.Main {
                 /* ---- OTHER PAGES ---- */
                 // Support
                 case "support":
-                    statusController.PageNotFound();
+                    OpenLink("https://caiquepatelliscapeline.github.io/TGS/Official_Page/pages/help.html");
                     AlterPage(null, "home");
                     break;
                 // Logout
@@ -148,7 +148,7 @@ namespace TGS.Controllers.Main {
                 statusController.PageNotFound();
                 AlterPage(null, "home");
             }
-        }
+        }        
 
         public void Errors(String title, String message) {
             MyMsgBox.Show(title, message, false);

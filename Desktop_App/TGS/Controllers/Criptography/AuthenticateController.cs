@@ -13,7 +13,7 @@ namespace TGS.Controllers.Criptography {
         MD5Hash md5Hash = new MD5Hash();
         StatusController statusController = new StatusController();
 
-        public void Login(String email, String password, Form form) {
+        public void Login(string email, string password, Form form) {
             ValidateController validateController = new ValidateController();
 
             if (validateController.Email(email)) {                      

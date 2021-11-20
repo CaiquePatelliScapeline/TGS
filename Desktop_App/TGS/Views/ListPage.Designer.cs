@@ -523,13 +523,11 @@ namespace TGS.Views {
             this.btn_Register.IconColor = System.Drawing.Color.White;
             this.btn_Register.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_Register.IconSize = 26;
-            this.btn_Register.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btn_Register.Location = new System.Drawing.Point(959, 7);
             this.btn_Register.Name = "btn_Register";
             this.btn_Register.Size = new System.Drawing.Size(160, 47);
             this.btn_Register.TabIndex = 9;
             this.btn_Register.Text = "Cadastrar";
-            this.btn_Register.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_Register.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Register.UseVisualStyleBackColor = false;
             this.btn_Register.Click += new System.EventHandler(this.btn_Register_Click);

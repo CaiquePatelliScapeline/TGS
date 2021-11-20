@@ -8,7 +8,6 @@ using TGS.Controllers.Criptography;
 using TGS.Controllers.Consult;
 using TGS.Controllers.Delete;
 using TGS.Controllers.Update;
-using TGS.Views.Components;
 
 namespace TGS.Views {
     public partial class DetailsPage : Form {
@@ -406,11 +405,11 @@ namespace TGS.Views {
                     txt_Detail4.Text = consultFields[3];
                     txt_Detail4.MaxLength = 20;
                     // Date and Time
-                    lbl_TitleDetail5.Text = "Data";
-                    txt_Detail5.Text = consultFields[0];
+                    lbl_TitleDetail5.Text = "Data";  // time.Substring(time.IndexOf('{') + 1, time.IndexOf('}') - time.IndexOf('{') - 1);                  
+                    txt_Detail5.Text = consultFields[0].Substring(0, 10);
                     txt_Detail5.Mask = "00/00/0000";
                     lbl_TitleDetail6.Text = "Horário";
-                    txt_Detail6.Text = consultFields[1];
+                    txt_Detail6.Text = consultFields[1].Substring(0, 5);
                     txt_Detail6.Mask = "00:00";
                     // Procedure Title
                     lbl_TitleDetail7.Text = "Procedimento";

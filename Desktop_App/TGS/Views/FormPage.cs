@@ -562,9 +562,8 @@ namespace TGS.Views {
         private void btn_Forward_Click(object sender, EventArgs e) {
             if(btn_Forward.Text == "Cadastrar") {
                 switch (formRender) {
-                    case "employees":
-                        string hashPassword = md5Hash.CreateMD5Hash(txt_Input7.Text);
-                        if (employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, hashPassword)) {
+                    case "employees":                        
+                        if (employeesRegistration.EmployeeRegistration(txt_Input6.Text, txt_Input1.Text, txt_Input2.Text, txt_Input3.Text, txt_Input4.Text, txt_Input5.Text, txt_Input7.Text)) {
                             alterPageController.AlterPage(ActiveForm, "employee-list");
                         }
                         break;

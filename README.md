@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/Tgs.png" />
+  <img src="https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/banner.png" />
 </p>
 
 <p align="center">
@@ -27,11 +27,13 @@
 
 # 🧠 Layout
 
-![](https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/1.png)
-
-![](https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/2.png)
-
-Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833819051900162/TGS)!
+<a href="https://www.figma.com/community/file/1012833819051900162/TGS" align="center" target="_blank">
+    <img src="https://github.com/CaiquePatelliScapeline/TGS/blob/main/Readme%20assets/appView1.png" width="100%" alt="Protótipo Figma" />
+    <br>
+    <center>
+        <p>Acesse o layout completo no <b>Figma</b>!</p>
+    </center>
+</a>
 
 
 # 🚀  Como executar o projeto ?
@@ -66,7 +68,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
   <table>
     <tr align="center">
       <td>
-        <a href="https://github.com/CaiquePatelliScapeline">
+        <a href="https://github.com/CaiquePatelliScapeline" target="_blank">
           <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/56651727?v=4" width="100px" alt="Caique Patelli" />
           <br>
           <b>Caique<br>Patelli</b>
@@ -75,7 +77,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
         </a>  
       </td>   
       <td>
-        <a href="https://github.com/GianlucaDeMicheli">
+        <a href="https://github.com/GianlucaDeMicheli" target="_blank">
           <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/56308126?v=4" width="100px" alt="Gianluca De Micheli" />
           <br>
           <b>Gianluca<br>De Micheli</b>
@@ -84,7 +86,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
         </a>
       </td>  
       <td>
-        <a href="https://github.com/MZequini">
+        <a href="https://github.com/MZequini" target="_blank">
           <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/88983177?v=4" width="100px" alt="Miram Zequini"/>
           <br>
           <b>Miram<br>Zequini</b>
@@ -93,7 +95,7 @@ Acesse o layout completo no [Figma](https://www.figma.com/community/file/1012833
         </a>
       </td>
       <td>
-        <a href="https://github.com/MuriloSchali">
+        <a href="https://github.com/MuriloSchali" target="_blank">
           <img style="border-radius: 50%" src="https://avatars.githubusercontent.com/u/89110560?v=4" width="100px" alt="Murilo Schali"/>
           <br>
           <b>Murilo<br>Schali</b>

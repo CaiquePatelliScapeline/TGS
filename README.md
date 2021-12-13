@@ -11,7 +11,7 @@
 
 # 💻 Sobre o projeto
 
-🩺 TGS é uma plataforma de gerenciamento de consultas direcionada à consultórios odontológicos.
+🩺 TGS é um programa de gestão de clínicas odontológicas, que tem por objetivo inovar e agilizar o atendimento ao cliente nos consultórios. Desenvolvido em C# e SQL Server, apresenta interface no estilo flat art, responsiva, intuitiva e de fácil manuseio.
 
   
 # ⚙️ Funcionalidades

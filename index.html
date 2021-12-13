@@ -1,475 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.svg">
+    <title>TGS</title>
 
-    <head>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <style>
+      html, body{
+        overflow-x: hidden;
+        background-color: #EDF5FF;
+      }
 
-        <title>TGS - Home</title>
-    <!--
-    SOFTY PINKO
-    https://templatemo.com/tm-535-softy-pinko
-    -->
+      body {
+        font-family:Arial, Helvetica, sans-serif;
+        margin: 0 200px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;          
+      }
 
-        <!-- Additional CSS Files -->
-        <link rel="shortcut icon" href="Official_Page/assets/images/icon.svg"/>
+      div {
+        margin-bottom: 20px;
+      }
 
-        <link rel="stylesheet" type="text/css" href="Official_Page/assets/css/bootstrap.min.css">
+      table {
+        border: solid 2px black;
+        border-radius: 8px;
+      }
 
-        <link rel="stylesheet" type="text/css" href="Official_Page/assets/css/font-awesome.css">
+      table a {
+        color: #3D82DB;
+        text-decoration: none;
+      }
 
-        <link rel="stylesheet" href="Official_Page/assets/css/templatemo-softy-pinko.css">
+      table a img {
+        width: 100px;
+        border-radius: 100%;
+      }
 
-    </head>
-    
-    <body>
-    
-        <!-- ***** Preloader Start ***** -->
-        <div id="preloader">
-            <div class="jumper">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>  
-        <!-- ***** Preloader End ***** -->
-        
-        
-        <!-- ***** Header Area Start ***** -->
-        <header class="header-area header-sticky">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="main-nav">
-                            <!-- ***** Logo Start ***** -->
-                            <a href="#" class="logo">
-                                <img src="Official_Page/assets/images/logo.svg" alt="Softy Pinko"/>
-                            </a>
-                            <!-- ***** Logo End ***** -->
-                            <!-- ***** Menu Start ***** -->
-                            <ul class="nav">
-                                <li><a href="#welcome" class="active">Inicio</a></li>
-                                <li><a href="#features">Sobre</a></li>
-                                <li><a href="#work-process">Funcionalidades</a></li>
-                                <li><a href="#testimonials">Avaliações</a></li>
-                                <li><a href="#pricing-plans">Planos</a></li>
-                                <li><a href="#contact-us">Contato</a></li>
-                                <li><a href="Official_Page/pages/help.html">Ajuda</a></li>
-                            </ul>
-                            <a class='menu-trigger'>
-                                <span>Menu</span>
-                            </a>
-                            <!-- ***** Menu End ***** -->
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- ***** Header Area End ***** -->
+      td {
+        border-right: solid 1px black;
+        padding: 4px 12px;
+      }
 
-        <!-- ***** Welcome Area Start ***** -->
-        <div class="welcome-area" id="welcome">
+      td:last-child {
+        border: none;
+      }
 
-            <!-- ***** Header Text Start ***** -->
-            <div class="header-text">
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">                               
-                            <h1>A melhor <strong>solução </strong><br>para gerenciar consultas em seu <strong>consultório</strong></h1>
-                            <p></p><br><br><br>
-                            <a href="#features" class="main-button-slider">Descubra Mais</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ***** Header Text End ***** -->
-        </div>
-        <!-- ***** Welcome Area End ***** -->
+      .title {
+        color: #2C5891;
+      }
 
-        <!-- ***** Features Small Start ***** -->
-        <section class="section home-feature">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <!-- ***** Features Small Item Start ***** -->
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                                <div class="features-small-item">
-                                    <div class="icon">
-                                        <i><img src="Official_Page/assets/images/browser.svg" alt=""></i>
-                                    </div>
-                                    <h5 class="features-title">Design Moderno</h5>
-                                    <p>Layout moderno e limpo para fácil usabilidade</p><br>
-                                </div>
-                            </div>
-                            <!-- ***** Features Small Item End ***** -->
+      .links {
+        text-decoration: none;
+        color: #3D82DB;
+        transition: .5s;
+      }
 
-                            <!-- ***** Features Small Item Start ***** -->
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                                <div class="features-small-item">
-                                    <div class="icon">
-                                        <i><img src="Official_Page/assets/images/suporte.svg" alt=""></i>
-                                    </div>
-                                    <h5 class="features-title">Agilidade</h5>
-                                    <p>Otimize o tempo de atendimento com uma plataforma rápida que integra todos os dados em um único lugar</p>
-                                </div>
-                            </div>
-                            <!-- ***** Features Small Item End ***** -->
+      .links i {
+        color: black;
+      }
 
-                            <!-- ***** Features Small Item Start ***** -->
-                            <div class="col-lg-4 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-                                <div class="features-small-item">
-                                    <div class="icon">
-                                        <i><img src="Official_Page/assets/images/box.svg" alt=""></i>
-                                    </div>
-                                    <h5 class="features-title">Organização</h5>
-                                    <p>Mantenha os dados de pacientes e funcionário em um único local organizado e de fácil acesso</p>
-                                </div>
-                            </div>
-                            <!-- ***** Features Small Item End ***** -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Features Small End ***** -->
+      .links:hover{
+        font-size: 20px;
+      }
 
-        <!-- ***** Features Big Item Start ***** -->
-        <section class="section padding-top-70 padding-bottom-0" id="features">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <img src="Official_Page/assets/images/left-image.svg" class="rounded img-fluid d-block mx-auto" alt="App">
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                        <div class="left-heading">
-                            <h2 class="section-title">Melhore o atendimento</h2>
-                        </div>
-                        <div class="left-text">
-                            <p>Reuna todos os dados em um unico ambiente organizado e intuitivo, otimizando o tempo de atendimento e proporcionando assim uma melhor experiencia para seus pacientes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="hr"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Features Big Item End ***** -->
+      @media (max-width: 915px) {
+        body {
+          margin: 0 100px;
+        }
+      }
 
-        <!-- ***** Features Big Item Start ***** -->
-        <section class="section padding-bottom-100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                        <div class="left-heading">
-                            <h2 class="section-title">Evolua</h2>
-                        </div>
-                        <div class="left-text">
-                            <p>Modernize seu atendimento armazenando todos seus registro em um ambiente digital e interativo.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-1"></div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                        <img src="Official_Page/assets/images/right-image.svg" class="rounded img-fluid d-block mx-auto" alt="App">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- ***** Features Big Item End ***** -->
+      @media (max-width: 700px) {
+        body {
+          margin: 0 50px;
+        }
 
-        <!-- ***** Home Parallax Start ***** -->
-        <section class="mini" id="work-process">
-            <div class="mini-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="offset-lg-3 col-lg-6">
-                            <div class="info">
-                                <h1>Funcionalidades</h1>
-                                <p>As funcionalidades de nosso sistema englobam:</p>
-                            </div>
-                        </div>
-                    </div>
+        .table-responsive {
+          display: block;
+          position: relative;
+          border: none;
+          width: 120px;
+        }
 
-                    <!-- ***** Mini Box Start ***** -->
-                    <div class="row">
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Agenda</strong>
-                                <span>Gerencie a agenda de multiplos dentistas no mesmo local de forma pratica.</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Pacientes</strong>
-                                <span>Registre o contato de seus pacientes e acesse suas informações rapidamente.</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Funcionários</strong>
-                                <span>Gerencie as informações e o acesso de seus funcionario ao sistema.</span><br>
-                            </a>
-                        </div>                        
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Dentistas</strong>
-                                <span>Gerencie multiplos dentistas em sua clinica com agendas individuais.</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Procedimentos</strong>
-                                <span>Registre informações sobre os procedimentos realizados em sua clinica.</span>
-                            </a>
-                        </div>
-                        <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                            <a href="#" class="mini-box">
-                                <i><img src="Official_Page/assets/images/medal.svg" alt=""></i>
-                                <strong>Integração</strong>
-                                <span>Mantenha todas as informações no sistema vinculadas e sincronizadas.</span><br>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- ***** Mini Box End ***** -->
-                </div>
-            </div>
-        </section>
-        <!-- ***** Home Parallax End ***** -->
+        .table-responsive tbody,
+        .table-responsive th,
+        .table-responsive td,
+        .table-responsive tr {
+          display: block;
+        }
+        .table-responsive td,
+        .table-responsive th {
+          margin-bottom: 12px;
+        }
 
-        <!-- ***** Testimonials Start ***** -->
-        <section class="section" id="testimonials">
-            <div class="container">
-                <!-- ***** Section Title Start ***** -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="center-heading">
-                            <h2 class="section-title">O que dizem sobre nós?</h2>
-                        </div>
-                    </div>
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="center-text">
-                            <p>Veja o que nossos usuarios dizem sobre nosso serviço</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Section Title End ***** -->
+        .table-responsive tbody {
+          width: auto;
+          position: relative;
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+          white-space: nowrap;
+        }
 
-                <div class="row">
-                    <!-- ***** Testimonials Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-content">
-                                <!--<i><img src="assets/images/testimonial-icon.png" alt=""></i>-->
-                                <p>Solução deles muito boa, com bastante ferramentas, layout fácil e intuitivo.</p><br>
-                                <div class="user-image">
-                                    <img src="Official_Page/assets/images/contact1.jpg" alt="">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="user-name">Renato Lakhross</h3>
-                                    <span>Dentista</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ***** Testimonials Item End ***** -->
-                    
-                    <!-- ***** Testimonials Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-content">
-                                <!--<i><img src="assets/images/testimonial-icon.png" alt=""></i>-->
-                                <p>O melhor atendimento que eu já recebi na vida! Gosto muito do software e do suporte!</p>
-                                <div class="user-image">
-                                    <img src="Official_Page/assets/images/contact2.jpg" alt="">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="user-name">Bruna Borges</h3>
-                                    <span>Recepcionista</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ***** Testimonials Item End ***** -->
-                    
-                    <!-- ***** Testimonials Item Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <div class="team-item">
-                            <div class="team-content">
-                                <!--<i><img src="assets/images/testimonial-icon.png" alt=""></i>-->
-                                <p>Ótimo software, intuitivo, rápido. Resolveu completamente meu problema.</p>
-                                <div class="user-image">
-                                    <img src="Official_Page/assets/images/contact3.jpg" alt="">
-                                </div>
-                                <div class="team-info">
-                                    <h3 class="user-name">Giovane Oliveira</h3>
-                                    <span>Aprendiz</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ***** Testimonials Item End ***** -->
-                </div>
-            </div>
-        </section>
-        <!-- ***** Testimonials End ***** -->
-
-        <!-- ***** Pricing Plans Start ***** -->
-        <section class="section colored" id="pricing-plans">
-            <div class="container">
-                <!-- ***** Section Title Start ***** -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="center-heading">
-                            <h2 class="section-title">Planos</h2>
-                        </div>
-                    </div>
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="center-text">
-                            <p>Escolha o plano que melhor se edeque a sua necessidade</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Section Title End ***** -->
-
-                <div class="row">
-                    <!-- ***** Pricing Item Start ***** -->
-                    
-                    <div class="col-lg-4 col-md-6 col-sm-12 offset-lg-4 offset-md-6" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                        <div class="pricing-item">
-                            <div class="pricing-header">
-                                <h3 class="pricing-title">Starter</h3>
-                            </div>
-                            <div class="pricing-body">
-                                <div class="price-wrapper">
-                                    <span class="currency"></span>
-                                    <span class="price">GRÁTIS</span>
-                                    <span class="period"></span>
-                                </div>
-                                <ul class="list">
-                                    <li class="active">Agenda</li>
-                                    <li class="active">Gerenciamento de Pacientes</li>
-                                    <li class="active">Gerenciamento de Funcionários</li>
-                                    <li class="active">Gerenciamento de Dentistas</li>
-                                    <li class="active">Gerenciamento de Procedimentos</li>
-                                    <li>Prontuario do Paciente</li>
-                                    <li>Confirmação de Consultas Automática</li>
-                                    <li>Armazenamento em Nuvem</li>
-                                </ul>
-                            </div>
-                            <div class="pricing-footer">
-                                <a href="https://github.com/CaiquePatelliScapeline/TGS" class="main-button" target="_blank">Começe Agora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- ***** Pricing Item End ***** -->
-                </div>
-            </div>
-        </section>
-        <!-- ***** Pricing Plans End ***** -->
-
-        <!-- ***** Contact Us Start ***** -->
-        <section class="section colored" id="contact-us">
-            <div class="container">
-                <!-- ***** Section Title Start ***** -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="center-heading">
-                            <h2 class="section-title">Fale Conosco</h2>
-                        </div>
-                    </div>
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="center-text">
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- ***** Section Title End ***** -->
-
-                <div class="row">
-                    <!-- ***** Contact Text Start ***** -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <h5 class="margin-bottom-30">Mantenha contato</h5>
-                        <div class="contact-text">
-                            <p>Contenos suas experiencias com nosso sistema e quais beneficios ele trouxe ao seu trabalho.</p>                            
-                            <p>Fale sobre as falhas que você encontrou e quais melhorias você acredita que o sistema precisa.</p>
-                        </div>
-                    </div>
-                    <!-- ***** Contact Text End ***** -->
-
-                    <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-8 col-md-6 col-sm-12">
-                        <div class="contact-form">
-                            <form id="contact" action="" method="get">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Nome Completo" required="">
-                                </fieldset>
-                                </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12">
-                                <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail" required="">
-                                </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Sua Mensagem" required=""></textarea>
-                                </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                <fieldset>
-                                    <button type="submit" id="form-submit" class="main-button">Enviar Mensagem</button>
-                                </fieldset>
-                                </div>
-                            </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ***** Contact Form End ***** -->
-                </div>
-            </div>
-        </section>
-        <!-- ***** Contact Us End ***** -->
-        
-        <!-- ***** Footer Start ***** -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="copyright">Copyright &copy; 2021&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TGS - Design: <a href="https://templatemo.com/" class="footer-link" target="_blank">TemplateMo</a></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        <!-- jQuery -->
-        <script src="Official_Page/assets/js/jquery-2.1.0.min.js"></script>
-
-        <!-- Bootstrap -->
-        <script src="Official_Page/assets/js/popper.js"></script>
-        <script src="Official_Page/assets/js/bootstrap.min.js"></script>
-
-        <!-- Plugins -->
-        <script src="Official_Page/assets/js/scrollreveal.min.js"></script>
-        <script src="Official_Page/assets/js/waypoints.min.js"></script>
-        <script src="Official_Page/assets/js/jquery.counterup.min.js"></script>
-        <script src="Official_Page/assets/js/imgfix.min.js"></script> 
-        
-        <!-- Global Init -->
-        <script src="Official_Page/assets/js/custom.js"></script>
-
-    </body>
+        .table-responsive tbody tr {
+          display: inline-block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <div>
+        <h1 class="title">TGS</h1>
+        <h2>TGS é um programa de gestão de clínicas odontológicas, que tem por objetivo inovar e agilizar o atendimento ao cliente nos consultórios. Desenvolvido em C# e SQL Server, apresenta interface no estilo flat art, responsiva, intuitiva e de fácil manuseio.</h2>
+        <br>
+        <strong><a class="links" href="https://github.com/CaiquePatelliScapeline/TGS" target="_blank"><i class="fab fa-github"></i> Código</a></strong>
+        <br>
+        <br>
+        <br>
+        <strong><a class="links" href="https://www.figma.com/community/file/1012833819051900162" target="_blank"><i class="fab fa-figma"></i> Protótipo</a></strong>
+        <br>
+        <br>
+        <br>
+        <strong><a class="links" href="https://we.tl/t-8URljGG0Fe" target="_blank"><i class="fas fa-film"></i> Apresentação</a></strong>
+        <br>
+        <br>
+        <br>
+        <strong><a class="links" href="https://docs.google.com/document/d/1z7HYL9-mLWze-NzsOeb4ev9KDtaHJRU0/edit?usp=sharing&ouid=109070950790631633396&rtpof=true&sd=true" target="_blank"><i class="far fa-file-alt"></i> Artigo</a></strong>
+        <br>
+        <br>
+        <br>
+      </div>
+      <div>
+        <table class="table-responsive">
+          <tbody>
+            <tr align="center">
+              <td>
+                <a href="https://github.com/CaiquePatelliScapeline" target="_blank">
+                  <img src="https://avatars.githubusercontent.com/u/56651727?v=4" alt="Caique Patelli" />
+                  <br>
+                  <b>Caique<br>Patelli</b>
+                  <br>
+                  🖖
+                </a>  
+              </td>   
+              <td>
+                <a href="https://github.com/GianlucaDeMicheli" target="_blank">
+                  <img src="https://avatars.githubusercontent.com/u/56308126?v=4" alt="Gianluca De Micheli" />
+                  <br>
+                  <b>Gianluca<br>De Micheli</b>
+                  <br>
+                  😛
+                </a>
+              </td>  
+              <td>
+                <a href="https://github.com/MZequini" target="_blank">
+                  <img src="https://avatars.githubusercontent.com/u/88983177?v=4" alt="Miram Zequini"/>
+                  <br>
+                  <b>Miram<br>Zequini</b>
+                  <br>
+                  🤗
+                </a>
+              </td>
+              <td>
+                <a href="https://github.com/MuriloSchali" target="_blank">
+                  <img src="https://avatars.githubusercontent.com/u/89110560?v=4" alt="Murilo Schali"/>
+                  <br>
+                  <b>Murilo<br>Schali</b>
+                  <br>
+                  🧐
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </center>
+  </body>
 </html>

@@ -132,3 +132,5 @@ $ RECYCLE.BIN /
 
 _NCrunch *
 Desktop_App/TGS/Configs/configs.txt
+/Web_App/nbproject/private/
+/Web_App/build/

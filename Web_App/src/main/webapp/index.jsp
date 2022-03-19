@@ -35,8 +35,8 @@
 		%>
         <div id="layoutSidenav">
             <%
-            	FileRead fileRead = new FileRead();
-				SideBar sideBar = new SideBar(fileRead.toJson());
+            	FileRead fileRead = new FileRead();                       	
+				SideBar sideBar = new SideBar(fileRead.sideBarLinks());
 				out.print(sideBar);
 			%>
             <div id="layoutSidenav_content">
@@ -87,6 +87,6 @@
 
         <!-- DataTables -->
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
-        <script src="assets/js/datatables-simple-demo.js"></script>
+        <script src="assets/js/datatables-simple-demo.js"></script>        
     </body>
 </html>

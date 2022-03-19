@@ -1,31 +1,4 @@
-package controllers;
-
-import java.io.File;
-import java.io.FileReader;
-
-import libs.json.JSONArray;
-import libs.json.JSONObject;
-import libs.json.parser.JSONParser;
-
-public class FileRead {
-	public JSONArray sideBarLinks() {		
-		
-		JSONArray listJson = new JSONArray();
-		JSONObject itemJson = new JSONObject();
-		
-		itemJson.put("icon", "home");
-		itemJson.put("title", "Home");
-		itemJson.put("link", "#");
-
-		listJson.put(itemJson);
-
-		
-		return listJson;
-	}
-}
-
-/*
- * [
+[
     {
         "icon": "home",
         "title": "Home",
@@ -33,7 +6,7 @@ public class FileRead {
     },
     {
         "icon": "calendar",
-        "title": "Calend·rio",
+        "title": "Calend√°rio",
         "link": "#"
     },
     {
@@ -53,7 +26,7 @@ public class FileRead {
     },
     {
         "icon": "suitcase",
-        "title": "Funcion·rios",
+        "title": "Funcion√°rios",
         "link": "#"
     },
     {
@@ -63,8 +36,7 @@ public class FileRead {
     },
     {
         "icon": "search_file",
-        "title": "ConfiguraÁıes",
+        "title": "Configura√ß√µes",
         "link": "#"
     }
 ]
- * */

@@ -1,8 +1,9 @@
-<%@page import="controllers.FileRead"%>
-<%@ page import="components.*" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="components.*, controllers.*, entities.*" %>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +11,6 @@
         <!-- Authors -->
         <meta name="author" content="Caique Patelli Scapeline"/>
         <meta name="author" content="Gianluca Dias De Micheli"/>
-        <meta name="author" content="Miriam Zequini"/>
-        <meta name="author" content="Murilo Gustavo Schali da Costa"/>
 
         <title>TGS | Home</title>
 
@@ -36,7 +35,7 @@
         <div id="layoutSidenav">
             <%
             	FileRead fileRead = new FileRead();                       	
-				SideBar sideBar = new SideBar(fileRead.sideBarLinks());
+				SideBar sideBar = new SideBar(fileRead.getJSONArray("sidebar"));
 				out.print(sideBar);
 			%>
             <div id="layoutSidenav_content">
@@ -50,25 +49,21 @@
                             <%
 								Report report = new Report("patients", "Pacientes", "2500");
 
-                            	for(int i = 0; i < 4; i++){
+                            	for(int i = 0; i < 6; i++){
 									out.print(report);
 								}	
                             %>
                         </div>
+                        <% 
+                        	Table table = new Table("Próximas Consultas");
+                        	out.print(table);
+                        %>
                         <div class="row">
-                            <%
+	                       	<%
 								ChartArea chartArea = new ChartArea();
 								out.print(chartArea);
 							%>
-                            <%
-                            	ChartBar chartBar = new ChartBar();
-                            	out.print(chartBar);
-                            %>
-                        </div>
-                        <% 
-                        	Table table = new Table();
-                        	out.print(table);
-                        %>
+						</div>
                     </div>
                 </main>                
             </div>

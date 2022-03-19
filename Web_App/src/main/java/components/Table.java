@@ -1,12 +1,18 @@
 package components;
 
 public class Table {
+	
+	private String tableTitle;
+	
+	public Table(String tableTitle) {
+		this.tableTitle = tableTitle;
+	}
 
 	public String toString() {
 		return "<div class=\"card mb-4\">\r\n"
 			 + "  <div class=\"card-header\">\r\n"
 		 	 + "    <i class=\"fas fa-table me-1\"></i>\r\n"
-			 + "    DataTable Example\r\n"
+			 + 		tableTitle
 			 + "  </div>\r\n"
 			 + "  <div class=\"card-body\">\r\n"
 			 + "    <table id=\"datatablesSimple\">\r\n"

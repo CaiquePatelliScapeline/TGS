@@ -3,25 +3,11 @@ package components;
 import libs.json.*;
 
 public class SideBar {
+
+	private JSONArray json;
 	
 	public SideBar(JSONArray json) {
 		this.json = json;
-	}
-	
-	private JSONArray json;
-
-	public String toString() {
-	
-		return "<div id=\"layoutSidenav_nav\">\r\n"
-		 + "  <nav class=\"sb-sidenav accordion sb-sidenav-blue\" id=\"sidenavAccordion\">\r\n"
-		 + "    <div class=\"sb-sidenav-menu\">\r\n"
-		 + "      <div class=\"nav\">\r\n"
-		 + "        <div class=\"sb-sidenav-menu-heading\"></div>\r\n"
-		 + 			renderList()
-		 + "      </div>\r\n"
-		 + "    </div>\r\n"
-		 + "  </nav>\r\n"
-		 + "</div>";
 	}
 	
 	private String renderList() {
@@ -36,4 +22,18 @@ public class SideBar {
 		
 		return list;
 	}
+	
+	public String toString() {
+		return "<div id=\"layoutSidenav_nav\">\r\n"
+			 + "  <nav class=\"sb-sidenav accordion sb-sidenav-blue\" id=\"sidenavAccordion\">\r\n"
+			 + "    <div class=\"sb-sidenav-menu\">\r\n"
+			 + "      <div class=\"nav\">\r\n"
+			 + "        <div class=\"sb-sidenav-menu-heading\"></div>\r\n"
+			 + 			renderList()
+			 + "      </div>\r\n"
+			 + "    </div>\r\n"
+			 + "  </nav>\r\n"
+			 + "</div>";
+	}
+	
 }

@@ -1,70 +1,23 @@
 package controllers;
 
-import java.io.File;
-import java.io.FileReader;
-
+import mock.MockJson;
 import libs.json.JSONArray;
-import libs.json.JSONObject;
-import libs.json.parser.JSONParser;
+import libs.json.JSONTokener;
 
 public class FileRead {
-	public JSONArray sideBarLinks() {		
+	
+	public JSONArray getJSONArray(String path) {		
 		
-		JSONArray listJson = new JSONArray();
-		JSONObject itemJson = new JSONObject();
+		String strJSON = "";
 		
-		itemJson.put("icon", "home");
-		itemJson.put("title", "Home");
-		itemJson.put("link", "#");
+		switch (path.toLowerCase()) {
+			case "sidebar":
+				strJSON = MockJson.getSideBarLinks();
+			break;
+		}
 
-		listJson.put(itemJson);
-
+		JSONArray jArray = (JSONArray) new JSONTokener(strJSON).nextValue();
 		
-		return listJson;
+		return jArray;
 	}
 }
-
-/*
- * [
-    {
-        "icon": "home",
-        "title": "Home",
-        "link": "#"
-    },
-    {
-        "icon": "calendar",
-        "title": "Calendário",
-        "link": "#"
-    },
-    {
-        "icon": "message",
-        "title": "Chat",
-        "link": "#"
-    },
-    {
-        "icon": "patients",
-        "title": "Pacientes",
-        "link": "#"
-    },
-    {
-        "icon": "masks",
-        "title": "Dentistas",
-        "link": "#"
-    },
-    {
-        "icon": "suitcase",
-        "title": "Funcionários",
-        "link": "#"
-    },
-    {
-        "icon": "search_file",
-        "title": "Procedimentos",
-        "link": "#"
-    },
-    {
-        "icon": "search_file",
-        "title": "Configurações",
-        "link": "#"
-    }
-]
- * */

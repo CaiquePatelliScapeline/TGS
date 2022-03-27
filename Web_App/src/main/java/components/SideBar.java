@@ -5,7 +5,12 @@ import libs.json.*;
 public class SideBar {
 
 	private JSONArray json;
-	
+	private String path = "";
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+
 	public SideBar(JSONArray json) {
 		this.json = json;
 	}
@@ -14,8 +19,8 @@ public class SideBar {
 		String list = "";
 		
 		for(int i = 0; i < json.length(); i++) {
-			list += "<a class=\"nav-link\" href=\""+ json.getJSONObject(i).getString("link") +"\">\r\n"
-				  + "  <div class=\"sb-nav-link-icon\"><img src=\"assets/icons/"+ json.getJSONObject(i).getString("icon") +".svg\" width=\"25px\" height=\"25px\"></div>\r\n"
+			list += "<a class=\"nav-link\" href=\""+ path + json.getJSONObject(i).getString("link") +"\">\r\n"
+				  + "  <div class=\"sb-nav-link-icon\"><img src=\""+ path +"assets/icons/"+ json.getJSONObject(i).getString("icon") +".svg\" width=\"25px\" height=\"25px\"></div>\r\n"
 				  + "  "+ json.getJSONObject(i).getString("title") +"\r\n"
 				  + "</a>\r\n";
 		}

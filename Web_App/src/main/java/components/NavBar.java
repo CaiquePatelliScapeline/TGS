@@ -1,11 +1,17 @@
 package components;
 
 public class NavBar {	
+	private String path = "";
+
+	public void setPath(String path) {
+		this.path = path;
+	}
+	
 	public String toString() {
 		return "<nav class=\"sb-topnav navbar navbar-expand navbar-dark\">\r\n"
 			 + "  <!-- Navbar Brand-->\r\n"
-			 + "  <a class=\"navbar-brand ps-3\" href=\"index.html\">\r\n"
-			 + "    <img src=\"assets/img/name_logo.svg\" height=\"50\">\r\n"
+			 + "  <a class=\"navbar-brand ps-3\" href=\"index.jsp\">\r\n"
+			 + "    <img src=\""+ path +"assets/img/name_logo.svg\" height=\"50\">\r\n"
 			 + "  </a>\r\n"
 			 + "  <!-- Sidebar Toggle-->\r\n"
 			 + "  <button class=\"btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0\" id=\"sidebarToggle\" href=\"#!\"><i class=\"fas fa-bars\"></i></button>\r\n"
